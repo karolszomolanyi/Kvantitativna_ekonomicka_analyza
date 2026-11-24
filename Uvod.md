@@ -10,6 +10,8 @@
 
 **ISBN:** 978-80-225-5399-5
 
+Táto elektronická učebnica je priebežne aktualizovaná v závislosti od vývoja obsahu a použitých dátových zdrojov.
+
 ## Úvod
 
 V súčasnosti existuje priepasť medzi poznatkami získanými v štandardných vysokoškolských kurzoch ekonómie a súčasným ekonomickým výskumom (hlavne v oblasti makroekonómie). Aplikácia makroekonomických modelov v súčasnom výskume vychádzajúcom z mikroekonomických princípov vyžaduje zložité výpočty, ktoré sa realizujú využitím výpočtovej techniky. Táto učebnica má ambíciu pomôcť čiastočne odbúrať uvedenú priepasť vytvorením interaktívnej knihy kvantitatívnej ekonomickej analýzy, v ktorej grafy aj dátové analýzy sú tvorené v programovom jazyku Python. Za posledné desaťročie sa Python stal jedným z najpoužívanejších programovacích jazykov. Popularitu získava pre svoju jednoduchosť a prístupnosť pre začiatočníkov.
