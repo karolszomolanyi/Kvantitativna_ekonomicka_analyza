@@ -16,8 +16,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - run: pip install jupyter-book
-
+      - run: pip install "jupyter-book<2" sphinx-proof
+      
       - run: jupyter-book build .
 
       - uses: peaceiris/actions-gh-pages@v3
