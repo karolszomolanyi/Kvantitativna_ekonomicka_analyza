@@ -1,0 +1,1722 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>19. Peniaze, banky a menová politika &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Peniaze';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="20. Modely hospodárskych cyklov s pružnými cenami a mzdami" href="Pruzne.html" />
+    <link rel="prev" title="18. Modely reálnej otvorenej ekonomiky" href="Otvorena.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Peniaze.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Peniaze, banky a menová politika</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peniaze">19.1. Peniaze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realne-a-nominalne-premenne">19.2. Reálne a nominálne premenné</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menove-ukazovatele-v-eurozone">19.3. Menové ukazovatele v eurozóne</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-v-ekonomike-emu">19.3.1. Recesie v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdp-v-ekonomike-emu">19.3.2. HDP v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penazne-agregaty">19.3.3. Peňažné agregáty</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-a-miera-inflacie-v-ekonomike-emu">19.3.4. Ceny a miera inflácie v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fisherov-vztah-fisherov-efekt-a-realna-urokova-miera-v-ekonomike-emu">19.3.5. Fisherov vzťah, Fisherov efekt a reálna úroková miera v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyklicke-charakteristiky-penazi-cien-a-inflacie">19.3.6. Cyklické charakteristiky peňazí, cien a inflácie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-a-ponuka-penazi">19.4. Dopyt a ponuka peňazí</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-po-peniazoch">19.4.1. Dopyt po peniazoch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vlada-a-ponuka-penazi">19.4.2. Vláda a ponuka peňazí</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konkurencna-rovnovaha-v-ekonomike-s-peniazmi">19.5. Konkurenčná rovnováha v ekonomike s peniazmi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-interpretacia">19.5.1. Grafická interpretácia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zvysenia-mnozstva-penazi">19.6. Vplyv zvýšenia množstva peňazí</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-penazneho-dopytu">19.7. Vplyv zmeny peňažného dopytu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konvencna-menova-politika-pasca-likvidity-a-nekonvencna-menova-politika">19.8. Konvenčná menová politika, pasca likvidity a nekonvenčná menová politika</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konvencna-menova-politika">19.8.1. Konvenčná menová politika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pasca-likvidity">19.8.2. Pasca likvidity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nekonvencna-menova-politika">19.8.3. Nekonvenčná menová politika</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rieseny-priklad-dynamicky-model-vseobecnej-rovnovahy-s-peniazmi">19.9. Riešený príklad: Dynamický model všeobecnej rovnováhy s peniazmi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zvysenia-ponuky-penazi">19.9.1. Vplyv zvýšenia ponuky peňazí</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-dopytu-po-peniazoch">19.9.2. Vplyv zmeny dopytu po peniazoch</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">19.10. Neriešené príklady</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="peniaze-banky-a-menova-politika">
+<h1><span class="section-number">19. </span>Peniaze, banky a menová politika<a class="headerlink" href="#peniaze-banky-a-menova-politika" title="Link to this heading">#</a></h1>
+<section id="peniaze">
+<h2><span class="section-number">19.1. </span>Peniaze<a class="headerlink" href="#peniaze" title="Link to this heading">#</a></h2>
+<p>Peniaze sú osobitným druhom aktíva, ktoré slúži predovšetkým ako <strong>médium výmeny</strong>. Umožňujú uskutočňovať obchod bez potreby priamej výmeny tovaru za tovar a výrazne znižujú transakčné náklady v ekonomike. Okrem toho plnia aj funkciu <strong>účtovnej jednotky</strong>, v ktorej sa vyjadrujú ceny, a funkciu <strong>uchovávateľa hodnoty</strong>, pretože umožňujú prenášať kúpnu silu do budúcnosti.</p>
+<p>V minulosti boli peniaze často kryté komoditami, najmä zlatom alebo striebrom. Hodnota peňazí preto vyplývala zo schopnosti ich emitenta vymeniť ich za určitú hodnotu drahého kovu. Moderné ekonomiky však používajú prevažne <strong>nekryté (fiat) peniaze</strong>, ktorých hodnota je založená na dôvere verejnosti v menový systém a menovú autoritu.</p>
+<p>V súčasných ekonomikách sa peniaze dostávajú do obehu najmä prostredníctvom úverov. Dôležitú úlohu zohrávajú centrálne banky, napríklad Európska centrálna banka (ECB), Federálny rezervný systém Spojených štátov (FED) alebo Česká národná banka (ČNB). Centrálna banka môže zvýšiť množstvo peňazí v ekonomike napríklad nákupom vládnych dlhopisov. Za nakúpené dlhopisy zaplatí novovytvorenými peniazmi, čím zvýši objem peňažných prostriedkov v bankovom systéme.</p>
+<p>Keďže peniaze existujú v rôznych podobách, centrálne banky sledujú ich množstvo pomocou <strong>peňažných agregátov</strong>. Jednotlivé agregáty sa líšia mierou likvidity aktív, ktoré zahŕňajú.</p>
+<p>Najčastejšie používané peňažné agregáty sú:</p>
+<ul class="simple">
+<li><p><strong>obeživo držané verejnosťou</strong>, ktoré zahŕňa bankovky a mince mimo bánk,</p></li>
+<li><p><strong>menová báza (M0)</strong>, ktorá pozostáva z obeživa a rezerv komerčných bánk v centrálnej banke,</p></li>
+<li><p><strong>M1</strong>, zahŕňajúca obeživo a vklady splatné na požiadanie,</p></li>
+<li><p><strong>M2</strong>, ktorá okrem agregátu M1 obsahuje aj krátkodobé termínované vklady,</p></li>
+<li><p><strong>M3</strong>, najširší bežne používaný peňažný agregát, zahŕňajúci M2 a ďalšie vysoko likvidné finančné aktíva.</p></li>
+</ul>
+<p>Pri analýze menovej politiky sa v eurozóne najčastejšie používa agregát <strong>M3</strong>, pretože poskytuje najširší pohľad na množstvo peňazí dostupných v ekonomike. Naopak agregát <strong>M1</strong> zachytáva najlikvidnejšie formy peňazí a býva citlivejší na hospodársky cyklus a zmeny menovej politiky.</p>
+<p>Informácie o peňažných agregátoch pravidelne zverejňujú centrálne banky.</p>
+</section>
+<section id="realne-a-nominalne-premenne">
+<h2><span class="section-number">19.2. </span>Reálne a nominálne premenné<a class="headerlink" href="#realne-a-nominalne-premenne" title="Link to this heading">#</a></h2>
+<p>Peňažné agregáty sa zvyčajne merajú v nominálnych jednotkách. Doteraz sme analyzovali reálne ekonomické modely, v ktorých spotrebný statok plnil nielen úlohu predmetu spotreby, ale aj média výmeny.</p>
+<p>Rozšírenie modelu o peniaze vyžaduje rozlíšenie medzi reálnymi a nominálnymi premennými. Ich vzťah sprostredkúva cenová hladina alebo cena spotrebného statku <span class="math notranslate nohighlight">\(P\)</span>. Ak je reálna hodnota premennej označená symbolom <span class="math notranslate nohighlight">\(X\)</span>, jej nominálnu hodnotu získame vynásobením cenovou hladinou <span class="math notranslate nohighlight">\(PX\)</span>.</p>
+<p>Všeobecná spotrebná cenová hladina sa v praxi meria cenovými indexmi <a class="reference internal" href="DynMer.html#kap-indexy"><span class="std std-ref">Cenové indexy</span></a>.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<p>Dlžník uhradil veriteľovi 110 € za splatenie pôžičky 100 € z predchádzajúceho roka. Ročný úrok pôžičky bol</p>
+<div class="math notranslate nohighlight">
+\[
+R=\frac{10}{100}\times100=10\%.
+\]</div>
+<p>Nech miera inflácie medzi týmito dvoma rokmi bola 5 %. Potom si veriteľ za vrátených 110 € môže nakúpiť</p>
+<div class="math notranslate nohighlight">
+\[
+1+r=\frac{110}{100\times1,05}
+      =\frac{1,1}{1,05}
+      =\frac{1+R}{1+i}
+\]</div>
+<p>násobok toho, čo si mohol kúpiť v predchádzajúcom roku za 100 €. Reálna úroková miera je (r).</p>
+</aside>
+<p>Hrubá <strong>reálna úroková miera</strong> je</p>
+<div class="math notranslate nohighlight" id="equation-r-fisher">
+<span class="eqno">(19.1)<a class="headerlink" href="#equation-r-fisher" title="Link to this equation">#</a></span>\[1+r=\frac{1+R}{1+i},\]</div>
+<p>kde <span class="math notranslate nohighlight">\(R\)</span> je nominálna úroková miera a <span class="math notranslate nohighlight">\(i\)</span> je miera inflácie</p>
+<p>Vzťah <a class="reference internal" href="#equation-r-fisher">(19.1)</a> sa označuje ako <strong>Fisherova rovnica</strong>. Vyjadruje, že nominálna úroková miera pozostáva z reálnej úrokovej miery a kompenzácie za infláciu.</p>
+<p>Pri nízkych hodnotách inflácie a úrokových mier možno Fisherovu rovnicu aproximovať v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-fisher-app">
+<span class="eqno">(19.2)<a class="headerlink" href="#equation-r-fisher-app" title="Link to this equation">#</a></span>\[R \approx r+i.\]</div>
+<div class="admonition-nominalny-zivotny-rozpocet-spotrebitela admonition">
+<p class="admonition-title">Nominálny životný rozpočet spotrebiteľa</p>
+<p>V modeloch prídelovej a výrobnej ekonomiky sme doteraz predpokladali, že cena spotrebného statku sa medzi obdobiami nemení a platí <span class="math notranslate nohighlight">\(P=P'\)</span>. Preskúmajme životný rozpočet spotrebiteľa v prídelovej ekonomike, ak cena nie je konštantná a <span class="math notranslate nohighlight">\(P\neq P'\)</span>.</p>
+<p>Podiel cien v druhom a prvom období predstavuje hrubý inflačný faktor,</p>
+<div class="math notranslate nohighlight">
+\[
+1+i=\frac{P'}{P}.
+\]</div>
+<p>Spotrebiteľov rozpočet v prvom období je</p>
+<div class="math notranslate nohighlight">
+\[
+Pc+Ps = P(y-t).
+\]</div>
+<p>Z nominálneho rozpočtového ohraničenia získame reálne <a class="reference internal" href="Dynam.html#equation-r-rozpocet-1o">(8.5)</a>, ak ho podelíme cenou <span class="math notranslate nohighlight">\(P\)</span>.</p>
+<p>Označme nominálnu úrokovú mieru, za ktorú sa úspory zhodnocujú medzi obdobiami, symbolom <span class="math notranslate nohighlight">\(R\)</span>. Spotrebiteľov rozpočet v druhom období je</p>
+<div class="math notranslate nohighlight">
+\[
+P'c' \le P'(y'-t')+(1+R)Ps.
+\]</div>
+<p>Po vydelení druhého rozpočtu cenou <span class="math notranslate nohighlight">\(P'\)</span> získame</p>
+<div class="math notranslate nohighlight">
+\[
+c' \le (y'-t')+\frac{1+R}{1+i}s.
+\]</div>
+<p>Posledný člen predstavuje reálnu hodnotu úspor po ich nominálnom zhodnotení a očistení o infláciu. Ak označíme reálnu úrokovú mieru symbolom <span class="math notranslate nohighlight">\(r\)</span>, musí platiť</p>
+<div class="math notranslate nohighlight">
+\[
+1+r=\frac{1+R}{1+i}.
+\]</div>
+<p>Po úprave získame</p>
+<div class="math notranslate nohighlight">
+\[
+1+R=(1+r)(1+i).
+\]</div>
+<p>V reálnom rozpočtovom ohraničení v druhom období <a class="reference internal" href="Dynam.html#equation-r-rozpocet-2o">(8.6)</a> sú úspory zhodnotené reálnou úrokovou mierou <span class="math notranslate nohighlight">\(r\)</span>.</p>
+</div>
+<p>V reálnych dynamických modeloch má dynamický substitučný efekt a príjmový efekt reálna úroková miera <span class="math notranslate nohighlight">\(r\)</span>, nie nominálna úroková miera <span class="math notranslate nohighlight">\(R\)</span>. O rozhodnutiach spotrebiteľa totiž rozhoduje množstvo statkov, ktoré si bude môcť kúpiť v budúcnosti, a nie počet peňažných jednotiek, ktoré získa.</p>
+<p>Aká je úroková miera obeživa? Ak držíme hotovosť v peňaženke, nezískavame žiadny úrok. Peniaze <strong>nie sú úročeným aktívom</strong>. Nominálna úroková miera peňazí sa rovná nule.</p>
+<p>Aká je však reálna úroková miera z držby peňazí?</p>
+<p>Dosadením <span class="math notranslate nohighlight">\(R=0\)</span> do Fisherovej rovnice získame</p>
+<div class="math notranslate nohighlight">
+\[
+1+r^m=\frac{1+0}{1+i}=\frac{1}{1+i},
+\]</div>
+<p>resp.</p>
+<div class="math notranslate nohighlight">
+\[
+r^m \approx 0-i=-i.
+\]</div>
+<p>Ak je miera inflácie kladná, reálna úroková miera peňazí je záporná.</p>
+<p>Držba peňazí je preto spojená s <strong>príležitostnými nákladmi</strong>. Ak namiesto nákupu úročených aktív držíme úspory vo forme obeživa, ich kúpna sila v dôsledku inflácie klesá. Čím vyššia je inflácia, tým vyššie sú príležitostné náklady držby peňazí.</p>
+</section>
+<section id="menove-ukazovatele-v-eurozone">
+<h2><span class="section-number">19.3. </span>Menové ukazovatele v eurozóne<a class="headerlink" href="#menove-ukazovatele-v-eurozone" title="Link to this heading">#</a></h2>
+<p>Slovensko nemá vlastnú menovú politiku od vstupu do <strong>Európskej menovej únie</strong> (EMÚ) v roku 2009. Preto sa z hľadiska peňazí a menovej analýzy zameriame na ekonomiku EMÚ. Geograficky sa krajinám v EMÚ hovorí aj <strong>eurozóna</strong>.</p>
+<p>Historický vývoj slovenskej ekonomiky bol poznačený veľkými udalosťami, z ktorých vznikli recesie. Preto ešte pred predstavením menových ukazovateľov priblížime recesie (<a class="reference internal" href="DynMer.html#def-recesia"><span class="std std-ref">Recesia</span></a>) v ekonomike EMÚ. Vužívame časové rady z Eurostatu <span class="bibtex-citation" id="id1">[<a class="reference internal" href="Literatura.html#id12" title="Eurostat. Eurostat database. 2026. Prístup: 11. september 2026. URL: https://ec.europa.eu/eurostat/data/database.">Eurostat26</a>]</span>.</p>
+<section id="recesie-v-ekonomike-emu">
+<h3><span class="section-number">19.3.1. </span>Recesie v ekonomike EMÚ<a class="headerlink" href="#recesie-v-ekonomike-emu" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-hc-ea">
+<caption><span class="caption-number">Tab. 19.1 </span><span class="caption-text">Recesie v ekonomike EMÚ od roku 1995</span><a class="headerlink" href="#tab-hc-ea" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Recesia</p></th>
+<th class="head"><p>Vrchol</p></th>
+<th class="head"><p>Dno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Globálna “dot-com” kríza</p></td>
+<td><p>2002Q4</p></td>
+<td><p>2003Q1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Globálna finančná kríza</p></td>
+<td><p>2008Q1</p></td>
+<td><p>2009Q1</p></td>
+</tr>
+<tr class="row-even"><td><p>Európska dlhová kríza</p></td>
+<td><p>2011Q2</p></td>
+<td><p>2013Q1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pandémia COVID-19</p></td>
+<td><p>2019Q2</p></td>
+<td><p>2020Q1</p></td>
+</tr>
+<tr class="row-even"><td><p>Energetická kríza</p></td>
+<td><p>2022Q2</p></td>
+<td><p>2023Q1</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+<p>Porovnaním recesií v ekonomike EMÚ v <a class="reference internal" href="#tab-hc-ea"><span class="std std-numref">Tab. 19.1</span></a> a slovenských recesií v <a class="reference internal" href="DynMer.html#tab-hc"><span class="std std-numref">Tab. 13.1</span></a> nájdeme mnoho podobností, ale aj rozdielov. V oboch ekonomikách sme zaznamenali globálnu finančnú krízu, pandémiu COVID-19 a energetickú krízu.</p>
+<p>Slovenská ekonomika zvykne reagovať s omeškaním na hospodársky vývoj v eurozóne, čo súvisí s jej vysokou otvorenosťou a závislosťou od zahraničného dopytu.</p>
+<p>Stalo sa tak pri globálnej finančnej kríze, ktorá na Slovensku prepukla s približne polročným omeškaním. Aj táto skutočnosť je indíciou, že slovenská ekonomika si krízu doviezla v podobe obchodného šoku.</p>
+<p>Zaujímavé je, že podľa identifikácie hospodárskeho cyklu sa recesia v EMÚ začala ešte pred vypuknutím pandémie COVID‑19. To naznačuje, že hospodársky rast v eurozóne sa spomaľoval už pred pandémiou a pandémia následný pokles ekonomickej aktivity výrazne prehĺbila.</p>
+<p>Jedine pri energetickej kríze slovenská ekonomika predbehla ekonomiku EMÚ. Podľa údajov v slovenskej ekonomike kríza skončila práve v období, keď sa začala v EMÚ.</p>
+<p>Prvou bola takzvaná dot-com kríza. Koncom 90. rokov boli s rozvojom internetu spojené veľmi optimistické očakávania budúceho hospodárskeho rastu. Investori očakávali, že nové internetové technológie výrazne zvýšia produktivitu práce a kapitálu. Mnohé projekty však tieto očakávania nenaplnili a po precitnutí investorov nasledoval pokles cien technologických akcií a hospodárske spomalenie.</p>
+<p>Z pohľadu modelu výrobnej ekonomiky možno dot-com krízu interpretovať ako dôsledok príliš optimistických očakávaní budúceho rastu celkovej produktivity faktorov (<a class="reference internal" href="Vyrob.html#kap-dge-ap"><span class="std std-ref">Vplyv očakávaného zvýšenia budúcej celkovej produktivity faktorov</span></a>). Po prehodnotení týchto očakávaní sa znížil investičný dopyt a spomalil hospodársky rast.</p>
+<p>Druhou recesiou bola európska dlhová kríza. Po globálnej finančnej kríze sa investori začali viac obávať schopnosti niektorých krajín eurozóny splácať svoje záväzky. Týkalo sa to najmä Grécka, ale aj ďalších krajín južnej Európy. V dôsledku toho sa zvýšili úrokové prirážky, za ktoré si tieto krajiny mohli požičiavať na finančných trhoch.</p>
+<p>Tento vývoj možno interpretovať pomocou modelu otvorenej ekonomiky s úrokovou prirážkou (<a class="reference internal" href="Otvorena.html#kap-otv-rp"><span class="std std-ref">Vplyv zvýšenia úrokovej prirážky spôsobenej nedokonalosťami na trhu dlhopisov (finančný šok)</span></a>). Vyššia úroková prirážka zvyšuje náklady financovania dlhu a znižuje životné bohatstvo ekonomických subjektov. Spotrebitelia obmedzujú spotrebu a firmy investície, čo vedie k poklesu ekonomickej aktivity a životnej úrovne.</p>
+<p>Európsku dlhovú krízu tak možno interpretovať ako príklad finančného šoku spojeného s asymetrickými informáciami a nedôverou investorov na finančných trhoch.</p>
+<p>Skutočnosť, že slovenské údaje neidentifikovali dot-com krízu ani európsku dlhovú krízu, môže súvisieť s procesom ekonomickej konvergencie. Rýchly rast produktivity, investícií a zamestnanosti mohol čiastočne kompenzovať negatívne šoky, ktoré viedli k recesiám v eurozóne. Hospodársky cyklus Slovenska sa preto mohol od hospodárskeho cyklu EMÚ do istej miery odlišovať.</p>
+<p>Recesie ekonomiky EMÚ budeme zvýrazňovať v zodpovedajúcich grafoch časových radov.</p>
+</section>
+<section id="hdp-v-ekonomike-emu">
+<h3><span class="section-number">19.3.2. </span>HDP v ekonomike EMÚ<a class="headerlink" href="#hdp-v-ekonomike-emu" title="Link to this heading">#</a></h3>
+<p>Priebeh sezónne očistenéhou časového radu reálneho HDP získaného z Eurostatu v ekonomike EMÚ je na <a class="reference internal" href="#graf-y-ea"><span class="std std-numref">Obr. 19.1</span></a>.</p>
+<figure class="align-default" id="graf-y-ea">
+<img alt="Data/graf_Y_EA.png" src="Data/graf_Y_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.1 </span><span class="caption-text">Priebeh reálneho HDP v ekonomike EMÚ</span><a class="headerlink" href="#graf-y-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Rovnako ako v slovenskej ekonomike, aj v ekonomike EMÚ predchádzalo globálnej finančnej kríze obdobie rýchleho hospodárskeho rastu, ktoré sa následne korigovalo recesiou. Naopak, pandémia COVID‑19 spôsobila krátky, ale mimoriadne prudký pokles ekonomickej aktivity. Po odznení pandémie sa ekonomika EMÚ pomerne rýchlo vrátila k predchádzajúcemu rastovému trendu.</p>
+</section>
+<section id="penazne-agregaty">
+<h3><span class="section-number">19.3.3. </span>Peňažné agregáty<a class="headerlink" href="#penazne-agregaty" title="Link to this heading">#</a></h3>
+<p>Na <a class="reference internal" href="#graf-m"><span class="std std-numref">Obr. 19.2</span></a> je zobrazený priebeh menových agregátov M_1 a M_3. Údaje sú získané z databázového portálu Európskej centrálnej banky (ECB) <span class="bibtex-citation" id="id2">[<a class="reference internal" href="Literatura.html#id31" title="ECB. Ecb database. 2026. Prístup: 5. november 2026. URL: https://data.ecb.europa.eu/.">ECB26</a>]</span>.</p>
+<figure class="align-default" id="graf-m">
+<img alt="_images/graf_M.png" src="_images/graf_M.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.2 </span><span class="caption-text">Priebeh menových agregátov M_1 a M_3</span><a class="headerlink" href="#graf-m" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov ECB.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Na <a class="reference internal" href="#graf-m"><span class="std std-numref">Obr. 19.2</span></a> vidíme, že oba peňažné agregáty v eurozóne dlhodobo rastú. Agregát M3 je počas celého sledovaného obdobia väčší ako agregát M1, pretože okrem najlikvidnejších foriem peňazí zahŕňa aj ďalšie krátkodobé finančné aktíva.</p>
+<p>Z grafu je tiež zrejmé, že agregát M1 reaguje na ekonomické udalosti výraznejšie ako agregát M3. Po pandémii COVID‑19 prudko vzrástol a priblížil sa k agregátu M3.</p>
+<p>K tomuto vývoju prispeli mimoriadne expanzívna menová politika ECB, nízke úrokové miery a rozsiahle podporné programy zavedené počas pandémie. Po roku 2022 sa rast agregátu M1 spomalil a časť prostriedkov sa presunula do menej likvidných foriem úspor, čo súviselo so sprísňovaním menovej politiky ECB.</p>
+<p>Pre ďalšiu analýzu je dôležité, že centrálne banky zvyčajne sledujú nielen celkové množstvo peňazí v ekonomike, ale aj ich štruktúru.</p>
+</section>
+<section id="ceny-a-miera-inflacie-v-ekonomike-emu">
+<h3><span class="section-number">19.3.4. </span>Ceny a miera inflácie v ekonomike EMÚ<a class="headerlink" href="#ceny-a-miera-inflacie-v-ekonomike-emu" title="Link to this heading">#</a></h3>
+<p>Na <a class="reference internal" href="#graf-p-ea"><span class="std std-numref">Obr. 19.3</span></a> je zobrazený harmonizovaný index spotrebiteľských cien (HICP) v ekonomike EMÚ a na <a class="reference internal" href="#graf-inf-ea"><span class="std std-numref">Obr. 19.4</span></a> medziročná miera inflácie meraná týmto indexom. Oba časové rady sú sezónne očistené a pochádzajú z databázy Eurostatu.</p>
+<figure class="align-default" id="graf-p-ea">
+<img alt="Data/graf_P_EA.png" src="Data/graf_P_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.3 </span><span class="caption-text">Harmonizovaný index cien v ekonomike EMÚ</span><a class="headerlink" href="#graf-p-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="graf-inf-ea">
+<img alt="Data/graf_inf_EA.png" src="Data/graf_inf_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.4 </span><span class="caption-text">Miera inflácie v ekonomike EMÚ</span><a class="headerlink" href="#graf-inf-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Cenová hladina v ekonomike EMÚ počas celého sledovaného obdobia dlhodobo rástla. Zatiaľ čo krátkodobé hospodárske výkyvy ovplyvňovali tempo rastu cien, samotný index HICP vykazuje stabilný rastúci trend. Výraznejšie zrýchlenie rastu cenovej hladiny nastalo po pandémii COVID‑19 a energetickej kríze rokov 2021 až 2023.</p>
+<p>Miera inflácie sa na rozdiel od cenovej hladiny vyznačuje podstatne vyššou volatilitou. Počas väčšiny sledovaného obdobia sa inflácia pohybovala v blízkosti inflačného cieľa ECB na úrovni približne 2 %. Po globálnej finančnej kríze a počas dlhovej krízy v eurozóne inflácia výrazne poklesla a v niektorých obdobiach sa priblížila k nule alebo bola záporná. Naopak, v rokoch 2022 a 2023 dosiahla najvyššie hodnoty od vzniku eurozóny, keď medziročne prekročila 10 %. Následne sa inflácia postupne znížila, avšak zostala nad úrovňami typickými pre obdobie pred pandémiou.</p>
+</section>
+<section id="fisherov-vztah-fisherov-efekt-a-realna-urokova-miera-v-ekonomike-emu">
+<h3><span class="section-number">19.3.5. </span>Fisherov vzťah, Fisherov efekt a reálna úroková miera v ekonomike EMÚ<a class="headerlink" href="#fisherov-vztah-fisherov-efekt-a-realna-urokova-miera-v-ekonomike-emu" title="Link to this heading">#</a></h3>
+<p>Fisherov vzťah je definícia vyjadrená Fisherovou rovnicou <a class="reference internal" href="#equation-r-fisher">(19.1)</a>. Mnohí ekonómovia však upozorňujú aj na empirické pozorovanie označované ako Fisherov efekt.</p>
+<dl class="simple myst">
+<dt>Fisherov efekt</dt><dd><p>empirická tendencia nominálnych úrokových mier rásť spolu s očakávanou infláciou; vyplýva z Fisherovej rovnice</p>
+</dd>
+</dl>
+<p>Fisherov efekt ilustruje <a class="reference internal" href="#graf-fisher"><span class="std std-numref">Obr. 19.5</span></a>, v ktorom je zobrazený priebeh miery inflácie a nominálnej úrokovej miery. Nominálnu úrokovú mieru predstavuje časový rad trojmesačnej medzibankovej úrokovej sadzby EURIBOR (<strong>EURIBOR3M</strong>). Obidva časové rady pochádzajú z databázy Eurostatu.</p>
+<figure class="align-default" id="graf-fisher">
+<img alt="_images/graf_fisher.png" src="_images/graf_fisher.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.5 </span><span class="caption-text">Miera inflácie a nominálna úroková miera v ekonomike EMÚ</span><a class="headerlink" href="#graf-fisher" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Z grafu možno pozorovať, že obdobia vyššej inflácie bývajú spravidla sprevádzané vyššími nominálnymi úrokovými mierami. Vzťah však nie je dokonalý. Nominálne úrokové miery sú ovplyvnené aj menovou politikou ECB, ktorá na zmeny inflácie reaguje s určitým oneskorením. Počas inflačnej vlny rokov 2021 až 2023 inflácia vzrástla skôr, zatiaľ čo úrokové miery začali výraznejšie rásť až následne. Napriek týmto krátkodobým odchýlkam časové rady naznačujú pozitívny dlhodobý vzťah medzi infláciou a nominálnou úrokovou mierou, ktorý je v súlade s Fisherovým efektom.</p>
+<p>Na {numref}graf_r je zobrazená reálna úroková miera vypočítaná pomocou aproximovanej Fisherovej rovnice ako rozdiel medzi nominálnou úrokovou mierou a mierou inflácie.</p>
+<figure class="align-default" id="graf-r">
+<img alt="_images/graf_r.png" src="_images/graf_r.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.6 </span><span class="caption-text">Reálna úroková miera v ekonomike EMÚ</span><a class="headerlink" href="#graf-r" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Z <a class="reference internal" href="#graf-r"><span class="std std-numref">Obr. 19.6</span></a> vidno, že reálna úroková miera v ekonomike EMÚ nie je konštantná. V priebehu sledovaného obdobia nadobúdala kladné aj záporné hodnoty v závislosti od vzájomného vývoja nominálnej úrokovej miery a inflácie.</p>
+<p>Počas väčšiny prvého desaťročia 21. storočia bola reálna úroková miera prevažne kladná, čo znamenalo, že výnos z úspor prevyšoval rast cenovej hladiny. Naopak, v období po globálnej finančnej kríze a najmä počas rokov 2021 až 2023 dosahovala výrazne záporné hodnoty. Dôvodom bol rýchly rast inflácie, na ktorý nominálne úrokové miery reagovali len s oneskorením.</p>
+<p>Záporná reálna úroková miera znižuje motiváciu domácností držať finančné úspory a súčasne znižuje reálnu hodnotu existujúcich dlhov. Naopak, kladná reálna úroková miera motivuje k sporeniu a zvyšuje náklady financovania investícií prostredníctvom úverov.</p>
+<p>Najhlbší pokles reálnej úrokovej miery nastal počas inflačnej vlny rokov 2022 a 2023, keď rast cien výrazne prevýšil nominálne úrokové miery. V tomto období dosahovala reálna úroková miera približne −9 %.</p>
+<div class="admonition-zaporne-urokove-miery admonition">
+<p class="admonition-title">Záporné úrokové miery</p>
+<p>Od konca 20. storočia možno vo vyspelých ekonomikách pozorovať dlhodobý pokles reálnych úrokových mier. Ekonomická teória tento vývoj vysvetľuje najmä starnutím populácie a rastom úspor domácností, spomalením rastu produktivity a dopytu po investíciách, ako aj zvýšeným dopytom po bezpečných finančných aktívach <span class="bibtex-citation" id="id3">[<a class="reference internal" href="Literatura.html#id32" title="Ben S. Bernanke. The global saving glut and the u.s. current account deficit. Speech No. 77, Board of Governors of the Federal Reserve System, 2005. URL: https://EconPapers.repec.org/RePEc:fip:fedgsq:77.">Ber05</a>, <a class="reference internal" href="Literatura.html#id33" title="Lukasz Rachel and Lawrence H. Summers. On falling neutral real rates, fiscal policy, and the risk of secular stagnation. Brookings Papers on Economic Activity, 2019. doi:10.3386/w26198.">RS19</a>]</span>. Výsledkom je pokles rovnovážnej reálnej úrokovej miery, pri ktorej sa vyrovnáva ponuka úspor a dopyt po investíciách.</p>
+</div>
+</section>
+<section id="cyklicke-charakteristiky-penazi-cien-a-inflacie">
+<h3><span class="section-number">19.3.6. </span>Cyklické charakteristiky peňazí, cien a inflácie<a class="headerlink" href="#cyklicke-charakteristiky-penazi-cien-a-inflacie" title="Link to this heading">#</a></h3>
+<p>Na <a class="reference internal" href="#graf-m1cycle-ea"><span class="std std-numref">Obr. 19.7</span></a>, <a class="reference internal" href="#graf-pcycle-ea"><span class="std std-numref">Obr. 19.8</span></a> a <a class="reference internal" href="#graf-i-cycle-ea"><span class="std std-numref">Obr. 19.9</span></a> sú porovnané cyklické zložky peňažného agregátu M1, harmonizovaného indexu spotrebiteľských cien (HICP) a miery inflácie s cyklickou zložkou reálneho HDP. Cyklické zložky boli získané odstránením log-kvadratického trendu, resp. kvadratického trendu v prípade miery inflácie. Výsledky analýzy sú zhrnuté v tabuľke <a class="reference internal" href="#tab-cyklickem"><span class="std std-numref">Obr. 19.10</span></a>.</p>
+<p>Z hľadiska korelácie s hospodárskym cyklom možno M1 považovať za acyklický.</p>
+<figure class="align-default" id="graf-m1cycle-ea">
+<img alt="_images/graf_M1cycle_EA.png" src="_images/graf_M1cycle_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.7 </span><span class="caption-text">Cyklické zložky M1 a HDP v ekonomike EMÚ</span><a class="headerlink" href="#graf-m1cycle-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj vlastné spracovanie na základe údajov Eurostatu a ECB</em></p>
+<p>Na rozdiel od slovenskej ekonomiky sú cenová hladina aj miera inflácie v ekonomike EMÚ mierne procyklické a oneskorené premenné. Počas expanzie ekonomickej aktivity majú tendenciu rásť, pričom na zmeny hospodárskeho cyklu reagujú s určitým časovým oneskorením.</p>
+<figure class="align-default" id="graf-pcycle-ea">
+<img alt="_images/graf_Pcycle_EA.png" src="_images/graf_Pcycle_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.8 </span><span class="caption-text">Cyklické zložky HICP a HDP v ekonomike EMÚ</span><a class="headerlink" href="#graf-pcycle-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="graf-i-cycle-ea">
+<img alt="_images/graf_i_cycle_EA.png" src="_images/graf_i_cycle_EA.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.9 </span><span class="caption-text">Cyklické zložky miery inflácie a HDP v ekonomike EMÚ</span><a class="headerlink" href="#graf-i-cycle-ea" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="tab-cyklickem">
+<img alt="_images/tab_cyklickeM.png" src="_images/tab_cyklickeM.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.10 </span><span class="caption-text">Cyklické zložky menových ukazovateľov v ekonomike EMÚ</span><a class="headerlink" href="#tab-cyklickem" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<div class="admonition-volatilita-hdp-v-slovenskej-ekonomike-a-v-ekonomike-emu admonition">
+<p class="admonition-title">Volatilita HDP v slovenskej ekonomike a v ekonomike EMÚ</p>
+<p>Ak porovnáme volatilitu slovneského HDP <a class="reference internal" href="DynMer.html#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a> a HDP v ekonomike EMÚ <a class="reference internal" href="#tab-cyklickem"><span class="std std-numref">Obr. 19.10</span></a>, cyklická zložka reálneho HDP Slovenska vykazuje vyššiu volatilitu než v eurozóne, čo dokumentuje aj vyššia štandardná odchýlka cyklických výkyvov. Vyššia volatilita je typickou charakteristikou malých otvorených ekonomík, v ktorých majú externé <a class="reference internal" href="Otvorena.html#obchodne-soky"><span class="std std-ref">Obchodné šoky</span></a> a finančné šoky (<a class="reference internal" href="Otvorena.html#kap-otv-rp"><span class="std std-ref">Vplyv zvýšenia úrokovej prirážky spôsobenej nedokonalosťami na trhu dlhopisov (finančný šok)</span></a>) výraznejší dopad na ekonomickú aktivitu.</p>
+</div>
+<p>V ďalšej časti rozšírime model výrobnej ekonomiky o peniaze.</p>
+</section>
+</section>
+<section id="dopyt-a-ponuka-penazi">
+<h2><span class="section-number">19.4. </span>Dopyt a ponuka peňazí<a class="headerlink" href="#dopyt-a-ponuka-penazi" title="Link to this heading">#</a></h2>
+<dl class="simple myst">
+<dt>Trh peňazí</dt><dd><p>trh, na ktorom sa stretáva dopyt po peniazoch s ich ponukou.</p>
+</dd>
+</dl>
+<p>Podobne ako spotrebné statky, práca alebo dlhopisy, aj peniaze predstavujú ekonomické dobro, po ktorom existuje dopyt a ktoré má svoju ponuku. Preto môžeme uvažovať o trhu peňazí.</p>
+<p>V najjednoduchšej verzii modelu budeme peniaze stotožňovať s obeživom držaným verejnosťou. Obeživo držané komerčnými bankami vo forme rezerv do peňažnej zásoby nezahŕňame.</p>
+<dl class="simple myst">
+<dt>Dopyt po peniazoch</dt><dd><p>množstvo peňazí, ktoré chcú domácnosti a firmy držať pri danej úrokovej miere a úrovni ekonomickej aktivity.</p>
+</dd>
+<dt>Ponuka peňazí</dt><dd><p>množstvo peňazí v obehu vytvorené centrálnou bankou.</p>
+</dd>
+</dl>
+<p>Centrálna banka môže zvýšiť množstvo peňazí v obehu napríklad nákupom dlhopisov od verejnosti. Predávajúci získa nové peniaze a množstvo obeživa v ekonomike sa zvýši.</p>
+<p><strong>Banky</strong></p>
+<ul class="simple">
+<li><p>umožňujú realizáciu platieb a prevodov medzi domácnosťami, firmami a vládou,</p></li>
+<li><p>pôsobia ako finanční sprostredkovatelia medzi sporiteľmi a dlžníkmi.</p></li>
+</ul>
+<p>V tejto kapitole budeme banky uvažovať predovšetkým ako inštitúcie zabezpečujúce platobný styk. Ich úlohu finančných sprostredkovateľov zanedbáme a vrátime sa k nej v neskorších kapitolách.</p>
+<section id="dopyt-po-peniazoch">
+<h3><span class="section-number">19.4.1. </span>Dopyt po peniazoch<a class="headerlink" href="#dopyt-po-peniazoch" title="Link to this heading">#</a></h3>
+<p>Dopyt po peniazoch možno chápať ako rozhodnutie, akú časť majetku budú ekonomické subjekty držať vo forme okamžite použiteľného platidla a akú časť vo forme úročených aktív.</p>
+<p>Držba obeživa je spojená s nákladom obetovanej príležitosti. Ak spotrebiteľ drží časť svojho majetku vo forme peňazí, vzdáva sa výnosu, ktorý by mohol získať držbou úročených aktív. Preto dopyt po peniazoch závisí od nominálnej úrokovej miery <span class="math notranslate nohighlight">\(R\)</span>, a nie od reálnej úrokovej miery <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p>Dopyt po peniazoch ovplyvňujú najmä:</p>
+<ul class="simple">
+<li><p><strong>nominálna úroková miera</strong> <span class="math notranslate nohighlight">\(R\)</span>,</p></li>
+<li><p><strong>príjem</strong> (výstup ekonomiky) <span class="math notranslate nohighlight">\(Y\)</span>,</p></li>
+<li><p><strong>možnosti realizácie platieb</strong> a transakčné náklady.</p></li>
+</ul>
+<p>Čím vyššia je nominálna úroková miera, tým vyššie sú náklady držby peňazí a tým nižší je dopyt po peniazoch. Naopak, čím vyšší je príjem, tým viac transakcií ekonomické subjekty realizujú a tým vyšší je ich dopyt po peniazoch.</p>
+<p>V odvodení dopytu po peniazoch rozlišujeme:</p>
+<ul class="simple">
+<li><p><em>špekulačný dopyt</em>, ktorý negatívne závisí od nominálnej úrokovej miery <span class="math notranslate nohighlight">\(R\)</span>,</p></li>
+<li><p><em>transakčný dopyt</em>, ktorý pozitívne závisí od dôchodku <span class="math notranslate nohighlight">\(Y\)</span>.</p></li>
+</ul>
+<p>Dopyt po reálnych peňažných zostatkoch zapíšeme v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{M^d}{P}=L(Y,R),
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(M^d\)</span> označuje nominálny dopyt po peniazoch, <span class="math notranslate nohighlight">\(P\)</span> cenovú hladinu a <span class="math notranslate nohighlight">\(L(Y,R)\)</span> funkciu dopytu po reálnych peňažných zostatkoch.</p>
+<p>O funkcii <span class="math notranslate nohighlight">\(L(Y,R)\)</span> platí</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L(Y,R)}{\partial Y}&gt;0,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial L(Y,R)}{\partial R}&lt;0.
+\]</div>
+<p>Po vynásobení cenovou hladinou získame nominálny dopyt po peniazoch</p>
+<div class="math notranslate nohighlight" id="equation-r-mdl">
+<span class="eqno">(19.3)<a class="headerlink" href="#equation-r-mdl" title="Link to this equation">#</a></span>\[M^d=PL(Y,R)=PL(Y,r+i).\]</div>
+<p>Najskôr budeme predpokladať konštantnú infláciu. Pre zjednodušenie nech <span class="math notranslate nohighlight">\(i=0\)</span>, takže platí</p>
+<div class="math notranslate nohighlight">
+\[
+M^d=PL(Y,r).
+\]</div>
+<p>Cenová elasticita dopytu po peniazoch sa rovná <span class="math notranslate nohighlight">\(1\)</span>. Jednopercentnému rastu cenovej hladiny zodpovedá jednopercentný rast nominálneho dopytu po peniazoch a naopak.</p>
+<p>Na <a class="reference internal" href="#graf-mdl"><span class="std std-numref">Obr. 19.11</span></a> je zobrazená funkcia dopytu po peniazoch v priestore <span class="math notranslate nohighlight">\([M^d,P]\)</span>. Pri danom výstupe <span class="math notranslate nohighlight">\(Y\)</span> a úrokovej miere <span class="math notranslate nohighlight">\(r\)</span> je nominálny dopyt po peniazoch priamo úmerný cenovej hladine.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="s2">"$M^d$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mdl">
+<img alt="_images/graf_MdL.png" src="_images/graf_MdL.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.11 </span><span class="caption-text">Funkcia dopytu po peniazoch</span><a class="headerlink" href="#graf-mdl" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dopyt po peniazoch sa zvýši:</p>
+<ul class="simple">
+<li><p>rastom príjmu <span class="math notranslate nohighlight">\(Y\)</span>,</p></li>
+<li><p>poklesom úrokovej miery <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
+<p>Rozvoj platobných technológií, elektronických platieb a ďalších bezhotovostných foriem platenia znižuje potrebu držby obeživa, a teda aj dopyt po peniazoch.</p>
+<p>Na <a class="reference internal" href="#graf-mdl-posun"><span class="std std-numref">Obr. 19.12</span></a> je zobrazený posun funkcie dopytu po peniazoch z <span class="math notranslate nohighlight">\(M^d_1(Y_1,r_1)\)</span> na <span class="math notranslate nohighlight">\(M^d_2(Y_2,r_2)\)</span> smerom doprava. K zvýšeniu dopytu po peniazoch môže dôjsť v dôsledku rastu výstupu z <span class="math notranslate nohighlight">\(Y_1\)</span> na <span class="math notranslate nohighlight">\(Y_2\)</span>, poklesu reálnej úrokovej miery z <span class="math notranslate nohighlight">\(r_1\)</span> na <span class="math notranslate nohighlight">\(r_2\)</span> alebo zhoršenia platobných technológií, ktoré zvyšujú preferenciu držby obeživa.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^d_1=PL(Y_1,r_1)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="mf">0.5</span><span class="o">*</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^d_2=PL(Y_2,r_2)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="s2">"$M^d$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mdl-posun">
+<img alt="_images/graf_MdL_posun.png" src="_images/graf_MdL_posun.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.12 </span><span class="caption-text">Posuny funkcie dopytu po peniazoch</span><a class="headerlink" href="#graf-mdl-posun" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>V ďalšom texte budeme pod peniazmi rozumieť obeživo držané verejnosťou. Neskôr model rozšírime o bankové vklady a širšie peňažné agregáty.</p>
+</section>
+<section id="vlada-a-ponuka-penazi">
+<h3><span class="section-number">19.4.2. </span>Vláda a ponuka peňazí<a class="headerlink" href="#vlada-a-ponuka-penazi" title="Link to this heading">#</a></h3>
+<p>Vláda v širšom zmysle slova zahŕňa:</p>
+<ul class="simple">
+<li><p>vládu, ktorá realizuje fiškálnu politiku,</p></li>
+<li><p>centrálnu banku, ktorá realizuje menovú politiku.</p></li>
+</ul>
+<p>Nominálny rozpočet verejného sektora v prvom období môžeme zapísať v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-rozpocetg">
+<span class="eqno">(19.4)<a class="headerlink" href="#equation-r-rozpocetg" title="Link to this equation">#</a></span>\[PG + (1+R_0)B_0 = PT + B + M - M_0,\]</div>
+<p>kde ľavá strana predstavuje výdavky a pravá strana príjmy verejného sektora.</p>
+<p>Príjmami verejného sektora sú:</p>
+<ul class="simple">
+<li><p>nominálne čisté daňové príjmy <span class="math notranslate nohighlight">\(PT\)</span>,</p></li>
+<li><p>emisia nových dlhopisov <span class="math notranslate nohighlight">\(B\)</span>,</p></li>
+<li><p>emisia nových peňazí <span class="math notranslate nohighlight">\(M-M_0\)</span>.</p></li>
+</ul>
+<p>Výdavkami verejného sektora sú:</p>
+<ul class="simple">
+<li><p>splatenie zdedeného verejného dlhu vrátane úrokov <span class="math notranslate nohighlight">\((1+R_0)B_0\)</span>,</p></li>
+<li><p>nominálne nákupy statkov a služieb <span class="math notranslate nohighlight">\(PG\)</span>.</p></li>
+</ul>
+<p>V našom modeli predpokladáme, že množstvo peňazí v obehu určuje centrálna banka. Zvýšenie peňažnej zásoby môže dosiahnuť napríklad nákupom dlhopisov od verejnosti. Predávajúci za dlhopisy získa nové peniaze a množstvo peňazí v obehu sa zvýši.</p>
+<dl class="simple myst">
+<dt>Ponuka peňazí</dt><dd><p>množstvo peňazí vytvorené a uvedené do obehu centrálnou bankou.</p>
+</dd>
+</dl>
+<p>Pre zjednodušenie budeme najskôr predpokladať, že ponuka peňazí je exogénna premenná určená menovou politikou:</p>
+<div class="math notranslate nohighlight">
+\[
+M^s=M.
+\]</div>
+</section>
+</section>
+<section id="konkurencna-rovnovaha-v-ekonomike-s-peniazmi">
+<span id="def-konkurencna-dge-money"></span><h2><span class="section-number">19.5. </span>Konkurenčná rovnováha v ekonomike s peniazmi<a class="headerlink" href="#konkurencna-rovnovaha-v-ekonomike-s-peniazmi" title="Link to this heading">#</a></h2>
+<p>Pri danej spotrebe vlády <span class="math notranslate nohighlight">\(\{G,G'\}\)</span>, technológii firmy <span class="math notranslate nohighlight">\(\{A,A'\}\)</span> a ponuke peňazí <span class="math notranslate nohighlight">\(\{M,M'\}\)</span> je konkurenčnou rovnováhou taká alokácia spotrebiteľa</p>
+<div class="math notranslate nohighlight">
+\[
+\{\ell,\ell',C,C',M^d,{M^d}'\},
+\]</div>
+<p>alokácia firmy</p>
+<div class="math notranslate nohighlight">
+\[
+\{N,N',Y,Y',K'\},
+\]</div>
+<p>a množina cien</p>
+<div class="math notranslate nohighlight">
+\[
+\{w,w',r,R,P,P'\},
+\]</div>
+<p>že</p>
+<ul class="simple">
+<li><p>spotrebiteľ rieši úlohu maximalizovať funkciu užitočnosti <a class="reference internal" href="Vyrob.html#equation-u-dge">(17.1)</a> vzhľadom na životný rozpočet <a class="reference internal" href="Vyrob.html#equation-zivotny-rozpocet-dge">(17.4)</a>,</p></li>
+<li><p>firma rieši úlohu <a class="reference internal" href="Vyrob.html#equation-max-firma-dge">(17.16)</a> za podmienok <a class="reference internal" href="Vyrob.html#equation-y1-dge">(17.11)</a>, <a class="reference internal" href="Vyrob.html#equation-y2-dge">(17.12)</a>,</p></li>
+<li><p>vláda spĺňa svoj rozpočet v oboch obdobiach,</p></li>
+<li><p>trh práce je v rovnováhe</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+N=h-\ell,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+N'=h-\ell',
+\]</div>
+<ul class="simple">
+<li><p>trh produktov je v rovnováhe</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+Y=C+I+G,
+\]</div>
+<ul class="simple">
+<li><p>trh peňazí je v rovnováhe</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+M^d=M.
+\]</div>
+<section id="graficka-interpretacia">
+<h3><span class="section-number">19.5.1. </span>Grafická interpretácia<a class="headerlink" href="#graficka-interpretacia" title="Link to this heading">#</a></h3>
+<p>Na <a class="reference internal" href="#graf-mtrh"><span class="std std-numref">Obr. 19.13</span></a> je zobrazená rovnováha na trhu peňazí. Dopyt po peniazoch je znázornený zelenou rastúcou krivkou <span class="math notranslate nohighlight">\(M^d\)</span>, ktorá je rovnaká ako na <a class="reference internal" href="#graf-mdl"><span class="std std-numref">Obr. 19.11</span></a>. Ponuka peňazí je zobrazená zvislou modrou čiarou <span class="math notranslate nohighlight">\(M^*=M^s\)</span>, pretože množstvo peňazí je určené centrálnou bankou.</p>
+<p>Priesečník kriviek dopytu a ponuky určuje rovnováhu na trhu peňazí. Pri danej ponuke peňazí <span class="math notranslate nohighlight">\(M^s\)</span>, výstupe <span class="math notranslate nohighlight">\(Y\)</span> a reálnej úrokovej miere <span class="math notranslate nohighlight">\(r\)</span> rovnováha určuje cenovú hladinu <span class="math notranslate nohighlight">\(P^*\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^d=PL(Y,r)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^*=M^s$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M^*$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P^*$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="s2">"$M$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mtrh">
+<img alt="_images/graf_Mtrh.png" src="_images/graf_Mtrh.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.13 </span><span class="caption-text">Rovnováha na trhu peňazí</span><a class="headerlink" href="#graf-mtrh" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Na <a class="reference internal" href="#graf-rovnovaham"><span class="std std-numref">Obr. 19.14</span></a> je zobrazená konkurenčná rovnováha v ekonomike s peniazmi. Obrázok je rozdelený do troch panelov. Horné dva panely zobrazujú konkurenčnú rovnováhu výrobnej ekonomiky, pozostávajúcu z rovnováhy na trhu práce (ľavý horný panel) a na trhu výstupu (pravý horný panel). Rovnováha na trhu peňazí je zobrazená v dolnom paneli. Na každom grafe je ponuka znázornená modrou krivkou a dopyt zelenou krivkou.</p>
+<p>Na trhu výstupu sa dopyt rovná ponuke, <span class="math notranslate nohighlight">\(Y^d=Y^s\)</span>, čím je určená rovnovážna dvojica výstupu a reálnej úrokovej miery <span class="math notranslate nohighlight">\([Y^*,r^*]\)</span>. Rovnovážna reálna úroková miera <span class="math notranslate nohighlight">\(r^*\)</span> následne určuje polohu krivky ponuky práce <span class="math notranslate nohighlight">\(N^s(r^*)\)</span>. Spolu s dopytom po práci tak vzniká rovnovážna dvojica práce a reálnej mzdy <span class="math notranslate nohighlight">\([N^*,w^*]\)</span>.</p>
+<p>Rovnovážne hodnoty <span class="math notranslate nohighlight">\(Y^*\)</span> a <span class="math notranslate nohighlight">\(r^*\)</span> zároveň určujú dopyt po peniazoch</p>
+<div class="math notranslate nohighlight">
+\[
+M^d = PL(Y^*,r^*).
+\]</div>
+<p>Rovnováha na trhu peňazí nastáva pri splnení podmienky</p>
+<div class="math notranslate nohighlight">
+\[
+M^s=M^d.
+\]</div>
+<p>Pri danej ponuke peňazí <span class="math notranslate nohighlight">\(M^s\)</span> priesečník dopytu a ponuky peňazí určuje rovnovážnu cenovú hladinu <span class="math notranslate nohighlight">\(P^*\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">0</span> <span class="c1"># intercept Ns</span>
+<span class="n">a2</span><span class="o">=-</span><span class="mf">0.5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">1</span> <span class="c1"># sklon Ns</span>
+
+<span class="n">c</span><span class="o">=</span><span class="mf">2.</span> <span class="c1"># intercept Nd</span>
+<span class="n">d</span><span class="o">=-</span><span class="mf">1.</span> <span class="c1"># sklon Nd</span>
+<span class="n">c2</span><span class="o">=</span><span class="mf">1.5</span>
+
+<span class="n">e</span><span class="o">=</span><span class="mf">0.</span> <span class="c1"># intercept Ys</span>
+<span class="n">f</span><span class="o">=</span><span class="mf">1.</span> <span class="c1"># sklon Ys</span>
+
+<span class="n">g</span><span class="o">=</span><span class="mf">2.</span> <span class="c1"># intercept Yd</span>
+<span class="n">h</span><span class="o">=-</span><span class="mi">1</span> <span class="c1"># sklon Yd</span>
+
+<span class="n">rozpatie</span><span class="o">=</span><span class="mf">1.8</span>
+<span class="n">xmin</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">rozpatie</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">xmax</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="n">rozpatie</span><span class="o">/</span><span class="mi">2</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fun</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">*</span><span class="n">x</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">axes</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+                     <span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">w</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$N^s(w,r^*,we)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">w</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$N^d(w,A,K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$Y^s(r,we,A,K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">r</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$Y^d(r,we,A',K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">popis_x</span><span class="o">=</span><span class="s2">"$N^*$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="s2">"$w^*$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">popis_x</span><span class="o">=</span><span class="s2">"$Y^*$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="s2">"$r^*$"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="s2">"$N$"</span><span class="p">,</span><span class="s2">"$w$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="s2">"$Y$"</span><span class="p">,</span><span class="s2">"$r$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^d=PL(Y^*,r^*)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M^*=M^s$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M^*$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P^*$"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"lower right"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="s2">"$M$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="c1">#ymin, ymax = axes[0].get_ylim()</span>
+<span class="c1">#axes[0].set_ylim(ymin, ymax*1.1)</span>
+<span class="c1">#axes[1].set_ylim(ymin, ymax*1.1)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-rovnovaham">
+<img alt="_images/graf_rovnovahaM.png" src="_images/graf_rovnovahaM.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.14 </span><span class="caption-text">Konkurenčná rovnováha</span><a class="headerlink" href="#graf-rovnovaham" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>V komparatívnej statike sa zameriame na efekt zmien ponuky dopytu peňazí.</p>
+</section>
+</section>
+<section id="vplyv-zvysenia-mnozstva-penazi">
+<h2><span class="section-number">19.6. </span>Vplyv zvýšenia množstva peňazí<a class="headerlink" href="#vplyv-zvysenia-mnozstva-penazi" title="Link to this heading">#</a></h2>
+<p>Vláda má využitím centrálnych bánk moc ovplyvňovať množstvo peňazí v hospodárstve.</p>
+<p>Predpokladajme, že peňažná zásoba bola pôvodne konštantná na úrovni <span class="math notranslate nohighlight">\(M_1\)</span> a ekonomické subjekty očakávali, že zostane nezmenená aj v budúcnosti. V prítomnom období však centrálna banka jednorazovo zvýši množstvo peňazí na úroveň <span class="math notranslate nohighlight">\(M_2&gt;M_1\)</span>.</p>
+<p>V rozpočtovom ohraničení vlády <a class="reference internal" href="#equation-r-rozpocetg">(19.4)</a></p>
+<div class="math notranslate nohighlight">
+\[
+PG + (1+R_0)B_{v0} = PT + B_v + M - M_0
+\]</div>
+<p>sa preto emisný príjem zvýši z nuly na</p>
+<div class="math notranslate nohighlight">
+\[
+M-M_0=M_2-M_1.
+\]</div>
+<p>Rozpočtové ohraničenie vlády <a class="reference internal" href="#equation-r-rozpocetg">(19.4)</a> sa musí naďalej spĺňať. Keďže zvýšenie množstva peňazí nebolo vopred očakávané, zdedené hodnoty úrokovej miery a verejného dlhu <span class="math notranslate nohighlight">\(R_0\)</span> a <span class="math notranslate nohighlight">\(B_{v0}\)</span> zostávajú nezmenené. Zmena množstva peňazí preto ovplyvní jednu alebo viac zo zostávajúcich premenných rozpočtového ohraničenia.</p>
+<p>Uvažujme o nasledujúcich možnostiach:</p>
+<ul class="simple">
+<li><p>Vláda zníži čisté daňové príjmy <span class="math notranslate nohighlight">\(T\)</span>. Pokles daňových príjmov bude presne kompenzovaný zvýšením množstva peňazí. Prakticky môže ísť napríklad o jednorazový transfer novovytvorených peňazí domácnostiam. Milton Friedman túto možnosť označil ako <strong>zhadzovanie peňazí z helikoptéry</strong> (<em>helicopter money</em>) <span class="bibtex-citation" id="id4">[<a class="reference internal" href="Literatura.html#id34" title="Milton Friedman. The Optimum Quantity of Money and Other Essays. Aldine Publishing Company, Chicago, 1969. ISBN 9780202060309.">Fri69</a>]</span>.</p></li>
+<li><p>Vláda zníži množstvo vládnych dlhopisov držaných verejnosťou, teda <span class="math notranslate nohighlight">\(B_v\)</span>. Táto možnosť sa bežne realizuje prostredníctvom <strong>operácií na voľnom trhu</strong>, pri ktorých centrálna banka nakupuje alebo predáva dlhopisy. <strong>Nákup na voľnom trhu</strong> znamená nákup dlhopisov za novovytvorené peniaze, čím sa zvyšuje množstvo peňazí v obehu. <strong>Predaj na voľnom trhu</strong> predstavuje opačný proces, ktorým centrálna banka množstvo peňazí znižuje.</p></li>
+<li><p>Vláda zvýši svoje nákupy statkov a služieb <span class="math notranslate nohighlight">\(G\)</span>. Emisný príjem plynúci z vytvárania nových peňazí sa označuje ako <strong>seigniorage</strong>. Vláda tak môže časť svojich výdavkov financovať emisiou peňazí. Seigniorage sa niekedy označuje aj ako <strong>inflačná daň</strong>, pretože rast množstva peňazí môže viesť k zvýšeniu cenovej hladiny. V histórii bol emisný príjem významným zdrojom financovania viacerých vlád a v extrémnych prípadoch prispel k vzniku hyperinflácie, napríklad v Nemecku a Maďarsku po prvej svetovej vojne <span class="bibtex-citation" id="id5">[<a class="reference internal" href="Literatura.html#id35" title="Thomas J. Sargent. The ends of four big inflations. In Robert E. Hall, editor, Inflation: Causes and Effects, pages 41–97. University of Chicago Press, Chicago, 1982. URL: http://www.nber.org/chapters/c11452.">Sar82</a>]</span>.</p></li>
+</ul>
+<p>V ďalšej analýze budeme predpokladať, že zvýšenie množstva peňazí je sprevádzané znížením čistých daňových príjmov <span class="math notranslate nohighlight">\(T\)</span>, teda transferom novovytvorených peňazí súkromnému sektoru.</p>
+<p>Ak sa zvýši množstvo peňazí z <span class="math notranslate nohighlight">\(M_1\)</span> na <span class="math notranslate nohighlight">\(M_2\)</span>, na <a class="reference internal" href="#graf-mponuka"><span class="std std-numref">Obr. 19.15</span></a> sa krivka ponuky peňazí posunie doprava z modrej do červenej polohy. Na obnovenie rovnováhy na trhu peňazí sa musí zvýšiť cenová hladina z <span class="math notranslate nohighlight">\(P_1\)</span> na <span class="math notranslate nohighlight">\(P_2\)</span>.</p>
+<p>Výstup <span class="math notranslate nohighlight">\(Y_1\)</span>, reálna úroková miera <span class="math notranslate nohighlight">\(r_1\)</span>, zamestnanosť <span class="math notranslate nohighlight">\(N_1\)</span> ani reálna mzda <span class="math notranslate nohighlight">\(w_1\)</span> sa pritom nezmenia. Zvýšenie množstva peňazí tak ovplyvní iba nominálnu premennú, cenovú hladinu, zatiaľ čo reálne premenné ekonomiky zostanú nezmenené.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">a</span><span class="o">=</span><span class="mi">0</span> <span class="c1"># intercept Ns</span>
+<span class="n">a2</span><span class="o">=-</span><span class="mf">0.5</span>
+<span class="n">b</span><span class="o">=</span><span class="mi">1</span> <span class="c1"># sklon Ns</span>
+
+<span class="n">c</span><span class="o">=</span><span class="mf">2.</span> <span class="c1"># intercept Nd</span>
+<span class="n">d</span><span class="o">=-</span><span class="mf">1.</span> <span class="c1"># sklon Nd</span>
+<span class="n">c2</span><span class="o">=</span><span class="mf">1.5</span>
+
+<span class="n">e</span><span class="o">=</span><span class="mf">0.</span> <span class="c1"># intercept Ys</span>
+<span class="n">f</span><span class="o">=</span><span class="mf">1.</span> <span class="c1"># sklon Ys</span>
+
+<span class="n">g</span><span class="o">=</span><span class="mf">2.</span> <span class="c1"># intercept Yd</span>
+<span class="n">h</span><span class="o">=-</span><span class="mi">1</span> <span class="c1"># sklon Yd</span>
+
+<span class="n">rozpatie</span><span class="o">=</span><span class="mf">1.8</span>
+<span class="n">xmin</span><span class="o">=</span><span class="mi">1</span><span class="o">-</span><span class="n">rozpatie</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">xmax</span><span class="o">=</span><span class="mi">1</span><span class="o">+</span><span class="n">rozpatie</span><span class="o">/</span><span class="mi">2</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fun</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">*</span><span class="n">x</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">axes</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+                     <span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">w</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$N^s(w,r_1,we)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">w</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$N^d(w,A,K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">e</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">r</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$Y^s(r,we,A,K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span><span class="n">fun</span><span class="p">(</span><span class="n">g</span><span class="p">,</span><span class="n">h</span><span class="p">,</span><span class="n">r</span><span class="p">),</span><span class="n">xmin</span><span class="p">,</span><span class="n">xmax</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$Y^d(r,we,A',K)$"</span><span class="p">,</span>
+                       <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">popis_x</span><span class="o">=</span><span class="s2">"$N_1$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="s2">"$w_1$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span> <span class="n">popis_x</span><span class="o">=</span><span class="s2">"$Y_1$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="s2">"$r_1$"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="s2">"$N$"</span><span class="p">,</span><span class="s2">"$w$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span><span class="s2">"$Y$"</span><span class="p">,</span><span class="s2">"$r$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$PL(Y_1,r_1)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M_1$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M_1$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P_1$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mf">1.25</span><span class="p">,</span><span class="mf">1.25</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="mf">1.25</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M_2$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="n">x</span><span class="o">=</span><span class="mf">1.25</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">1.25</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M_2$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P_2$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s2">"lower right"</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mf">1.15</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+<span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="s2">"$M$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="c1">#ymin, ymax = axes[0].get_ylim()</span>
+<span class="c1">#axes[0].set_ylim(ymin, ymax*1.1)</span>
+<span class="c1">#axes[1].set_ylim(ymin, ymax*1.1)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mponuka">
+<img alt="_images/graf_Mponuka.png" src="_images/graf_Mponuka.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.15 </span><span class="caption-text">Vplyv zvýšenia množstva peňazí na konkurenčnú rovnováhu</span><a class="headerlink" href="#graf-mponuka" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<dl class="simple myst">
+<dt>Klasická dichotómia</dt><dd><p>oddelenie reálnych a nominálnych premenných v ekonomike. Reálne premenné sú určené rovnováhou na trhoch práce a produktov, zatiaľ čo cenová hladina je určená rovnováhou na trhu peňazí. Zmeny nominálnych premenných, ako sú množstvo peňazí alebo cenová hladina, neovplyvňujú reálne premenné ekonomiky.</p>
+</dd>
+</dl>
+<p>Na trhu peňazí platí</p>
+<div class="math notranslate nohighlight">
+\[
+M = PL(Y,r).
+\]</div>
+<p>Keďže sa výstup <span class="math notranslate nohighlight">\(Y\)</span> ani reálna úroková miera <span class="math notranslate nohighlight">\(r\)</span> nemenia, zvýšenie ponuky peňazí o 1 % spôsobí, <em>ceteris paribus</em>, zvýšenie cenovej hladiny o 1 %.</p>
+<p>Reálne premenné <span class="math notranslate nohighlight">\(Y,\ r,\ N,\ w,\ C,\ I,\ G,\ L(Y,r)\)</span> sa nezmenia.</p>
+<p>Nominálne premenné <span class="math notranslate nohighlight">\( PY,\ Pw,\ PC,\ PI,\ PG,\ M\)</span> sa zvýšia v rovnakej proporcii, v akej sa zvýši množstvo peňazí v obehu. Peňažná elasticita nominálnych premenných sa rovná <span class="math notranslate nohighlight">\(1\)</span>.</p>
+<dl class="simple myst">
+<dt><strong>Neutralita peňazí</strong></dt><dd><p>zmena množstva peňazí nemení reálne ekonomické premenné, ale iba nominálne premenné.</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>Z krátkodobého hľadiska mnohí ekonómovia predpokladajú, že peniaze nie sú neutrálne.</p></li>
+<li><p>Neutralita peňazí sa zvyčajne predpokladá z dlhodobého hľadiska.</p></li>
+</ul>
+<p>Podľa týchto teórií môžu zmeny množstva peňazí v krátkom období ovplyvňovať aj reálne ekonomické premenné. Neskôr (<a class="reference internal" href="Nepruzne.html"><span class="doc">Súčasné keynesovské modely: nepružné ceny</span></a>) predstavíme keynesovský model, v ktorom zmena ponuky peňazí krátkodobo ovplyvňuje výstup, zamestnanosť a ďalšie reálne premenné ekonomiky.</p>
+</section>
+<section id="vplyv-zmeny-penazneho-dopytu">
+<h2><span class="section-number">19.7. </span>Vplyv zmeny peňažného dopytu<a class="headerlink" href="#vplyv-zmeny-penazneho-dopytu" title="Link to this heading">#</a></h2>
+<p>Ak sa zvýši dopyt po peniazoch, na <a class="reference internal" href="#graf-mdopyt"><span class="std std-numref">Obr. 19.16</span></a> krivka dopytu sa posunie doprava zo zelenej do tmavomodrej čiary. Pri nezmenenom množstve peňazí, klesne cena výstupu.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$PL_1(Y,r)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="s2">"horizontal"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P_2$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M_1$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P_1$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.75</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="s2">"horizontal"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="mf">0.75</span><span class="o">*</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$PL_2(Y,r)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"indianred"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span>
+<span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="s2">"$M$"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="c1">#ymin, ymax = axes[0].get_ylim()</span>
+<span class="c1">#axes[0].set_ylim(ymin, ymax*1.1)</span>
+<span class="c1">#axes[1].set_ylim(ymin, ymax*1.1)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mdopyt">
+<img alt="_images/graf_Mdopyt.png" src="_images/graf_Mdopyt.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.16 </span><span class="caption-text">Vplyv zvýšenia množstva peňažného dopytu na cenu výstupu</span><a class="headerlink" href="#graf-mdopyt" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Čo spôsobuje pohyby peňažného dopytu?</p>
+<ul class="simple">
+<li><p><strong>Technologické zmeny</strong> (šeky, debetné a kreditné karty, internet banking, mobilné platby a pod.) znižujú potrebu držby hotovosti a tým aj dopyt po peniazoch.</p></li>
+<li><p><strong>Finančné inovácie</strong>, napríklad <em>sweep accounts</em>, automaticky presúvajú nevyužité zostatky na úročené účty. Uľahčujú správu finančných prostriedkov a znižujú potrebu držby neúročeného obeživa, čo znižuje dopyt po peniazoch.</p></li>
+<li><p><strong>Zmeny regulácie finančného sektora</strong> môžu znižovať náklady poskytovania bankových služieb. Lacnejšie a dostupnejšie bankové služby znižujú potrebu držby hotovosti a tým aj dopyt po peniazoch.</p></li>
+<li><p><strong>Zmeny vnímanej rizikovosti bankových vkladov</strong> ovplyvňujú rozdelenie majetku medzi hotovosť a vklady. Čím bezpečnejšie sa javia bankové vklady, tým menší je dopyt po obežive.</p></li>
+<li><p><strong>Spoľahlivosť a kapacita platobného systému</strong> ovplyvňuje ochotu používať bezhotovostné platby. Čím rýchlejšie, lacnejšie a spoľahlivejšie funguje bankový systém, tým menší je dopyt po hotovosti.</p></li>
+</ul>
+<p>Vo vyspelých ekonomikách možno od 80. rokov 20. storočia pozorovať výrazný rozvoj platobných technológií, finančných inovácií a elektronického bankovníctva. Dôsledkom boli opakované posuny funkcie dopytu po peniazoch doľava, keďže domácnosti a firmy dokázali realizovať rovnaký objem transakcií pri menšej držbe obeživa.</p>
+</section>
+<section id="konvencna-menova-politika-pasca-likvidity-a-nekonvencna-menova-politika">
+<h2><span class="section-number">19.8. </span>Konvenčná menová politika, pasca likvidity a nekonvenčná menová politika<a class="headerlink" href="#konvencna-menova-politika-pasca-likvidity-a-nekonvencna-menova-politika" title="Link to this heading">#</a></h2>
+<section id="konvencna-menova-politika">
+<h3><span class="section-number">19.8.1. </span>Konvenčná menová politika<a class="headerlink" href="#konvencna-menova-politika" title="Link to this heading">#</a></h3>
+<p>Tvorba menovej politiky sa historicky často mení. Uveďme najskôr krátku históriu modernej menovej politiky:</p>
+<ul class="simple">
+<li><p>Koncom 70. a začiatkom 80. rokov sa pri tvorbe menovej politiky kládol dôraz na kontrolu rastu peňažnej zásoby. Monetaristi na čele s Miltonom Friedmanom tvrdili, že stabilný rast množstva peňazí umožňuje dosiahnuť stabilnú infláciu. Guvernér FED-u Paul Volcker sa v boji s vysokou infláciou začiatkom 80. rokov opieral o cielenie peňažných agregátov.</p></li>
+<li><p>Počas 80. a 90. rokov sa ukázalo, že dopyt po peniazoch nie je dostatočne stabilný. Rozvoj nových finančných nástrojov, elektronického bankovníctva a zmien regulácie spôsoboval významné posuny funkcie dopytu po peniazoch. Väčšina centrálnych bánk preto prešla od cielenia peňažných agregátov k cieleniu krátkodobých nominálnych úrokových mier.</p></li>
+</ul>
+</section>
+<section id="pasca-likvidity">
+<span id="kap-pasca-likvidity"></span><h3><span class="section-number">19.8.2. </span>Pasca likvidity<a class="headerlink" href="#pasca-likvidity" title="Link to this heading">#</a></h3>
+<p>Doteraz sme pod peniazmi rozumeli obeživo držané verejnosťou. Pri analýze pasce likvidity však musíme uvažovať širší pojem likvidity. Ak sa nominálna úroková miera približuje k nule, rozdiel medzi obeživom a krátkodobými štátnymi dlhopismi sa stiera. Obe aktíva poskytujú prakticky rovnaký výnos a stávajú sa blízkymi substitútmi.</p>
+<p>Politika cielenia nominálnej úrokovej miery má prirodzené ohraničenie. Ak sa nominálna úroková miera priblíži k nule, ďalšie znižovanie sadzieb stráca účinnosť. Domácnosti môžu namiesto dlhopisov držať hotovosť, ktorej nominálna úroková miera sa rovná nule.</p>
+<p>Ak sa nominálna úroková miera úročených aktív rovná nule, hotovosť a krátkodobé štátne dlhopisy sa stávajú dokonalými substitútmi. Spotrebiteľ je indiferentný medzi držbou hotovosti a držbou dlhopisov, pretože obe aktíva prinášajú rovnaký nominálny výnos.</p>
+<p>V takomto prípade možno ponuku peňazí nahradiť ponukou nominálnej likvidity <span class="math notranslate nohighlight">\(M+B\)</span>, kde <span class="math notranslate nohighlight">\(B\)</span> predstavuje likvidné krátkodobé vládne dlhopisy. Pri nulovej nominálnej úrokovej miere je dopyt po reálnych peňažných zostatkoch daný funkciou <span class="math notranslate nohighlight">\(L(Y,0)\)</span></p>
+<p>Rovnováha na trhu likvidity nastáva pri podmienke</p>
+<div class="math notranslate nohighlight">
+\[
+M+B=PL(Y,0).
+\]</div>
+<p>Pri danej úrovni výstupu <span class="math notranslate nohighlight">\(Y\)</span> táto podmienka určuje rovnovážnu cenovú hladinu <span class="math notranslate nohighlight">\(P^*\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">vodiace_ciary</span><span class="o">=</span><span class="s2">"horizontal"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">P</span><span class="p">:</span><span class="n">P</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$PL(Y,0)$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_zvislu_ciaru</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">nazov</span><span class="o">=</span><span class="s2">"$M+B$"</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">popis_x</span><span class="o">=</span><span class="s2">"$M+B$"</span><span class="p">,</span><span class="n">popis_y</span><span class="o">=</span><span class="s2">"$P^*$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="s2">"Likvidita"</span><span class="p">,</span><span class="s2">"$P$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-likvidita">
+<img alt="_images/graf_likvidita.png" src="_images/graf_likvidita.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 19.17 </span><span class="caption-text">Pasca likvidity</span><a class="headerlink" href="#graf-likvidita" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Predpokladajme, že pri nulovej úrokovej miere sa centrálna banka rozhodne prostredníctvom operácie na voľnom trhu zvýšiť množstvo peňazí. Nakúpi vládne dlhopisy za novovytvorené peniaze, čím sa zvýši množstvo peňazí <span class="math notranslate nohighlight">\(M\)</span> a súčasne zníži množstvo dlhopisov držaných verejnosťou <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Pri nulovej úrokovej miere sú však peniaze a krátkodobé vládne dlhopisy dokonalými substitútmi. Zvýšenie množstva peňazí je preto plne kompenzované poklesom množstva dlhopisov držaných verejnosťou, takže celková ponuka likvidity <span class="math notranslate nohighlight">\(M+B\)</span> sa nezmení.</p>
+<p>Keďže sa nezmení ponuka likvidity, nezmení sa ani rovnovážna cenová hladina <span class="math notranslate nohighlight">\(P^*\)</span>. Operácie na voľnom trhu preto pri nulovej úrokovej miere strácajú schopnosť ovplyvňovať ekonomiku.</p>
+<dl class="simple myst">
+<dt><strong>Pasca likvidity</strong></dt><dd><p>situácia, v ktorej sú nominálna úroková miera a výnos likvidných dlhopisov tak nízke, že peniaze a dlhopisy sa stávajú dokonalými substitútmi a konvenčná menová politika prostredníctvom operácií na voľnom trhu prestáva byť účinná.</p>
+</dd>
+</dl>
+<p>Na možnosť vzniku pasce likvidity upozornil John Maynard Keynes vo svojej knihe <em>The General Theory of Employment, Interest and Money</em> <span class="bibtex-citation" id="id6">[<a class="reference internal" href="Literatura.html#id36" title="John Maynard Keynes. The General Theory of Employment, Interest and Money. Macmillan, London, 1936.">Key36</a>]</span>.</p>
+<p>V období od globálnej finančnej krízy rokov 2008 až 2009 až po pandémiu COVID‑19 sa mnohé centrálne banky nachádzali v prostredí veľmi nízkych alebo nulových úrokových mier. Keďže konvenčné znižovanie úrokových sadzieb už nebolo možné, snažili sa ďalej uvoľňovať menovú politiku prostredníctvom nekonvenčných nástrojov.</p>
+</section>
+<section id="nekonvencna-menova-politika">
+<span id="kap-nekonvencnam"></span><h3><span class="section-number">19.8.3. </span>Nekonvenčná menová politika<a class="headerlink" href="#nekonvencna-menova-politika" title="Link to this heading">#</a></h3>
+<p>K nekonvenčnej menovej politike patria nástroje ako kvantitatívne uvoľňovanie a záporné úrokové sadzby.</p>
+<ul class="simple">
+<li><p><strong>Kvantitatívne uvoľňovanie</strong> (<em>quantitative easing</em>). Centrálna banka zvyšuje množstvo peňazí nákupom dlhodobých a menej likvidných finančných aktív namiesto krátkodobých štátnych dlhopisov. Pri takýchto operáciách sa ponuka likvidity zvyšuje, pretože verejnosť drží viac peňazí a menej dlhodobých cenných papierov. Programy kvantitatívneho uvoľňovania realizovali napríklad Federálny rezervný systém, Bank of England, Bank of Japan a ECB. Ich účinnosť je predmetom diskusie, keďže inflácia sa v mnohých krajinách dlhodobo pohybovala pod inflačnými cieľmi centrálnych bánk.</p></li>
+<li><p><strong>Záporné úrokové miery</strong>. Mnohí ekonómovia predpokladajú, že efektívna spodná hranica nominálnych úrokových mier je nižšia ako nula, pretože držba veľkého množstva hotovosti je spojená s nákladmi a rizikami. Domácnosti a firmy preto môžu akceptovať mierne záporné úrokové miery namiesto držby veľkého objemu hotovosti. Niektoré centrálne banky, vrátane ECB, Švajčiarskej národnej banky a Bank of Japan, preto počas určitého obdobia používali záporné úrokové sadzby. Ich cieľom bolo podporiť dopyt a zvýšiť infláciu smerom k inflačnému cieľu.</p></li>
+</ul>
+<p>Cieľom záporných úrokových mier bolo podporiť ekonomickú aktivitu a zvýšiť infláciu. Nie všetci ekonómovia však súhlasia s tým, že nižšie nominálne úrokové miery vedú k vyššej inflácii. Alternatívny pohľad predstavuje neofisherovský efekt, ktorému sa budeme venovať neskôr.</p>
+<div class="admonition-nekonvencna-menova-politika-ecb admonition">
+<p class="admonition-title">Nekonvenčná menová politika ECB</p>
+<p>Po globálnej finančnej kríze v roku 2008 ECB postupne znižovala svoje kľúčové úrokové sadzby. Keď sa nominálne úrokové sadzby priblížili k nule, centrálna banka začala využívať nekonvenčné nástroje menovej politiky. Jedným z nich boli záporné úrokové sadzby, ktoré sa v eurozóne prejavili zápornou hodnotou trojmesačného Euriboru v rokoch 2015 až 2022. Podľa <a class="reference internal" href="#graf-fisher"><span class="std std-numref">Obr. 19.5</span></a> sa napriek tomuto uvoľneniu menovej politiky infláciu dlhodobo nedarilo stabilne udržať na cieľovej úrovni 2 %.</p>
+<p>ECB popri záporných úrokových sadzbách využívala aj programy kvantitatívneho uvoľňovania. Tie sa prejavili výrazným rastom peňažných agregátov M1 a M3, ktorý prevyšoval rast reálnej ekonomickej aktivity. Vývoj oboch agregátov je zobrazený na <a class="reference internal" href="#graf-m"><span class="std std-numref">Obr. 19.2</span></a>.</p>
+<p>Na <a class="reference internal" href="#graf-m1cycle-ea"><span class="std std-numref">Obr. 19.7</span></a> sú zobrazené cyklické zložky reálneho HDP a peňažného agregátu M1. Počas období kvantitatívneho uvoľňovania, najmä po roku 2015 a počas pandémie COVID-19, sa M1 nachádzal výrazne nad svojím dlhodobým trendom, zatiaľ čo HDP vykazoval podstatne menšie odchýlky. Rast peňažnej zásoby tak v tomto období prevyšoval rast reálnej ekonomickej aktivity.</p>
+</div>
+</section>
+</section>
+<section id="rieseny-priklad-dynamicky-model-vseobecnej-rovnovahy-s-peniazmi">
+<span id="kap-mdge"></span><h2><span class="section-number">19.9. </span>Riešený príklad: Dynamický model všeobecnej rovnováhy s peniazmi<a class="headerlink" href="#rieseny-priklad-dynamicky-model-vseobecnej-rovnovahy-s-peniazmi" title="Link to this heading">#</a></h2>
+<p>V príklade využijeme nasledovné balíčky:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">fsolve</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Aby sme mohli využiť model vyvinutý v príklade <a class="reference internal" href="Vyrob.html#kap-priklad-dge"><span class="std std-ref">Príklad: Dynamický model všeobecnej rovnováhy v jazyku Python</span></a>, stačí pridať rovnicu rovnováhy na trhu peňazí.</p>
+<p>Predpokladajme nasledovný funkčný tvar peňažného dopytu</p>
+<div class="math notranslate nohighlight" id="equation-r-l-priklad">
+<span class="eqno">(19.5)<a class="headerlink" href="#equation-r-l-priklad" title="Link to this equation">#</a></span>\[L(Y,r) = Y^{\kappa} \gamma r^{\lambda},\]</div>
+<p>kde <span class="math notranslate nohighlight">\(\kappa&gt;0\)</span> je elasticita transakčného dopytu po peniazoch (príjmová elasticita dopytu), <span class="math notranslate nohighlight">\(\lambda&lt;0\)</span> je elasticita špekulačného dopytu po peniazoch (úroková elasticita dopytu). Parameter <span class="math notranslate nohighlight">\(\gamma\)</span> zachytáva inštitucionálne a technologické faktory ovplyvňujúce dopyt po peniazoch, ako sú rozvoj platobných technológií, preferencie držby likvidity alebo regulácia finančného sektora.</p>
+<p>Konkurenčnú rovnováhu (<a class="reference internal" href="Vyrob.html#def-konkurencna-dge-decentr"><span class="std std-ref">Konkurenčná rovnováha</span></a>) rozšírime o rovnicu rovnováhy na trhu peňazí</p>
+<div class="math notranslate nohighlight" id="equation-r-m-priklad">
+<span class="eqno">(19.6)<a class="headerlink" href="#equation-r-m-priklad" title="Link to this equation">#</a></span>\[\frac{M}{P} = Y^{\kappa} \gamma r^{\lambda},\]</div>
+<p>kde <span class="math notranslate nohighlight">\(M\)</span> je exogénna ponuka peňazí, cena výstupu <span class="math notranslate nohighlight">\(P\)</span> je endogénna.</p>
+<p>Hodnotu parametra <span class="math notranslate nohighlight">\(\gamma\)</span> môžeme kalibrovať tak, aby v konkurenčnej rovnováhe <span class="math notranslate nohighlight">\(P=M=1\)</span>.</p>
+<p>Pri dodržaní pravidla kalibrácie z predchádzajúcej časti <span class="math notranslate nohighlight">\(Y=1,r=\alpha-\delta\)</span> v rovnováhe platí:</p>
+<div class="math notranslate nohighlight">
+\[
+1=1^\kappa \gamma (\alpha-\delta)^\lambda.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight" id="equation-r-gammal">
+<span class="eqno">(19.7)<a class="headerlink" href="#equation-r-gammal" title="Link to this equation">#</a></span>\[\gamma = (\alpha-\delta)^{-\lambda}.\]</div>
+<p>Zvoľme hodnoty elasticít dopytu po peniazoch</p>
+<div class="math notranslate nohighlight">
+\[
+\kappa=0,5
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda=-0,5
+\]</div>
+<div class="admonition-empiricke-odhady-elasticit-dopytu-po-peniazoch admonition">
+<p class="admonition-title">Empirické odhady elasticít dopytu po peniazoch</p>
+<p>Zvolené hodnoty parametrov slúžia na ilustráciu modelu a nemajú predstavovať empirické odhady dopytu po peniazoch.</p>
+<p>V empirickej literatúre sú časté odhady elasticít dopytu po peniazoch:</p>
+<ul class="simple">
+<li><p>príjmová elasticita <span class="math notranslate nohighlight">\(\kappa\)</span> blízko 1,</p></li>
+<li><p>úroková elasticita <span class="math notranslate nohighlight">\(\lambda\)</span> približne medzi −0,3 až −0,7.</p></li>
+</ul>
+<p>Hoffman a Rasche napríklad odhadujú dlhodobú úrokovú elasticitu dopytu po M1 približne −0,5 až −0,6 a nedokážu zamietnuť hypotézu jednotkovej príjmovej elasticity <span class="bibtex-citation" id="id7">[<a class="reference internal" href="Literatura.html#id37" title="Dennis L. Hoffman and Robert H. Rasche. Long-run income and interest elasticities of money demand in the united states. The Review of Economics and Statistics, 73(4):665–674, 1991. doi:10.2307/2109405.">HR91</a>]</span>.</p>
+</div>
+<p>Vytvorme všetky potrebné funkcie, kalibrované hodnoty parametrov a vypočítajme konkurenčnú rovnováhu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ppr</span><span class="p">(</span><span class="n">endog</span><span class="p">):</span>
+
+    <span class="n">C</span><span class="p">,</span> <span class="n">Cp</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">lp</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">Np</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Yp</span><span class="p">,</span> <span class="n">I</span><span class="p">,</span> <span class="n">Ip</span><span class="p">,</span> <span class="n">Kp</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">wp</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">P</span> <span class="o">=</span> <span class="n">endog</span>
+            <span class="c1"># ÚPRAVA oproti pôvodnému modelu, pribudla endogénna premenná P</span>
+    <span class="k">return</span> <span class="p">(</span>
+
+        <span class="n">C</span><span class="o">/</span><span class="n">l</span> <span class="o">-</span> <span class="n">w</span><span class="p">,</span>                                            
+        <span class="n">Cp</span><span class="o">/</span><span class="n">lp</span> <span class="o">-</span> <span class="n">wp</span><span class="p">,</span>                                         
+        <span class="n">Cp</span><span class="o">/</span><span class="p">(</span><span class="n">beta</span><span class="o">*</span><span class="n">C</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="n">r</span><span class="p">),</span>                                
+
+        <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span><span class="o">*</span><span class="n">A</span><span class="o">*</span><span class="n">K</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">N</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="o">-</span> <span class="n">w</span><span class="p">,</span>               
+        <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span><span class="o">*</span><span class="n">Ap</span><span class="o">*</span><span class="n">Kp</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">Np</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="o">-</span> <span class="n">wp</span><span class="p">,</span>           
+        <span class="n">alpha</span><span class="o">*</span><span class="n">Ap</span><span class="o">*</span><span class="n">Kp</span><span class="o">**</span><span class="p">(</span><span class="n">alpha</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">Np</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="o">-</span> <span class="n">delta</span> <span class="o">-</span> <span class="n">r</span><span class="p">,</span>   
+
+        <span class="n">Y</span> <span class="o">-</span> <span class="n">A</span><span class="o">*</span><span class="n">K</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">N</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">),</span>                        
+        <span class="n">Yp</span> <span class="o">-</span> <span class="n">Ap</span><span class="o">*</span><span class="n">Kp</span><span class="o">**</span><span class="n">alpha</span><span class="o">*</span><span class="n">Np</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">),</span>                    
+
+        <span class="n">I</span> <span class="o">-</span> <span class="p">(</span><span class="n">Kp</span> <span class="o">-</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span><span class="o">*</span><span class="n">K</span><span class="p">),</span>                             
+        <span class="n">Ip</span> <span class="o">-</span> <span class="n">delta</span><span class="o">*</span><span class="n">Kp</span><span class="p">,</span>                                      
+
+        <span class="n">C</span> <span class="o">+</span> <span class="n">I</span> <span class="o">+</span> <span class="n">G</span> <span class="o">-</span> <span class="n">Y</span><span class="p">,</span>                                      
+        <span class="n">Cp</span> <span class="o">+</span> <span class="n">Ip</span> <span class="o">+</span> <span class="n">Gp</span> <span class="o">-</span> <span class="n">Yp</span><span class="p">,</span>                                  
+
+        <span class="n">N</span> <span class="o">+</span> <span class="n">l</span> <span class="o">-</span> <span class="n">h</span><span class="p">,</span>                                          
+        <span class="n">Np</span> <span class="o">+</span> <span class="n">lp</span> <span class="o">-</span> <span class="n">h</span><span class="p">,</span>
+
+        <span class="n">M</span><span class="o">/</span><span class="n">P</span> <span class="o">-</span> <span class="n">Y</span><span class="o">**</span><span class="n">kappa</span> <span class="o">*</span> <span class="n">gamma</span> <span class="o">*</span> <span class="n">r</span><span class="o">**</span><span class="n">lam</span>           <span class="c1"># ZMENA rovnováha na trhu peňazí</span>
+
+    <span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">percent_zmena</span><span class="p">(</span><span class="n">pred</span><span class="p">,</span> <span class="n">po</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">100</span> <span class="o">*</span> <span class="p">(</span><span class="n">po</span> <span class="o">-</span> <span class="n">pred</span><span class="p">)</span> <span class="o">/</span> <span class="n">pred</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">napis_odpoved</span><span class="p">(</span><span class="n">text</span><span class="p">,</span><span class="n">ge_new</span><span class="p">):</span>
+    <span class="n">ge_change</span> <span class="o">=</span> <span class="n">percent_zmena</span><span class="p">(</span><span class="n">ge</span><span class="p">,</span><span class="n">ge_new</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Spotreba"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Práca"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Výstup"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Mzdová sadzba"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Investície"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Úroková miera"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Cena výstupu"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge_change</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span><span class="mi">4</span><span class="p">))</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mf">1.</span>      
+<span class="n">Ap</span> <span class="o">=</span> <span class="mf">1.</span>     
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span> 
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">0.1</span> 
+<span class="n">G</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>     
+<span class="n">Gp</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">lam</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.5</span>
+
+<span class="n">beta</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">-</span> <span class="n">delta</span><span class="p">)</span> 
+<span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">G</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> 
+<span class="n">gamma</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha</span><span class="o">-</span><span class="n">delta</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="n">lam</span><span class="p">)</span>
+
+<span class="n">ge</span> <span class="o">=</span> <span class="n">fsolve</span><span class="p">(</span>
+    <span class="n">ppr</span><span class="p">,</span>
+    <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">delta</span><span class="o">-</span><span class="n">G</span><span class="p">,</span> <span class="mi">1</span><span class="o">-</span><span class="n">delta</span><span class="o">-</span><span class="n">G</span><span class="p">,</span> <span class="n">h</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">h</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span><span class="n">delta</span><span class="p">,</span> 
+     <span class="n">delta</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">,</span><span class="n">alpha</span><span class="o">-</span><span class="n">delta</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1">#zobraz výsledky</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Konkurenčná rovnováha"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Spotreba v prvom období"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"v druhom"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Práca v prvom období"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"v druhom"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"HDP v prvom období"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"v druhom"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Investície v prvom období"</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"v druhom"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mzdová sadzba v prvom období"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span><span class="mi">2</span><span class="p">),</span> <span class="s2">"v druhom"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Úroková miera"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">13</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cena výstupu"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">ge</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Konkurenčná rovnováha
+Spotreba v prvom období 0.65 v druhom 0.65
+Práca v prvom období 1.0 v druhom 1.0
+HDP v prvom období 1.0 v druhom 1.0
+Investície v prvom období 0.1 v druhom 0.1
+Mzdová sadzba v prvom období 0.67 v druhom 0.67
+Úroková miera 0.23
+Cena výstupu 1.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Konkurenčná rovnováha zodpovedá našim predpokladom, cena výstupu sa rovná 1. Môžeme prejsť na numerickú analýzu vplyvov posunu ponuky a dopytu peňazí.</p>
+<section id="vplyv-zvysenia-ponuky-penazi">
+<h3><span class="section-number">19.9.1. </span>Vplyv zvýšenia ponuky peňazí<a class="headerlink" href="#vplyv-zvysenia-ponuky-penazi" title="Link to this heading">#</a></h3>
+<p>Preskúmajme vplyv zvýšenia ponuky peňazí o 1 %, <em>ceteris paribus</em>, na konkurenčnú rovnováhu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span><span class="o">=</span><span class="mf">1.01</span>
+<span class="n">ge_m</span><span class="o">=</span><span class="n">fsolve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,</span><span class="n">ge</span><span class="p">)</span>
+<span class="n">napis_odpoved</span><span class="p">(</span><span class="s2">"Percentuálne zmeny endogénnych premenných "</span> 
+              <span class="s2">"spôsobene 1% zmenou ponuky peňazí, *ceteris paribus*"</span><span class="p">,</span>
+              <span class="n">ge_m</span><span class="p">)</span>
+<span class="n">M</span><span class="o">=</span><span class="mf">1.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Percentuálne zmeny endogénnych premenných spôsobene 1% zmenou ponuky peňazí, *ceteris paribus*
+Spotreba 0.0
+Práca -0.0
+Výstup -0.0
+Mzdová sadzba -0.0
+Investície -0.0
+Úroková miera 0.0
+Cena výstupu 1.0
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ak sa ponuka peňazí zvýši o 1 %, <em>ceteris paribus</em>, cena výstupu sa zvýši o 1 %. Reálne endogénne premenné zostanú nezmenené.</p>
+</section>
+<section id="vplyv-zmeny-dopytu-po-peniazoch">
+<h3><span class="section-number">19.9.2. </span>Vplyv zmeny dopytu po peniazoch<a class="headerlink" href="#vplyv-zmeny-dopytu-po-peniazoch" title="Link to this heading">#</a></h3>
+<p>Parameter <span class="math notranslate nohighlight">\(\gamma\)</span> zachytáva inštitucionálne a technologické faktory ovplyvňujúce dopyt po peniazoch. Ak sa zvýši parameter gamma, zvýši sa dopyt po peniazoch.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">percento_z_gamma</span> <span class="o">=</span> <span class="n">gamma</span><span class="o">/</span><span class="mi">100</span>
+<span class="n">gamma</span><span class="o">=</span><span class="n">gamma</span><span class="o">+</span><span class="n">percento_z_gamma</span>
+<span class="n">ge_gamma</span><span class="o">=</span><span class="n">fsolve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,</span><span class="n">ge</span><span class="p">)</span>
+<span class="n">napis_odpoved</span><span class="p">(</span><span class="s2">"Percentuálne zmeny endogénnych premenných "</span> 
+              <span class="s2">"spôsobene 1% zmenou parametra gamma, *ceteris paribus*"</span><span class="p">,</span>
+              <span class="n">ge_gamma</span><span class="p">)</span>
+<span class="n">gamma</span><span class="o">=</span><span class="n">gamma</span><span class="o">-</span><span class="n">percento_z_gamma</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Percentuálne zmeny endogénnych premenných spôsobene 1% zmenou parametra gamma, *ceteris paribus*
+Spotreba 0.0
+Práca -0.0
+Výstup -0.0
+Mzdová sadzba -0.0
+Investície -0.0
+Úroková miera 0.0
+Cena výstupu -0.9901
+</pre></div>
+</div>
+</div>
+</div>
+<p>Ak sa parameter <span class="math notranslate nohighlight">\(\gamma\)</span> zvýši o 1 %, <em>ceteris paribus</em>, cena výstupu sa zníži o 0,99 %. Reálne endogénne premenné zostanú nezmenené.</p>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">19.10. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Dokážte, že ponuková elasticita ceny výstupu sa rovná <span class="math notranslate nohighlight">\(1\)</span> a dopytová elasticita ceny výstupu sa rovná <span class="math notranslate nohighlight">\(-1\)</span> a platí:</p>
+<div class="math notranslate nohighlight">
+\[
+   \frac{\partial{P}}{\partial{M^s}} \frac{M^s}{P} = 1
+   \]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+   \frac{\partial{P}}{\partial{L}} \frac{L}{P} = -1
+   \]</div>
+</li>
+<li><p>Využite dynamický model všeobecnej rovnováhy z riešeného príkladu (<a class="reference internal" href="#kap-mdge"><span class="std std-ref">Riešený príklad: Dynamický model všeobecnej rovnováhy s peniazmi</span></a>) na preskúmanie reakcií ceny výstupu na nesledovné šoky:</p>
+<ul class="simple">
+<li><p>zvýšia súčasné vládne nákupy (fiškálny šok),</p></li>
+<li><p>zníži stav predeterminovaného kapitálu (katastrofa),</p></li>
+<li><p>zvýši súčasná celková produktivita faktorov (dobrá úroda),</p></li>
+<li><p>zvýši budúca celková produktivita faktorov (optimistické správy),</p></li>
+<li><p>zvýši úroková prirážka (finančný šok),</p></li>
+<li><p>simultánne znížia ponuka a dopyt po práci (sektorový šok),</p></li>
+<li><p>zníži ponuka práce (pandémia).</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Otvorena.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">18. </span>Modely reálnej otvorenej ekonomiky</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Pruzne.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">20. </span>Modely hospodárskych cyklov s pružnými cenami a mzdami</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peniaze">19.1. Peniaze</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realne-a-nominalne-premenne">19.2. Reálne a nominálne premenné</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menove-ukazovatele-v-eurozone">19.3. Menové ukazovatele v eurozóne</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-v-ekonomike-emu">19.3.1. Recesie v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hdp-v-ekonomike-emu">19.3.2. HDP v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penazne-agregaty">19.3.3. Peňažné agregáty</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-a-miera-inflacie-v-ekonomike-emu">19.3.4. Ceny a miera inflácie v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fisherov-vztah-fisherov-efekt-a-realna-urokova-miera-v-ekonomike-emu">19.3.5. Fisherov vzťah, Fisherov efekt a reálna úroková miera v ekonomike EMÚ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cyklicke-charakteristiky-penazi-cien-a-inflacie">19.3.6. Cyklické charakteristiky peňazí, cien a inflácie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-a-ponuka-penazi">19.4. Dopyt a ponuka peňazí</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-po-peniazoch">19.4.1. Dopyt po peniazoch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vlada-a-ponuka-penazi">19.4.2. Vláda a ponuka peňazí</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konkurencna-rovnovaha-v-ekonomike-s-peniazmi">19.5. Konkurenčná rovnováha v ekonomike s peniazmi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-interpretacia">19.5.1. Grafická interpretácia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zvysenia-mnozstva-penazi">19.6. Vplyv zvýšenia množstva peňazí</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-penazneho-dopytu">19.7. Vplyv zmeny peňažného dopytu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konvencna-menova-politika-pasca-likvidity-a-nekonvencna-menova-politika">19.8. Konvenčná menová politika, pasca likvidity a nekonvenčná menová politika</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konvencna-menova-politika">19.8.1. Konvenčná menová politika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pasca-likvidity">19.8.2. Pasca likvidity</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nekonvencna-menova-politika">19.8.3. Nekonvenčná menová politika</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rieseny-priklad-dynamicky-model-vseobecnej-rovnovahy-s-peniazmi">19.9. Riešený príklad: Dynamický model všeobecnej rovnováhy s peniazmi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zvysenia-ponuky-penazi">19.9.1. Vplyv zvýšenia ponuky peňazí</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-dopytu-po-peniazoch">19.9.2. Vplyv zmeny dopytu po peniazoch</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">19.10. Neriešené príklady</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

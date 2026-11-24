@@ -1,0 +1,2161 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>13. Makroekonomické merania v čase a priestore &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'DynMer';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="14. Úvod do teórie rastu" href="UvodRast.html" />
+    <link rel="prev" title="12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch" href="Finan.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/DynMer.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Makroekonomické merania v čase a priestore</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urokovanie">13.1. Úrokovanie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jednoduche-urokovanie">13.1.1. Jednoduché úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie">13.1.2. Zložené úrokovanie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buduca-a-sucasna-hodnota">13.2. Budúca a súčasná hodnota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spojite-urokovanie">13.3. Spojité úrokovanie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu">13.4. Miera rastu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominalny-hdp">13.5. Nominálny HDP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realny-hdp">13.6. Reálny HDP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deflatory">13.7. Deflátory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenove-indexy">13.8. Cenové indexy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-inflacie">13.9. Miera inflácie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parita-kupnej-sily">13.10. Parita kúpnej sily</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hospodarske-cykly">13.11. Hospodárske cykly</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-v-slovenskej-ekonomike">13.11.1. Recesie v slovenskej ekonomike</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cyklicke-charakteristiky">13.12. Cyklické charakteristiky</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezonna-zlozka">13.12.1. Sezónna zložka</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trendova-a-cyklicka-zlozka">13.12.2. Trendová a cyklická zložka</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trendova-a-cyklicka-zlozka-v-slovenskej-ekonomike">13.12.3. Trendová a cyklická zložka v slovenskej ekonomike</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charakteristiky">13.12.4. Charakteristiky</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-a-rast-v-ekonomike-slovenska">13.13. Recesie a rast v ekonomike Slovenska</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hospodarske-cykly-v-ekonomike-slovenska">13.14. Hospodárske cykly v ekonomike Slovenska</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spotreba-investicie-a-friedmanova-hypoteza-trvaleho-prijmu-v-praxi">13.14.1. Spotreba, investície a Friedmanova hypotéza trvalého príjmu v praxi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vladne-nakupy-vyvoz-a-dovoz">13.14.2. Vládne nákupy, vývoz a dovoz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vseobecna-cenova-hladina-a-miera-inflacie">13.14.3. Všeobecná cenová hladina a miera inflácie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stylizovane-fakty-slovenskej-ekonomiky">13.15. Štylizované fakty slovenskej ekonomiky</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">13.16. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-jednoduche-zlozene-a-spojite-urokovanie">13.16.1. Príklad: Jednoduché, zložené a spojité úrokovanie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.16.1.1. Jednoduché úrokovanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie-s-rocnou-frekvenciou">13.16.1.2. Zložené úrokovanie s ročnou frekvenciou</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie-s-dennou-frekvenciou">13.16.1.3. Zložené úrokovanie s dennou frekvenciou</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.16.1.4. Spojité úrokovanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnanie-vysledkov">13.16.1.5. Porovnanie výsledkov</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp-deflatory-a-retazenie-objemov">13.16.2. Príklad: Nominálny a reálny HDP, deflátory a reťazenie objemov</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zadanie">13.16.2.1. Zadanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.16.2.2. Nominálny HDP</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-v-prvom-roku">13.16.2.3. Ceny v prvom roku</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-v-druhom-roku">13.16.2.4. Ceny v druhom roku</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#realny-hdp-vypocitany-retazenim-objemov">13.16.2.5. Reálny HDP vypočítaný reťazením objemov</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rieseny-priklad-index-spotrebitelskych-cien">13.16.3. Riešený príklad: Index spotrebiteľských cien</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vysledky">13.16.3.1. Výsledky</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">13.17. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-urokovanie">13.17.1. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.17.2. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.17.3. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-miera-rastu">13.17.4. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.17.5. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.17.6. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">13.17.7. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp">13.17.8. Príklad: Nominálny a reálny HDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp-cenove-indexy-a-miera-inflacie">13.17.9. Príklad: Nominálny a reálny HDP, cenové indexy a miera inflácie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-index-spotrebitelskych-cien">13.17.10. Príklad: Index spotrebiteľských cien</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literatura">13.18. Literatúra</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="makroekonomicke-merania-v-case-a-priestore">
+<h1><span class="section-number">13. </span>Makroekonomické merania v čase a priestore<a class="headerlink" href="#makroekonomicke-merania-v-case-a-priestore" title="Link to this heading">#</a></h1>
+<p>Táto kapitola sa zameria na meranie a porovnávanie ekonomických javov v čase. Cieľom je analyzovať dynamiku ekonomickej výkonnosti a cenovej hladiny. Na tento účel potrebujeme nástroje, ktoré umožňujú porovnávať ekonomické agregáty medzi rôznymi obdobiami. Dôležitosť časového aspektu v ekonómii ilustruje už samotný koncept úrokovania.</p>
+<section id="urokovanie">
+<h2><span class="section-number">13.1. </span>Úrokovanie<a class="headerlink" href="#urokovanie" title="Link to this heading">#</a></h2>
+<p>Uvažujme, že vložíme <span class="math notranslate nohighlight">\(X_0\)</span> peňažných jednotiek (eur) do banky. Banka nám ručí, že z tohto vkladu budeme mať za dané obdobie fixný príjem v eurách, ktorý nazývame <em>úrok</em>. Úrok na jednotku (euro) vkladu za dané obdobie nazývame <em>úroková miera</em>. Ak je úroková miera päť percent, čo je 0,05, znamená to, že z jedného vloženého eura za dané obdobie získame úrok päť centov.</p>
+<p>Ak je dané obdobie rok, hovoríme, že úroková miera je <em>ročná</em>. V praxi, ak nie je uvedená časová jednotka úrokovej miery, považuje sa za ročnú. Úrokovú mieru vyjadrenú na konkrétne obdobie možno jednoduchým pomerným prepočtom vyjadriť na ľubovoľné iné časové obdobie. Napríklad <em>dennú</em> úrokovú mieru môžeme previesť na ročnú vynásobením počtom dní 365.</p>
+<p>Vyjadrime, aká bude hodnota vkladu <span class="math notranslate nohighlight">\(X_0\)</span> za <em>t</em> období (rokov), ak ročná úroková miera je <em>r</em>. Poznáme dva koncepty.</p>
+<section id="jednoduche-urokovanie">
+<h3><span class="section-number">13.1.1. </span>Jednoduché úrokovanie<a class="headerlink" href="#jednoduche-urokovanie" title="Link to this heading">#</a></h3>
+<p>Najjednoduchší koncept sa nazýva <em>jednoduché úrokovanie</em>. Podľa neho sa vklad úročí iba raz na konci obdobia <em>t</em>. Pomocou neho môžeme vyjadriť hodnotu vkladu po <em>t</em> rokoch ako súčet úroku a vkladu:</p>
+<div class="math notranslate nohighlight">
+\[
+X_t = X_0(1 + rt)
+\]</div>
+</section>
+<section id="zlozene-urokovanie">
+<h3><span class="section-number">13.1.2. </span>Zložené úrokovanie<a class="headerlink" href="#zlozene-urokovanie" title="Link to this heading">#</a></h3>
+<p>Ak je úročenie ročné, na konci každého roka sa úrok pripíše ku vkladu a jeho hodnota sa zvýši. V ďalšom roku sa úrok vypočíta z aktuálnej hodnoty vkladu. Tento koncept nazývame <em>zložené úrokovanie</em>.</p>
+<p>Hodnota vkladu na konci prvého roka je:</p>
+<div class="math notranslate nohighlight">
+\[
+X_1 = rX_0+X_0=(1+r)X_0
+\]</div>
+<p>Hodnota vkladu na konci druhého roka je:</p>
+<div class="math notranslate nohighlight">
+\[
+X_2 = rX_1+X_1=(1+r)X_1=(1+r)^2 X_0
+\]</div>
+<p>Nakoniec hodnota vkladu na konci roku <em>t</em> je:</p>
+<div class="math notranslate nohighlight" id="equation-r-zlozeny-urok">
+<span class="eqno">(13.1)<a class="headerlink" href="#equation-r-zlozeny-urok" title="Link to this equation">#</a></span>\[X_t = X_0(1+r)^t\]</div>
+</section>
+</section>
+<section id="buduca-a-sucasna-hodnota">
+<h2><span class="section-number">13.2. </span>Budúca a súčasná hodnota<a class="headerlink" href="#buduca-a-sucasna-hodnota" title="Link to this heading">#</a></h2>
+<p>Výraz <span class="math notranslate nohighlight">\(X_t\)</span> nazývame aj <strong>budúca hodnota</strong> vkladu <span class="math notranslate nohighlight">\(X_0\)</span>. Vyjadruje hodnotu vkladu po <span class="math notranslate nohighlight">\(t\)</span> obdobiach (rokoch), ak je každý rok úročený úrokovou mierou <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p>Výraz <span class="math notranslate nohighlight">\(1+r\)</span> nazývame <strong>úročiteľ</strong>. Ide o úrokovú mieru vyjadrenú pomocou indexu. Ak je napríklad úroková miera 5 %, potom úročiteľ je</p>
+<div class="math notranslate nohighlight">
+\[
+1+r = 1,05.
+\]</div>
+<p>Inverznou funkciou budúcej hodnoty je <strong>súčasná hodnota</strong>. Vyjadruje dnešnú hodnotu budúcej sumy <span class="math notranslate nohighlight">\(X_t\)</span>. Z budúcej hodnoty <a class="reference internal" href="#equation-r-zlozeny-urok">(13.1)</a> dostaneme súčasnú hodnotu jednoduchou úpravou:</p>
+<div class="math notranslate nohighlight">
+\[
+X_0 = \frac{X_t}{(1+r)^t}.
+\]</div>
+<p>Operáciu výpočtu súčasnej hodnoty nazývame <strong>odúročenie</strong>. Prevrátená hodnota úročiteľa je <strong>odúročiteľ</strong> <span class="math notranslate nohighlight">\(1/(1+r)\)</span>.</p>
+<div class="admonition-vsimnite-si admonition">
+<p class="admonition-title">Všimnite si</p>
+<p>Úrokovanie sme využili už pri analýze spotrebiteľského rozhodovania medzi súčasnosťou a budúcnosťou.</p>
+<p>Na ľavej strane rovnice súčasnej hodnoty životného rozpočtu spotrebiteľa <a class="reference internal" href="Dynam.html#equation-r-shrozpocet">(8.7)</a> je súčet súčasnej hodnoty všetkých výdavkov na spotrebu počas života spotrebiteľa v dvoch obdobiach.</p>
+<p>Na pravej strane rovnice je súčasná hodnota životného bohatstva spotrebiteľa <a class="reference internal" href="Dynam.html#equation-r-shbohatstvo">(8.8)</a>. Ide o súčet súčasnej hodnoty všetkých príjmov počas života spotrebiteľa.</p>
+<p>Rovnicu súčasnej hodnoty možno vynásobiť úročiteľom <span class="math notranslate nohighlight">\(1+r\)</span>. Dostaneme ekvivalentný zápis v budúcich hodnotách:</p>
+<div class="math notranslate nohighlight">
+\[
+(1+r)c + c' \le (1+r)we,
+\]</div>
+<p>kde budúca hodnota životného bohatstva spotrebiteľa je</p>
+<div class="math notranslate nohighlight">
+\[
+(1+r)we=(1+r)(y-t)+(y'-t').
+\]</div>
+<p>Diskontný faktor <span class="math notranslate nohighlight">\(\beta\)</span> vyjadruje subjektívne oceňovanie budúcej spotreby zo strany spotrebiteľa.</p>
+<p>Odúročiteľ <span class="math notranslate nohighlight">\(1/(1+r)\)</span> vyjadruje trhový mechanizmus prevodu budúcich peňažných súm na ich súčasnú hodnotu.</p>
+<p>Hoci ide o odlišné pojmy, ak sa rovnajú <a class="reference internal" href="Produk.html#equation-r-beta">(2.11)</a>, subjektívne oceňovanie budúcnosti zo strany spotrebiteľa sa presne zhoduje s oceňovaním budúcnosti na finančnom trhu. V tomto prípade je optimálna spotreba v oboch obdobiach rovnaká.</p>
+</div>
+<p>V praxi sa vklady zvyknú úročiť častejšie ako raz za rok (štvrťročne, mesačne, … aj keď úroková miera je ročná).</p>
+<p>Uvažujme, že počet období úrokovania je <span class="math notranslate nohighlight">\(m\)</span> (napr. ak <span class="math notranslate nohighlight">\(m = 4\)</span>, úrokovanie je štvrťročné). Štvrťročnú úrokovú mieru <span class="math notranslate nohighlight">\(r\)</span> vyjadríme tak, že ročnú úrokovú mieru <span class="math notranslate nohighlight">\(r_m\)</span> vydelíme počtom úrokovaní v roku <span class="math notranslate nohighlight">\(m\)</span>, platí:</p>
+<div class="math notranslate nohighlight">
+\[
+r = \frac{r_m}{m}, 
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(r_m\)</span> je ročná úroková miera. Počet úrokovaní za <span class="math notranslate nohighlight">\(t\)</span> rokov bude</p>
+<div class="math notranslate nohighlight">
+\[
+n = mt.
+\]</div>
+<p>Budúca hodnota vkladu <span class="math notranslate nohighlight">\(X_0\)</span> je:</p>
+<div class="math notranslate nohighlight" id="equation-r-bhm">
+<span class="eqno">(13.2)<a class="headerlink" href="#equation-r-bhm" title="Link to this equation">#</a></span>\[X_t=\left( 1+\frac{r_m}{m} \right)^{mt} X_0 = (1+r)^n X_0.\]</div>
+</section>
+<section id="spojite-urokovanie">
+<h2><span class="section-number">13.3. </span>Spojité úrokovanie<a class="headerlink" href="#spojite-urokovanie" title="Link to this heading">#</a></h2>
+<p>Doteraz sme sa zaoberali diskrétnym úrokovaním, kde bol čas uvažovaný diskrétne, t. j. ročne, štvrťročne, … Predpokladajme, že čas je spojitý (vieme určiť ľubovoľnú hodnotu času medzi rokmi alebo štvrťrokmi). Aká bude budúca hodnota vkladu <span class="math notranslate nohighlight">\(X_0\)</span>, ak sa bude zhodnocovať spojito (neustále)? Inými slovami, pýtame sa na budúcu hodnotu vkladu, ak <span class="math notranslate nohighlight">\(m \to infty\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=\lim_{m \to \infty} \left( 1+\frac{r_m}{m} \right)^{mt} X_0 
+\]</div>
+<p>Uvedený výraz možno upraviť na tvar:</p>
+<div class="math notranslate nohighlight" id="equation-r-bh-spojito">
+<span class="eqno">(13.3)<a class="headerlink" href="#equation-r-bh-spojito" title="Link to this equation">#</a></span>\[X_t = e^{rt}X_0,\]</div>
+<p>kde <span class="math notranslate nohighlight">\(e = 2,71828...\)</span> je Eulerovo číslo.</p>
+</section>
+<section id="miera-rastu">
+<h2><span class="section-number">13.4. </span>Miera rastu<a class="headerlink" href="#miera-rastu" title="Link to this heading">#</a></h2>
+<p>Miera rastu hodnoty vkladu <span class="math notranslate nohighlight">\(X_0\)</span> je práve úroková miera. Priemernú medziročnú mieru rastu vkladu <span class="math notranslate nohighlight">\(X_0\)</span> za <span class="math notranslate nohighlight">\(t\)</span> rokov môžeme získať vyjadrením úrokovej miery zo súčasnej hodnoty <a class="reference internal" href="#equation-r-zlozeny-urok">(13.1)</a>. Vyjadrime ju najskôr v tvare:</p>
+<div class="math notranslate nohighlight" id="equation-hruba-miera-rastu">
+<span class="eqno">(13.4)<a class="headerlink" href="#equation-hruba-miera-rastu" title="Link to this equation">#</a></span>\[1+r=  \left( \frac{X_t}{X_0} \right)^{\frac{1}{t}}\]</div>
+<p>Výraz <span class="math notranslate nohighlight">\((1+r)\)</span> nazývame <strong>hrubá miera rastu</strong>. Vyjadruje, koľkokrát sa hodnota premennej zväčší za jedno obdobie. Ak napríklad vklad <span class="math notranslate nohighlight">\(X_0\)</span> v danom období rastie priemerne o päť percent, tak miera rastu vkladu <a class="reference internal" href="#equation-hruba-miera-rastu">(13.4)</a> je 1,05. Naopak, klesá priemerne o tri percentá, miera rastu je 0,97.</p>
+<p>Ak od <a class="reference internal" href="#equation-hruba-miera-rastu">(13.4)</a> odčítame jednotku, získame <strong>čistú mieru rastu</strong></p>
+<div class="math notranslate nohighlight" id="equation-miera-rastu">
+<span class="eqno">(13.5)<a class="headerlink" href="#equation-miera-rastu" title="Link to this equation">#</a></span>\[r=  \left( \frac{X_t}{X_0} \right)^{\frac{1}{t}} - 1.\]</div>
+<p>Čistá miera rastu <span class="math notranslate nohighlight">\(r\)</span> vyjadruje relatívny prírastok hodnoty premennej za jedno obdobie.</p>
+<p>Vyjadrenia <a class="reference internal" href="#equation-hruba-miera-rastu">(13.4)</a> a <a class="reference internal" href="#equation-miera-rastu">(13.5)</a> možno použiť pri výpočte priemernej medziročnej miery rastu ľubovoľnej premennej, kde <span class="math notranslate nohighlight">\(X_t\)</span> je jej konečná hodnota za <span class="math notranslate nohighlight">\(t\)</span> období a <span class="math notranslate nohighlight">\(X_0\)</span> je jej začiatočná hodnota.</p>
+<p>Ak chceme vypočítať, ako narástla ľubovoľná premenná za dané obdobie a poznáme jej hodnoty na začiatku (<span class="math notranslate nohighlight">\(X\)</span>) a na konci obdobia (<span class="math notranslate nohighlight">\(X'\)</span>), jej jednorázovú mieru rastu vypočítame:</p>
+<div class="math notranslate nohighlight" id="equation-miera-rastu2">
+<span class="eqno">(13.6)<a class="headerlink" href="#equation-miera-rastu2" title="Link to this equation">#</a></span>\[g(X)=\frac{X'-X}{X},\]</div>
+<p>kde <span class="math notranslate nohighlight">\(g(X)\)</span> vyjadruje mieru rastu premennej <span class="math notranslate nohighlight">\(X\)</span>.</p>
+<p>Uvedené vyjadrenia miery rastu sú diskrétne. Spojito vyjadrenú mieru rastu získame analogicky z prirodzeného logaritmu vzťahu spojitého úrokovania <a class="reference internal" href="#equation-r-bh-spojito">(13.3)</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+\ln{X_t}=rt+\ln{X_0}
+\]</div>
+<p>Vyjadrime úrokovú mieru:</p>
+<div class="math notranslate nohighlight" id="equation-miera-rastu-spojito">
+<span class="eqno">(13.7)<a class="headerlink" href="#equation-miera-rastu-spojito" title="Link to this equation">#</a></span>\[r=  \frac{\ln{X_t}-\ln{X_0}}{t}\]</div>
+<p>Spojito vyjadrenú medziročnú mieru rastu ľubovoľnej premennej za dané obdobie, ktorej hodnota na konci obdobia je <span class="math notranslate nohighlight">\(X'\)</span> a na začiatku je <span class="math notranslate nohighlight">\(X\)</span>, získame:</p>
+<div class="math notranslate nohighlight" id="equation-miera-rastu-spojito2">
+<span class="eqno">(13.8)<a class="headerlink" href="#equation-miera-rastu-spojito2" title="Link to this equation">#</a></span>\[g(X)=  \frac{\ln{X'}-\ln{X}}{t},\]</div>
+<p>kde <span class="math notranslate nohighlight">\(g(X)\)</span> je spojito vyjadrená miera rastu danej premennej.</p>
+<p>Ekonómovia uprednostňujú spojité vyjadrenie miery rastu z dvoch dôvodov.</p>
+<p>Prvý dôvod je matematická jednoduchosť. Mnohé ekonomické modely pracujú so spojitým časom a prirodzeným logaritmom.</p>
+<p>Druhý dôvod je, že spojito vyjadrenú priemernú medziročnú mieru rastu získame jednoduchým aritmetickým priemerom jednotlivých mier rastu <a class="reference internal" href="#equation-miera-rastu-spojito">(13.7)</a>, zatiaľ čo pri diskrétnom vyjadrení sa používa geometrický priemer <a class="reference internal" href="#equation-miera-rastu">(13.5)</a> (pozri riešený príklad).</p>
+<p>Miera rastu vyjadruje relatívnu zmenu premennej. Vyjadruje sa v percentách alebo v desatinnom tvare. Absolútna zmena je naopak jednoduchý rozdiel medzi konečnou a začiatočnou hodnotou <span class="math notranslate nohighlight">\(X'-X\)</span>. Absolútna zmena sa vyjadruje v pôvodných jednotkách danej premennej.</p>
+<p>Matematická jednoduchosť spojitého vyjadrenia miery rastu spočíva v jeho linearite. Zo zápisu <a class="reference internal" href="#equation-miera-rastu-spojito2">(13.8)</a> vidíme, že miera rastu je jednoduchý rozdiel prirodzených logaritmov premennej <span class="math notranslate nohighlight">\(X\)</span>. Preto, ak si zobrazíme priebeh prirodzeného logaritmu časového radu <span class="math notranslate nohighlight">\(X\)</span>, získame rýchly obraz, ako sa jej miera rastu v čase mení.</p>
+<p>Ak je napríklad priebeh <span class="math notranslate nohighlight">\(ln(X)\)</span> v čase konvexný, miera rastu <span class="math notranslate nohighlight">\(g(X)\)</span> sa v čase zvyšuje.</p>
+<p>Naopak, pri konkávnom priebehu <span class="math notranslate nohighlight">\(ln(X)\)</span> usudzujeme, že miera rastu <span class="math notranslate nohighlight">\(g(X)\)</span> sa časom zmenšuje.</p>
+<p>Na <a class="reference internal" href="#graf-y"><span class="std std-numref">Obr. 13.1</span></a> je zobrazený reálny sezónne očistený (<a class="reference internal" href="#def-sez-ocistenie"><span class="std std-ref">Sezónne očistený časový rad</span></a>) HDP na Slovensku v období od roku 1995. Údaje sú získané z Eurostatu <span class="bibtex-citation" id="id1">[<a class="reference internal" href="#id26" title="Eurostat. Eurostat database. 2026. Prístup: 11. september 2026. URL: https://ec.europa.eu/eurostat/data/database.">Eurostat26</a>]</span>. Z priebehu grafu usudzujeme, že reálny slovenský HDP vytrvalo rastie, ale miera rastu HDP nie je v skúmanom období konštantná.</p>
+<figure class="align-default" id="graf-y">
+<img alt="_images/graf_Y.png" src="_images/graf_Y.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.1 </span><span class="caption-text">Reálny HDP v slovenskej ekonomike</span><a class="headerlink" href="#graf-y" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Ale, až keď zobrazíme prirodzený logaritmus HDP, (<a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a>) získame presnejší obraz.</p>
+<p>V oboch obrázkoch sú sivými zónami vyznačené recesie, ktoré si ešte predstavíme neskôr(<a class="reference internal" href="#kap-skrecesie"><span class="std std-ref">Recesie v slovenskej ekonomike</span></a>). Recesie predstavujú obdobia poklesu ekonomickej aktivity medzi vrcholom a dnom hospodárskeho cyklu. Z <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a> je na prvý pohľad vidieť, že niektoré z recesií zmenili tempo rastu HDP.</p>
+<figure class="align-default" id="graf-lny">
+<img alt="_images/graf_lnY.png" src="_images/graf_lnY.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.2 </span><span class="caption-text">Reálny HDP v slovenskej ekonomike</span><a class="headerlink" href="#graf-lny" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Z <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a> možno usúdiť, že po finančnej kríze sa priemerné tempo rastu slovenského HDP znížilo. Zdá sa tiež, že po pandémii COVID-19 zostalo tempo rastu nižšie než v období pred globálnou finančnou krízou.</p>
+</section>
+<section id="nominalny-hdp">
+<h2><span class="section-number">13.5. </span>Nominálny HDP<a class="headerlink" href="#nominalny-hdp" title="Link to this heading">#</a></h2>
+<p>Vráťme sa k výpočtu HDP (pozri <a class="reference internal" href="Zaklad.html"><span class="doc">Systémy národných účtov a makroekonomická rovnováha</span></a>). Uviedli sme, že HDP je vyjadrený v peňažných jednotkách, resp. nominálne. Matematicky môžeme výdavkovú metódu výpočtu HDP zapísať v tvare:</p>
+<div class="math notranslate nohighlight" id="equation-r-py">
+<span class="eqno">(13.9)<a class="headerlink" href="#equation-r-py" title="Link to this equation">#</a></span>\[PY = P_1Y_1 + P_2Y_2 + \cdots P_kY_k,\]</div>
+<p>kde <span class="math notranslate nohighlight">\(PY\)</span> je HDP,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{y}=
+\begin{pmatrix}
+Y_1\\
+Y_2\\
+\vdots\\
+Y_k
+\end{pmatrix}
+\end{split}\]</div>
+<p>sú množstvá všetkých (<span class="math notranslate nohighlight">\(k\)</span>) nakúpených nových domácich tovarov a služieb za jedno obdobie. Môžu to byť tovary a služby slúžiace domácnostiam, tovary a služby potrebné na zvýšenie alebo údržbu vstupu kapitálu, tovary a služby slúžiace vláde alebo tovary a služby, ktoré kúpi zvyšok sveta.</p>
+<p>Tieto tovary a služby sú samozrejme vyjadrené v rôznych jednotkách. Ak ich chceme sčítať, potrebujeme ich vyjadriť v rovnakých jednotkách. Preto ich vynásobíme cenami, za aké boli skutočne (bežne) kúpené.</p>
+<p>Nominálny HDP nazývame aj HDP v bežných cenách. Cenu prvého tovaru označujeme <span class="math notranslate nohighlight">\(P_1\)</span>, druhého <span class="math notranslate nohighlight">\(P_2\)</span> atď.</p>
+<div class="admonition-vsimnite-si admonition">
+<p class="admonition-title">Všimnite si</p>
+<p>Všimnite si, že hodnota HDP závisí od dvoch faktorov: od množstva vyprodukovaných tovarov a služieb a od ich cien. Práve odlíšenie zmien množstiev od zmien cien bude hlavným cieľom nasledujúcich častí.</p>
+</div>
+<p>Slovenský HDP v bežných cenách je zobrazený na <a class="reference internal" href="#graf-y-ycp"><span class="std std-numref">Obr. 13.3</span></a> oranžovou čiarou.</p>
+<p>Ak zavedieme vektorové označenie, veľmi zjednodušíme ďalšie zápisy. Pre tento účel budeme vektorom <span class="math notranslate nohighlight">\(\mathbf{y}\)</span> označovať množstvá všetkých spotrebovaných tovarov a služieb vyjadrené v ich pôvodných jednotkách. Vektor <span class="math notranslate nohighlight">\(\mathbf{p}\)</span> je vektor ich cien. Jeho transpozícia je zapísaná v riadku:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{p}^\top=
+\begin{pmatrix}
+P_1 &amp; P_2 &amp; \cdots &amp; P_k
+\end{pmatrix}
+\]</div>
+<p>Výpočet HDP v bežných cenách <a class="reference internal" href="#equation-r-py">(13.9)</a> možno rozpísať skalárnym súčinom</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+PY = P_1Y_1 + P_2Y_2 + \cdots P_kY_k 
+=\begin{pmatrix}
+P_1 &amp; P_2 &amp; \cdots &amp; P_k
+\end{pmatrix}
+\begin{pmatrix}
+Y_1\\
+Y_2\\
+\vdots\\
+Y_k
+\end{pmatrix}.
+\end{split}\]</div>
+<p>Jednoduchý vektorový zápis výpočtu <a class="reference internal" href="#equation-r-py">(13.9)</a> je v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-py-vekt">
+<span class="eqno">(13.10)<a class="headerlink" href="#equation-r-py-vekt" title="Link to this equation">#</a></span>\[PY=\mathbf{p}^\top\mathbf{y}.\]</div>
+<p>Podľa konvencie tejto učebnice, odlíšime vektory množstiev a cien v nasledujúcom období apostrofom <span class="math notranslate nohighlight">\((\mathbf{p',y'})\)</span>. HDP v ďalšom období je</p>
+<div class="math notranslate nohighlight" id="equation-r-py2-vekt">
+<span class="eqno">(13.11)<a class="headerlink" href="#equation-r-py2-vekt" title="Link to this equation">#</a></span>\[P'Y'=\mathbf{p'}^\top\mathbf{y'}.\]</div>
+<p>Vyjadrime mieru rastu nominálneho HDP:</p>
+<div class="math notranslate nohighlight">
+\[
+1+g(PY)=\frac{\mathbf{p'}^\top\mathbf{y'}}{\mathbf{p}^\top\mathbf{y}},
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(g(PY)\)</span> je diskrétne vyjadrenie miery rastu HDP. Táto hodnota nás informuje, ako sa v danom období zmenila peňažne vyjadrená výkonnosť ekonomiky. Problém je, že zmenu nominálneho HDP možno prisúdiť dvom zdrojom. Môže byť spôsobená zmenou vyprodukovaných množstiev <span class="math notranslate nohighlight">\(\mathbf y\)</span>, ale aj zmenou cien <span class="math notranslate nohighlight">\(\mathbf p\)</span>, teda zmenou všeobecnej cenovej hladiny.</p>
+<p>Preto veličina <span class="math notranslate nohighlight">\(g(PY)\)</span> vyjadruje mieru rastu <strong>nominálneho HDP</strong>, pričom sama osebe neumožňuje určiť, aká časť rastu bola spôsobená rastom produkcie a aká rastom cien.</p>
+</section>
+<section id="realny-hdp">
+<h2><span class="section-number">13.6. </span>Reálny HDP<a class="headerlink" href="#realny-hdp" title="Link to this heading">#</a></h2>
+<p>Zaujíma nás, ako narástol reálny HDP (<span class="math notranslate nohighlight">\(Y\)</span>).</p>
+<p>Problém môžeme vyriešiť tak, že HDP v oboch obdobiach vypočítame v stálych cenách. Vezmime prvé obdobie za bázické, t. j. HDP vypočítame s využitím cien prvého obdobia. Reálny hrubý domáci produkt v cenách prvého obdobia v prvom období bude <span class="math notranslate nohighlight">\(\mathbf{p}^\top\mathbf{y}\)</span> <a class="reference internal" href="#equation-r-py-vekt">(13.10)</a> a v druhom <span class="math notranslate nohighlight">\(\mathbf{p}^\top\mathbf{y'}\)</span>.</p>
+<p>Získame tak mieru rastu <strong>reálneho</strong> HDP s prvým bázickým obdobím</p>
+<div class="math notranslate nohighlight" id="equation-g1y">
+<span class="eqno">(13.12)<a class="headerlink" href="#equation-g1y" title="Link to this equation">#</a></span>\[1+g_1(Y) = \frac{\mathbf{p}^\top\mathbf{y'}}{\mathbf{p}^\top\mathbf{y}}.\]</div>
+<p>K inému výsledku sa dopracujeme, ak vezmeme za bázické obdobie druhé. Reálny HDP s druhým bázickým obdobím je</p>
+<div class="math notranslate nohighlight" id="equation-g2y">
+<span class="eqno">(13.13)<a class="headerlink" href="#equation-g2y" title="Link to this equation">#</a></span>\[1+g_2(Y) = \frac{\mathbf{p'}^\top\mathbf{y'}}{\mathbf{p'}^\top\mathbf{y}}.\]</div>
+<p>Porovnaním <a class="reference internal" href="#equation-g1y">(13.12)</a> a <a class="reference internal" href="#equation-g2y">(13.13)</a> zistíme, že vo všeobecnosti nie sú rovnaké. Dôvodom je zmena relatívnych cien v čase. Pri použití cien prvého obdobia býva miera rastu reálneho HDP spravidla vyššia než pri použití cien druhého obdobia. Voľba bázického obdobia preto ovplyvňuje odhad reálneho rastu ekonomiky.</p>
+<p>Pri výpočte reálneho HDP je problém voľby bázického obdobia. Súčasné národné účty tento problém riešia pomocou reťazených objemových indexov. Namiesto použitia cien jediného bázického obdobia sa zmeny objemu vypočítavajú s využitím cien susedných období a následne sa navzájom reťazia. Tento postup budeme ďalej označovať jednoduchšie ako reťazenie objemov.</p>
+<dl class="simple myst" id="def-retazenie-objemov">
+<dt>Výpočet reálneho HDP reťazením objemov</dt><dd><p>Reálny HDP vypočítaný reťazením objemov vzniká spájaním objemových zmien medzi susednými obdobiami do jedného časového radu <span class="bibtex-citation" id="id2">[<a class="reference internal" href="#id28" title="European Commission. European System of Accounts 2010. Publications Office of the European Union, Luxembourg, 2013. ISBN 978-92-79-31242-7. URL: https://doi.org/10.2785/16644, doi:10.2785/16644.">EuropeanCommission13</a>]</span>.</p>
+</dd>
+</dl>
+<p>V našom príklade s dvoma obdobiami použijeme Fisherov objemový index, teda geometrický priemer objemových indexov vypočítaných s cenami prvého a druhého obdobia.</p>
+<p>Miera rastu reálneho HDP je preto geometrickým priemerom oboch hrubých mier rastu reálneho HDP:</p>
+<div class="math notranslate nohighlight" id="equation-gy">
+<span class="eqno">(13.14)<a class="headerlink" href="#equation-gy" title="Link to this equation">#</a></span>\[1+g(Y) = \sqrt{(1+g_1(y))(1+g_2(y))} = \sqrt {\frac{\mathbf{p}^\top\mathbf{y'}}{\mathbf{p}^\top\mathbf{y}} \frac{\mathbf{p'}^\top\mathbf{y'}}{\mathbf{p'}^\top\mathbf{y}}}.\]</div>
+<p>V moderných národných účtoch sa takto vypočítané medziročné zmeny následne reťazia, čím vzniká časový rad reálneho HDP. Geometrický priemer mier rastu <a class="reference internal" href="#equation-g1y">(13.12)</a> a <a class="reference internal" href="#equation-g2y">(13.13)</a> sa nazýva Fisherov objemový index.</p>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Reálny HDP vypočítaný v cenách prvého obdobia zodpovedá Laspeyresovmu objemovému indexu. Reálny HDP vypočítaný v cenách druhého obdobia zodpovedá Paascheho objemovému indexu. Geometrický priemer oboch mier rastu sa nazýva Fisherov objemový index.</p>
+</div>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad: reťazenie objemov</p>
+<p>Predpokladajme, že reálny HDP v roku 2020 je</p>
+<div class="math notranslate nohighlight">
+\[
+Y_{2020}=100.
+\]</div>
+<p>Pomocou Fisherovho indexu vypočítame medziročné miery rastu:</p>
+<div class="math notranslate nohighlight">
+\[
+1+g(Y_{2021})=1,03,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+1+g(Y_{2022})=1,05,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+1+g(Y_{2023})=0,98.
+\]</div>
+<p>Reálny HDP v roku 2021 získame ako</p>
+<div class="math notranslate nohighlight">
+\[
+Y_{2021}=100 \times 1,03=103.
+\]</div>
+<p>Reálny HDP v roku 2022 je</p>
+<div class="math notranslate nohighlight">
+\[
+Y_{2022}=100 \times 1,03 \times 1,05.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+Y_{2022}=108,15
+\]</div>
+<p>Nakoniec reálny HDP v roku 2023 je</p>
+<div class="math notranslate nohighlight">
+\[
+Y_{2023}=100 \times 1,03 \times 1.05 \times 0,98.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+Y_{2023}=105,99.
+\]</div>
+<p>Vidíme, že jednotlivé medziročné zmeny sa postupne <strong>reťazia</strong>, teda násobia za sebou. Práve odtiaľ pochádza označenie <em>reťazenie objemov</em>.</p>
+</aside>
+<p>Reálny HDP vypočítame reťazením objemov.</p>
+<p>Pri voľbe prvého bázického obdobia, reálny HDP v prvom období sa rovná nominálnemu HDP:</p>
+<div class="math notranslate nohighlight" id="equation-realny-nominalny1">
+<span class="eqno">(13.15)<a class="headerlink" href="#equation-realny-nominalny1" title="Link to this equation">#</a></span>\[Y^{(1)}=\mathbf{p}^\top\mathbf{y}.\]</div>
+<p>Reálny HDP v druhom období s prvým bázickým obdobím vypočítaný reťazením objemov je:</p>
+<div class="math notranslate nohighlight" id="equation-realny-hdp">
+<span class="eqno">(13.16)<a class="headerlink" href="#equation-realny-hdp" title="Link to this equation">#</a></span>\[Y'^{(1)}=(1+g(Y))Y^{(1)}=(1+g(Y))\mathbf{p}^\top\mathbf{y}.\]</div>
+<p>Ak za bázické zvolíme druhé obdobie, reálny HDP v druhom období sa rovná nominálnemu HDP:</p>
+<div class="math notranslate nohighlight" id="equation-realny-nominalny2">
+<span class="eqno">(13.17)<a class="headerlink" href="#equation-realny-nominalny2" title="Link to this equation">#</a></span>\[Y'^{(2)}=\mathbf{p'}^\top\mathbf{y'}.\]</div>
+<p>Analogicky reálny HDP v prvom období s druhým bázickým obdobvím vypočítaný reťazením objemov je:</p>
+<div class="math notranslate nohighlight" id="equation-realny-hdp2">
+<span class="eqno">(13.18)<a class="headerlink" href="#equation-realny-hdp2" title="Link to this equation">#</a></span>\[Y^{(2)}= \frac{\mathbf{p'}^\top\mathbf{y'}}{1+g(Y)}.\]</div>
+<p>To znamená, že HDP prvého obdobia vyjadrený s druhým bázickým obdobím získame „odstránením“ reálneho rastu z HDP druhého obdobia.</p>
+<p>Takýmto spôsobom môžeme počítať reálny rast nielen HDP, ale aj ľubovoľného agregátu zo systému národných účtov. Rovnaký princíp sa používa napríklad pri výpočte reálnej spotreby domácností, reálnych investícií, reálnych vládnych nákupov alebo reálneho dovozu a vývozu.</p>
+<p>Na <a class="reference internal" href="#graf-y-ycp"><span class="std std-numref">Obr. 13.3</span></a> je zobrazený štvrťročný sezónne očistený (<a class="reference internal" href="#def-sez-ocistenie"><span class="std std-ref">Sezónne očistený časový rad</span></a>) reálny a nominálny HDP v slovenskej ekonomike. Obidva časové rady sme získali z oficiálnej databázy Eurostat. Nominálny HDP je vypočítaný v bežných cenách. Reálny HDP je vypočítaný reťazením objemov a vyjadrený s bázickým obdobím v roku 2020. Preto v bázickom období musí byť reálny HDP rovnako veľký ako nominálny (<span class="math notranslate nohighlight">\(\mathbf{p}^\top_{2020} \mathbf{y}_{2020}\)</span>).</p>
+<figure class="align-default" id="graf-y-ycp">
+<img alt="_images/graf_Y_Ycp.png" src="_images/graf_Y_Ycp.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.3 </span><span class="caption-text">Reálny a nominálny HDP v slovenskej ekonomike</span><a class="headerlink" href="#graf-y-ycp" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Rast nominálneho HDP odráža nielen rast objemu produkcie v ekonomike, ale aj rast cenovej hladiny.</p>
+<p>Od prvého štvrťroku 2000 po obdobie posledného pozorovania (druhý štvrťrok 2026 v čase písania tejto kapitoly) sa nominálny HDP zvýšil takmer 6,61 násobne.</p>
+<p>To predstavuje spojitý priemerný ročný rast</p>
+<div class="math notranslate nohighlight">
+\[ 
+g\!\left(\ln Y_{SK,2000Q1-2026Q2}\right) = 4 \frac{ \ln Y_{SK,2026Q2} - \ln Y_{SK,2000Q1} } {T-1}.
+\]</div>
+<p>v hodnote približne 7,2 %, kde <span class="math notranslate nohighlight">\(T\)</span> je počet pozorovaní, avšak počet zmien HDP je o jednu menej, <span class="math notranslate nohighlight">\(T-1\)</span>. Dolný index HDP označeného symbolom <span class="math notranslate nohighlight">\(Y\)</span> označuje krajinu (SK) a obdobie. Napríklad, 1995Q1 znamená prvý štvrťrok 1995.</p>
+<p>Reálny HDP v rovnakom období narástol približne 2,27 násobne, čo predstavuje spojitý priemerný ročný rast približne 3,12 %.</p>
+<figure class="align-default" id="tab-y-ycp">
+<img alt="_images/tab_Y_Ycp.png" src="_images/tab_Y_Ycp.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.4 </span><span class="caption-text">Rast reálneho a nominálneho HDP v slovenskej ekonomike</span><a class="headerlink" href="#tab-y-ycp" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Rozdiel medzi nominálnym a reálnym rastom HDP ukazuje, že významná časť rastu peňažnej hodnoty produkcie bola spôsobená rastom cien. Kým nominálny HDP rástol priemerným tempom 7,31 % ročne, reálny HDP rástol iba tempom 3,14 % ročne.</p>
+</section>
+<section id="deflatory">
+<span id="kap-deflator"></span><h2><span class="section-number">13.7. </span>Deflátory<a class="headerlink" href="#deflatory" title="Link to this heading">#</a></h2>
+<p>Uviedli sme, že rast nominálneho HDP môžeme pripísať rastu reálneho HDP a rastu cien. Ak sme dokázali vypočítať rast reálneho HDP, nie je problém dopočítať rast cien. Táto informácia je rovnako predmetom záujmu ekonómov.</p>
+<dl class="simple myst" id="def-deflator">
+<dt>Deflátor</dt><dd><p>Deflátor ľubovoľnej premennej <span class="math notranslate nohighlight">\(X\)</span> definujeme ako podiel jej nominálnej a reálnej hodnoty vynásobený číslom 100:</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-r-deflator">
+<span class="eqno">(13.19)<a class="headerlink" href="#equation-r-deflator" title="Link to this equation">#</a></span>\[\text{Deflátor}(X) = 100 \frac{\text{nominálne }X} {\text{reálne }X}.\]</div>
+<p>Ak zvolíme bázické prvé obdobie, v prvom období sa reálny aj nominálny HDP rovnajú <a class="reference internal" href="#equation-realny-nominalny1">(13.15)</a> a deflátor HDP <a class="reference internal" href="#equation-r-deflator">(13.19)</a> sa v prvom období rovná 100.</p>
+<p>Ak do výpočtu deflátora <a class="reference internal" href="#equation-r-deflator">(13.19)</a> dosadíme reálny HDP v druhom období vypočítaný reťazením objemov s prvým bázickým obdobím <a class="reference internal" href="#equation-realny-hdp">(13.16)</a> a nominálny HDP <a class="reference internal" href="#equation-r-py2-vekt">(13.11)</a>, získame</p>
+<div class="math notranslate nohighlight" id="equation-deflator">
+<span class="eqno">(13.20)<a class="headerlink" href="#equation-deflator" title="Link to this equation">#</a></span>\[\text{Deflátor HDP}'^{(1)}=100\frac{\mathbf p'^\top\mathbf y'}{Y'^{(1)}}.\]</div>
+<p>Ak zvolíme bázické druhé obdobie, do výpočtu deflátora <a class="reference internal" href="#equation-r-deflator">(13.19)</a> dosadíme reálny HDP v prvom období vypočítaný reťazením objemov s druhým bázickým obdobím <a class="reference internal" href="#equation-realny-hdp2">(13.18)</a> a nominálny HDP v cenách v prvom období<a class="reference internal" href="#equation-r-py-vekt">(13.10)</a> a získame</p>
+<div class="math notranslate nohighlight" id="equation-deflator-2">
+<span class="eqno">(13.21)<a class="headerlink" href="#equation-deflator-2" title="Link to this equation">#</a></span>\[\text{Deflátor HDP}^{(2)}=100\frac{\mathbf p^\top\mathbf y}{Y^{(2)}}.\]</div>
+<p>Pri druhom bázickom období sa reálny a nominálny HDP rovnajú <a class="reference internal" href="#equation-realny-nominalny2">(13.17)</a> a deflátor HDP <a class="reference internal" href="#equation-r-deflator">(13.19)</a> sa v druhom období rovná 100.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="vypocet-deflatora-retazenim-objemov-pri-volbe-roznych-bazickych-obdobi">
+<thead>
+<tr class="row-odd"><th class="head"><p>Obdobie</p></th>
+<th class="head"><p>Bázické obdobie 1</p></th>
+<th class="head"><p>Bázické obdobie 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Obdobie 1</p></td>
+<td><p>100</p></td>
+<td><p><span class="math notranslate nohighlight">\(100\frac{\mathbf p^\top\mathbf y}{Y^{(2)}}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Obdobie 2</p></td>
+<td><p><span class="math notranslate nohighlight">\(100\frac{\mathbf p'^\top\mathbf y'}{Y'^{(1)}}\)</span></p></td>
+<td><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Sezónne očistený štvrťročný časový rad deflátora HDP v slovenskej ekonomike je zobrazený na <a class="reference internal" href="#graf-deflator"><span class="std std-numref">Obr. 13.5</span></a>. Časový rad sme získali podielom nominálneho a reálneho HDP (<a class="reference internal" href="#graf-y-ycp"><span class="std std-numref">Obr. 13.3</span></a>).</p>
+<p>Recesie sú zobrazené sivými zónami (pozri <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>).</p>
+<p>Bázickým obdobím je rok 2020, v ktorom sa deflátor rovná 100. Keďže cenová hladina v dlhom období rástla, hodnoty deflátora pred rokom 2020 sú nižšie ako 100, zatiaľ čo po roku 2020 sú vyššie ako 100.</p>
+<p>Môžeme si všimnúť, že ceny rástli pomerne rýchlo v období pred globálnou finančnou krízou v roku 2008. Nasledovalo obdobie nízkeho rastu cien. V rokoch 2014 až 2016 dokonca všeobecná cenová hladina mierne klesala.</p>
+<p>Po recesii spojenej s pandémiou COVID-19 začali ceny opäť výraznejšie rásť. Rast cien sa ešte zvýraznil počas energetickej krízy spojenej s recesiou v roku 2022.</p>
+<figure class="align-default" id="graf-deflator">
+<img alt="_images/graf_deflator.png" src="_images/graf_deflator.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.5 </span><span class="caption-text">Deflátor HDP v slovenskej ekonomike</span><a class="headerlink" href="#graf-deflator" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="cenove-indexy">
+<span id="kap-indexy"></span><h2><span class="section-number">13.8. </span>Cenové indexy<a class="headerlink" href="#cenove-indexy" title="Link to this heading">#</a></h2>
+<p>Deflátory HDP alebo ďalších zložiek národných účtov patria medzi cenové indexy. Ich úlohou je merať vývoj všeobecnej cenovej hladiny v ekonomike.</p>
+<p>Okrem nich poznáme aj ďalšie cenové indexy, napríklad index spotrebiteľských cien alebo index cien priemyselných výrobcov. Jednotlivé indexy sa od seba odlišujú najmä tým, ktoré tovary a služby zahŕňajú a aké váhy používajú pri výpočte.</p>
+<p>Pri indexe spotrebiteľských cien je základným súborom spotrebný kôš domácností. Obsahuje tovary a služby, ktoré typicky nakupujú domácnosti na svoju spotrebu. Na Slovensku sa podľa metodiky Európskej únie na meranie spotrebiteľskej inflácie používa harmonizovaný index spotrebiteľských cien (Harmonised Index of Consumer Prices, HICP). Spotrebný kôš a jeho váhy sa pravidelne aktualizujú, aby zodpovedali meniacim sa spotrebným zvyklostiam domácností.</p>
+<p>Jednotlivé cenové indexy nemusia vykazovať rovnaký vývoj. Deflátor HDP zahŕňa ceny všetkých finálnych domácich tovarov a služieb, zatiaľ čo HICP meria ceny spotrebného koša domácností.</p>
+<p>Ďalším významným cenovým indexom je index cien priemyselných výrobcov (Producer Price Index, PPI). Tento index meria ceny, za ktoré domáci výrobcovia predávajú svoju produkciu. Na rozdiel od HICP sleduje ceny na úrovni výroby, nie ceny platené konečnými spotrebiteľmi. Zmeny výrobných cien sa môžu následne premietať do spotrebiteľských cien.</p>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Pri výpočte reálneho HDP sa používajú reťazené objemové indexy založené na Fisherovom prístupe. Naopak, harmonizovaný index spotrebiteľských cien (HICP) vychádza zo spotrebného koša domácností a používa reťazené cenové indexy založené na Laspeyresovej metodike.</p>
+</div>
+<p>Sezónne očistený (<a class="reference internal" href="#def-sez-ocistenie"><span class="std std-ref">Sezónne očistený časový rad</span></a>) mesačný časový rad harmonizovaného indexu spotrebiteľských cien (HICP) v slovenskej ekonomike je zobrazený na <a class="reference internal" href="#graf-hicp"><span class="std std-numref">Obr. 13.6</span></a>. Časový rad sme získali z databázy Eurostat. Bázickým obdobím je rok 2025.</p>
+<p>Recesie sú zobrazené sivými zónami (pozri <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>).</p>
+<p>Priebeh HICP potvrdzuje závery odvodené z vývoja deflátora HDP na <a class="reference internal" href="#graf-deflator"><span class="std std-numref">Obr. 13.5</span></a>. Ceny rástli pomerne rýchlo v období pred globálnou finančnou krízou v roku 2008. Následne sa rast cien spomalil. HICP tiež potvrdzuje obdobie veľmi nízkej inflácie a miestami aj poklesu cien v rokoch 2014 až 2016. Po pandémii COVID-19 začali ceny opäť rásť výrazne rýchlejšie. Rast cien sa ešte viac zvýraznil počas energetickej krízy spojenej s rastom cien energií po roku 2021.</p>
+<figure class="align-default" id="graf-hicp">
+<img alt="_images/graf_hicp.png" src="_images/graf_hicp.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.6 </span><span class="caption-text">Harmonizovaný index spotrebiteľských cien (HICP) v slovenskej ekonomike</span><a class="headerlink" href="#graf-hicp" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="miera-inflacie">
+<span id="kap-inflacia"></span><h2><span class="section-number">13.9. </span>Miera inflácie<a class="headerlink" href="#miera-inflacie" title="Link to this heading">#</a></h2>
+<dl class="simple myst" id="def-inflacia">
+<dt>Miera inflácie</dt><dd><p>Miera inflácie je miera rastu všeobecnej cenovej hladiny.</p>
+</dd>
+</dl>
+<p>Za všeobecnú cenovú hladinu možno dosadiť ľubovoľný cenový index. Ak je <span class="math notranslate nohighlight">\(P\)</span> ľubovoľný cenový index, miera inflácie je</p>
+<div class="math notranslate nohighlight" id="equation-diskretna-inflacia">
+<span class="eqno">(13.22)<a class="headerlink" href="#equation-diskretna-inflacia" title="Link to this equation">#</a></span>\[\pi = \frac{P'-P}{P}.\]</div>
+<p>Pri spojitom vyjadrení platí</p>
+<div class="math notranslate nohighlight" id="equation-spojita-inflacia">
+<span class="eqno">(13.23)<a class="headerlink" href="#equation-spojita-inflacia" title="Link to this equation">#</a></span>\[\pi = \ln(P')-\ln(P).\]</div>
+<p>V závislosti od použitého cenového indexu môžeme hovoriť napríklad o inflácii meranej deflátorom HDP, harmonizovaným indexom spotrebiteľských cien (HICP) alebo indexom cien priemyselných výrobcov (PPI).</p>
+<p>Na <a class="reference internal" href="#graf-inflacia"><span class="std std-numref">Obr. 13.7</span></a> je zobrazená miera inflácie meraná deflátorom HDP a harmonizovaným indexom spotrebiteľských cien (HICP). Údaje začínajú v prvom štvrťroku 1998.</p>
+<p>Štvrťročné údaje miery inflácie sme získali spojitým vyjadrením <a class="reference internal" href="#equation-spojita-inflacia">(13.23)</a>, pričom za <span class="math notranslate nohighlight">\(P\)</span> sme dosadili deflátor HDP (<a class="reference internal" href="#graf-deflator"><span class="std std-numref">Obr. 13.5</span></a>) a HICP (<a class="reference internal" href="#graf-hicp"><span class="std std-numref">Obr. 13.6</span></a>).</p>
+<p>Z mesačných údajov HICP sme štvrťročné údaje získali priemerovaním.</p>
+<p>Recesie sú zobrazené sivými zónami (pozri <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>).</p>
+<figure class="align-default" id="graf-inflacia">
+<img alt="_images/graf_inflacia.png" src="_images/graf_inflacia.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.7 </span><span class="caption-text">Miera inflácie na Slovensku</span><a class="headerlink" href="#graf-inflacia" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Miera inflácie meraná deflátorom HDP a harmonizovaným indexom spotrebiteľských cien (HICP) vykazuje podobný dlhodobý vývoj, avšak v niektorých obdobiach sa môže významne líšiť. Dôvodom je, že jednotlivé indexy pokrývajú rozdielne súbory tovarov a služieb.</p>
+<p>Deflátor HDP zahŕňa ceny všetkých finálnych domácich tovarov a služieb vyprodukovaných v ekonomike, zatiaľ čo HICP sleduje ceny spotrebného koša domácností. Preto poskytujú odlišný pohľad na vývoj cenovej hladiny.</p>
+<p>Z <a class="reference internal" href="#graf-inflacia"><span class="std std-numref">Obr. 13.7</span></a> vidíme, že inflácia meraná deflátorom HDP a harmonizovaným indexom spotrebiteľských cien (HICP) vykazuje podobný dlhodobý vývoj. Najmä po roku 2010 sa obe miery inflácie pohybujú veľmi blízko pri sebe, čo naznačuje, že cenové zmeny v spotrebnom koši domácností a v domácej produkcii boli v tomto období podobné.</p>
+<p>V prvej polovici 2000-tych rokov je inflácia meraná deflátorom HDP volatilnejšia než inflácia meraná HICP. Dôvodom môže byť skutočnosť, že deflátor HDP zahŕňa ceny všetkých finálnych domácich tovarov a služieb, zatiaľ čo HICP sleduje iba ceny spotrebného koša domácností.</p>
+<p>Pred globálnou finančnou krízou v roku 2008 boli inflačné tlaky výrazné a inflácia dosahovala vysoké hodnoty. Počas finančnej krízy sa rast cien prudko spomalil a obe miery inflácie sa krátkodobo priblížili k nule.</p>
+<p>V rokoch 2014 až 2016 možno pozorovať obdobie veľmi nízkej inflácie až miernej deflácie. Toto obdobie sa skončilo postupným návratom inflácie ku kladným hodnotám.</p>
+<p>Po pandémii COVID-19 sa inflácia opäť výrazne zvýšila. Najvyššie hodnoty dosiahla počas energetickej krízy v rokoch 2022 a 2023. Inflácia meraná HICP v tomto období prevyšovala infláciu meranú deflátorom HDP, čo naznačuje, že rast cien energií a ďalších položiek spotrebného koša zasiahol domácnosti silnejšie než priemerné ceny produkcie zahrnutej do HDP.</p>
+<dl class="simple myst" id="def-deflacia">
+<dt>Deflácia</dt><dd><p>Deflácia je pokles všeobecnej cenovej hladiny. Deflácia nastáva, ak je miera inflácie záporná.</p>
+</dd>
+</dl>
+<p>Na Slovensku možno obdobie deflácie pozorovať približne v rokoch 2014 až 2016. Cenové indexy v tomto období klesali, ako vidno z <a class="reference internal" href="#graf-deflator"><span class="std std-numref">Obr. 13.5</span></a> a <a class="reference internal" href="#graf-hicp"><span class="std std-numref">Obr. 13.6</span></a>, a miera inflácie bola záporná, ako dokumentuje <a class="reference internal" href="#graf-inflacia"><span class="std std-numref">Obr. 13.7</span></a>.</p>
+</section>
+<section id="parita-kupnej-sily">
+<h2><span class="section-number">13.10. </span>Parita kúpnej sily<a class="headerlink" href="#parita-kupnej-sily" title="Link to this heading">#</a></h2>
+<p>V predchádzajúcich častiach sme ukázali, že pri porovnávaní ekonomických veličín v čase nestačí pracovať s nominálnymi hodnotami. Rast nominálneho HDP môže byť spôsobený nielen rastom produkcie, ale aj rastom cien. Preto sme zaviedli reálny HDP, ktorý abstrahuje od zmien cenovej hladiny v čase.</p>
+<p>Podobný problém vzniká aj pri porovnávaní ekonomík v priestore, teda medzi krajinami alebo regiónmi. Rovnaká peňažná suma umožňuje kúpiť rôzne množstvo tovarov a služieb v rôznych častiach sveta. Napríklad za 100 eur si spotrebiteľ kúpi iný objem tovarov a služieb na Slovensku než v Nemecku alebo vo Švajčiarsku.</p>
+<p>Pri porovnávaní životnej úrovne a ekonomickej výkonnosti preto nestačí prepočítať ekonomické veličiny pomocou trhového výmenného kurzu. Potrebujeme zohľadniť aj rozdiely v cenových hladinách jednotlivých krajín.</p>
+<p>Zároveň platí, že pri porovnávaní ekonomickej výkonnosti krajín nás zvyčajne zaujíma produkcia pripadajúca na jedného obyvateľa. Preto sa HDP spravidla prepočítava na obyvateľa.</p>
+<p>Na zohľadnenie rozdielov v cenových hladinách medzi krajinami sa používa prepočet pomocou <strong>parity kúpnej sily</strong> (<em>Purchasing Power Parity</em>, PPP). Pri tomto prístupe sa ekonomické veličiny prepočítajú do spoločnej cenovej hladiny, takže ich možno navzájom porovnávať bez skreslenia spôsobeného rozdielnymi cenami.</p>
+<p>Parita kúpnej sily tak plní podobnú úlohu v priestore, akú plní reálny HDP v čase. Reálny HDP odstraňuje rozdiely v cenách medzi obdobiami, zatiaľ čo prepočet pomocou parity kúpnej sily odstraňuje rozdiely v cenách medzi krajinami.</p>
+<p>Na <a class="reference internal" href="#graf-ppp"><span class="std std-numref">Obr. 13.8</span></a> je zobrazený index HDP na obyvateľa prepočítaného paritou kúpnej sily (PPP) na Slovensku, v Nemecku a v Rakúsku. Bázickým regiónom je Európska únia (EÚ). Ročné údaje pochádzajú z databázy Eurostat. Slovenské recesie sú zobrazené sivými zónami (pozri <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>).</p>
+<p>HDP na obyvateľa v EÚ je v každom období normalizovaný na hodnotu 100. Ak je hodnota indexu na Slovensku v roku 2000 približne 51, znamená to, že HDP na obyvateľa prepočítaný paritou kúpnej sily dosahoval približne 51 % priemernej úrovne EÚ.</p>
+<p>V roku 2010 táto hodnota dosahovala približne 75. Slovensko sa v období rokov 2000 až 2010 výrazne približovalo priemernej úrovni ekonomickej výkonnosti Európskej únie. Index HDP na obyvateľa prepočítaný paritou kúpnej sily vzrástol z približne 51 % priemeru EÚ v roku 2000 na približne 76 % v roku 2025.</p>
+<p>Po roku 2010 sa proces približovania výrazne spomalil. Slovenský HDP na obyvateľa sa následne pohyboval približne medzi 70 % a 80 % priemeru EÚ a do roku 2025 nedošlo k ďalšiemu významnému približovaniu.</p>
+<p>Toto pozorovanie je v súlade s vývojom prirodzeného logaritmu reálneho HDP na <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a>, podľa ktorého sa tempo rastu slovenskej ekonomiky po finančnej kríze postupne spomaľovalo.</p>
+<p>Pre ilustráciu obrázok zobrazuje aj indexy HDP na obyvateľa prepočítané paritou kúpnej sily v Nemecku a Rakúsku. Na začiatku sledovaného obdobia dosahovali obe krajiny výrazne vyššiu úroveň HDP na obyvateľa než priemer EÚ. V priebehu času sa však ich náskok voči priemeru EÚ zmenšoval.</p>
+<p>Z obrázka možno usudzovať, že obdobie globálnej finančnej krízy bolo pre slovenskú ekonomiku spojené s výraznejším zhoršením relatívnej výkonnosti než v prípade Rakúska, Nemecka alebo priemeru Európskej únie. Naopak, počas pandémie COVID-19 sa relatívna pozícia Slovenska voči priemeru EÚ mierne zlepšila.</p>
+<figure class="align-default" id="graf-ppp">
+<img alt="_images/graf_PPP.png" src="_images/graf_PPP.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.8 </span><span class="caption-text">Index HDP na obyvateľa v Rakúsku, Nemecku a na Slovensku vypočítaného paritou kúpnej sily s bázickým regiónom EÚ</span><a class="headerlink" href="#graf-ppp" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Ukazovatele HDP na obyvateľa prepočítané paritou kúpnej sily patria medzi najpoužívanejšie miery ekonomickej výkonnosti krajín. Ich výpočet je však metodicky náročný a výsledky môžu byť citlivé na odhady cenových hladín, najmä v oblasti bývania a služieb. Preto sa metodika výpočtu PPP pravidelne spresňuje.</p>
+</div>
+</section>
+<section id="hospodarske-cykly">
+<h2><span class="section-number">13.11. </span>Hospodárske cykly<a class="headerlink" href="#hospodarske-cykly" title="Link to this heading">#</a></h2>
+<p>Uvedieme dva prístupy k meraniu hospodárskych cyklov. Prvý vychádza z Burnsovej a Mitchellovej definície cyklu založenej na identifikácii vrcholov a dien ekonomickej aktivity. Druhý vychádza z rozkladu časových radov na trendovú a cyklickú zložku, pričom cyklické charakteristiky získame analýzou cyklickej zložky.</p>
+<dl class="simple myst" id="def-bm">
+<dt>Burnsova a Mitchellova definícia cyklu</dt><dd><p>Hospodársky cyklus je sled expanzií a recesií hospodárskej aktivity. Expanzia trvá od dna k nasledujúcemu vrcholu cyklu. Recesia trvá od vrcholu k nasledujúcemu dnu.</p>
+</dd>
+</dl>
+<p>Pre naše účely nasledujme vrcholy, dná a cykly nasledovne:</p>
+<dl class="simple myst" id="def-vrchol">
+<dt>Vrchol hospodárskeho cyklu</dt><dd><p>Vrchol hospodárskeho cyklu je štvrťrok, v ktorom je reálny HDP <strong>vyšší</strong> než v dvoch predchádzajúcich a dvoch nasledujúcich štvrťrokoch.</p>
+</dd>
+</dl>
+<div class="admonition-technicka-poznamka admonition">
+<p class="admonition-title">Technická poznámka</p>
+<p>Pri identifikácii hospodárskych cyklov sa môže stať, že medzi dvoma dnami identifikujeme viac lokálnych vrcholov. V takom prípade za vrchol hospodárskeho cyklu považujeme posledný vrchol pred nasledujúcim dnom.</p>
+</div>
+<dl class="simple myst" id="def-dno">
+<dt>Dno hospodárskeho cyklu</dt><dd><p>Dno hospodárskeho cyklu je štvrťrok, v ktorom je reálny HDP <strong>nižší</strong> než v dvoch predchádzajúcich a dvoch nasledujúcich štvrťrokoch.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-recesia">
+<dt>Recesia</dt><dd><p>Obdobie od vrcholu hospodárskeho cyklu k nasledujúcemu dnu.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-expanzia">
+<dt>Expanzia</dt><dd><p>Obdobie od dna hospodárskeho cyklu k nasledujúcemu vrcholu.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-hc">
+<dt>Hospodársky cyklus</dt><dd><p>Hospodársky cyklus je obdobie medzi dvoma po sebe nasledujúcimi vrcholmi hospodárskej aktivity.</p>
+</dd>
+</dl>
+<p>Hospodársky cyklus má pravidelnosť v zmysle, že dná striedajú vrcholy, ale je nepravidelný v tom zmysle, že amplitúdy hospodárskych cyklov nie sú rovnako intenzívne a dlhé.</p>
+<section id="recesie-v-slovenskej-ekonomike">
+<span id="kap-skrecesie"></span><h3><span class="section-number">13.11.1. </span>Recesie v slovenskej ekonomike<a class="headerlink" href="#recesie-v-slovenskej-ekonomike" title="Link to this heading">#</a></h3>
+<p>Druhá polovica 90. rokov predstavovala v slovenskej ekonomike obdobie zásadných ekonomických a inštitucionálnych zmien, preto pri identifikácii slovenských hospodárskych cyklov využijeme reálny HDP od prvého štvrťroku 2000.</p>
+<p>S využitím údajov slovenského reálneho HDP  a podľa definícií <a class="reference internal" href="#def-vrchol"><span class="std std-ref">Vrchol hospodárskeho cyklu</span></a> a <a class="reference internal" href="#def-dno"><span class="std std-ref">Dno hospodárskeho cyklu</span></a> možno v slovenských údajoch (<a class="reference internal" href="#graf-y"><span class="std std-numref">Obr. 13.1</span></a>) po roku 2000 identifikovať tri významné recesie spojené s globálnou finančnou krízou, pandémiou COVID-19 a energetickou krízou.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-hc">
+<caption><span class="caption-number">Tab. 13.1 </span><span class="caption-text">Recesie v slovenskej ekonomike od roku 2000</span><a class="headerlink" href="#tab-hc" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Recesia</p></th>
+<th class="head"><p>Vrchol</p></th>
+<th class="head"><p>Dno</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Globálna finančná kríza</p></td>
+<td><p>2008Q4</p></td>
+<td><p>2009Q1</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pandémia COVID-19</p></td>
+<td><p>2019Q4</p></td>
+<td><p>2020Q2</p></td>
+</tr>
+<tr class="row-even"><td><p>Energetická kríza</p></td>
+<td><p>2021Q4</p></td>
+<td><p>2022Q2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+<ul class="simple">
+<li><p>Prvá je recesia od štvrtého štvrťroku 2008 po prvý štvrťrok 2009. Bola spôsobená zlyhaním hypotekárneho trhu v USA v roku 2008. Touto finančnou krízou sme sa zaoberali v kapitole <a class="reference internal" href="Finan.html"><span class="doc">Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</span></a>. Krízu spôsobilo podcenenie rizika nesplatenia hypoték a pokles cien nehnuteľností.</p></li>
+<li><p>Druhú recesiu spôsobila pandémia COVID-19. Počas pandémie sa rýchlo šírilo infekčné ochorenie a vlády v mnohých krajinách prijímali opatrenia obmedzujúce spoločenský kontakt. V dôsledku toho poklesla ponuka práce aj ekonomická aktivita.</p></li>
+<li><p>Tretia recesia bola spojená s energetickou krízou v Európe v rokoch 2021 a 2022.</p></li>
+</ul>
+<p>Napriek tomu, že mnohé z udalostí, ktoré recesie vyvolali, vznikli v zahraničí, zasiahli aj Slovensko. Slovensko je malá otvorená ekonomika. Vývoz a dovoz sú na Slovensku významnou súčasťou ekonomickej aktivity. Preto je Slovensko závislé na globálnej ekonomike. Ak napríklad zdražie ropa, ktorú dovážame, zasiahne to domácich spotrebiteľov aj firmy. Ak klesne spotreba v USA, zasiahne to domácich vývozcov.</p>
+<p>Vo väčšine grafov zobrazujúcich slovenské časové rady v tejto kapitole sú recesie vyznačené sivými zónami. Ide o obdobia uvedené v <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>.</p>
+<p>Zaujímavé je, že všetky tri identifikované recesie možno spojiť s udalosťami, ktoré vznikli mimo Slovenska.</p>
+</section>
+</section>
+<section id="cyklicke-charakteristiky">
+<h2><span class="section-number">13.12. </span>Cyklické charakteristiky<a class="headerlink" href="#cyklicke-charakteristiky" title="Link to this heading">#</a></h2>
+<p>Ďalšie informácie o hospodárskych cykloch získame rozkladom časových radov na ich jednotlivé zložky. Ekonomické časové rady spravidla obsahujú:</p>
+<ul class="simple">
+<li><p>sezónnu zložku,</p></li>
+<li><p>trendovú zložku,</p></li>
+<li><p>cyklickú zložku,</p></li>
+<li><p>náhodnú zložku.</p></li>
+</ul>
+<section id="sezonna-zlozka">
+<h3><span class="section-number">13.12.1. </span>Sezónna zložka<a class="headerlink" href="#sezonna-zlozka" title="Link to this heading">#</a></h3>
+<p>Pri časových radoch s vyššou frekvenciou, napríklad pri štvrťročných alebo mesačných údajoch, bývajú krátkodobé výkyvy často spôsobené sezónnymi vplyvmi. Niektoré tovary a služby sa spotrebúvajú viac v určitých obdobiach roka, sezónne sa mení ponuka práce a mnohé odvetvia dosahujú pravidelne vyššie alebo nižšie tržby. Napríklad v letných mesiacoch býva lacnejšia zelenina a ovocie, po skončení školského roka vstupuje na trh práce viac brigádnikov a ku koncu roka býva spotreba domácností spravidla vyššia.</p>
+<p>Na <a class="reference internal" href="#graf-y-ynsa"><span class="std std-numref">Obr. 13.9</span></a> je zobrazený reálny HDP Slovenska od prvého štvrťroka 1995 pred a po sezónnom očistení. Údaje sme získali z Eurostatu. Sezónne neočistený časový rad je zobrazený modrou čiarou. Vidíme, že HDP dosahuje pravidelne najvyššie hodnoty v treťom štvrťroku, o niečo nižšie vo štvrtom štvrťroku a najnižšie v prvom štvrťroku. Tento pravidelne sa opakujúci vzorec predstavuje sezónnu zložku časového radu.</p>
+<dl class="simple myst" id="def-sez-ocistenie">
+<dt>Sezónne očistený časový rad</dt><dd><p>Sezónne očistený časový rad je časový rad upravený tak, aby neobsahoval pravidelne sa opakujúce sezónne vplyvy. Vďaka tomu umožňuje lepšie sledovať dlhodobý trend a hospodárske cykly.</p>
+</dd>
+</dl>
+<p>Aby bolo možné jednoduchšie sledovať dlhodobejší vývoj ekonomiky, štatistické úrady zvyknú zverejňovať aj sezónne očistené údaje. Pri sezónnom očistení sa odhadne a odstráni pravidelne sa opakujúca sezónna zložka, čím sa zvýraznia trendové a cyklické pohyby ekonomiky. Na tento účel sa používajú štatistické metódy založené najmä na kĺzavých priemeroch a ďalších filtroch.</p>
+<figure class="align-default" id="graf-y-ynsa">
+<img alt="_images/graf_Y_Ynsa.png" src="_images/graf_Y_Ynsa.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.9 </span><span class="caption-text">Sezónne neočistený a sezónne očistený reálny HDP v slovenskej ekonomike</span><a class="headerlink" href="#graf-y-ynsa" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Pre naše účely budeme pri časových radoch s vyššou frekvenciou používať sezónne očistené údaje. Ak nie je uvedené inak, všetky štvrťročné a mesačné časové rady v tejto učebnici sú sezónne očistené.</p>
+<p>Sezónne očistený časový rad reálneho HDP zobrazený oranžovou čiarou je totožný s časovým radom reálneho HDP na <a class="reference internal" href="#graf-y"><span class="std std-numref">Obr. 13.1</span></a>.</p>
+</section>
+<section id="trendova-a-cyklicka-zlozka">
+<h3><span class="section-number">13.12.2. </span>Trendová a cyklická zložka<a class="headerlink" href="#trendova-a-cyklicka-zlozka" title="Link to this heading">#</a></h3>
+<p>Trend ekonomickej premennej vyjadruje jej dlhodobý vývoj. Ekonomické premenné sa však v čase nepohybujú presne po svojom trende, ale okolo neho fluktuujú.</p>
+<p>Časť týchto fluktuácií možno vysvetliť sezónnymi vplyvmi. Zostávajúce odchýlky od trendu sa často pripisujú hospodárskemu cyklu.</p>
+<p>Okrem identifikácie vrcholov a dien hospodárskeho cyklu možno hospodársky cyklus vyjadriť aj prostredníctvom cyklickej zložky časového radu reálneho HDP. Cyklická zložka meria odchýlku ekonomickej aktivity od jej dlhodobého trendu.</p>
+<p>Pri odhade trendovej zložky časového radu možno použiť viacero metód. V literatúre sa často využívajú lineárne a polynomiálne trendové regresie, Hodrickov-Prescottov filter, Hamiltonov filter alebo frekvenčné filtre <span class="bibtex-citation" id="id3">[<a class="reference internal" href="#id31" title="Marianne Baxter and Robert G. King. Measuring business cycles: approximate band-pass filters for economic time series. Review of Economics and Statistics, 81(4):575–593, 1999. URL: https://www.jstor.org/stable/2646708, doi:10.1162/003465399558454.">BK99</a>, <a class="reference internal" href="#id30" title="James D. Hamilton. Why you should never use the hodrick-prescott filter. Review of Economics and Statistics, 100(5):831–843, 2018. doi:10.1162/rest_a_00706.">Ham18</a>, <a class="reference internal" href="#id29" title="Robert J. Hodrick and Edward C. Prescott. Postwar u.s. business cycles: an empirical investigation. Journal of Money, Credit and Banking, 29(1):1–16, 1997. doi:10.2307/2953682.">HP97</a>]</span>.</p>
+<p>V tejto učebnici budeme trend ekonomickej aktivity odhadovať pomocou log-kvadratického trendu. Tento prístup je jednoduchý, transparentný a pri štúdiu základných cyklických charakteristík poskytuje výsledky podobné alternatívnym metódam <span class="bibtex-citation" id="id4">[<a class="reference internal" href="#id32" title="Martin Uribe and Stephanie Schmitt-Grohé. Open Economy Macroeconomics. Princeton University Press, 2017. ISBN 9780691158778.">USG17</a>]</span>. Cyklickú zložku následne získame ako rozdiel medzi pozorovanou hodnotou logaritmu HDP a jeho odhadnutým trendom.</p>
+<p>V regresnom modeli log-kvadratického trendu odhadnutého metódou najmenších štvorcov</p>
+<div class="math notranslate nohighlight" id="equation-log-kvadr-trend">
+<span class="eqno">(13.24)<a class="headerlink" href="#equation-log-kvadr-trend" title="Link to this equation">#</a></span>\[\ln(y_t)=\hat{\beta}_0+\hat{\beta}_1 t+\hat{\beta}_2 t^2+e_t,\]</div>
+<p>je <span class="math notranslate nohighlight">\(y_t\)</span> hodnota skúmaného časového radu v období <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(\hat{\beta}_0\)</span>, <span class="math notranslate nohighlight">\(\hat{\beta}_1\)</span> a <span class="math notranslate nohighlight">\(\hat{\beta}_2\)</span> sú odhadnuté parametre modelu, <span class="math notranslate nohighlight">\(t\)</span> je časový trend a reziduál</p>
+<div class="math notranslate nohighlight" id="equation-r-cyklicka">
+<span class="eqno">(13.25)<a class="headerlink" href="#equation-r-cyklicka" title="Link to this equation">#</a></span>\[e_t=\ln(y_t)-\ln(\hat{y}_t)\]</div>
+<p>je cyklická zložka, pričom <span class="math notranslate nohighlight">\(\hat{y}_t\)</span> označuje vyrovnané hodnoty trendu.</p>
+<p>Výhodou takto odhadnutej cyklickej zložky je, že je vyjadrená ako rozdiel logaritmov. Preto ju možno interpretovať ako približnú percentuálnu odchýlku časového radu od jeho dlhodobého trendu. Po vynásobení hodnotou 100 získame cyklickú zložku vyjadrenú v percentách.</p>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Pri premenných, ktoré môžu nadobúdať nulové alebo záporné hodnoty, napríklad pri miere inflácie, používame analogický kvadratický trend bez logaritmickej transformácie v tvare</p>
+<div class="math notranslate nohighlight" id="equation-kvadr-trend">
+<span class="eqno">(13.26)<a class="headerlink" href="#equation-kvadr-trend" title="Link to this equation">#</a></span>\[y_t=\hat{\beta}_0+\hat{\beta}_1 t+\hat{\beta}_2 t^2+e_t.\]</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</section>
+<section id="trendova-a-cyklicka-zlozka-v-slovenskej-ekonomike">
+<h3><span class="section-number">13.12.3. </span>Trendová a cyklická zložka v slovenskej ekonomike<a class="headerlink" href="#trendova-a-cyklicka-zlozka-v-slovenskej-ekonomike" title="Link to this heading">#</a></h3>
+<p>Trendové zložky časových radov sme odhadli na celej dostupnej vzorke. Pri interpretácii hospodárskych cyklov sa však zameriame na obdobie po roku 2000, keďže druhá polovica 90. rokov bola spojená s výraznými štrukturálnymi zmenami slovenskej ekonomiky.</p>
+<p>Na <a class="reference internal" href="#graf-ytrend"><span class="std std-numref">Obr. 13.10</span></a> je zobrazený reálny HDP Slovenska a jeho trendová zložka od prvého štvrťroku 2000.</p>
+<p>Z <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a> a <a class="reference internal" href="#graf-ppp"><span class="std std-numref">Obr. 13.8</span></a> sme usúdili, že tempo rastu slovenského reálneho HDP sa v danom období spomaľuje. <a class="reference internal" href="#graf-ytrend"><span class="std std-numref">Obr. 13.10</span></a> je s touto hypotézou v súlade. Pri detailnejšom pohľade na trendovú zložku vidíme, že je mierne konkávna. Odhad parametra <span class="math notranslate nohighlight">\(\hat{\beta}_2\)</span> je záporný, čo naznačuje postupné spomaľovanie dlhodobého tempa rastu slovenskej ekonomiky.</p>
+<p>Podľa obrázka je vrchol pred recesiou vyvolanou globálnou finančnou krízou výrazne vyšší, než predpovedá dlhodobý trend. Následná recesia spôsobila návrat reálneho HDP smerom k trendu.</p>
+<p>Odlišnú situáciu možno pozorovať počas pandémie COVID-19. Dno tejto recesie sa nachádza výrazne pod trendom a následné oživenie vracia reálny HDP späť k jeho dlhodobému trendu.</p>
+<p>Po energetickej kríze sa slovenský reálny HDP postupne vrátil k trendu, v súčasnosti sa však opäť nachádza mierne pod ním.</p>
+<figure class="align-default" id="graf-ytrend">
+<img alt="_images/graf_Ytrend.png" src="_images/graf_Ytrend.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.10 </span><span class="caption-text">Reálny HDP a jeho trendová zložka v slovenskej ekonomike</span><a class="headerlink" href="#graf-ytrend" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Na <a class="reference internal" href="#graf-ycz"><span class="std std-numref">Obr. 13.11</span></a> je zobrazená cyklická zložka slovenského reálneho HDP. Z grafu možno vyčísliť odchýlky ekonomickej aktivity od jej dlhodobého trendu počas najvýznamnejších hospodárskych udalostí.</p>
+<p>Vrchol pred globálnou finančnou krízou sa nachádzal približne 10 % nad dlhodobým trendom. Naopak, dno po vypuknutí pandémie COVID-19 bolo takmer 10 % pod dlhodobým trendom.</p>
+<figure class="align-default" id="graf-ycz">
+<img alt="_images/graf_Ycz.png" src="_images/graf_Ycz.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.11 </span><span class="caption-text">Cyklická zložka reálneho HDP v slovenskej ekonomike.</span><a class="headerlink" href="#graf-ycz" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Pred globálnou finančnou krízou sa ekonomická aktivita nachádzala výrazne nad svojím dlhodobým trendom. Ako sme uviedli v kapitole <a class="reference internal" href="Finan.html"><span class="doc">Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</span></a>, v Spojených štátoch amerických v tom období rástlo zadlženie domácností, zvyšovali sa ceny nehnuteľností a finančné inštitúcie podceňovali riziko nesplácania hypoték.</p>
+<p>Po prehodnotení rizík (<a class="reference internal" href="Finan.html#fin-kriza-2008-a"><span class="std std-ref">Pokles podielu bonitných dlžníkov</span></a>) a poklese cien nehnuteľností (<a class="reference internal" href="Finan.html#fin-kriza-2008-p"><span class="std std-ref">Pokles cien nehnuteľností</span></a>) sa spotreba a investície prudko znížili. Keďže Slovensko je malá otvorená ekonomika, pokles dopytu v zahraničí sa prejavil aj poklesom dopytu po slovenskej produkcii. Prostredníctvom zahraničného obchodu sa preto globálna finančná kríza premietla do poklesu slovenského reálneho HDP a návratu ekonomickej aktivity k dlhodobému trendu.</p>
+<p>Pandémia COVID-19 mala odlišný charakter. Kým finančná kríza vznikla predovšetkým v dôsledku problémov finančného systému a následného poklesu agregátneho dopytu, pandémia predstavovala náhly negatívny šok na strane ponuky aj dopytu. Obmedzenia ekonomickej aktivity spôsobili, že reálny HDP krátkodobo klesol výrazne pod svoj dlhodobý trend.</p>
+</section>
+<section id="charakteristiky">
+<h3><span class="section-number">13.12.4. </span>Charakteristiky<a class="headerlink" href="#charakteristiky" title="Link to this heading">#</a></h3>
+<p>Charakteristiky cyklickej zložky ľubovoľného časového radu zisťujeme podľa jej vzťahu k cyklickej zložke reálneho HDP. Zaujíma nás najmä:</p>
+<ul class="simple">
+<li><p>aká je volatilita cyklickej zložky v porovnaní s volatilitou cyklickej zložky HDP,</p></li>
+<li><p>aká je jej súčasná korelácia s cyklickou zložkou HDP,</p></li>
+<li><p>či sa jej pohyby objavujú skôr alebo neskôr než pohyby cyklickej zložky HDP.</p></li>
+</ul>
+<dl class="simple myst" id="def-volatilita">
+<dt>Volatilita cyklickej zložky</dt><dd><p>Volatilita vyjadruje veľkosť výkyvov danej premennej v hospodárskom cykle. Meriame ju štandardnou odchýlkou cyklickej zložky. Volatilitu často vyjadrujeme relatívne ako pomer štandardnej odchýlky danej premennej k štandardnej odchýlke cyklickej zložky reálneho HDP.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-korelacia">
+<dt>Súčasná korelácia</dt><dd><p>Súčasná korelácia vyjadruje silu lineárnej závislosti medzi cyklickou zložkou danej premennej a cyklickou zložkou reálneho HDP. Meriame ju Pearsonovým korelačným koeficientom.</p>
+</dd>
+</dl>
+<p>Podľa znamienka korelácie hovoríme, že premenná je</p>
+<ul class="simple">
+<li><p><strong>procyklická</strong>, ak je jej cyklická zložka pozitívne korelovaná s cyklickou zložkou reálneho HDP,</p></li>
+<li><p><strong>kontracyklická</strong>, ak je jej cyklická zložka negatívne korelovaná s cyklickou zložkou reálneho HDP,</p></li>
+<li><p><strong>acyklická</strong>, ak jej cyklická zložka nevykazuje koreláciu s cyklickou zložkou reálneho HDP.</p></li>
+</ul>
+<p>Vo všeobecnosti platí:</p>
+<ul class="simple">
+<li><p>koeficient korelácie blízky 1 znamená veľmi silnú procyklickosť,</p></li>
+<li><p>koeficient korelácie blízky −1 znamená veľmi silnú kontracyklickosť,</p></li>
+<li><p>koeficient korelácie blízky 0 znamená acyklickosť.</p></li>
+</ul>
+<dl class="simple myst" id="def-predstih">
+<dt>Predstih a oneskorenie</dt><dd><p>Korelácia sa môže prejaviť aj s časovým posunom.</p>
+</dd>
+</dl>
+<p>Premenná je</p>
+<ul class="simple">
+<li><p><strong>predbiehajúca</strong> (leading), ak sú jej súčasné hodnoty silnejšie korelované s budúcimi hodnotami cyklickej zložky HDP,</p></li>
+<li><p><strong>oneskorená</strong> (lagging), ak sú jej súčasné hodnoty silnejšie korelované s minulými hodnotami cyklickej zložky HDP,</p></li>
+<li><p><strong>súbežná</strong> (coincident), ak je najsilnejšia korelácia medzi cyklickou zložkou premennej a HDP pozorovaná bez časového posunu.</p></li>
+</ul>
+</section>
+</section>
+<section id="recesie-a-rast-v-ekonomike-slovenska">
+<h2><span class="section-number">13.13. </span>Recesie a rast v ekonomike Slovenska<a class="headerlink" href="#recesie-a-rast-v-ekonomike-slovenska" title="Link to this heading">#</a></h2>
+<p>Rast a hospodársky cyklus predstavujú dva pohľady na ekonomický vývoj. Rast opisuje dlhodobý vývoj ekonomiky, zatiaľ čo hospodárske cykly zachytávajú krátkodobé odchýlky ekonomickej aktivity od jej dlhodobého trendu.</p>
+<p>Makroekonomická teória túto skutočnosť reflektuje. Teória ekonomického rastu sa zaoberá dlhodobým vývojom ekonomiky, zatiaľ čo teória hospodárskych cyklov vysvetľuje krátkodobé fluktuácie ekonomickej aktivity.</p>
+<p>Identifikovali sme tri významné recesie v slovenskej ekonomike (pozri <a class="reference internal" href="#tab-hc"><span class="std std-numref">Tab. 13.1</span></a>), ktoré súvisia s globálnou finančnou krízou, pandémiou COVID-19 a energetickou krízou v Európe.</p>
+<p>Z predchádzajúcej analýzy však vyplýva, že tieto recesie nepredstavujú iba krátkodobé výkyvy ekonomickej aktivity. Z <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a>, <a class="reference internal" href="#graf-ppp"><span class="std std-numref">Obr. 13.8</span></a> a <a class="reference internal" href="#graf-ytrend"><span class="std std-numref">Obr. 13.10</span></a> možno usudzovať, že po globálnej finančnej kríze došlo k spomaleniu dlhodobého tempa rastu slovenskej ekonomiky. Trendová zložka reálneho HDP je konkávna a odhad parametra <span class="math notranslate nohighlight">\(\hat{\beta}_2\)</span> je záporný. Zároveň sa približne od roku 2010 výrazne spomalil proces dobiehania priemernej ekonomickej výkonnosti Európskej únie.</p>
+<p>V tabuľke <a class="reference internal" href="#tab-rast-udalosti"><span class="std std-numref">Obr. 13.12</span></a> je uvedená spojito vypočítaná priemerná ročná miera rastu <a class="reference internal" href="#equation-miera-rastu-spojito">(13.7)</a> reálneho HDP na obyvateľa na Slovensku a v EÚ v troch obdobiach. Prvé obdobie zahŕňa roky pred globálnou finančnou krízou (2000Q1–2008Q2), druhé obdobie roky medzi finančnou krízou a pandémiou COVID-19 (2009Q3–2019Q4) a tretie obdobie obdobie po pandémii COVID-19 (2021Q1–2026Q2). Údaje reálneho HDP na obyvateľa pochádzajú z Eurostatu.</p>
+<figure class="align-default" id="tab-rast-udalosti">
+<img alt="_images/tab_rast_udalosti.png" src="_images/tab_rast_udalosti.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.12 </span><span class="caption-text">Priemerné ročné tempo rastu reálneho HDP na obyvateľa na Slovensku a v EÚ (%) v troch obdobiach</span><a class="headerlink" href="#tab-rast-udalosti" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Rovnaké výpočty po dekádach sú v <a class="reference internal" href="#tab-rast-dekady"><span class="std std-numref">Obr. 13.13</span></a></p>
+<figure class="align-default" id="tab-rast-dekady">
+<img alt="_images/tab_rast_dekady.png" src="_images/tab_rast_dekady.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.13 </span><span class="caption-text">Priemerné ročné tempo rastu reálneho HDP na obyvateľa na Slovensku a v EÚ (%) po dekádach</span><a class="headerlink" href="#tab-rast-dekady" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>V období pred globálnou finančnou krízou rástla slovenská ekonomika priemerným tempom takmer 6 % ročne. Po finančnej kríze sa tempo rastu znížilo približne na 2,6 % ročne a po pandémii COVID-19 kleslo pod 2 % ročne.</p>
+<p>Naopak, tempo rastu EÚ sa počas celého obdobia pohybovalo približne medzi 1 % a 2 % ročne. Kým na začiatku sledovaného obdobia Slovensko rástlo výrazne rýchlejšie než EÚ, v posledných rokoch sa rozdiel medzi tempom rastu oboch ekonomík výrazne zmenšil.</p>
+<p>Výsledky naznačujú, že proces ekonomického dobiehania vyspelejších krajín EÚ sa spomalil alebo zastavil.</p>
+</section>
+<section id="hospodarske-cykly-v-ekonomike-slovenska">
+<span id="kap-sk-cykclicke"></span><h2><span class="section-number">13.14. </span>Hospodárske cykly v ekonomike Slovenska<a class="headerlink" href="#hospodarske-cykly-v-ekonomike-slovenska" title="Link to this heading">#</a></h2>
+<p>Recesie na Slovensku sme identifikovali už skôr (<a class="reference internal" href="#kap-skrecesie"><span class="std std-ref">Recesie v slovenskej ekonomike</span></a>). V tejto časti sa zameriame na cyklické charakteristiky ekonomických premenných.</p>
+<p>Na odhad cyklických zložiek podľa vzťahu <a class="reference internal" href="#equation-r-cyklicka">(13.25)</a> sme využili úplné dostupné vzorky sezónne očistených časových radov HDP, spotreby, vládnych nákupov, investícií, vývozu, dovozu, cenovej hladiny a inflácie (<a class="reference internal" href="#graf-y"><span class="std std-numref">Obr. 13.1</span></a> a <a class="reference internal" href="Zaklad.html#graf-hdp-zlozky"><span class="std std-numref">Obr. 10.1</span></a>). Mesačné časové rady cenovej hladiny (<a class="reference internal" href="#graf-hicp"><span class="std std-numref">Obr. 13.6</span></a>) a inflácie (<a class="reference internal" href="#graf-inflacia"><span class="std std-numref">Obr. 13.7</span></a>) sme najskôr agregovali do štvrťročnej frekvencie pomocou priemerovania.</p>
+<p>Volatilitu (<a class="reference internal" href="#def-volatilita"><span class="std std-ref">Volatilita cyklickej zložky</span></a>) a koreláciu s cyklickou zložkou HDP (<a class="reference internal" href="#def-korelacia"><span class="std std-ref">Súčasná korelácia</span></a>) sme vypočítali zo vzorky cyklických zložiek od roku 2000.</p>
+<p>Pri skúmaní predbiehajúcich a oneskorených premenných sme porovnávali koreláciu cyklickej zložky s cyklickou zložkou HDP pri posune o jeden štvrťrok dopredu a dozadu. Premennú považujeme za predbiehajúcu, ak je korelácia pri posune o jeden štvrťrok dozadu silnejšia než súčasná korelácia. Analogicky premennú považujeme za oneskorenú, ak je korelácia pri posune o jeden štvrťrok dopredu silnejšia než súčasná korelácia.</p>
+<section id="spotreba-investicie-a-friedmanova-hypoteza-trvaleho-prijmu-v-praxi">
+<span id="def-soky-sk"></span><h3><span class="section-number">13.14.1. </span>Spotreba, investície a Friedmanova hypotéza trvalého príjmu v praxi<a class="headerlink" href="#spotreba-investicie-a-friedmanova-hypoteza-trvaleho-prijmu-v-praxi" title="Link to this heading">#</a></h3>
+<p>V nasledujúcich grafoch sú zobrazené porovnania cyklických zložiek s cyklickou zložkou HDP. Cyklická zložka HDP je vo všetkých obrázkoch zobrazená modrou. Výpočty sú v tabuľke zobrazenej na <a class="reference internal" href="#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a>.</p>
+<p>Podľa <a class="reference internal" href="#graf-ccycle"><span class="std std-numref">Obr. 13.14</span></a> je spotreba procyklická. Výkyvy spotreby sú však menšie než výkyvy investícií a len mierne prevyšujú výkyvy HDP.
+ 
+Z <a class="reference internal" href="#graf-icycle"><span class="std std-numref">Obr. 13.15</span></a> usudzujeme, že investície sú viac než dvojnásobne volatilnejšie než HDP a zároveň procyklické. Investície preto patria medzi najvýraznejšie zložky hospodárskeho cyklu.</p>
+<figure class="align-default" id="graf-ccycle">
+<img alt="_images/graf_Ccycle.png" src="_images/graf_Ccycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.14 </span><span class="caption-text">Cyklická zložka HDP a spotreby</span><a class="headerlink" href="#graf-ccycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="graf-icycle">
+<img alt="_images/graf_Icycle.png" src="_images/graf_Icycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.15 </span><span class="caption-text">Cyklická zložka HDP a investícií</span><a class="headerlink" href="#graf-icycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Podľa <a class="reference internal" href="#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a> je spotreba v slovenskej ekonomike procyklická a jej volatilita je len mierne vyššia než volatilita HDP. Tento výsledok sa môže zdať prekvapivý, pretože v mnohých rozvinutých ekonomikách býva spotreba menej volatilná než HDP.</p>
+<p>Slovenská ekonomika je však malá otvorená transformujúca sa ekonomika, ktorá v sledovanom období prešla viacerými významnými hospodárskymi udalosťami. Patria medzi ne vstup do Európskej únie, prijatie eura, globálna finančná kríza, pandémia COVID-19 a energetická kríza. Tieto udalosti mohli zvýšiť citlivosť spotreby domácností na hospodársky cyklus.</p>
+<p>V časti <a class="reference internal" href="Dynam.html#kap-friedman-trvaly"><span class="std std-numref">Section 8.8</span></a> sme si predstavili koncept spotrebiteľského vyhladzovania a Friedmanovu hypotézu trvalého príjmu, podľa ktorej reakcia spotreby na zmenu príjmu závisí od toho, do akej miery domácnosti považujú túto zmenu za trvalú.</p>
+<p>Zopakujme, že ak domácnosti vnímajú zmenu príjmu ako trvalú, hraničný sklon k spotrebe je blízky jednej. Naopak, ak je zmena príjmu iba dočasná, za predpokladu veľmi dlhého rozhodovacieho horizontu je hraničný sklon k spotrebe blízky nule. Ukázali sme tiež, že reakcia úspor je opačná. Pri trvalej zmene príjmu sa úspory menia len málo, zatiaľ čo pri dočasnej zmene príjmu absorbujú väčšinu zmeny.</p>
+<p>Rovnakú logiku možno preniesť aj na hospodárske cykly. Hospodárske cykly môžu byť spôsobené šokmi (<a class="reference internal" href="Dynam.html#def-sok"><span class="std std-ref">Šok</span></a>), ktoré spôsobia výkyvy príjmu a ostatných premenných. Ak sú výkyvy príjmu vnímané prevažne ako trvalé, očakávame, že volatilita spotreby bude podobná volatilite príjmu. Ak sú výkyvy príjmu prevažne dočasné, domácnosti ich budú tlmiť prostredníctvom úspor a volatilita spotreby bude nižšia než volatilita príjmu.</p>
+<p>Podľa hodnôt volatility cyklických zložiek spotreby a HDP (<a class="reference internal" href="#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a>), by sme mohli usúdiť, že významná časť šokov je domácnosťami vnímaná ako dlhodobejšia. To je čiastočne pravda. Takýto záver podporujú aj <a class="reference internal" href="#graf-lny"><span class="std std-numref">Obr. 13.2</span></a> a <a class="reference internal" href="#tab-rast-udalosti"><span class="std std-numref">Obr. 13.12</span></a>, z ktorých vidíme, že jednotlivé recesie boli sprevádzané spomalením dlhodobého rastu ekonomiky.</p>
+<p>Skutočne sa môžeme domnievať, že globálna finančná kríza, pandémia COVID-19, ale aj európska energetická kríza predstavujú šoky, ktoré majú dlhodobý dopad nielen na slovenskú ekonomiku, ale aj na ekonomiky vo svete či v Európe. Okrem toho Slovensko v období od roku 2000 pokračovalo v transformácii z centrálne plánovanej na trhovú ekonomiku, vstúpilo do EÚ a prijalo euro. Aj tieto udalosti možno interpretovať ako šoky s dlhodobými ekonomickými dôsledkami.</p>
+<p>Ak je však spotreba podobne volatilná ako HDP, domácnosti spotrebiteľské vyhladzovanie využívajú len v obmedzenej miere. Podľa nášho jednoduchého modelu by v takom prípade mala väčšinu zmien príjmu absorbovať spotreba, zatiaľ čo úspory by mali reagovať relatívne málo. Z identity úspor a investícií <a class="reference internal" href="Zaklad.html#equation-identita-s-i">(10.4)</a> však vieme, že úspory financujú investície a bežný účet platobnej bilancie. Vysoká volatilita investícií preto s týmto obrazom úplne nekorešponduje.</p>
+<p>Presnejší obraz získame po úprave časového radu spotreby. Súkromná spotreba zahŕňa spotrebu trvanlivých a netrvanlivých statkov. Z pohľadu domácnosti majú mnohé statky dlhodobej spotreby charakter investície alebo spôsobu uloženia úspor. Nákup automobilu, nábytku alebo rozsiahle vybavenie domácnosti preto svojím charakterom pripomína investičné rozhodnutie viac než bežnú spotrebu. Naopak, výdavky na potraviny alebo služby predstavujú typickú spotrebu, ktorú sa domácnosti usilujú vyhladiť v zmysle Friedmanovej hypotézy trvalého príjmu.</p>
+<p>Na <a class="reference internal" href="#graf-c-cycle-d"><span class="std std-numref">Obr. 13.16</span></a> je cyklická charakteristika spotreby trvalých statkov spolu s cyklickou charakteristikou HDP. Podľa tabuľky na <a class="reference internal" href="#tab-c-d"><span class="std std-numref">Obr. 13.17</span></a> je spotreba trvalých statkov viac než dvojnásobne volatilnejšia ako HDP.Výdavky na trvanlivé statky teda reagujú na hospodársky cyklus podstatne výraznejšie než celková spotreba. Tento výsledok je konzistentný s možnosťou domácností presúvať nákupy trvanlivých statkov medzi jednotlivými obdobiami.</p>
+<figure class="align-default" id="graf-c-cycle-d">
+<img alt="_images/graf_C_cycle_D.png" src="_images/graf_C_cycle_D.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.16 </span><span class="caption-text">Cyklická zložka HDP a spotreby trvalých statkov</span><a class="headerlink" href="#graf-c-cycle-d" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="tab-c-d">
+<img alt="_images/tab_C_D.png" src="_images/tab_C_D.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.17 </span><span class="caption-text">Cyklická charakteristika spotreby trvalých statkov</span><a class="headerlink" href="#tab-c-d" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Pozorované cyklické charakteristiky spotreby a investícií sú preto konzistentné s predstavou, že šoky v slovenskej ekonomike nie sú ani čisto dočasné, ani čisto trvalé. Možnú interpretáciu poskytuje koncept pretrvávajúcich šokov (<a class="reference internal" href="Dynam.html#kap-pretrvavajuce"><span class="std std-ref">Pretrvávajúce zmeny príjmu</span></a>), ktorých účinky pretrvávajú aj v budúcich obdobiach.</p>
+<p>Interpretáciu ešte komplikuje skutočnosť, že volatilitu spotreby a investícií ovplyvňuje nielen povaha šokov, ale aj fungovanie finančných trhov. Ak domácnosti alebo firmy čelia obmedzenému prístupu k úverom, ich schopnosť vyhladzovať spotrebu a investície sa znižuje. V dôsledku toho môže byť spotreba volatilnejšia, než predpovedá Friedmanova hypotéza trvalého príjmu.</p>
+<p>Podobne aj investičné rozhodnutia ovplyvňujú náklady na prispôsobenie kapitálu. Ak je zmena kapitálovej zásoby spojená s vysokými nákladmi, firmy investície rozkladajú do viacerých období. Vyššie náklady na prispôsobenie preto znižujú volatilitu investícií. Naopak, pri nízkych nákladoch môžu firmy reagovať na ekonomické šoky prudšími zmenami investícií.</p>
+<div class="admonition-globalna-financna-kriza-a-recesia-pocas-pandemie-covid-19 admonition">
+<p class="admonition-title">Globálna finančná kríza a recesia počas pandémie COVID-19</p>
+<p>Porovnanie globálnej finančnej krízy a pandémie COVID-19 ukazuje, že hospodárske cykly nemusia mať rovnaký charakter. Kým počas finančnej krízy reagovali najvýraznejšie investície, počas pandémie COVID-19 bolo zasiahnuté predovšetkým správanie spotrebiteľov.</p>
+<p>Tento rozdiel naznačuje, že volatilitu spotreby a investícií neurčuje iba povaha ekonomických šokov, ale aj fungovanie trhov a náklady spojené s prispôsobením.</p>
+</div>
+</section>
+<section id="vladne-nakupy-vyvoz-a-dovoz">
+<h3><span class="section-number">13.14.2. </span>Vládne nákupy, vývoz a dovoz<a class="headerlink" href="#vladne-nakupy-vyvoz-a-dovoz" title="Link to this heading">#</a></h3>
+<p>Na <a class="reference internal" href="#graf-gcycle"><span class="std std-numref">Obr. 13.18</span></a> sú zobrazené cyklické zložky HDP a vládnych nákupov. Podľa výsledkov v tabuľke na <a class="reference internal" href="#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a> sú vládne nákupy v priemere procyklické. Takýto výsledok nie je pre rozvinuté ekonomiky nezvyčajný. Hoci sa od fiškálnej politiky často očakáva stabilizácia hospodárskeho cyklu, v praxi sa vládne výdavky často pohybujú rovnakým smerom ako ekonomická aktivita.</p>
+<p>Pri detailnejšom pohľade na <a class="reference internal" href="#graf-gcycle"><span class="std std-numref">Obr. 13.18</span></a> však vidíme, že vzťah medzi vládnymi nákupmi a hospodárskym cyklom nebol počas celého obdobia rovnaký. Podľa grafu sa silnejšia procyklickosť vládnych nákupov objavuje najmä po roku 2015.</p>
+<p>Výsledok naznačuje, že správanie verejného sektora sa v priebehu sledovaného obdobia menilo a že jednoduché označenie vládnych nákupov za procyklické alebo kontracyklické nemusí vystihovať celý príbeh.</p>
+<figure class="align-default" id="graf-gcycle">
+<img alt="_images/graf_Gcycle.png" src="_images/graf_Gcycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.18 </span><span class="caption-text">Cyklická zložka HDP a vládnych nákupov</span><a class="headerlink" href="#graf-gcycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Vývoz a dovoz sú silno procyklické a ešte volatilnejšie ako investície. Tento výsledok odráža vysokú otvorenosť slovenskej ekonomiky. Počas hospodárskeho rastu rastie zahraničný dopyt po slovenskej produkcii, čo zvyšuje vývoz. Súčasne rastie dovoz vstupov potrebných na výrobu exportov, ale aj dovoz spotrebných a investičných tovarov. Počas recesií sa tento proces obracia a vývoz aj dovoz klesajú.</p>
+<figure class="align-default" id="graf-vcycle">
+<img alt="_images/graf_Vcycle.png" src="_images/graf_Vcycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.19 </span><span class="caption-text">Cyklická zložka HDP a vývozu</span><a class="headerlink" href="#graf-vcycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="graf-dcycle">
+<img alt="_images/graf_Dcycle.png" src="_images/graf_Dcycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.20 </span><span class="caption-text">Cyklická zložka HDP a dovozu</span><a class="headerlink" href="#graf-dcycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="vseobecna-cenova-hladina-a-miera-inflacie">
+<h3><span class="section-number">13.14.3. </span>Všeobecná cenová hladina a miera inflácie<a class="headerlink" href="#vseobecna-cenova-hladina-a-miera-inflacie" title="Link to this heading">#</a></h3>
+<p>Harmonizovaný index spotrebiteľských cien aj miera inflácie sú podľa slovenských údajov acyklické.</p>
+<p>Na údajoch ekonomiky Veľkej Británie v rozpätí rokov od 1861 po 1957 britský ekonóm A.W. Phillips odhadol nepriamu závislosť medzi rastom miezd a mierou nezamestnanosti <span class="bibtex-citation" id="id5">[<a class="reference internal" href="#id33" title="A. W. Phillips. The relation between unemployment and the rate of change of money wage rates in the united kingdom, 1861–1957. Economica, 25(100):283–299, 1958. doi:10.2307/2550759.">Phi58</a>]</span>. Tento vzťah sa stal známym ako Phillipsova krivka. V modernej makroekonómii sa Phillipsova krivka zvyčajne interpretuje ako vzťah medzi mierou inflácie a ekonomickou aktivitou.</p>
+<p>Intuitívne možno očakávať, že v období hospodárskeho rastu rastie dopyt po práci, klesá nezamestnanosť a rastú mzdy. Rast miezd predstavuje rast ceny výrobného faktora práca, ktorý sa môže premietnuť aj do rastu všeobecnej cenovej hladiny. Z tohto dôvodu mnohé makroekonomické modely predpokladajú kladnú súvislosť medzi ekonomickou aktivitou a infláciou.</p>
+<p>V posledných desaťročiach však empirické údaje často ukazujú, že tento vzťah je slabší, než sa pôvodne predpokladalo. Slovenské údaje naznačujú, že cenová hladina aj miera inflácie sú skôr acyklické. Zdá sa teda, že hospodársky cyklus vysvetľuje len malú časť zmien inflácie.</p>
+<figure class="align-default" id="graf-pcycle">
+<img alt="_images/graf_Pcycle.png" src="_images/graf_Pcycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.21 </span><span class="caption-text">Cyklická zložka HDP a HICP</span><a class="headerlink" href="#graf-pcycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-default" id="graf-picycle">
+<img alt="_images/graf_picycle.png" src="_images/graf_picycle.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.22 </span><span class="caption-text">Cyklická zložka HDP a miery inflácie.</span><a class="headerlink" href="#graf-picycle" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Tabuľka na <a class="reference internal" href="#tab-cyklicke"><span class="std std-numref">Obr. 13.23</span></a> sumarizuje cyklické charakteristiky vybraných časových radov v slovenskej ekonomike. Väčšina premenných je procyklická a súbežná s hospodárskym cyklom.</p>
+<figure class="align-default" id="tab-cyklicke">
+<img alt="_images/tab_cyklicke.png" src="_images/tab_cyklicke.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 13.23 </span><span class="caption-text">Cyklické charakteristiky vybraných slovenských časových radov.</span><a class="headerlink" href="#tab-cyklicke" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="stylizovane-fakty-slovenskej-ekonomiky">
+<h2><span class="section-number">13.15. </span>Štylizované fakty slovenskej ekonomiky<a class="headerlink" href="#stylizovane-fakty-slovenskej-ekonomiky" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Od roku 2000 možno v slovenskej ekonomike identifikovať tri významné recesie:</p>
+<ul class="simple">
+<li><p>globálnu finančnú krízu (2008–2009),</p></li>
+<li><p>pandémiu COVID-19 (2020),</p></li>
+<li><p>energetickú krízu (2021–2022).</p></li>
+</ul>
+</li>
+<li><p>Slovenská ekonomika dlhodobo rastie, ale tempo rastu sa postupne znižuje. Spomaľovanie rastu pozorujeme pri porovnaní jednotlivých dekád aj období medzi recesiami.</p></li>
+<li><p>Slovensko sa do roku 2010 výrazne približovalo priemernej ekonomickej výkonnosti Európskej únie, meranej HDP na obyvateľa v parite kúpnej sily. Po roku 2010 sa proces konvergencie výrazne spomalil.</p></li>
+<li><p>Miera inflácie v slovenskej ekonomike sa po roku 2000 výrazne menila. Po globálnej finančnej kríze nasledovalo obdobie nízkej inflácie až deflácie. Naopak, po pandémii COVID-19 a najmä počas energetickej krízy inflácia výrazne vzrástla.</p></li>
+<li><p>Súkromná spotreba je procyklická a súbežná s hospodárskym cyklom. Jej volatilita je približne rovnaká ako volatilita HDP.</p></li>
+<li><p>Jednotlivé zložky súkromnej spotreby sa líšia svojou cyklickou volatilitou. Spotreba trvanlivých statkov je viac než dvojnásobne volatilnejšia než HDP a výrazne volatilnejšia než spotreba netrvanlivých statkov. Zároveň je silne procyklická a súbežná s hospodárskym cyklom.</p></li>
+<li><p>Investície sú procyklické a súbežné s hospodárskym cyklom. Sú viac než dvojnásobne volatilnejšie než HDP.</p></li>
+<li><p>Vládne nákupy sú v slovenskej ekonomike procyklické a súbežné s hospodárskym cyklom.</p></li>
+<li><p>Vývoz a dovoz patria medzi najvolatilnejšie zložky ekonomiky. Obe premenné sú silne procyklické a súbežné s hospodárskym cyklom.</p></li>
+<li><p>Cenová hladina a miera inflácie sú v slovenskej ekonomike prevažne acyklické.</p></li>
+<li><p>Charakter hospodárskych recesií nie je rovnaký. Počas globálnej finančnej krízy reagovali najvýraznejšie investície, zatiaľ čo počas pandémie COVID-19 bol výraznejšie zasiahnutý spotrebiteľský dopyt.</p></li>
+</ol>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">13.16. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<div class="admonition-inspiracia admonition">
+<p class="admonition-title">Inšpirácia</p>
+<p>Mnohé z riešených a neriešných príkladov sú prevzaté a upravené z makroekonomických učebníc Stephena D. Williamsona <em>Macroeconomics</em> a Matthiasa Doepkeho, Andreasa Lehnerta a Andrewa Sellgrena <span class="bibtex-citation" id="id6">[<a class="reference internal" href="#id66">DLS00</a>, <a class="reference internal" href="#id17" title="Stephen D. Williamson. Macroeconomics. Pearson, 6 edition, 2018. ISBN 9780134472119.">Wil18</a>]</span>.</p>
+</div>
+<section id="priklad-jednoduche-zlozene-a-spojite-urokovanie">
+<h3><span class="section-number">13.16.1. </span>Príklad: Jednoduché, zložené a spojité úrokovanie<a class="headerlink" href="#priklad-jednoduche-zlozene-a-spojite-urokovanie" title="Link to this heading">#</a></h3>
+<p>Predstavte si, že investujete 1 000 € do dvojročného dlhopisu s ročnou úrokovou mierou 5 %. Vypočítajte budúcu hodnotu investície pri:</p>
+<ul class="simple">
+<li><p>jednoduchom úrokovaní,</p></li>
+<li><p>zloženom úrokovaní s ročnou frekvenciou,</p></li>
+<li><p>zloženom úrokovaní s dennou frekvenciou,</p></li>
+<li><p>spojitom úrokovaní.</p></li>
+</ul>
+<section id="id7">
+<h4><span class="section-number">13.16.1.1. </span>Jednoduché úrokovanie<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Pri jednoduchom úrokovaní platí</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=X_0(1+rt).
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+X_0=1000,\qquad r=0,05,\qquad t=2
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=1000(1+0,05\times2)=1100.
+\]</div>
+<p>Budúca hodnota investície je <span class="math notranslate nohighlight">\(\boxed{1\,100\text{ €}}\)</span>.</p>
+</section>
+<section id="zlozene-urokovanie-s-rocnou-frekvenciou">
+<h4><span class="section-number">13.16.1.2. </span>Zložené úrokovanie s ročnou frekvenciou<a class="headerlink" href="#zlozene-urokovanie-s-rocnou-frekvenciou" title="Link to this heading">#</a></h4>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=X_0(1+r)^t.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=1000(1,05)^2=1102,50.
+\]</div>
+<p>Budúca hodnota investície je <span class="math notranslate nohighlight">\(\boxed{1\,102,50\text{ €}}\)</span>.</p>
+</section>
+<section id="zlozene-urokovanie-s-dennou-frekvenciou">
+<h4><span class="section-number">13.16.1.3. </span>Zložené úrokovanie s dennou frekvenciou<a class="headerlink" href="#zlozene-urokovanie-s-dennou-frekvenciou" title="Link to this heading">#</a></h4>
+<p>Predpokladajme 365 dní v roku. Potom</p>
+<div class="math notranslate nohighlight">
+\[
+m=365.
+\]</div>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=X_0\left(1+\frac{r}{m}\right)^{mt}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=1000\left(1+\frac{0,05}{365}\right)^{730}.
+\]</div>
+<p>Po výpočte</p>
+<div class="math notranslate nohighlight">
+\[
+X_t\approx 1105,16.
+\]</div>
+<p>Budúca hodnota investície je <span class="math notranslate nohighlight">\(\boxed{1\,105,16\text{ €}}\)</span>.</p>
+</section>
+<section id="id8">
+<h4><span class="section-number">13.16.1.4. </span>Spojité úrokovanie<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>Pri spojitom úrokovaní platí
+ 
+$<span class="math notranslate nohighlight">\(
+X_t=X_0 e^{rt}.
+\)</span>$
+ 
+Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+X_t=1000e^{0,05\times2}=1000e^{0,1}\approx1105,17.
+\]</div>
+<p>Budúca hodnota investície je <span class="math notranslate nohighlight">\(\boxed{1\,105.17\text{ €}}\)</span>.</p>
+</section>
+<section id="porovnanie-vysledkov">
+<h4><span class="section-number">13.16.1.5. </span>Porovnanie výsledkov<a class="headerlink" href="#porovnanie-vysledkov" title="Link to this heading">#</a></h4>
+<p></p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-urokovanie">
+<caption><span class="caption-number">Tab. 13.2 </span><span class="caption-text">Porovnanie výsledkov</span><a class="headerlink" href="#tab-priklad-urokovanie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Metóda</p></th>
+<th class="head text-right"><p>Budúca hodnota (€)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jednoduché úrokovanie</p></td>
+<td class="text-right"><p>1 100,00</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zložené úrokovanie (ročne)</p></td>
+<td class="text-right"><p>1 102,50</p></td>
+</tr>
+<tr class="row-even"><td><p>Zložené úrokovanie (denne)</p></td>
+<td class="text-right"><p>1 105,16</p></td>
+</tr>
+<tr class="row-odd"><td><p>Spojité úrokovanie</p></td>
+<td class="text-right"><p>1 105,17</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Čím častejšie je úrok pripisovaný k istine, tým vyššia je budúca hodnota investície. Spojité úrokovanie predstavuje limitný prípad s nekonečným pripisovaním úroku k istine.</p>
+</section>
+</section>
+<section id="priklad-nominalny-a-realny-hdp-deflatory-a-retazenie-objemov">
+<h3><span class="section-number">13.16.2. </span>Príklad: Nominálny a reálny HDP, deflátory a reťazenie objemov<a class="headerlink" href="#priklad-nominalny-a-realny-hdp-deflatory-a-retazenie-objemov" title="Link to this heading">#</a></h3>
+<p>Uvažujme o ekonomike, v ktorej sa vyrábajú iba jablká a hrušky. V prvom roku sa vyprodukovalo 50 kg jabĺk a 100 kg hrušiek. Trhové ceny jabĺk a hrušiek boli 1,00 €/kg, respektíve 0,80 €/kg. V druhom roku sa vyprodukovalo 80 kg jabĺk a 120 kg hrušiek za ceny 1,50 €/kg a 0,90 €/kg. Údaje sumarizuje <a class="reference internal" href="#tab-priklad-retazenie"><span class="std std-numref">Tab. 13.3</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-retazenie">
+<caption><span class="caption-number">Tab. 13.3 </span><span class="caption-text">Produkcia a ceny v príkladovej ekonomike</span><a class="headerlink" href="#tab-priklad-retazenie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Produkt</p></th>
+<th class="head text-right"><p>Množstvo (rok 1)</p></th>
+<th class="head text-right"><p>Cena (rok 1)</p></th>
+<th class="head text-right"><p>Množstvo (rok 2)</p></th>
+<th class="head text-right"><p>Cena (rok 2)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jablká</p></td>
+<td class="text-right"><p>50 kg</p></td>
+<td class="text-right"><p>1,00 €/kg</p></td>
+<td class="text-right"><p>80 kg</p></td>
+<td class="text-right"><p>1,50 €/kg</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hrušky</p></td>
+<td class="text-right"><p>100 kg</p></td>
+<td class="text-right"><p>0,80 €/kg</p></td>
+<td class="text-right"><p>120 kg</p></td>
+<td class="text-right"><p>0,90 €/kg</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="zadanie">
+<h4><span class="section-number">13.16.2.1. </span>Zadanie<a class="headerlink" href="#zadanie" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>Vypočítajte nominálny HDP v oboch rokoch.</p></li>
+<li><p>Vypočítajte reálny HDP v cenách prvého roku, mieru rastu reálneho HDP a deflátor HDP.</p></li>
+<li><p>Vypočítajte reálny HDP v cenách druhého roku, mieru rastu reálneho HDP a deflátor HDP.</p></li>
+<li><p>Vypočítajte mieru rastu reálneho HDP reťazením objemov. Následne vypočítajte reálny HDP v oboch obdobiach pri použití prvého aj druhého bázického obdobia a príslušné deflátory.</p></li>
+</ol>
+</section>
+<section id="id9">
+<h4><span class="section-number">13.16.2.2. </span>Nominálny HDP<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<p><strong>Nominálny HDP</strong> v prvom roku je</p>
+<div class="math notranslate nohighlight">
+\[
+PY_1 = 1,00\times50 + 0,80\times100 = 130.
+\]</div>
+<p>Nominálny HDP v druhom roku je</p>
+<div class="math notranslate nohighlight">
+\[
+PY_2 = 1,50\times80 + 0,90\times120 = 228.
+\]</div>
+</section>
+<section id="ceny-v-prvom-roku">
+<h4><span class="section-number">13.16.2.3. </span>Ceny v prvom roku<a class="headerlink" href="#ceny-v-prvom-roku" title="Link to this heading">#</a></h4>
+<p><strong>Reálny HDP v cenách prvého roku</strong> je</p>
+<div class="math notranslate nohighlight">
+\[
+PY_2^{(1)} = 1,00\times80 + 0,80\times120 = 176.
+\]</div>
+<p><strong>Reálna miera rastu HDP</strong></p>
+<p>Hrubá miera rastu reálneho HDP je</p>
+<div class="math notranslate nohighlight">
+\[
+1+g_1(Y)=\frac{176}{130}=1,3538.
+\]</div>
+<p>Čistá miera rastu je</p>
+<div class="math notranslate nohighlight">
+\[
+g_1(Y)=\frac{176}{130}-1=0,3538.
+\]</div>
+<p>Reálny HDP vzrástol približne o <span class="math notranslate nohighlight">\(35,38\%\)</span>.</p>
+<p><strong>Deflátor HDP</strong></p>
+<p>Nominálny HDP v druhom roku je</p>
+<div class="math notranslate nohighlight">
+\[
+PY_2 = 1,50\times80 + 0,90\times120 = 228.
+\]</div>
+<p>Deflátor HDP v druhom roku je</p>
+<div class="math notranslate nohighlight">
+\[
+D
+=
+100\frac{228}{176}=129,55.
+\]</div>
+<p>To znamená, že cenová hladina v druhom roku bola približne o <span class="math notranslate nohighlight">\(29,55\%\)</span> vyššia než v prvom roku.</p>
+<p>Výsledky možno zhrnúť:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-realny1">
+<caption><span class="caption-number">Tab. 13.4 </span><span class="caption-text">Prvý bázický rok</span><a class="headerlink" href="#tab-priklad-realny1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukazovateľ</p></th>
+<th class="head text-right"><p>Rok 1</p></th>
+<th class="head text-right"><p>Rok 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nominálny HDP</p></td>
+<td class="text-right"><p>130</p></td>
+<td class="text-right"><p>228</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reálny HDP (ceny roku 1)</p></td>
+<td class="text-right"><p>130</p></td>
+<td class="text-right"><p>176</p></td>
+</tr>
+<tr class="row-even"><td><p>Deflátor HDP</p></td>
+<td class="text-right"><p>100</p></td>
+<td class="text-right"><p>129,55</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="ceny-v-druhom-roku">
+<h4><span class="section-number">13.16.2.4. </span>Ceny v druhom roku<a class="headerlink" href="#ceny-v-druhom-roku" title="Link to this heading">#</a></h4>
+<p>Teraz zvolíme za bázické obdobie druhý rok. Reálny HDP v druhom roku je preto zhodný s nominálnym HDP:</p>
+<div class="math notranslate nohighlight">
+\[
+P'Y' = 1,50\times80 + 0,90\times120 = 228.
+\]</div>
+<p>Reálny HDP v prvom roku vypočítaný v cenách druhého roku je</p>
+<div class="math notranslate nohighlight">
+\[
+P'Y = 1,50\times50 + 0,90\times100 = 165.
+\]</div>
+<p>Hrubá miera rastu reálneho HDP je</p>
+<div class="math notranslate nohighlight">
+\[
+1+g_2(Y)=\frac{228}{165}=1,3818.
+\]</div>
+<p>Čistá miera rastu reálneho HDP je</p>
+<div class="math notranslate nohighlight">
+\[
+g_2(Y)=\frac{228}{165}-1=0,3818.
+\]</div>
+<p>Reálny HDP preto vzrástol o <span class="math notranslate nohighlight">\(38,18\%\)</span>.</p>
+<p>Deflátor HDP v druhom roku je podľa definície</p>
+<div class="math notranslate nohighlight">
+\[
+D'_2=100\frac{228}{228}=100.
+\]</div>
+<p>Deflátor HDP v prvom roku je</p>
+<div class="math notranslate nohighlight">
+\[
+D_2=100\frac{130}{165}=78,79.
+\]</div>
+<p>To znamená, že cenová hladina v prvom roku predstavovala približne 78,8 % cenovej hladiny druhého roku.</p>
+<p>Výsledky možno zhrnúť:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-realny2">
+<caption><span class="caption-number">Tab. 13.5 </span><span class="caption-text">Druhý bázický rok</span><a class="headerlink" href="#tab-priklad-realny2" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukazovateľ</p></th>
+<th class="head text-right"><p>Rok 1</p></th>
+<th class="head text-right"><p>Rok 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nominálny HDP</p></td>
+<td class="text-right"><p>130</p></td>
+<td class="text-right"><p>228</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reálny HDP (ceny roku 2)</p></td>
+<td class="text-right"><p>165</p></td>
+<td class="text-right"><p>228</p></td>
+</tr>
+<tr class="row-even"><td><p>Deflátor HDP</p></td>
+<td class="text-right"><p>78,79</p></td>
+<td class="text-right"><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="realny-hdp-vypocitany-retazenim-objemov">
+<h4><span class="section-number">13.16.2.5. </span>Reálny HDP vypočítaný reťazením objemov<a class="headerlink" href="#realny-hdp-vypocitany-retazenim-objemov" title="Link to this heading">#</a></h4>
+<p>Pri výpočte reálneho HDP reťazením objemov používame geometrický priemer mier rastu vypočítaných pri použití prvého a druhého bázického obdobia:</p>
+<div class="math notranslate nohighlight">
+\[
+1+g(Y)=\sqrt{(1+g_1(Y))(1+g_2(Y))}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+1+g(Y)=\sqrt{1,3538\times1,3818}=1,3677.
+\]</div>
+<p>Čistá miera rastu reálneho HDP vypočítaná reťazením objemov je preto</p>
+<div class="math notranslate nohighlight">
+\[
+g(Y)=1,3677-1=0,3677.
+\]</div>
+<p>Reálny HDP vzrástol o <span class="math notranslate nohighlight">\(36,77\%\)</span>.</p>
+<p>Ak za bázicky rok zvolíme prvý rok, reálny HDP v druhom roku bude</p>
+<div class="math notranslate nohighlight">
+\[
+Y'^{1}=130\times1,3677=177,80.
+\]</div>
+<p>Ak za bázicky rok zvolíme druhý rok, reálny HDP v prvom roku bude</p>
+<div class="math notranslate nohighlight">
+\[
+Y^{2}=\frac{228}{1,3677}=166,71.
+\]</div>
+<p>Deflátor HDP pri použití prvého roku ako referenčného je</p>
+<div class="math notranslate nohighlight">
+\[
+D_1=100\frac{228}{177,80}=128,23.
+\]</div>
+<p>Deflátor HDP pri použití druhého roku ako referenčného je</p>
+<div class="math notranslate nohighlight">
+\[
+D_2=100\frac{130}{166,71}=77,98.
+\]</div>
+<p>Výsledky možno zhrnúť:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-retazenie-objemov">
+<caption><span class="caption-number">Tab. 13.6 </span><span class="caption-text">Reálny HDP vypočítaný reťazením objemov</span><a class="headerlink" href="#tab-priklad-retazenie-objemov" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukazovateľ</p></th>
+<th class="head text-right"><p>Rok 1</p></th>
+<th class="head text-right"><p>Rok 2</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nominálny HDP</p></td>
+<td class="text-right"><p>130</p></td>
+<td class="text-right"><p>228</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reálny HDP (reťazenie objemov)</p></td>
+<td class="text-right"><p>166,71</p></td>
+<td class="text-right"><p>177,80</p></td>
+</tr>
+<tr class="row-even"><td><p>Deflátor HDP</p></td>
+<td class="text-right"><p>77,98</p></td>
+<td class="text-right"><p>128,23</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Všimnite si, že miera rastu vypočítaná reťazením objemov leží medzi mierou rastu vypočítanou v cenách prvého roku a mierou rastu vypočítanou v cenách druhého roku:</p>
+<div class="math notranslate nohighlight">
+\[
+35,38\%&lt;36,77\%&lt;38,18\%.
+\]</div>
+<p>Práve odstránenie závislosti výsledku od voľby bázického obdobia je hlavným dôvodom, prečo moderné národné účty používajú reťazenie objemov.</p>
+</section>
+</section>
+<section id="rieseny-priklad-index-spotrebitelskych-cien">
+<h3><span class="section-number">13.16.3. </span>Riešený príklad: Index spotrebiteľských cien<a class="headerlink" href="#rieseny-priklad-index-spotrebitelskych-cien" title="Link to this heading">#</a></h3>
+<p>Predpokladajme, že množstvá jabĺk a hrušiek v prvom roku predstavujú spotrebný kôš priemernej domácnosti.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-cpi">
+<caption><span class="caption-number">Tab. 13.7 </span><span class="caption-text">Spotrebný kôš domácnosti</span><a class="headerlink" href="#tab-priklad-cpi" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Produkt</p></th>
+<th class="head text-right"><p>Množstvo</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Jablká</p></td>
+<td class="text-right"><p>50 kg</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hrušky</p></td>
+<td class="text-right"><p>100 kg</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ceny v prvom roku sú:</p>
+<ul class="simple">
+<li><p>jablká: 1,00 €/kg,</p></li>
+<li><p>hrušky: 0,80 €/kg.</p></li>
+</ul>
+<p>Ceny v druhom roku sú:</p>
+<ul class="simple">
+<li><p>jablká: 1,50 €/kg,</p></li>
+<li><p>hrušky: 0,90 €/kg.</p></li>
+</ul>
+<p><strong>Náklady na spotrebný kôš v prvom roku</strong></p>
+<div class="math notranslate nohighlight">
+\[
+C_1 = 1,00\times50 + 0,80\times100 = 130.
+\]</div>
+<p><strong>Náklady na ten istý spotrebný kôš v druhom roku</strong></p>
+<div class="math notranslate nohighlight">
+\[
+C_2 = 1,50\times50 + 0,90\times100 = 165.
+\]</div>
+<p><strong>Index spotrebiteľských cien</strong></p>
+<p>Index spotrebiteľských cien v druhom roku pri použití prvého roku ako bázického je</p>
+<div class="math notranslate nohighlight">
+\[
+CPI = 100\frac{165}{130}=126,92.
+\]</div>
+<p><strong>Miera inflácie</strong></p>
+<p>Hrubá miera inflácie je</p>
+<div class="math notranslate nohighlight">
+\[
+1+\pi=\frac{165}{130}=1,2692.
+\]</div>
+<p>Čistá miera inflácie je</p>
+<div class="math notranslate nohighlight">
+\[
+\pi=\frac{165}{130}-1=0,2692.
+\]</div>
+<p>Miera inflácie preto dosahuje</p>
+<div class="math notranslate nohighlight">
+\[
+\pi = 26,92\%.
+\]</div>
+<section id="vysledky">
+<h4><span class="section-number">13.16.3.1. </span>Výsledky<a class="headerlink" href="#vysledky" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-cpi-vysledok">
+<caption><span class="caption-number">Tab. 13.8 </span><span class="caption-text">Výpočet CPI a inflácie</span><a class="headerlink" href="#tab-priklad-cpi-vysledok" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Ukazovateľ</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Náklady na spotrebný kôš v roku 1</p></td>
+<td class="text-right"><p>130</p></td>
+</tr>
+<tr class="row-odd"><td><p>Náklady na spotrebný kôš v roku 2</p></td>
+<td class="text-right"><p>165</p></td>
+</tr>
+<tr class="row-even"><td><p>CPI</p></td>
+<td class="text-right"><p>126,92</p></td>
+</tr>
+<tr class="row-odd"><td><p>Inflácia</p></td>
+<td class="text-right"><p>26,92 %</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition-vsimnite-si admonition">
+<p class="admonition-title">Všimnite si</p>
+<p>Pri výpočte CPI používame stále rovnaký spotrebný kôš. Pri výpočte reálneho HDP sme naopak porovnávali produkciu ekonomiky pri rôznych množstvách tovarov a služieb. Preto sa pri HDP používajú objemové indexy a reťazenie objemov, zatiaľ čo pri spotrebiteľských cenách sa vychádza zo spotrebného koša domácností.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">13.17. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-urokovanie">
+<h3><span class="section-number">13.17.1. </span>Príklad: Úrokovanie<a class="headerlink" href="#priklad-urokovanie" title="Link to this heading">#</a></h3>
+<p>Ročná úroková miera kreditnej karty je 14,2 %. Aká je denná úroková miera?</p>
+</section>
+<section id="id10">
+<h3><span class="section-number">13.17.2. </span>Príklad: Úrokovanie<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Úžerník pýta úrok 30 € za týždeň pôžičky v hodnote 1000 €. Aká je jeho ročná úroková miera? (predpokladajte, že rok má 52 týždňov).</p>
+</section>
+<section id="id11">
+<h3><span class="section-number">13.17.3. </span>Príklad: Úrokovanie<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>Dnes ráno ste investovali 10 000 € do fondov s 5,7% ročnou úrokovou mierou. V ktorý deň bude hodnota investície aspoň 15 000 €? (Odpovedzte v počtoch dňoch od dnes. Úroky prichádzajú každý deň, ale úrokovanie je ročné.)</p>
+</section>
+<section id="priklad-miera-rastu">
+<h3><span class="section-number">13.17.4. </span>Príklad: Miera rastu<a class="headerlink" href="#priklad-miera-rastu" title="Link to this heading">#</a></h3>
+<p>Predpokladajte, že reálny HDP Európskej únie bude nasledujúce polstoročie rásť konštantnou ročnou spojito vyjadrenou mierou 1,5 %. Ako dlho bude trvať, kým sa reálny HDP zdvojnásobí?</p>
+</section>
+<section id="id12">
+<h3><span class="section-number">13.17.5. </span>Príklad: Miera rastu<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>Predpokladajte, že každý rok sa vyrúbe 4,6 % zostávajúcej rozlohy lesov. Ako dlho bude trvať, kým sa vyrúbe polovica lesov?</p>
+</section>
+<section id="id13">
+<h3><span class="section-number">13.17.6. </span>Príklad: Miera rastu<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<p>Počet obyvateľov sveta  bol približne 679 mil. v roku 1 700 a 954 mil. v roku 1 800.</p>
+<ol class="arabic simple">
+<li><p>Aká bola spojito vyjadrená medziročná miera rastu obyvateľstva medzi rokmi 1 700 a 1 800?</p></li>
+<li><p>Predpokladajte, že rovnako rýchlo rástla svetová populácia od čias Adama a Evy až po rok 1 800. Kedy asi boli Adam a Eva vyhnaní z Rajskej záhrady? (Pomôcka: koľko bolo vtedy obyvateľov sveta?)</p></li>
+</ol>
+</section>
+<section id="id14">
+<h3><span class="section-number">13.17.7. </span>Príklad: Miera rastu<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>Podľa údajov zo Svetovej banky bol v roku 1984 reálny ročný príjem priemerného Američana 15 400 dolárov, kým reálny ročný príjem priemerného Japonca v tom istom roku bol 10 600 dolárov. V období medzi rokmi 1965 a 1984 rástol priemerný reálny ročný príjem obyvateľa ročnou (spojito vyjadrenou) mierou 1,7 % v USA a 4,7 % v Japonsku. Ak by tieto miery rastu zostali v ďalších rokoch po 1984 také isté ako v rokoch 1965 – 1984, v ktorom roku by mali priemerný Američan a Japonec rovnaký príjem? Aký veľký by bol?</p>
+</section>
+<section id="priklad-nominalny-a-realny-hdp">
+<h3><span class="section-number">13.17.8. </span>Príklad: Nominálny a reálny HDP<a class="headerlink" href="#priklad-nominalny-a-realny-hdp" title="Link to this heading">#</a></h3>
+<p>Predpokladajte, že suma dane z pridanej hodnoty odvedenej za r. 2020 v hypotetickom štáte bola 120 mld. toliarov. Sadzba dane z pridanej hodnoty bola 25 %.</p>
+<ol class="arabic simple">
+<li><p>Vypočítajte nominálny HDP v danom štáte za rok 2020 (pomôcka: sumu dane z pridanej hodnoty treba tiež pripočítať do HDP)</p></li>
+<li><p>Za predpokladu konštantnej ročnej miery inflácie v štáte 6 % v období 2010 – 2020 vypočítajte reálny HDP v cenách roku 2012.</p></li>
+<li><p>Nominálny HDP v roku 2012 bol 315 mld. toliarov. Ako vzrástol nominálny a ako reálny HDP?</p></li>
+<li><p>O koľko percent vzrástla všeobecná cenová hladina v r. 2020 v porovnaní s rokom 2012? Aká je hodnota 1 toliara z roku 2012 v roku 2020?</p></li>
+</ol>
+</section>
+<section id="priklad-nominalny-a-realny-hdp-cenove-indexy-a-miera-inflacie">
+<h3><span class="section-number">13.17.9. </span>Príklad: Nominálny a reálny HDP, cenové indexy a miera inflácie<a class="headerlink" href="#priklad-nominalny-a-realny-hdp-cenove-indexy-a-miera-inflacie" title="Link to this heading">#</a></h3>
+<p>Ekonomika produkuje nábytok a automobily. V <a class="reference internal" href="#tab-priklad-nabytok-auto"><span class="std std-numref">Tab. 13.9</span></a> sú uvedené množstvá produkcie a ceny za ktoré sa predávali v dvoch po sebe nasledujúcich rokoch.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-nabytok-auto">
+<caption><span class="caption-number">Tab. 13.9 </span><span class="caption-text">Produkcia a ceny v ekonomike</span><a class="headerlink" href="#tab-priklad-nabytok-auto" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Rok</p></th>
+<th class="head text-right"><p>Nábytok (ks)</p></th>
+<th class="head text-right"><p>Cena nábytku (€/ks)</p></th>
+<th class="head text-right"><p>Automobily (ks)</p></th>
+<th class="head text-right"><p>Cena automobilu (€/ks)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td class="text-right"><p>500</p></td>
+<td class="text-right"><p>1 000</p></td>
+<td class="text-right"><p>100</p></td>
+<td class="text-right"><p>10 000</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td class="text-right"><p>800</p></td>
+<td class="text-right"><p>1 250</p></td>
+<td class="text-right"><p>120</p></td>
+<td class="text-right"><p>16 000</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>Vypočítajte nominálny HDP v oboch obdobiach a jeho mieru rastu.</p></li>
+<li><p>Vypočítajte reálny HDP v oboch obdobiach a jeho mieru rastu voľbou prvého aj druhého bázického obdobia.</p></li>
+<li><p>Vypočítajte reálny HDP v oboch obdobiach reťazením objemov v cenách z prvého aj druhého roku. Vypočítajte mieru rastu reálneho HDP reťazením objemov.</p></li>
+<li><p>K úloham 2. a 3. vypočítajte prislúchajúce deflátory</p></li>
+</ol>
+</section>
+<section id="priklad-index-spotrebitelskych-cien">
+<h3><span class="section-number">13.17.10. </span>Príklad: Index spotrebiteľských cien<a class="headerlink" href="#priklad-index-spotrebitelskych-cien" title="Link to this heading">#</a></h3>
+<p>Je daný nasledujúci spotrebný kôš a ceny jeho jednotlivých položiek v rokoch 2021 a 2020</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-hicp">
+<caption><span class="caption-number">Tab. 13.10 </span><span class="caption-text">Spotrebný kôš domácnosti</span><a class="headerlink" href="#tab-priklad-hicp" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Položka</p></th>
+<th class="head text-right"><p>Množstvo</p></th>
+<th class="head text-right"><p>Cena (rok 2020)</p></th>
+<th class="head text-right"><p>Cena (rok 2021)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Potraviny</p></td>
+<td class="text-right"><p>100</p></td>
+<td class="text-right"><p>100</p></td>
+<td class="text-right"><p>150</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bývanie</p></td>
+<td class="text-right"><p>150</p></td>
+<td class="text-right"><p>150</p></td>
+<td class="text-right"><p>200</p></td>
+</tr>
+<tr class="row-even"><td><p>Doprava</p></td>
+<td class="text-right"><p>25</p></td>
+<td class="text-right"><p>300</p></td>
+<td class="text-right"><p>325</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="arabic simple">
+<li><p>Vypočítajte spotrebiteľský cenový index CPI tohto spotrebného koša v roku 2021 v cenách roku 2020.</p></li>
+<li><p>Vypočítajte mieru inflácie za rok 2021 v porovnaní s rokom 2020.</p></li>
+</ol>
+</section>
+</section>
+<section id="literatura">
+<h2><span class="section-number">13.18. </span>Literatúra<a class="headerlink" href="#literatura" title="Link to this heading">#</a></h2>
+<div class="docutils container" id="id15">
+<div role="list" class="citation-list">
+<div class="citation" id="id31" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">BK99</a><span class="fn-bracket">]</span></span>
+<p>Marianne Baxter and Robert G. King. Measuring business cycles: approximate band-pass filters for economic time series. <em>Review of Economics and Statistics</em>, 81(4):575–593, 1999. URL: <a class="reference external" href="https://www.jstor.org/stable/2646708">https://www.jstor.org/stable/2646708</a>, <a class="reference external" href="https://doi.org/10.1162/003465399558454">doi:10.1162/003465399558454</a>.</p>
+</div>
+<div class="citation" id="id66" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">DLS00</a><span class="fn-bracket">]</span></span>
+<p><strong>missing publisher in DLS2000</strong></p>
+</div>
+<div class="citation" id="id30" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">Ham18</a><span class="fn-bracket">]</span></span>
+<p>James D. Hamilton. Why you should never use the hodrick-prescott filter. <em>Review of Economics and Statistics</em>, 100(5):831–843, 2018. <a class="reference external" href="https://doi.org/10.1162/rest_a_00706">doi:10.1162/rest_a_00706</a>.</p>
+</div>
+<div class="citation" id="id29" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">HP97</a><span class="fn-bracket">]</span></span>
+<p>Robert J. Hodrick and Edward C. Prescott. Postwar u.s. business cycles: an empirical investigation. <em>Journal of Money, Credit and Banking</em>, 29(1):1–16, 1997. <a class="reference external" href="https://doi.org/10.2307/2953682">doi:10.2307/2953682</a>.</p>
+</div>
+<div class="citation" id="id33" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">Phi58</a><span class="fn-bracket">]</span></span>
+<p>A. W. Phillips. The relation between unemployment and the rate of change of money wage rates in the united kingdom, 1861–1957. <em>Economica</em>, 25(100):283–299, 1958. <a class="reference external" href="https://doi.org/10.2307/2550759">doi:10.2307/2550759</a>.</p>
+</div>
+<div class="citation" id="id32" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">USG17</a><span class="fn-bracket">]</span></span>
+<p>Martin Uribe and Stephanie Schmitt-Grohé. <em>Open Economy Macroeconomics</em>. Princeton University Press, 2017. ISBN 9780691158778.</p>
+</div>
+<div class="citation" id="id17" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">Wil18</a><span class="fn-bracket">]</span></span>
+<p>Stephen D. Williamson. <em>Macroeconomics</em>. Pearson, 6 edition, 2018. ISBN 9780134472119.</p>
+</div>
+<div class="citation" id="id28" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">EuropeanCommission13</a><span class="fn-bracket">]</span></span>
+<p>European Commission. <em>European System of Accounts 2010</em>. Publications Office of the European Union, Luxembourg, 2013. ISBN 978-92-79-31242-7. URL: <a class="reference external" href="https://doi.org/10.2785/16644">https://doi.org/10.2785/16644</a>, <a class="reference external" href="https://doi.org/10.2785/16644">doi:10.2785/16644</a>.</p>
+</div>
+<div class="citation" id="id26" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">Eurostat26</a><span class="fn-bracket">]</span></span>
+<p>Eurostat. Eurostat database. 2026. Prístup: 11. september 2026. URL: <a class="reference external" href="https://ec.europa.eu/eurostat/data/database">https://ec.europa.eu/eurostat/data/database</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Finan.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">12. </span>Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="UvodRast.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">14. </span>Úvod do teórie rastu</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#urokovanie">13.1. Úrokovanie</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#jednoduche-urokovanie">13.1.1. Jednoduché úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie">13.1.2. Zložené úrokovanie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buduca-a-sucasna-hodnota">13.2. Budúca a súčasná hodnota</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spojite-urokovanie">13.3. Spojité úrokovanie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu">13.4. Miera rastu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nominalny-hdp">13.5. Nominálny HDP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#realny-hdp">13.6. Reálny HDP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deflatory">13.7. Deflátory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cenove-indexy">13.8. Cenové indexy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-inflacie">13.9. Miera inflácie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#parita-kupnej-sily">13.10. Parita kúpnej sily</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hospodarske-cykly">13.11. Hospodárske cykly</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-v-slovenskej-ekonomike">13.11.1. Recesie v slovenskej ekonomike</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cyklicke-charakteristiky">13.12. Cyklické charakteristiky</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sezonna-zlozka">13.12.1. Sezónna zložka</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trendova-a-cyklicka-zlozka">13.12.2. Trendová a cyklická zložka</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trendova-a-cyklicka-zlozka-v-slovenskej-ekonomike">13.12.3. Trendová a cyklická zložka v slovenskej ekonomike</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#charakteristiky">13.12.4. Charakteristiky</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recesie-a-rast-v-ekonomike-slovenska">13.13. Recesie a rast v ekonomike Slovenska</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hospodarske-cykly-v-ekonomike-slovenska">13.14. Hospodárske cykly v ekonomike Slovenska</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spotreba-investicie-a-friedmanova-hypoteza-trvaleho-prijmu-v-praxi">13.14.1. Spotreba, investície a Friedmanova hypotéza trvalého príjmu v praxi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vladne-nakupy-vyvoz-a-dovoz">13.14.2. Vládne nákupy, vývoz a dovoz</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vseobecna-cenova-hladina-a-miera-inflacie">13.14.3. Všeobecná cenová hladina a miera inflácie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stylizovane-fakty-slovenskej-ekonomiky">13.15. Štylizované fakty slovenskej ekonomiky</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">13.16. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-jednoduche-zlozene-a-spojite-urokovanie">13.16.1. Príklad: Jednoduché, zložené a spojité úrokovanie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">13.16.1.1. Jednoduché úrokovanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie-s-rocnou-frekvenciou">13.16.1.2. Zložené úrokovanie s ročnou frekvenciou</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zlozene-urokovanie-s-dennou-frekvenciou">13.16.1.3. Zložené úrokovanie s dennou frekvenciou</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">13.16.1.4. Spojité úrokovanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#porovnanie-vysledkov">13.16.1.5. Porovnanie výsledkov</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp-deflatory-a-retazenie-objemov">13.16.2. Príklad: Nominálny a reálny HDP, deflátory a reťazenie objemov</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#zadanie">13.16.2.1. Zadanie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">13.16.2.2. Nominálny HDP</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-v-prvom-roku">13.16.2.3. Ceny v prvom roku</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ceny-v-druhom-roku">13.16.2.4. Ceny v druhom roku</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#realny-hdp-vypocitany-retazenim-objemov">13.16.2.5. Reálny HDP vypočítaný reťazením objemov</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rieseny-priklad-index-spotrebitelskych-cien">13.16.3. Riešený príklad: Index spotrebiteľských cien</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#vysledky">13.16.3.1. Výsledky</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">13.17. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-urokovanie">13.17.1. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">13.17.2. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">13.17.3. Príklad: Úrokovanie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-miera-rastu">13.17.4. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">13.17.5. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">13.17.6. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">13.17.7. Príklad: Miera rastu</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp">13.17.8. Príklad: Nominálny a reálny HDP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-nominalny-a-realny-hdp-cenove-indexy-a-miera-inflacie">13.17.9. Príklad: Nominálny a reálny HDP, cenové indexy a miera inflácie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-index-spotrebitelskych-cien">13.17.10. Príklad: Index spotrebiteľských cien</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#literatura">13.18. Literatúra</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

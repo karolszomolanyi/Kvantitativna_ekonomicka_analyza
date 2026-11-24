@@ -1,0 +1,2525 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>14. Úvod do teórie rastu &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UvodRast';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="15. Konvergencia a ustálený rast" href="Rast.html" />
+    <link rel="prev" title="13. Makroekonomické merania v čase a priestore" href="DynMer.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/UvodRast.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Úvod do teórie rastu</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solowov-model-rastu">14.1. Solowov model rastu</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#produkcna-funkcia">14.1.1. Produkčná funkcia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu-prace">14.1.2. Miera rastu práce</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uspory">14.1.3. Úspory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zakladna-rovnica-solowovho-modelu">14.2. Základná rovnica Solowovho modelu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-interpretacia-zakladnej-rovnice-solowovho-modelu">14.3. Grafická interpretácia základnej rovnice Solowovho modelu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casove-rady">14.4. Časové rady</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ustaleny-stav">14.5. Ustálený stav</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-identifikacia-ustaleneho-stavu">14.6. Grafická identifikácia ustáleného stavu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extenzivne-premenne-v-ustalenom-stave">14.7. Extenzívne premenné v ustálenom stave</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zlate-pravidlo">14.8. Zlaté pravidlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">14.9. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-ustaleny-a-prechodny-stav">14.9.1. Príklad: Ustálený a prechodný stav</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">14.9.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">14.9.1.2. Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">14.9.1.3. Časové rady</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-extenzivne-premenne-v-ustalenom-stave">14.9.2. Príklad: Extenzívne premenné v ustálenom stave</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">14.9.2.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu-extenzivnych-premennych">14.9.2.1.1. Miera rastu extenzívnych premenných</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">14.9.2.2. Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graf-priebehu-casoveho-radu">14.9.2.3. Graf priebehu časového radu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#miery-rastu-extenzivnych-premennych-v-dalsich-obdobiach">14.9.2.4. Miery rastu extenzívnych premenných v ďalších obdobiach</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-zlate-pravidlo">14.9.3. Príklad: Zlaté pravidlo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">14.9.3.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">14.9.3.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-kalibracia-solowovho-modelu">14.9.4. Príklad: Kalibrácia Solowovho modelu</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">14.10. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-solowov-model">14.10.1. Príklad: Solowov model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">14.10.2. Príklad: Kalibrácia Solowovho modelu</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="uvod-do-teorie-rastu">
+<h1><span class="section-number">14. </span>Úvod do teórie rastu<a class="headerlink" href="#uvod-do-teorie-rastu" title="Link to this heading">#</a></h1>
+<p>Pri pohľade na dlhodobý hospodársky vývoj krajín možno rozlíšiť tri charakteristické rastové príbehy.</p>
+<ol class="arabic simple">
+<li><p><strong>Vyspelé ekonomiky</strong>, medzi ktoré patria Spojené štáty a krajiny západnej Európy, zaznamenávali počas veľmi dlhého obdobia relatívne stabilný rast reálneho HDP na obyvateľa. Priemerná ročná miera rastu HDP na obyvateľa dosahovala v USA od konca občianskej vojny v 19. storočí až po globálnu finančnú krízu v roku 2008 približne 2 %. Aj relatívne nízke tempo rastu, ak pretrváva mnoho desaťročí, vedie k obrovskému kumulatívnemu zvýšeniu životnej úrovne. Dnešné veľké rozdiely v HDP na obyvateľa sú preto do značnej miery výsledkom rozdielneho hospodárskeho vývoja počas dlhého obdobia. Ekonomický rast pritom zohráva významnú úlohu pri zlepšovaní materiálnych životných podmienok.</p></li>
+<li><p><strong>Konvergujúce ekonomiky</strong> začínali s podstatne nižšou úrovňou HDP na obyvateľa, ale počas určitého obdobia rástli výrazne rýchlejšie ako vyspelé ekonomiky. Medzi najvýraznejšie historické príklady patria ekonomiky východnej Ázie. Japonsko, Singapur, Hongkong či Južná Kórea dokázali počas povojnových desaťročí výrazne zmenšiť rozdiel v životnej úrovni voči najvyspelejším ekonomikám. Dnes patria medzi ekonomiky s vysokou úrovňou HDP na obyvateľa.</p></li>
+<li><p><strong>Ekonomiky s pomalou alebo neúspešnou konvergenciou</strong> zostávajú napriek hospodárskemu rastu relatívne chudobné. Ich HDP na obyvateľa môže rásť, jeho rast však nestačí na výraznejšie približovanie sa k vyspelým ekonomikám. V jednotlivých obdobiach môžu niektoré z týchto ekonomík zaznamenať aj dlhšie obdobia stagnácie alebo poklesu životnej úrovne.</p></li>
+</ol>
+<dl class="simple myst">
+<dt>Konvergencia</dt><dd><p>Konvergenciou budeme označovať proces, pri ktorom chudobnejšia ekonomika rastie rýchlejšie ako bohatšia ekonomika, takže sa rozdiel v ich HDP na obyvateľa postupne zmenšuje.</p>
+</dd>
+</dl>
+<p>Slovenská ekonomika predstavuje ďalší zaujímavý príklad konvergencie. Podobne ako ostatné postkomunistické ekonomiky strednej a východnej Európy vstupovalo Slovensko do obdobia transformácie s podstatne nižšou úrovňou HDP na obyvateľa než západoeurópske ekonomiky. HDP na obyvateľa prepočítaný paritou kúpnej sily dosahoval v polovici 90. rokov minulého storočia približne 51 % priemernej úrovne EÚ.</p>
+<p>Ako vyplýva z <a class="reference internal" href="DynMer.html#graf-ppp"><span class="std std-numref">Obr. 13.8</span></a>, slovenská ekonomika rástla mimoriadne rýchlo najmä v období pred globálnou finančnou krízou, keď sa HDP na obyvateľa prepočítaný pomocou parity kúpnej sily zvýšil približne na tri štvrtiny európskeho priemeru. Slovenský HDP na obyvateľa sa následne pohyboval približne medzi 70 % a 80 % priemeru EÚ a do roku 2025 nedošlo k ďalšiemu významnému približovaniu.</p>
+<p>Slovenská skúsenosť tak obsahuje prvky dvoch odlišných rastových príbehov. Rýchly rast a približovanie sa k vyspelejším ekonomikám pripomínajú konvergenčný rast, aký v minulosti zaznamenali úspešné ekonomiky východnej Ázie. Následné spomalenie konvergencie však ukazuje, že rýchly rast nemusí automaticky pokračovať navždy. Ako ukazuje <a class="reference internal" href="DynMer.html#tab-rast-udalosti"><span class="std std-numref">Obr. 13.12</span></a>, priemerné tempo rastu HDP na obyvateľa bolo pred globálnou finančnou krízou výrazne vyššie ako v nasledujúcich obdobiach. V období pred globálnou finančnou krízou bol priemerný rast HDP na obyvateľa vysoko nad 2 %, v období medzi globálnou finančnou krízou a pandémiou COVID-19 mierne nad 2 % a v súčasnom období dokonca pod 2 %.</p>
+<p>Tieto rozdielne skúsenosti predstavujú základné otázky teórie ekonomického rastu. Prečo niektoré ekonomiky dokážu dlhodobo zvyšovať životnú úroveň? Prečo chudobnejšie ekonomiky niekedy rýchlo dobiehajú bohatšie krajiny, zatiaľ čo iné zaostávajú? Akú úlohu pri ekonomickom raste zohrávajú akumulácia kapitálu, miera sporenia, populačný vývoj a rast produktivity? A do akej miery môže dlhodobý ekonomický rast ovplyvniť hospodárska politika?</p>
+<p>Konštrukcia teórie, ktorá nám umožní na tieto otázky odpovedať, je predmetom tejto a nasledujúcej kapitoly. Teória ekonomického rastu vysvetľuje vývoj ekonomiky z dlhodobého hľadiska. Neskôr ju doplníme teóriou hospodárskych cyklov, ktorá sa sústreďuje na krátkodobé výkyvy ekonomickej aktivity.</p>
+<section id="solowov-model-rastu">
+<h2><span class="section-number">14.1. </span>Solowov model rastu<a class="headerlink" href="#solowov-model-rastu" title="Link to this heading">#</a></h2>
+<p>Na vysvetlenie dlhodobých trendov v ekonomike sa využíva model, ktorý nezávisle od seba prezentovali Solow <span class="bibtex-citation" id="id1">[<a class="reference internal" href="Literatura.html#id20" title="Robert M. Solow. A contribution to the theory of economic growth. The Quarterly Journal of Economics, 70(1):65–94, 1956. doi:10.2307/1884513.">Sol56</a>]</span> a Swan <span class="bibtex-citation" id="id2">[<a class="reference internal" href="Literatura.html#id21" title="Trevor W. Swan. Economic growth and capital accumulation. Economic Record, 32(2):334–361, 1956. doi:10.1111/j.1475-4932.1956.tb00434.x.">Swa56</a>]</span>. Model budeme ďalej označovať ako <strong>Solowov model rastu</strong>.</p>
+<p>Od kapitoly <a class="reference internal" href="Stati.html"><span class="doc">Voľný čas a spotreba</span></a> sme predpokladali, že výstup ekonomiky je kompozitný statok, ktorý predstavuje celkovú produkciu tovarov a služieb. Statok je vyrábaný firmami a spotrebovávaný spotrebiteľmi. Predpokladáme zatvorenú ekonomiku bez vlády.</p>
+<section id="produkcna-funkcia">
+<h3><span class="section-number">14.1.1. </span>Produkčná funkcia<a class="headerlink" href="#produkcna-funkcia" title="Link to this heading">#</a></h3>
+<p>Technologické možnosti firiem sú opísané makroekonomickou produkčnou funkciou, ktorú sme predstavili v časti <a class="reference internal" href="Produk.html#kap-makro-pf"><span class="std std-ref">Makroekonomické vlastnosti produkčnej funkcie</span></a>.</p>
+<p>Zopakujme, že vstupmi produkčnej funkcie sú kapitál <span class="math notranslate nohighlight">\(K\)</span> a práca <span class="math notranslate nohighlight">\(N\)</span>. Efektívnosť využívania vstupov vo výrobe vyjadruje celková produktivita faktorov <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<p>Z hľadiska dlhodobého ekonomického rastu celkovú produktivitu faktorov <span class="math notranslate nohighlight">\(A\)</span> interpretujeme ako <strong>úroveň technológie</strong>.</p>
+<p>O produkčnej funkcii <a class="reference internal" href="Produk.html#equation-r-makro-pf">(2.6)</a> predpokladáme tieto vlastnosti:</p>
+<ol class="arabic simple">
+<li><p>je rastúca v oboch vstupoch, kapitáli a práci,</p></li>
+<li><p>je konkávna,</p></li>
+<li><p>elasticita výstupu podľa celkovej produktivity faktorov sa rovná 1,</p></li>
+<li><p>prechádza začiatkom súradnicového systému,</p></li>
+<li><p>má konštantné výnosy z rozsahu.</p></li>
+</ol>
+<p>Vďaka konštantným výnosom z rozsahu možno produkčnú funkciu vyjadriť v intenzívnom tvare <a class="reference internal" href="Produk.html#equation-intenzivna-pf">(2.18)</a>.</p>
+<p>Intenzívny kapitál <span class="math notranslate nohighlight">\(k\)</span> a intenzívny výstup yyy sú vyjadrené na jednotku práce. Ak predpokladáme konštantný počet jednotiek práce na obyvateľa, môžeme intenzívny výstup <span class="math notranslate nohighlight">\(y\)</span> interpretovať aj ako HDP na obyvateľa.</p>
+</section>
+<section id="miera-rastu-prace">
+<h3><span class="section-number">14.1.2. </span>Miera rastu práce<a class="headerlink" href="#miera-rastu-prace" title="Link to this heading">#</a></h3>
+<p>Predpokladáme, že populácia spotrebiteľov rastie konštantnou mierou <span class="math notranslate nohighlight">\(n\)</span>. Keďže predpokladáme konštantný počet jednotiek práce na obyvateľa, rovnakou mierou rastie aj práca:</p>
+<div class="math notranslate nohighlight" id="equation-r-rast-prace">
+<span class="eqno">(14.1)<a class="headerlink" href="#equation-r-rast-prace" title="Link to this equation">#</a></span>\[\frac{N'}{N}=1+n.\]</div>
+<p>Podľa konvencie tejto učebnice premenná označená apostrofom predstavuje hodnotu v nasledujúcom období; <span class="math notranslate nohighlight">\(N'\)</span> je práca v ďalšom období.</p>
+</section>
+<section id="uspory">
+<h3><span class="section-number">14.1.3. </span>Úspory<a class="headerlink" href="#uspory" title="Link to this heading">#</a></h3>
+<p>V predchádzajúcich modeloch sme ukázali, že rovnováha na jednotlivých trhoch zabezpečuje, aby sa zároveň spĺňali identity systému národných účtov. Aplikovaním Walrasovho zákona (<a class="reference internal" href="Rovnovaha.html#kap-walras"><span class="std std-ref">Walrasov zákon</span></a>) sme napríklad v <a class="reference internal" href="StaticModel.html"><span class="doc">Statický model všeobecnej rovnováhy</span></a> ukázali, že rovnováha na trhu práce vedie k rovnosti medzi vytvoreným a použitým výstupom. Podobne sme v <a class="reference internal" href="Finan.html"><span class="doc">Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</span></a> ukázali súvislosť medzi rovnováhou na finančnom trhu, úsporami a použitím príjmu.</p>
+<p>V Solowovom modeli nebudeme konkurenčnú rovnováhu jednotlivých trhov explicitne odvodzovať. Správanie spotrebiteľov zjednodušíme predpokladom, že v každom období usporia konštantný podiel <span class="math notranslate nohighlight">\(s\)</span> svojho príjmu:</p>
+<div class="math notranslate nohighlight" id="equation-r-miera-sporenia">
+<span class="eqno">(14.2)<a class="headerlink" href="#equation-r-miera-sporenia" title="Link to this equation">#</a></span>\[S=sY.\]</div>
+<p>Podiel výstupu <span class="math notranslate nohighlight">\(s\)</span>, ktorý spotrebitelia usporia, nazývame <strong>mierou sporenia</strong>. Predpokladáme, že:</p>
+<div class="math notranslate nohighlight">
+\[
+0 &lt; s &lt; 1.
+\]</div>
+<p>Predpokladáme pritom, že trhy sú v rovnováhe, a preto sa musia spĺňať aj príslušné identity systému národných účtov. Keďže ekonomika je zatvorená a neuvažujeme vládu, jej bežný účet sa rovná nule a agregátne úspory sa musia rovnať agregátnym investíciám:</p>
+<div class="math notranslate nohighlight" id="equation-identita-s-i-zatvorena">
+<span class="eqno">(14.3)<a class="headerlink" href="#equation-identita-s-i-zatvorena" title="Link to this equation">#</a></span>\[S=I,\]</div>
+<p>čo zodpovedá identite úspor a investícií <a class="reference internal" href="Zaklad.html#equation-identita-s-i">(10.4)</a>.</p>
+<p>Z identity rozdelenia agregovaného príjmu <a class="reference internal" href="Zaklad.html#equation-r-agregovany-prijem">(10.3)</a> vyjadríme reálnu spotrebu. Ekonomika je uzavretá, a preto sa čisté príjmy faktorov a čisté jednostranné transfery zo zahraničia rovnajú nule. V modeli neuvažujeme vládu, takže vládne nákupy sa rovnajú nule. Identitu rozdelenia agregovaného príjmu môžeme preto vyjadriť v tvare:</p>
+<div class="math notranslate nohighlight" id="equation-r-rozdelenie-mala-zatvorena">
+<span class="eqno">(14.4)<a class="headerlink" href="#equation-r-rozdelenie-mala-zatvorena" title="Link to this equation">#</a></span>\[Y=C+S.\]</div>
+<p>Kombináciou <a class="reference internal" href="#equation-identita-s-i-zatvorena">(14.3)</a> a <a class="reference internal" href="#equation-r-rozdelenie-mala-zatvorena">(14.4)</a> získame</p>
+<div class="math notranslate nohighlight" id="equation-r-solow-spotreba">
+<span class="eqno">(14.5)<a class="headerlink" href="#equation-r-solow-spotreba" title="Link to this equation">#</a></span>\[C=(1-s)Y.\]</div>
+<p>Z každej jednotky výstupu spotrebitelia usporia podiel <span class="math notranslate nohighlight">\(s\)</span> a spotrebujú podiel <span class="math notranslate nohighlight">\(1-s\)</span>.</p>
+<p>Zopakujme, že hrubé súkromné investície (<a class="reference internal" href="Zaklad.html#def-i"><span class="std std-ref">Hrubé investície</span></a>) pozostávajú z čistých investícií (<a class="reference internal" href="Zaklad.html#def-ciste-i"><span class="std std-ref">Čisté investície</span></a>) a odpisov (<a class="reference internal" href="Zaklad.html#def-odpisy"><span class="std std-ref">Odpisy</span></a>).</p>
+<p>Čisté investície zvyšujú kapitál <span class="math notranslate nohighlight">\(K\)</span>; rovnajú sa zmene stavu kapitálu <span class="math notranslate nohighlight">\(K'-K\)</span>.</p>
+<p>Predpokladajme, že v každom období sa znehodnotí konštantný podiel <span class="math notranslate nohighlight">\(\delta\)</span> existujúceho kapitálu. Odpisy sa preto rovnajú <span class="math notranslate nohighlight">\(\delta K\)</span>. Podiel existujúceho kapitálu, ktorý sa počas jedného obdobia opotrebuje, <span class="math notranslate nohighlight">\(\delta\)</span>, nazývame <strong>mierou znehodnotenia kapitálu</strong>.</p>
+<p>Hrubé súkromné investície sú súčtom čistých investícií a odpisov:</p>
+<div class="math notranslate nohighlight" id="equation-r-solow-investice">
+<span class="eqno">(14.6)<a class="headerlink" href="#equation-r-solow-investice" title="Link to this equation">#</a></span>\[I=K'-K+\delta K.\]</div>
+<p>V základnej verzii Solowovho modelu predpokladáme, že úroveň technológie <span class="math notranslate nohighlight">\(A\)</span> je konštantná. Tento predpoklad zmeníme v ďalšej kapitole.</p>
+</section>
+</section>
+<section id="zakladna-rovnica-solowovho-modelu">
+<h2><span class="section-number">14.2. </span>Základná rovnica Solowovho modelu<a class="headerlink" href="#zakladna-rovnica-solowovho-modelu" title="Link to this heading">#</a></h2>
+<p>Z rovnice hrubých súkromných investícií <a class="reference internal" href="#equation-r-solow-investice">(14.6)</a> vyjadrime kapitál v nasledujúcom období</p>
+<div class="math notranslate nohighlight">
+\[
+K'=(1-\delta)K+I
+\]</div>
+<p>Za hrubé súkromné investície dosadíme hrubé súkromné úspory z identity <a class="reference internal" href="#equation-identita-s-i-zatvorena">(14.3)</a></p>
+<div class="math notranslate nohighlight">
+\[
+K'=(1-\delta)K+S,
+\]</div>
+<p>ktoré ďalej zapíšeme  podľa <a class="reference internal" href="#equation-r-miera-sporenia">(14.2)</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+K'=(1-\delta)K+sY.
+\]</div>
+<p>Za reálny HDP dosaďme produkčnú funkciu <a class="reference internal" href="Produk.html#equation-r-makro-pf">(2.6)</a> a prehoďme poradie členov na pravej strane:</p>
+<div class="math notranslate nohighlight">
+\[
+K'= sA F(K,N) + (1-\delta)K.
+\]</div>
+<p>Ak chceme skonštruovať model, ktorý má vysvetliť rast v rôzne veľkých ekonomikách, je výhodné vyjadriť dynamiku premenných v intenzívnom tvare podelením prácou <span class="math notranslate nohighlight">\(N\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{K'}{N}=sA\frac{F(K,N)}{N}+(1-\delta)\frac{K}{N}.
+\]</div>
+<p>Za predpokladu konštantných výnosov z rozsahu, produkčná funkcia v intenzívnom tvare je <a class="reference internal" href="Produk.html#equation-intenzivna-pf">(2.18)</a>, kde <span class="math notranslate nohighlight">\(\frac{K}{N}=k\)</span>. Preto rovnicu môžeme zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{K'}{N}=sAf(k)+(1-\delta)k.
+\]</div>
+<p>Z formulácie rastu práce <a class="reference internal" href="#equation-r-rast-prace">(14.1)</a> vieme vyjadriť prácu:</p>
+<div class="math notranslate nohighlight">
+\[
+N=\frac{N'}{1+n}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+(1+n)\frac{K'}{N'}=sAf(k)+(1-\delta)k.
+\]</div>
+<p>Rovnako ako v prvom období, aj v nasledovnom období je intenzívny kapitál</p>
+<div class="math notranslate nohighlight">
+\[
+k'=\frac{K'}{N'}
+\]</div>
+<p>Po dosadení získame <strong>základnú rovnicu Solowovho modelu</strong>:</p>
+<div class="math notranslate nohighlight" id="equation-r-solow-zakladna">
+<span class="eqno">(14.7)<a class="headerlink" href="#equation-r-solow-zakladna" title="Link to this equation">#</a></span>\[k'=\frac{sAf(k)}{1+n}+\frac{(1-\delta)}{1+n}k.\]</div>
+<p>Základná rovnica Solowovho modelu vyjadruje dynamiku intenzívneho kapitálu <span class="math notranslate nohighlight">\(k\)</span>. Intenzívny kapitál v nasledujúcom období vypočítame využitím kapitálu v prítomnom období <span class="math notranslate nohighlight">\(k\)</span> a parametrov miery rastu práce <span class="math notranslate nohighlight">\(n\)</span>, úrovne technológie <span class="math notranslate nohighlight">\(A\)</span>, miery sporenia <span class="math notranslate nohighlight">\(s\)</span> a miery znehodnotenia kapitálu <span class="math notranslate nohighlight">\(\delta\)</span>.</p>
+</section>
+<section id="graficka-interpretacia-zakladnej-rovnice-solowovho-modelu">
+<h2><span class="section-number">14.3. </span>Grafická interpretácia základnej rovnice Solowovho modelu<a class="headerlink" href="#graficka-interpretacia-zakladnej-rovnice-solowovho-modelu" title="Link to this heading">#</a></h2>
+<p>Označme funkciu pravej strany základnej rovnice Solowovho modelu <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a> symbolom <span class="math notranslate nohighlight">\(\phi(k)\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+k'=\phi(k)=\frac{sAf(k)}{1+n}+\frac{(1-\delta)}{1+n}k.
+\]</div>
+<p>Na <a class="reference internal" href="#graf-45"><span class="std std-numref">Obr. 14.1</span></a> je zobrazená funkcia <span class="math notranslate nohighlight">\(\phi(k)\)</span> modrou čiarou. Funkcia je rastúca a keďže produkčná funkcia <span class="math notranslate nohighlight">\(Af(k)\)</span> prvom člene je konkávna, funkcia <span class="math notranslate nohighlight">\(\phi(k)\)</span> je konkávna. Funkcia vychádza zo začiatku súradnicového systému.</p>
+<p>O uvedenom môžeme presvedčiť za predpokladu, že <span class="math notranslate nohighlight">\(\phi(k)\)</span> je dvakrát diferencovateľaná. Platí:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d^2 \phi(k)}{d k^2} = \frac{sA}{1+n} \frac{d^2 f(k)}{d k^2}&lt;0
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\phi(0)=\frac{sAf(0)}{1+n}=0.
+\]</div>
+<p>Využitím základnej rovnice Solowovho modelu môžeme definovať stav, keď sa intenzívny kapitál nemení, t.j. intenzívny kapitál v nasledujúcom období sa rovná kapitálu v prítomnom období, <span class="math notranslate nohighlight">\(k′ = k\)</span>. Hovoríme o <strong>ustálenom stave</strong>.</p>
+<p>Aby sme vyjadrili hodnotu intenzívneho kapitálu v ustálenom stave, zobrazíme priamku, ktorá prislúcha rovnosti <span class="math notranslate nohighlight">\(k′ = k\)</span>. Priamka zobrazená čiernou farbou vychádza zo začiatku súradnicového systému a zviera s osami <span class="math notranslate nohighlight">\(45^\circ\)</span> uhol. V bodoch kde sa priamka pretne s funkciou <span class="math notranslate nohighlight">\(\phi(k)\)</span> sa realizuje rovnica <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a> a zároveň <span class="math notranslate nohighlight">\(k′ = k\)</span>. V tomto bode je hodnota intenzívneho kapitálu v ustálenom stave.</p>
+<p>Na <a class="reference internal" href="#graf-45"><span class="std std-numref">Obr. 14.1</span></a> sa <span class="math notranslate nohighlight">\(\phi(k)\)</span> pretne s priamkou <span class="math notranslate nohighlight">\(k'=k\)</span> v dvoch bodoch. Prvý je v začiatku súradnicového systému, <span class="math notranslate nohighlight">\(k=0\)</span>. Druhý je označený hviezdičkou <span class="math notranslate nohighlight">\(k*\)</span>.</p>
+<p>Dynamika intenzívneho kapitálu závisí od hodnoty v prítomnom období. Nech <span class="math notranslate nohighlight">\(k_0\)</span> na <a class="reference internal" href="#graf-45"><span class="std std-numref">Obr. 14.1</span></a> je množstvo prítomného intenzívneho kapitálu. Podľa základnej rovnice Solowovho modelu <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a> vieme vypočítať hodnotu intenzívneho kapitálu pracujúceho v ďalšom období. Ak ju označíme <span class="math notranslate nohighlight">\(k_1\)</span>, platí:</p>
+<div class="math notranslate nohighlight">
+\[
+k_1=\phi(k_0)=\frac{sAf(k_0)}{1+n}+\frac{(1-\delta)}{1+n}k_0.
+\]</div>
+<p>Graficky určíme <span class="math notranslate nohighlight">\(k_1\)</span> tak, že z hodnoty <span class="math notranslate nohighlight">\(k_0\)</span> na horizontálnej osi postupujeme vertikálne k funkcii <span class="math notranslate nohighlight">\(\phi(k)\)</span>. Funkčná hodnota <span class="math notranslate nohighlight">\(\phi(k_0)\)</span> na vertikálnej osi predstavuje kapitál <span class="math notranslate nohighlight">\(k_1\)</span> v nasledujúcom období.</p>
+<p>Aby sme mohli hodnotu <span class="math notranslate nohighlight">\(k_1\)</span> použiť ako kapitál na horizontálnej osi pri výpočte ďalšieho obdobia, využijeme priamku <span class="math notranslate nohighlight">\(k'=k\)</span>. Keďže táto priamka zviera s oboma osami uhol <span class="math notranslate nohighlight">\(45^\circ\)</span>, rovnaká hodnota má na oboch osiach rovnakú vzdialenosť od začiatku súradnicového systému. Horizontálnym posunom od funkcie <span class="math notranslate nohighlight">\(\phi(k)\)</span> k priamke <span class="math notranslate nohighlight">\(k'=k\)</span> preto prenesieme hodnotu <span class="math notranslate nohighlight">\(k_1\)</span> z vertikálnej osi na horizontálnu os. Ak <span class="math notranslate nohighlight">\(0&lt;k_0&lt;k^*\)</span> hodnota <span class="math notranslate nohighlight">\(k1\)</span> je väčšia ako <span class="math notranslate nohighlight">\(k0\)</span>. Intenzívny kapitál rastie.</p>
+<p>Rovnaký postup môžeme zopakovať. Dosadením hodnoty <span class="math notranslate nohighlight">\(k_1\)</span> do funkcie <span class="math notranslate nohighlight">\(\phi(k)\)</span> získame hodnotu</p>
+<div class="math notranslate nohighlight">
+\[
+k_2=\phi(k_1),
+\]</div>
+<p>dosadením <span class="math notranslate nohighlight">\(k_2\)</span>
+ 
+$<span class="math notranslate nohighlight">\(
+k_3=\phi(k_2),
+\)</span><span class="math notranslate nohighlight">\(
+ 
+a všeobecne
+ 
+\)</span><span class="math notranslate nohighlight">\(
+k_{t+1}=\phi(k_t).
+\)</span>$</p>
+<p>Opakovaním tohto postupu základná rovnica Solowovho modelu generuje postupnosť <span class="math notranslate nohighlight">\(k_0,k_1,k_2,k_3,\ldots\)</span></p>
+<p>Intenzívny kapitál rastie, ak štartovacia hodnota <span class="math notranslate nohighlight">\(0&lt;k_0\)</span> je nižšia ako <span class="math notranslate nohighlight">\(k^*\)</span> a naopak klesá, ak <span class="math notranslate nohighlight">\(k_0&gt;k^*\)</span> a približuje sa k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span>.</p>
+<p>Ak štartovacia hodnota <span class="math notranslate nohighlight">\(k_0=k^*\)</span>, intenzívny kapitál je od začiatku v ustálenom stave <span class="math notranslate nohighlight">\(k^*\)</span> a v čase sa nemení. Rovnaké platí, ak <span class="math notranslate nohighlight">\(k_0=0\)</span>: ak ekonomika nemá žiadny kapitál, pri našich predpokladoch nevyrába, nevytvára úspory ani investície a kapitál zostáva nulový.</p>
+<p>Rozdiel medzi ustálenými stavmi <span class="math notranslate nohighlight">\(k=0\)</span> a <span class="math notranslate nohighlight">\(k=k^*\)</span> je, že <span class="math notranslate nohighlight">\(k^*\)</span> je <strong>stabilný</strong>. Ak aj na začiatku intenzívny kapitál nebol v ustálenom stave <span class="math notranslate nohighlight">\(0&lt;k_0 \ne k^*\)</span>, časom sa začne približovať k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span>.</p>
+<p>Ustálený stav <span class="math notranslate nohighlight">\(k=0\)</span> túto vlastnosť nemá. Ak ekonomika začína s ľubovoľnou kladnou zásobou kapitálu, jej intenzívny kapitál sa od nulového ustáleného stavu vzďaľuje. V ďalšom výklade sa preto budeme zaoberať ustáleným stavom <span class="math notranslate nohighlight">\(k^*\)</span> a budeme predpokladať <span class="math notranslate nohighlight">\(k&gt;0\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+<span class="n">k0</span><span class="o">=</span><span class="mf">0.3</span>
+<span class="n">A</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">k_us</span><span class="p">,</span> <span class="n">y_us</span><span class="p">,</span> <span class="n">i_us</span><span class="p">,</span> <span class="n">c_us</span> <span class="o">=</span> <span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_cobweb</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">grafy</span><span class="o">.</span><span class="n">phi</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="p">),</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mf">2.3</span><span class="p">,</span>
+    <span class="n">k0</span><span class="p">,</span>
+    <span class="n">var</span><span class="o">=</span><span class="s2">"k"</span><span class="p">,</span>
+    <span class="n">steady_state</span><span class="o">=</span><span class="n">k_us</span><span class="p">,</span>
+    <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-45">
+<img alt="_images/graf_45.png" src="_images/graf_45.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.1 </span><span class="caption-text">Grafická interpretácia základnej rovnice Solowovho modelu</span><a class="headerlink" href="#graf-45" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="casove-rady">
+<h2><span class="section-number">14.4. </span>Časové rady<a class="headerlink" href="#casove-rady" title="Link to this heading">#</a></h2>
+<p>Základná rovnica Solowovho modelu <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a> generuje postupnosť <span class="math notranslate nohighlight">\(k_0,k_1,k_2,k_3,\ldots\)</span>, ktorá má vlastnosti časového radu. Časový rad intenzívneho kapitálu vygenerovaný rovnicou <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a> je zobrazený na <a class="reference internal" href="#graf-k-solow"><span class="std std-numref">Obr. 14.2</span></a>. Pri štartovacej hodnote <span class="math notranslate nohighlight">\(0&lt;k_0&lt;k^*\)</span> sa intenzívny kapitál každým ďalším obdobím zväčšuje a približuje sa k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span> zobrazenému prerušovanou čiernou čiarou. Platí, že čím bližšie je <span class="math notranslate nohighlight">\(k\)</span> k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span> tým menšie sú jeho prírastky v každom ďalšom období.</p>
+<p>Intenzívny kapitál preto rastie čoraz pomalšie, až jeho prírastky pri približovaní sa k ustálenému stavu smerujú k nule.</p>
+<p>Opačný proces nastáva, ak je štartovacia hodnota <span class="math notranslate nohighlight">\(k_0&gt;k^*\)</span>. Intenzívny kapitál v každom ďalšom období klesá a postupne sa približuje k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span>, pričom jeho pokles je čoraz menší.</p>
+<p>Ak je štartovacia hodnota <span class="math notranslate nohighlight">\(k_0=k^*\)</span>, ekonomika sa už nachádza v ustálenom stave. Intenzívny kapitál sa v čase nemení, <span class="math notranslate nohighlight">\(k_t=k^*\)</span> pre každé obdobie, a jeho časový rad má preto tvar vodorovnej čiary (prerušovaná čiara na <a class="reference internal" href="#graf-k-solow"><span class="std std-numref">Obr. 14.2</span></a>).</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N0</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">k</span><span class="p">,</span><span class="n">index</span><span class="p">,</span><span class="o">*</span><span class="n">_</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rady</span><span class="p">(</span><span class="n">k0</span><span class="p">,</span><span class="n">N0</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">,</span><span class="n">T</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">k</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$k_t$"</span><span class="p">],</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$k_t$"</span><span class="p">,</span>
+    <span class="n">steady_states</span><span class="o">=</span><span class="p">{</span>
+        <span class="sa">r</span><span class="s2">"$k^*$"</span><span class="p">:</span> <span class="n">k_us</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-k-solow">
+<img alt="_images/graf_k_solow.png" src="_images/graf_k_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.2 </span><span class="caption-text">Časový rad intenzívneho kapitálu</span><a class="headerlink" href="#graf-k-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Od kapitálu v intenzívnom tvare <span class="math notranslate nohighlight">\(k\)</span> závisia aj ďalšie endogénne premenné: intenzívny výstup</p>
+<div class="math notranslate nohighlight" id="equation-r-int-y">
+<span class="eqno">(14.8)<a class="headerlink" href="#equation-r-int-y" title="Link to this equation">#</a></span>\[y=Af(k),\]</div>
+<p>intenzívne investície</p>
+<div class="math notranslate nohighlight" id="equation-r-int-i">
+<span class="eqno">(14.9)<a class="headerlink" href="#equation-r-int-i" title="Link to this equation">#</a></span>\[i=sy=sAf(k),\]</div>
+<p>a intenzívna spotreba</p>
+<div class="math notranslate nohighlight" id="equation-r-int-c">
+<span class="eqno">(14.10)<a class="headerlink" href="#equation-r-int-c" title="Link to this equation">#</a></span>\[c=(1-s)y=(1-s)Af(k).\]</div>
+<p>Keďže v zatvorenej ekonomike platí <span class="math notranslate nohighlight">\(S=I\)</span>, intenzívne investície <span class="math notranslate nohighlight">\(i\)</span> sa rovnajú intenzívnym úsporám <span class="math notranslate nohighlight">\(sy\)</span>.</p>
+<p>Všetky tri intenzívne premenné rastú s <span class="math notranslate nohighlight">\(k\)</span>. Ak je intenzívny kapitál <span class="math notranslate nohighlight">\(k\)</span> vyjadrený časovým radom, potom aj intenzívny výstup <span class="math notranslate nohighlight">\(y\)</span>, investície <span class="math notranslate nohighlight">\(i\)</span> a spotreba <span class="math notranslate nohighlight">\(c\)</span> vytvárajú časové rady.</p>
+<p>Platí:</p>
+<ul class="simple">
+<li><p>Ak kapitál <span class="math notranslate nohighlight">\(k\)</span> v čase rastie, rastú aj <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(i\)</span> a <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p>Ak kapitál <span class="math notranslate nohighlight">\(k\)</span> v čase klesá, klesajú aj <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(i\)</span> a <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+<li><p>Ak sa kapitál <span class="math notranslate nohighlight">\(k\)</span> v čase nemení, nemenia sa ani <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(i\)</span> a <span class="math notranslate nohighlight">\(c\)</span>.</p></li>
+</ul>
+<p>Z posledného tvrdenia vyplýva, že ak je kapitál v ustálenom stave <span class="math notranslate nohighlight">\(k=k^*\)</span>, potom sú v ustálenom stave aj výstup, investície a spotreba. Ich ustálené hodnoty označujeme hviezdičkou: <span class="math notranslate nohighlight">\(k^*,y^*,i^*=sy^*,c^*\)</span>.</p>
+<p>Keď sa približovanie intenzívneho kapitálu <span class="math notranslate nohighlight">\(k\)</span> k ustálenému stavu <span class="math notranslate nohighlight">\(k^*\)</span> spomaľuje, spomaľuje sa aj približovanie ostatných uvažovaných premenných k ich ustáleným hodnotám.</p>
+<p>Časové rady intenzívneho výstupu, investícií a spotreby sú zobrazené na <a class="reference internal" href="#graf-y-solow"><span class="std std-numref">Obr. 14.3</span></a>–<a class="reference internal" href="#graf-c-solow"><span class="std std-numref">Obr. 14.5</span></a>. Z grafov vidíme, že ich priebeh je podobný priebehu intenzívneho kapitálu na <a class="reference internal" href="#graf-k-solow"><span class="std std-numref">Obr. 14.2</span></a>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rovnice</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">y</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$y_t$"</span><span class="p">],</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$y_t$"</span><span class="p">,</span>
+    <span class="n">steady_states</span><span class="o">=</span><span class="p">{</span>
+        <span class="sa">r</span><span class="s2">"$y^*$"</span><span class="p">:</span> <span class="n">y_us</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-y-solow">
+<img alt="_images/graf_y_solow.png" src="_images/graf_y_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.3 </span><span class="caption-text">Časový rad intenzívneho výstupu</span><a class="headerlink" href="#graf-y-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">i</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$i_t=sy(t)$"</span><span class="p">],</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$i_t$"</span><span class="p">,</span>
+    <span class="n">steady_states</span><span class="o">=</span><span class="p">{</span>
+        <span class="sa">r</span><span class="s2">"$i^*=sy^*$"</span><span class="p">:</span> <span class="n">i_us</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-i-solow">
+<img alt="_images/graf_i_solow.png" src="_images/graf_i_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.4 </span><span class="caption-text">Časový rad intenzívnych investícií alebo úspor</span><a class="headerlink" href="#graf-i-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">c</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$c_t$"</span><span class="p">],</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$c_t$"</span><span class="p">,</span>
+    <span class="n">steady_states</span><span class="o">=</span><span class="p">{</span>
+        <span class="sa">r</span><span class="s2">"$c^*$"</span><span class="p">:</span> <span class="n">c_us</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-c-solow">
+<img alt="_images/graf_c_solow.png" src="_images/graf_c_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.5 </span><span class="caption-text">Časový rad intenzívnej spotreby</span><a class="headerlink" href="#graf-c-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="ustaleny-stav">
+<span id="kap-us"></span><h2><span class="section-number">14.5. </span>Ustálený stav<a class="headerlink" href="#ustaleny-stav" title="Link to this heading">#</a></h2>
+<p>V dynamických ekonomických modeloch závisí hodnota endogénnych premenných v jednom období od ich hodnôt v predchádzajúcom období.</p>
+<dl class="simple myst" id="def-us">
+<dt>Ustálený stav</dt><dd><p>Ustálený stav je stav ekonomiky, v ktorom sa vybrané endogénne premenné v čase nemenia.</p>
+</dd>
+</dl>
+<p>Ak danú endogénnu premennú označíme <span class="math notranslate nohighlight">\(x\)</span>, v ustálenom stave platí</p>
+<div class="math notranslate nohighlight">
+\[
+x'=x=x^*,
+\]</div>
+<p>kde hviezdička označuje hodnotu premennej v ustálenom stave.</p>
+<p>Ak dynamiku premennej opisuje rovnica</p>
+<div class="math notranslate nohighlight">
+\[
+x'=\phi(x),
+\]</div>
+<p>jej ustálený stav <span class="math notranslate nohighlight">\(x^*\)</span> spĺňa podmienku</p>
+<div class="math notranslate nohighlight">
+\[
+x^*=\phi(x^*).
+\]</div>
+<p>Ustálený stav je teda <strong>pevný bod dynamického systému</strong>: ak sa ekonomika nachádza v ustálenom stave a <span class="math notranslate nohighlight">\(x=x^*\)</span>, dynamická rovnica v nasledujúcom období vygeneruje opäť rovnakú hodnotu <span class="math notranslate nohighlight">\(x'=x^*\)</span>.</p>
+<p>Samotná existencia ustáleného stavu ešte neznamená, že k nemu ekonomika bude smerovať. Ak sa ekonomika po odchýlení od ustáleného stavu postupne vracia späť, ustálený stav nazývame <strong>stabilným</strong>. Ak sa od neho naopak ďalej vzďaľuje, ustálený stav je <strong>nestabilný</strong>.</p>
+<p>V základnom Solowovom modeli sú v ustálenom stave konštantné intenzívne premenné <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(i\)</span> a <span class="math notranslate nohighlight">\(c\)</span>. Existujú dva ustálené stavy. Kladný ustálený stav <span class="math notranslate nohighlight">\(k^*,y^*,i^*=sy^*,c^*\)</span> je stabilný, zatiaľ čo nulový ustálený stav <span class="math notranslate nohighlight">\(k=y=i=c=0\)</span> je nestabilný.</p>
+<dl class="simple myst" id="def-ps">
+<dt>Prechodný stav</dt><dd><p>Ak sa ekonomika nenachádza v ustálenom stave, nachádza sa v prechodnom stave. V prechodnom stave sa vybrané endogénne premenné v čase menia. V základnom Solowovom modeli sa ekonomika v prechodnom stave postupne približuje ku kladnému stabilnému ustálenému stavu.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-konvergencia-us">
+<dt>Konvergencia k ustálenému stavu</dt><dd><p>Ak sa hodnota endogénnej premennej <span class="math notranslate nohighlight">\(x_t\)</span> v čase približuje k jej hodnote v ustálenom stave <span class="math notranslate nohighlight">\(x^*\)</span>, hovoríme, že premenná <span class="math notranslate nohighlight">\(x\)</span> konverguje k ustálenému stavu.</p>
+</dd>
+</dl>
+<p>Konvergenciu k ustálenému stavu možno zapísať limitou</p>
+<div class="math notranslate nohighlight">
+\[
+\lim_{t\to \infty} (x_t) = x^*.
+\]</div>
+<p>Časové rady na <a class="reference internal" href="#graf-k-solow"><span class="std std-numref">Obr. 14.2</span></a>–<a class="reference internal" href="#graf-c-solow"><span class="std std-numref">Obr. 14.5</span></a> zodpovedajú ekonomike v prechodnom stave. Všetky štyri premenné konvergujú k svojim hodnotám v ustálenom stave.</p>
+</section>
+<section id="graficka-identifikacia-ustaleneho-stavu">
+<h2><span class="section-number">14.6. </span>Grafická identifikácia ustáleného stavu<a class="headerlink" href="#graficka-identifikacia-ustaleneho-stavu" title="Link to this heading">#</a></h2>
+<p>Pre ustálený stav platí</p>
+<div class="math notranslate nohighlight">
+\[
+k^*=\phi(k^*)=\frac{sAf(k^*)}{1+n}+\frac{(1-\delta)}{1+n}k^*.
+\]</div>
+<p>Po úprave získame rovnicu vhodnú pre grafickú identifikáciu ustáleného stavu v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-us">
+<span class="eqno">(14.11)<a class="headerlink" href="#equation-r-us" title="Link to this equation">#</a></span>\[sAf(k^*)=(\delta+n)k^*\]</div>
+<p>Na ľavej strane <a class="reference internal" href="#equation-r-us">(14.11)</a> sú intenzívne úspory a teda aj investície v ustálenom stave. V ustálenom stave sa investície a úspory rovnajú:</p>
+<div class="math notranslate nohighlight" id="equation-r-i-us">
+<span class="eqno">(14.12)<a class="headerlink" href="#equation-r-i-us" title="Link to this equation">#</a></span>\[i^*=sy^*=(\delta+n)k^*.\]</div>
+<p>Na oboch stranách <a class="reference internal" href="#equation-r-us">(14.11)</a> sú funkcie kapitálu. Funkcia <span class="math notranslate nohighlight">\(sAf(k)\)</span> je rastúca a konkávna a na <a class="reference internal" href="#graf-us"><span class="std std-numref">Obr. 14.6</span></a> je zobrazená oranžovou čiarou. Funkcia <span class="math notranslate nohighlight">\((\delta+n)k\)</span> zobrazená zelenou je lineárna rastúca. Obe funkcie vychádzajú zo začiatku súradnicového systému. Na <a class="reference internal" href="#graf-us"><span class="std std-numref">Obr. 14.6</span></a> je tiež modrou farbou zobrazená produkčná funkcia <span class="math notranslate nohighlight">\(Af(k)\)</span>.</p>
+<p>Rovnica <a class="reference internal" href="#equation-r-us">(14.11)</a> sa spĺňa v bodoch, v ktorých sa pretíňajú krivky <span class="math notranslate nohighlight">\(sAf(k)\)</span> a <span class="math notranslate nohighlight">\((\delta+n)k\)</span>. Priesečníky identifikujú ustálený stav. Zaujíma nás kladný <span class="math notranslate nohighlight">\(k^*\)</span>, ktorý identifikujeme na horizontálnej osi. V bode priesečníka dosahujú investície aj úspory ustálenú hodnotu <span class="math notranslate nohighlight">\(i^*=sy^*\)</span>.</p>
+<p>Pomocou produkčnej funkcie možno pri kapitáli <span class="math notranslate nohighlight">\(k^*\)</span> získať výstup v ustálenom stave <span class="math notranslate nohighlight">\(y^*=Af(k^*)\)</span>. Spotreba v ustálenom stave <span class="math notranslate nohighlight">\(c^*\)</span> je rozdiel medzi výstupom a úsporami, zobrazená vertikálnou dvojšípkou ako vzdialenosť medzi <span class="math notranslate nohighlight">\(y^*\)</span> a <span class="math notranslate nohighlight">\(i^*\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+<span class="n">k_us</span><span class="p">,</span><span class="n">y_us</span><span class="p">,</span><span class="n">i_us</span><span class="p">,</span><span class="o">*</span><span class="n">_</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">A</span> <span class="o">*</span> <span class="n">grafy</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">alpha</span><span class="p">),</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$y=Af(k)$"</span>
+<span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">s</span> <span class="o">*</span> <span class="n">A</span> <span class="o">*</span> <span class="n">grafy</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">alpha</span><span class="p">),</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$i=sAf(k)$"</span>
+<span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">delta</span><span class="p">)</span> <span class="o">*</span> <span class="n">k</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="mi">5</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$(n+\delta)k$"</span>
+<span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_us</span><span class="p">,</span> <span class="n">y_us</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$k^*$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$y^*$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_us</span><span class="p">,</span> <span class="n">i_us</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$i^*=sy^*$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_us</span><span class="p">,</span> <span class="n">y_us</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_us</span><span class="p">,</span> <span class="n">i_us</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">x_arrow</span> <span class="o">=</span> <span class="mf">0.07</span> <span class="o">*</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">()[</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_dvojsipku</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">i_us</span><span class="p">,</span>
+    <span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">y_us</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$c^*$"</span>
+<span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">f</span><span class="s2">"$k$"</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-us">
+<img alt="_images/graf_us.png" src="_images/graf_us.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.6 </span><span class="caption-text">Grafická identifikácia ustáleného stavu</span><a class="headerlink" href="#graf-us" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="extenzivne-premenne-v-ustalenom-stave">
+<h2><span class="section-number">14.7. </span>Extenzívne premenné v ustálenom stave<a class="headerlink" href="#extenzivne-premenne-v-ustalenom-stave" title="Link to this heading">#</a></h2>
+<p>Extenzívnu premennú získame prenásobením intenzívnej premennej množstvom práce. V ustálenom stave platí.</p>
+<div class="math notranslate nohighlight">
+\[
+X^*=Nx^*, \qquad x^* \in \{k^*,y^*,i^*,c^*\}, \qquad X^* \in \{K^*,Y^*,I^*,C^*\}.
+\]</div>
+<div class="admonition-upozornenie admonition">
+<p class="admonition-title">Upozornenie</p>
+<p>Hviezdička pri extenzívnej premennej <span class="math notranslate nohighlight">\(X^*\)</span> označuje jej hodnotu, keď sa ekonomika nachádza v ustálenom stave. Neznamená, že táto hodnota je v čase konštantná.</p>
+</div>
+<p>Aká je dynamika extenzívnych premennýh v ustálenom stave?</p>
+<p>Zapíšme extenzívne premenné v nasledujúcom období, pričom zohľadníme definíciu ustáleného stavu, $x’^<em>=x^</em>,</p>
+<div class="math notranslate nohighlight">
+\[
+X'^*=N'x'^*=N'x^*, \qquad x^* \in \{k^*,y^*,i^*,c^*\}, \qquad X'^* \in \{K'^*,Y'^*,I'^*,C'^*\}.
+\]</div>
+<p>Miera rastu extenzívnej premennej je</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{X'^*}{X^*}=\frac{N'x^*}{Nx^*}=\frac{N'}{N}=1+n, \qquad X^* \in \{K^*,Y^*,I^*,C^*\}, \qquad X'^* \in \{K'^*,Y'^*,I'^*,C'^*\}.
+\]</div>
+<p>Ustálený stav neznamená, že ekonomika prestane rásť. Konštantné zostávajú intenzívne premenné, zatiaľ čo extenzívne rastú spolu s množstvom práce mierou <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Na <a class="reference internal" href="#graf-ke-solow"><span class="std std-numref">Obr. 14.7</span></a>–<a class="reference internal" href="#graf-ce-solow"><span class="std std-numref">Obr. 14.10</span></a> sú zobrazené časové rady extenzívnych premenných.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">grafy</span><span class="o">.</span><span class="n">set_data_style</span><span class="p">()</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">s</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">0.02</span>
+
+<span class="n">k_us</span><span class="p">,</span> <span class="n">y_us</span><span class="p">,</span> <span class="n">i_us</span><span class="p">,</span> <span class="n">c_us</span> <span class="o">=</span> <span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
+
+<span class="n">k0</span><span class="o">=</span><span class="n">k_us</span>
+<span class="n">N0</span><span class="o">=</span><span class="mi">1000</span>
+<span class="n">k</span><span class="p">,</span><span class="n">index</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="o">*</span><span class="n">_</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rady</span><span class="p">(</span><span class="n">k0</span><span class="p">,</span><span class="n">N0</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">,</span><span class="n">T</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rovnice</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+<span class="n">K</span><span class="o">=</span><span class="n">k</span><span class="o">*</span><span class="n">N</span>
+<span class="n">Y</span><span class="o">=</span><span class="n">y</span><span class="o">*</span><span class="n">N</span>
+<span class="n">I</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="n">N</span>
+<span class="n">C</span><span class="o">=</span><span class="n">c</span><span class="o">*</span><span class="n">N</span>
+
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">K</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$K^*_t$"</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-ke-solow">
+<img alt="_images/graf_Ke_solow.png" src="_images/graf_Ke_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.7 </span><span class="caption-text">Časový rad extenzívneho kapitálu v ustálenom stave</span><a class="headerlink" href="#graf-ke-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_remove-output tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">Y</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$Y^*_t$"</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-ye-solow">
+<img alt="_images/graf_Ye_solow.png" src="_images/graf_Ye_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.8 </span><span class="caption-text">Časový rad extenzívneho výstupu v ustálenom stave</span><a class="headerlink" href="#graf-ye-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_remove-output tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">I</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$I^*_t$"</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-ie-solow">
+<img alt="_images/graf_Ie_solow.png" src="_images/graf_Ie_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.9 </span><span class="caption-text">Časový rad extenzívnych investícií alebo úspor v ustálenom stave</span><a class="headerlink" href="#graf-ie-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_remove-output tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+    <span class="n">C</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$C^*_t$"</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-ce-solow">
+<img alt="_images/graf_Ce_solow.png" src="_images/graf_Ce_solow.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.10 </span><span class="caption-text">Časový rad extenzívnej spotreby v ustálenom stave</span><a class="headerlink" href="#graf-ce-solow" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>V ustálenom stave sú intenzívne premenné <span class="math notranslate nohighlight">\(k^*,y^*,i^*,c^*\)</span> konštantné. Extenzívne premenné <span class="math notranslate nohighlight">\(K^*_t,Y^*_t,I^*_t,C^*_t\)</span> sa však v čase menia, pretože množstvo práce <span class="math notranslate nohighlight">\(N_t\)</span> rastie. Hviezdička pri extenzívnej premennej označuje jej hodnotu v ekonomike, ktorá sa nachádza v ustálenom stave, nie jej konštantnú hodnotu.</p>
+</section>
+<section id="zlate-pravidlo">
+<h2><span class="section-number">14.8. </span>Zlaté pravidlo<a class="headerlink" href="#zlate-pravidlo" title="Link to this heading">#</a></h2>
+<p>Americký ekonóm Edmund Phelps položil otázku: <strong>Ak je ekonomika v ustálenom stave, za akých podmienok je intenzívna spotreba maximálna?</strong> <span class="bibtex-citation" id="id3">[<a class="reference internal" href="Literatura.html#id22" title="Edmund S. Phelps. The golden rule of accumulation: a fable for growthmen. The American Economic Review, 51(4):638–643, 1961.">Phe61</a>]</span></p>
+<p>Podľa <a class="reference internal" href="#graf-zlate"><span class="std std-numref">Obr. 14.11</span></a> hľadáme takú mieru sporenia, pri ktorej je intenzívna spotreba v ustálenom stave maximálna. Rôzne miery sporenia <span class="math notranslate nohighlight">\(s\)</span> generujú rôzne ustálené stavy, a teda aj rôzne hodnoty spotreby <span class="math notranslate nohighlight">\(c^*\)</span>. Na <a class="reference internal" href="#graf-zlate"><span class="std std-numref">Obr. 14.11</span></a> je pri miere sporenia <span class="math notranslate nohighlight">\(s_1\)</span> spotreba <span class="math notranslate nohighlight">\(c_1^*\)</span>, pri miere sporenia <span class="math notranslate nohighlight">\(s_2\)</span> spotreba <span class="math notranslate nohighlight">\(c_2^*\)</span> a pri miere sporenia <span class="math notranslate nohighlight">\(s^*\)</span> dosahuje spotreba svoju maximálnu hodnotu <span class="math notranslate nohighlight">\(c^{**}\)</span>.</p>
+<p>Miera sporenia ovplyvňuje ustálený stav ekonomiky. Keďže všetky intenzívne endogénne premenné možno charakterizovať pomocou intenzívneho kapitálu, každý kladný ustálený stav môžeme charakterizovať príslušnou hodnotou <span class="math notranslate nohighlight">\(k^*\)</span>.</p>
+<p>Spotreba v ustálenom stave je rozdielom medzi výstupom a úsporami, resp. vzhľadom na rovnosť úspor a investícií medzi výstupom a investíciami:</p>
+<div class="math notranslate nohighlight">
+\[
+c^*=y^**i^*.
+\]</div>
+<p>Za <span class="math notranslate nohighlight">\(y^*\)</span> dosaďme produkčnú funkciu a za <span class="math notranslate nohighlight">\(i^*\)</span> vzťah <a class="reference internal" href="#equation-r-i-us">(14.12)</a>. Získame spotrebu v ustálenom stave:</p>
+<div class="math notranslate nohighlight" id="equation-r-c-us">
+<span class="eqno">(14.13)<a class="headerlink" href="#equation-r-c-us" title="Link to this equation">#</a></span>\[c^*=Af(k^*)-(\delta+n)k^*.\]</div>
+<p>Získali sme tak spotrebu v ustálenom stave <span class="math notranslate nohighlight">\(c^*\)</span> ako funkciu kapitálu v ustálenom stave <span class="math notranslate nohighlight">\(k^*\)</span>.</p>
+<p>Phelpsov problém môžeme riešiť maximalizáciou <a class="reference internal" href="#equation-r-c-us">(14.13)</a> vzhľadom na <span class="math notranslate nohighlight">\(k^*&gt;0\)</span>. Podmienka prvého rádu je</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d c^*}{d k^*}=A\frac{d f(k^*)}{d k^*}-(n+\delta)=0.
+\]</div>
+<p>Prvý člen predstavuje intenzívny hraničný produkt kapitálu:</p>
+<div class="math notranslate nohighlight">
+\[
+mpk(k)=A\frac{df(k)}{dk}.
+\]</div>
+<p>Označme hodnotu kapitálu, pri ktorej je spotreba v ustálenom stave maximálna, <span class="math notranslate nohighlight">\(k^{**}\)</span>. Podmienku prvého rádu môžeme zapísať v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-zlate">
+<span class="eqno">(14.14)<a class="headerlink" href="#equation-r-zlate" title="Link to this equation">#</a></span>\[mpk(k^{**})-\delta=n.\]</div>
+<p>Hraničný produkt kapitálu <span class="math notranslate nohighlight">\(mpk\)</span> vyjadruje prírastok výstupu vytvorený dodatočnou jednotkou kapitálu. Časť tohto prírastku vo výške <span class="math notranslate nohighlight">\(\delta\)</span> je potrebná na náhradu znehodnotenia kapitálu. Rozdiel</p>
+<div class="math notranslate nohighlight">
+\[
+mpk-\delta
+\]</div>
+<p>preto predstavuje čistý výnos z dodatočnej jednotky kapitálu.</p>
+<p>Trh dlhopisov a trh kapitálu sú v rovnováhe, ak čistý príjem z dlhopisov sa rovná čistému príjmu z kapitálu. Čistý príjem z dlhopisov je úroková miera.</p>
+<p>Intenzívna spotreba v ustálenom stave je teda maximálna vtedy, keď sa čistý výnos z kapitálu, resp. reálna úroková miera, rovná miere rastu práce</p>
+<div class="math notranslate nohighlight">
+\[
+r=n.
+\]</div>
+<p>Túto podmienku nazývame <strong>zlatým pravidlom akumulácie kapitálu</strong>.</p>
+<p>Hraničný produkt kapitálu je na <a class="reference internal" href="#graf-zlate"><span class="std std-numref">Obr. 14.11</span></a> prezentovaný dotyčnicou produkčnej funkcie zobrazenej modrou farbou. Pri maximálnej spotrebe v ustálenom stave je sklon dotyčnice rovnaký ako sklon oranžovej priamky <span class="math notranslate nohighlight">\((n+\delta)k\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">set_theory_style</span><span class="p">()</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mf">0.2</span>
+
+<span class="c1">#množina parametrov miery sporenia  </span>
+<span class="n">ska</span><span class="o">=</span><span class="p">[</span><span class="mf">0.4</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">]</span>
+<span class="n">slabels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$i=s_1Af(k)$"</span><span class="p">,</span><span class="sa">r</span><span class="s2">"$i=s^*Af(k)$"</span><span class="p">,</span><span class="sa">r</span><span class="s2">"$i=s_2Af(k)$"</span><span class="p">]</span>
+<span class="n">clabels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$c^*_1$"</span><span class="p">,</span><span class="sa">r</span><span class="s2">"$c^{**}$"</span><span class="p">,</span><span class="sa">r</span><span class="s2">"$c^*_2$"</span><span class="p">]</span>
+
+<span class="n">k_zlate</span><span class="p">,</span><span class="n">y_zlate</span><span class="p">,</span><span class="n">i_zlate</span><span class="p">,</span><span class="o">*</span><span class="n">_</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">ska</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">A</span> <span class="o">*</span> <span class="n">grafy</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">alpha</span><span class="p">),</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="n">xmax</span><span class="o">=</span><span class="n">k_zlate</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$y=Af(k)$"</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">1.</span>
+<span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="n">delta</span><span class="p">)</span> <span class="o">*</span> <span class="n">k</span><span class="p">,</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="n">xmax</span><span class="o">=</span><span class="n">k_zlate</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$(n+\delta)k$"</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">1.</span>
+<span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">s</span><span class="p">,</span> <span class="n">slabel</span><span class="p">,</span> <span class="n">clabel</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ska</span><span class="p">,</span> <span class="n">slabels</span><span class="p">,</span> <span class="n">clabels</span><span class="p">):</span>
+    <span class="n">us</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">)</span>
+    
+    <span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_funkciu</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">s</span> <span class="o">*</span> <span class="n">A</span> <span class="o">*</span> <span class="n">grafy</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">alpha</span><span class="p">),</span>
+    <span class="mi">0</span><span class="p">,</span>
+    <span class="n">xmax</span><span class="o">=</span><span class="n">k_zlate</span><span class="o">*</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="n">slabel</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.</span>
+    <span class="p">)</span>
+    <span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">us</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">us</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">us</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">us</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+    <span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_dvojsipku</span><span class="p">(</span>
+    <span class="n">ax</span><span class="p">,</span>
+    <span class="n">us</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">us</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+    <span class="n">us</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">us</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">nazov</span><span class="o">=</span><span class="n">clabel</span><span class="p">,</span>
+    <span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">ekonomicke_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="n">xlabel</span><span class="o">=</span><span class="sa">f</span><span class="s2">"$k$"</span><span class="p">,</span><span class="n">ylabel</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_dotycnicu</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">A</span> <span class="o">*</span> <span class="n">grafy</span><span class="o">.</span><span class="n">f</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">alpha</span><span class="p">),</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">A</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">k</span><span class="o">**</span><span class="p">(</span><span class="n">alpha</span><span class="o">-</span><span class="mi">1</span><span class="p">),</span><span class="n">k_zlate</span><span class="p">,</span><span class="mi">2</span>
+                         <span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">"Sklon = $n+\delta$"</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mf">1.</span><span class="p">)</span>
+
+<span class="n">grafy</span><span class="o">.</span><span class="n">vyznac_na_osi</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_zlate</span><span class="p">,</span> <span class="n">i_zlate</span><span class="p">,</span> <span class="n">popis_x</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$k^{**}$"</span><span class="p">,</span> <span class="n">popis_y</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$i^{**}=sy^{**}$"</span><span class="p">)</span>
+<span class="n">grafy</span><span class="o">.</span><span class="n">nakresli_bod</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">k_zlate</span><span class="p">,</span> <span class="n">i_zlate</span><span class="p">,</span> <span class="n">nazov</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vodiace_ciary</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-zlate">
+<img alt="_images/graf_zlate.png" src="_images/graf_zlate.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 14.11 </span><span class="caption-text">Zlaté pravidlo</span><a class="headerlink" href="#graf-zlate" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">14.9. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<p>Využijeme nasledovné balíky. Balík <code class="docutils literal notranslate"><span class="pre">grafy</span></code> vytvorený v rámci tejto učebnice obsahuje mnohé funkcie Solowovho modelu. Pred jeho importom potrebujete prekopírovať súbor <code class="docutils literal notranslate"><span class="pre">grafy.py</span></code> do pracovného priečinka.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">grafy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">simplify</span> 
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="priklad-ustaleny-a-prechodny-stav">
+<span id="priklad-solow-zaklad"></span><h3><span class="section-number">14.9.1. </span>Príklad: Ustálený a prechodný stav<a class="headerlink" href="#priklad-ustaleny-a-prechodny-stav" title="Link to this heading">#</a></h3>
+<p>O ekonomike poznáte tieto údaje: úroveň technológie je <span class="math notranslate nohighlight">\(2\)</span>, miera sporenia je <span class="math notranslate nohighlight">\(0,3\)</span>, miera znehodnotenia kapitálu je <span class="math notranslate nohighlight">\(0,38\)</span> a miera rastu práce je <span class="math notranslate nohighlight">\(0,02\)</span>. V súčasnom období je v ekonomike 1000 obyvateľov a extenzívny kapitál je 300. Agregátna produkčná funkcia má Cobbov-Douglasov tvar s konštantnými výnosmi z rozsahu a podielom kapitálu na výstupe <span class="math notranslate nohighlight">\(0,3\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Vypočítajte hodnoty intenzívneho kapitálu v súčasnom a nasledujúcom období.</p></li>
+<li><p>Rozhodnite, či je ekonomika v ustálenom stave. Svoje rozhodnutie zdôvodnite.</p></li>
+<li><p>Odvoďte a vypočítajte hodnotu intenzívneho kapitálu v ustálenom stave.</p></li>
+<li><p>Vypočítajte intenzívny výstup, investície a spotrebu v súčasnom období a v ustálenom stave.</p></li>
+</ol>
+<section id="riesenie">
+<h4><span class="section-number">14.9.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<p><strong>Intenzívny kapitál v súčasnom období</strong> je</p>
+<div class="math notranslate nohighlight">
+\[
+k=\frac{K}{N}=\frac{300}{1000}=0,3.
+\]</div>
+<p>Na výpočet <strong>intenzívneho kapitálu v nasledujúcom období</strong> využijeme základnú rovnicu Solowovho modelu <a class="reference internal" href="#equation-r-solow-zakladna">(14.7)</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+k'=\phi(k)=\frac{sAf(k)}{1+n}+\frac{1-\delta}{1+n}k.
+\]</div>
+<p>Po dosadení získame</p>
+<div class="math notranslate nohighlight">
+\[
+k'=\frac{0,3 \times 2 \times 0,3^{0,3}}{1+0,02}+\frac{1-0,38}{1+0,02}\times0,3\approx0,59.
+\]</div>
+<p><em>Intenzívny kapitál v súčasnom období je <span class="math notranslate nohighlight">\(0,3\)</span>.</em></p>
+<p><em>Intenzívny kapitál v nasledujúcom období je približne <span class="math notranslate nohighlight">\(0,59\)</span>.</em></p>
+<p>Ak by bola ekonomika v ustálenom stave, intenzívny kapitál by sa v čase nemenil. V skutočnosti intenzívny kapitál v nasledujúcom období vzrástol z hodnoty <span class="math notranslate nohighlight">\(0,3\)</span> na približne <span class="math notranslate nohighlight">\(0,59\)</span>. Ekonomika sa preto nenachádza v ustálenom stave, ale v <strong>prechodnom stave</strong>.</p>
+<p>Rovnica identifikácie ustáleného stavu je <a class="reference internal" href="#equation-r-us">(14.11)</a>. Ak dosadíme Cobbov-Douglasov tvar produkčnej funkcie, môžeme vyjadriť <strong>intenzívny kapitál v ustálenom stave</strong>:</p>
+<div class="math notranslate nohighlight">
+\[
+sA{k^*}^{\alpha}=(n+\delta)k^*.
+\]</div>
+<p>Postupnými úpravami získame</p>
+<div class="math notranslate nohighlight">
+\[
+sA{k^*}^{\alpha-1}=n+\delta,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+{k^*}^{\alpha-1}=\frac{n+\delta}{sA},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+{k^*}^{1-\alpha}=\frac{sA}{n+\delta},
+\]</div>
+<p>a teda</p>
+<div class="math notranslate nohighlight" id="equation-r-cd-us">
+<span class="eqno">(14.15)<a class="headerlink" href="#equation-r-cd-us" title="Link to this equation">#</a></span>\[k^*=\left[\frac{sA}{n+\delta}\right]^{\frac{1}{1-\alpha}}.\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+k^*=\left[\frac{0,3\times2}{0,02+0,38}\right]^{\frac{1}{1-0,3}}\approx1,78.
+\]</div>
+<p>Intenzívny kapitál sa bude postupne približovať zo štartovacej hodnoty <span class="math notranslate nohighlight">\(0,3\)</span> k ustálenému stavu <span class="math notranslate nohighlight">\(1,78\)</span>.</p>
+<p>Ak dosadíme intenzívny kapitál v súčasnom období do <a class="reference internal" href="#equation-r-int-y">(14.8)</a>–<a class="reference internal" href="#equation-r-int-c">(14.10)</a>, získame <strong>intenzívny výstup v súčasnom období</strong></p>
+<div class="math notranslate nohighlight">
+\[
+y=2\times0,3^{0,3}\approx1,39,
+\]</div>
+<p><strong>intenzívne investície v súčasnom období</strong></p>
+<div class="math notranslate nohighlight">
+\[
+i=sy\approx0,3\times1,39\approx0,42,
+\]</div>
+<p>a <strong>intenzívnu spotrebu v súčasnom období</strong></p>
+<div class="math notranslate nohighlight">
+\[
+c=(1-s)y\approx(1-0,3)\times1,39\approx1,39-0,42\approx0,98.
+\]</div>
+<p>Analogicky môžeme vypočítať <strong>intenzívne premenné v ustálenom stave</strong>. Pri výpočte investícií a spotreby môžeme využiť aj <a class="reference internal" href="#equation-r-i-us">(14.12)</a> a <a class="reference internal" href="#equation-r-c-us">(14.13)</a>.</p>
+<p>Intenzívny výstup v ustálenom stave je</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=2\times1,78^{0,3}\approx2,38.
+\]</div>
+<p>Intenzívne investície v ustálenom stave sú</p>
+<div class="math notranslate nohighlight">
+\[
+i^*=sy^*\approx0,3\times2,38\approx0,71.
+\]</div>
+<p>Rovnakú hodnotu získame z podmienky ustáleného stavu:</p>
+<div class="math notranslate nohighlight">
+\[
+i^*=(n+\delta)k^*\approx(0,02+0,38)\times1,78\approx0,71.
+\]</div>
+<p>Intenzívna spotreba v ustálenom stave je</p>
+<div class="math notranslate nohighlight">
+\[
+c^*=(1-s)y^*\approx(1-0,3)\times2,38\approx1,67.
+\]</div>
+<p>Rovnaký výsledok získame ako rozdiel medzi výstupom a investíciami:</p>
+<div class="math notranslate nohighlight">
+\[
+c^*=y^*-(n+\delta)k^*\approx2,38-(0,02+0,38)\times1,78\approx1,67.
+\]</div>
+<p>Výsledky môžeme zhrnúť v nasledujúcej tabuľke:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-vysledky-ps-us">
+<caption><span class="caption-number">Tab. 14.1 </span><span class="caption-text">Intenzívne premenné v prechodnom a ustálenom stave</span><a class="headerlink" href="#tab-vysledky-ps-us" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Endogénna premenná</p></th>
+<th class="head text-center"><p>Symbol</p></th>
+<th class="head text-right"><p>Súčasné obdobie</p></th>
+<th class="head text-right"><p>Ustálený stav</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Intenzívny kapitál</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(k\)</span></p></td>
+<td class="text-right"><p>0,30</p></td>
+<td class="text-right"><p>1,78</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Intenzívny výstup</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(y\)</span></p></td>
+<td class="text-right"><p>1,39</p></td>
+<td class="text-right"><p>2,38</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Intenzívne investície</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(i\)</span></p></td>
+<td class="text-right"><p>0,42</p></td>
+<td class="text-right"><p>0,71</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Intenzívna spotreba</p></td>
+<td class="text-center"><p><span class="math notranslate nohighlight">\(c\)</span></p></td>
+<td class="text-right"><p>0,98</p></td>
+<td class="text-right"><p>1,67</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Keďže je intenzívny kapitál v súčasnom období nižší ako v ustálenom stave, <span class="math notranslate nohighlight">\(k&lt;k^*\)</span>, ekonomika bude počas prechodného obdobia akumulovať kapitál. Spolu s intenzívnym kapitálom sa budú zvyšovať aj intenzívny výstup, investície a spotreba, až sa priblížia k svojim ustáleným hodnotám.</p>
+</section>
+<section id="python">
+<h4><span class="section-number">14.9.1.2. </span>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h4>
+<p>Pre aplikovanie základnej rovnice Solowovho modelu využijeme funkciu <code class="docutils literal notranslate"><span class="pre">grafy.phi</span></code>.</p>
+<p>V kóde budeme rozlišovať číselné hodnoty premenných a ich symbolický zápis. Číselné hodnoty označíme príponou h a symbolické premenné príponou s.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exogénne premenné, hodnoty</span>
+<span class="n">Kh</span><span class="o">=</span><span class="mi">300</span>
+<span class="n">Nh</span><span class="o">=</span><span class="mi">1000</span>
+<span class="n">Ah</span><span class="o">=</span><span class="mi">2</span>
+<span class="n">sh</span><span class="o">=</span><span class="mf">0.3</span>
+<span class="n">alphah</span><span class="o">=</span><span class="mf">0.3</span>
+<span class="n">deltah</span><span class="o">=</span><span class="mf">0.38</span>
+<span class="n">nh</span><span class="o">=</span><span class="mf">0.02</span>
+
+<span class="n">kh</span><span class="o">=</span><span class="n">Kh</span><span class="o">/</span><span class="n">Nh</span>
+<span class="n">khp</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">phi</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">kh</span><span class="p">,</span><span class="n">A</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">nh</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">deltah</span>
+            <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Intenzívny kapitál v súčasnom období"</span><span class="p">,</span> <span class="n">kh</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Intenzívny kapitál v nasledujúcom období"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">khp</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intenzívny kapitál v súčasnom období 0.3
+Intenzívny kapitál v nasledujúcom období 0.59
+</pre></div>
+</div>
+</div>
+</div>
+<p>Nasledujúci kód odvodí intenzívny kapitál v ustálenom stave z <a class="reference internal" href="#equation-r-us">(14.11)</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exogénne premenné, symboly</span>
+<span class="n">As</span><span class="p">,</span><span class="n">alphas</span><span class="p">,</span><span class="n">ns</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="n">deltas</span><span class="p">,</span><span class="n">k_star</span><span class="o">=</span><span class="n">symbols</span><span class="p">(</span><span class="s2">"A,alpha,n,s,delta,k_star"</span><span class="p">,</span><span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">k_us</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">ss</span><span class="o">*</span><span class="n">As</span><span class="o">*</span><span class="n">k_star</span><span class="o">**</span><span class="n">alphas</span><span class="o">-</span><span class="p">(</span><span class="n">deltas</span><span class="o">+</span><span class="n">ns</span><span class="p">)</span><span class="o">*</span><span class="n">k_star</span><span class="p">,</span><span class="n">k_star</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">k_us</span><span class="o">=</span><span class="n">k_us</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">display</span><span class="p">(</span><span class="n">k_us</span><span class="p">[</span><span class="n">k_star</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left(\frac{\delta + n}{A s}\right)^{\frac{1}{\alpha - 1}}\]</div>
+</div>
+</div>
+<p>Dosadením hodnôt za symboly získame <span class="math notranslate nohighlight">\(k^*\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Za symboly dosadíme hodnoty</span>
+<span class="n">exogenne</span><span class="o">=</span><span class="p">({</span><span class="n">As</span><span class="p">:</span><span class="n">Ah</span><span class="p">,</span><span class="n">ss</span><span class="p">:</span><span class="n">sh</span><span class="p">,</span><span class="n">alphas</span><span class="p">:</span><span class="n">alphah</span><span class="p">,</span><span class="n">deltas</span><span class="p">:</span><span class="n">deltah</span><span class="p">,</span><span class="n">ns</span><span class="p">:</span><span class="n">nh</span><span class="p">})</span>
+
+<span class="n">k_us</span><span class="p">[</span><span class="n">k_star</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">exogenne</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 1.78467418422658\]</div>
+</div>
+</div>
+<p>Hodnoty intenzívnych premenných možno vypočítať aj pomocou funkcie <code class="docutils literal notranslate"><span class="pre">grafy.us</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="s2">"$[k^*,y^*,i^*,c^*]=$"</span><span class="p">))</span>
+<span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">nh</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">deltah</span>
+            <span class="p">),</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle [k^*,y^*,i^*,c^*]=\]</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.78, 2.38, 0.71, 1.67])
+</pre></div>
+</div>
+</div>
+</div>
+<p>V balíčku <code class="docutils literal notranslate"><span class="pre">grafy</span></code>, funkcia <code class="docutils literal notranslate"><span class="pre">grafy.rovnice</span></code> slúži na aplikáciu rovníc <a class="reference internal" href="#equation-r-int-y">(14.8)</a>–<a class="reference internal" href="#equation-r-int-c">(14.10)</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">Math</span><span class="p">(</span><span class="s2">"$[y,i,c]=$"</span><span class="p">))</span>
+<span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">grafy</span><span class="o">.</span><span class="n">rovnice</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">kh</span><span class="p">,</span><span class="n">A</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle [y,i,c]=\]</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.39, 0.42, 0.98])
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id4">
+<h4><span class="section-number">14.9.1.3. </span>Časové rady<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p>Ak chceme vygenerovať časový rad s <span class="math notranslate nohighlight">\(T\)</span> pozorovaniami intenzívneho kapitálu, môžeme využiť funkciu <code class="docutils literal notranslate"><span class="pre">grafy.rady</span></code>. Funkcia využíva <code class="docutils literal notranslate"><span class="pre">grafy.phi</span></code> na generovanie intenzívneho kapitálu. Okrem toho s využitím <a class="reference internal" href="#equation-r-rast-prace">(14.1)</a> generuje časový rad práce a tiež časový rad úrovne technológie (význam priblížime v nasledovnej kapitole).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span><span class="p">,</span><span class="n">index</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="o">*</span><span class="n">_</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rady</span><span class="p">(</span><span class="n">k0</span><span class="o">=</span><span class="n">kh</span><span class="p">,</span><span class="n">N0</span><span class="o">=</span><span class="n">Nh</span><span class="p">,</span><span class="n">A0</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">nh</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">deltah</span><span class="p">,</span><span class="n">T</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">rovnice</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"k"</span><span class="p">:</span> <span class="n">k</span><span class="p">,</span><span class="s2">"y"</span><span class="p">:</span> <span class="n">y</span><span class="p">,</span><span class="s2">"i"</span><span class="p">:</span> <span class="n">i</span><span class="p">,</span><span class="s2">"c"</span><span class="p">:</span> <span class="n">c</span><span class="p">,</span><span class="s2">"N"</span><span class="p">:</span><span class="n">N</span><span class="p">},</span><span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>k</th>
+      <th>y</th>
+      <th>i</th>
+      <th>c</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.300000</td>
+      <td>1.393691</td>
+      <td>0.418107</td>
+      <td>0.975583</td>
+      <td>1000.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.592262</td>
+      <td>1.709166</td>
+      <td>0.512750</td>
+      <td>1.196416</td>
+      <td>1020.000000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.862698</td>
+      <td>1.913320</td>
+      <td>0.573996</td>
+      <td>1.339324</td>
+      <td>1040.400000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.087126</td>
+      <td>2.050756</td>
+      <td>0.615227</td>
+      <td>1.435529</td>
+      <td>1061.208000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.263966</td>
+      <td>2.145609</td>
+      <td>0.643683</td>
+      <td>1.501926</td>
+      <td>1082.432160</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1.399354</td>
+      <td>2.212118</td>
+      <td>0.663635</td>
+      <td>1.548483</td>
+      <td>1104.080803</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1.501211</td>
+      <td>2.259241</td>
+      <td>0.677772</td>
+      <td>1.581469</td>
+      <td>1126.162419</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1.576983</td>
+      <td>2.292863</td>
+      <td>0.687859</td>
+      <td>1.605004</td>
+      <td>1148.685668</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1.632930</td>
+      <td>2.316969</td>
+      <td>0.695091</td>
+      <td>1.621878</td>
+      <td>1171.659381</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1.674027</td>
+      <td>2.334311</td>
+      <td>0.700293</td>
+      <td>1.634018</td>
+      <td>1195.092569</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Pre zobrazenie radov využívame funkciu <code class="docutils literal notranslate"><span class="pre">grafy.plot_model_path</span></code>. Nasledujúci kód zobrazí <a class="reference internal" href="#graf-k-solow"><span class="std std-numref">Obr. 14.2</span></a>. Funkcia umožňuje tiež zobrazenie ustáleného stavu, preto ho na začiatku ešte raz vypočítame.</p>
+<div class="cell tag_remove_output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k_us</span><span class="p">,</span><span class="n">y_us</span><span class="p">,</span><span class="n">i_us</span><span class="p">,</span><span class="n">c_us</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">Ah</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alphah</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">nh</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">sh</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">deltah</span>
+            <span class="p">)</span>
+<span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+        <span class="n">k</span><span class="p">,</span>
+        <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="sa">r</span><span class="s2">"$k_t$"</span><span class="p">],</span>
+        <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$k_t$"</span><span class="p">,</span>
+        <span class="n">steady_states</span><span class="o">=</span><span class="p">{</span>
+            <span class="sa">r</span><span class="s2">"$k^*$"</span><span class="p">:</span> <span class="n">k_us</span>
+        <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zobrazenie ďalších radov nechávame na čitateľa.</p>
+</section>
+</section>
+<section id="priklad-extenzivne-premenne-v-ustalenom-stave">
+<h3><span class="section-number">14.9.2. </span>Príklad: Extenzívne premenné v ustálenom stave<a class="headerlink" href="#priklad-extenzivne-premenne-v-ustalenom-stave" title="Link to this heading">#</a></h3>
+<p>O ekonomike s agregátnou produkčnou funkciou v Cobbovom-Douglasovom tvare poznáte: úroveň technológie (1), mieru sporenia (1/3), podiel kapitálu (1/3), mieru znehodnotenia kapitálu (0,1) a mieru rastu práce (0,02). V súčasnom období žije v ekonomike 1000 obyvateľov. Predpokladáme, že ekonomika je v ustálenom stave.</p>
+<ol class="arabic simple">
+<li><p>Vypočítajte hodnoty intenzívnych premenných v ustálenom stave.</p></li>
+<li><p>Vypočítajte hodnoty extenzívnych premenných v súčasnom období a v nasledovnom období.</p></li>
+<li><p>Vypočítajte mieru rastu extenzívnych premenných medzi obidvoma obdobiami.</p></li>
+</ol>
+<section id="id5">
+<h4><span class="section-number">14.9.2.1. </span>Riešenie<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>Najprv vypočítame <strong>intenzívny kapitál v ustálenom stave</strong>. Pre Cobbovu-Douglasovu produkčnú funkciu platí podľa <a class="reference internal" href="#equation-r-cd-us">(14.15)</a></p>
+<div class="math notranslate nohighlight">
+\[
+k^*=\left[\frac{sA}{n+\delta}\right]^{\frac{1}{1-\alpha}}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+k^*=\left[\frac{\frac{1}{3}\times1}{0,02+0,1}\right]^{\frac{1}{1-\frac{1}{3}}}\approx4,63.
+\]</div>
+<p><strong>Intenzívny výstup v ustálenom stave</strong> vypočítame z produkčnej funkcie:</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=A{k^*}^{\alpha}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=1\times4,63^{\frac{1}{3}}\approx1,67.
+\]</div>
+<p><strong>Intenzívne investície v ustálenom stave</strong> sú</p>
+<div class="math notranslate nohighlight">
+\[
+i^*=sy^*,
+\]</div>
+<p>a teda</p>
+<div class="math notranslate nohighlight">
+\[
+i^*=\frac{1}{3}\times1,67\approx0,56.
+\]</div>
+<p>Rovnakú hodnotu môžeme overiť pomocou podmienky ustáleného stavu:</p>
+<div class="math notranslate nohighlight">
+\[
+i^*=(n+\delta)k^*=(0,02+0,1)\times4,63\approx0,56.
+\]</div>
+<p><strong>Intenzívna spotreba v ustálenom stave</strong> je</p>
+<div class="math notranslate nohighlight">
+\[
+c^*=(1-s)y^*
+\]</div>
+<p>a teda</p>
+<div class="math notranslate nohighlight">
+\[
+c^*=\left(1-\frac{1}{3}\right)\times1,67\approx1,11.
+\]</div>
+<p>Hodnoty intenzívnych premenných v ustálenom stave sú preto približne</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Premenná</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Intenzívny kapitál <span class="math notranslate nohighlight">\(k^*\)</span></p></td>
+<td class="text-right"><p>4,63</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Intenzívny výstup <span class="math notranslate nohighlight">\(y^*\)</span></p></td>
+<td class="text-right"><p>1,67</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Intenzívne investície <span class="math notranslate nohighlight">\(i^*\)</span></p></td>
+<td class="text-right"><p>0,56</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Intenzívna spotreba <span class="math notranslate nohighlight">\(c^*\)</span></p></td>
+<td class="text-right"><p>1,11</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Extenzívne premenné v súčasnom období</strong></p>
+<p>Extenzívnu premennú získame prenásobením intenzívnej premennej množstvom práce. V súčasnom období je</p>
+<div class="math notranslate nohighlight">
+\[
+N=1000.
+\]</div>
+<p>Extenzívny kapitál je</p>
+<div class="math notranslate nohighlight">
+\[
+K^*=Nk^*=1000\times4,63\approx4629,63.
+\]</div>
+<p>Výstup je</p>
+<div class="math notranslate nohighlight">
+\[
+Y^*=Ny^*=1000\times1,67\approx1666,67.
+\]</div>
+<p>Investície sú</p>
+<div class="math notranslate nohighlight">
+\[
+I^*=Ni^*=1000\times0,56\approx555,56.
+\]</div>
+<p>Spotreba je</p>
+<div class="math notranslate nohighlight">
+\[
+C^*=Nc^*=1000\times1,11\approx1111,11.
+\]</div>
+<p><strong>Extenzívne premenné v nasledujúcom období</strong></p>
+<p>Ekonomika je v ustálenom stave, preto sa intenzívne premenné v nasledujúcom období nemenia:</p>
+<div class="math notranslate nohighlight">
+\[
+k'^*=k^*, \qquad
+y'^*=y^*, \qquad
+i'^*=i^*, \qquad
+c'^*=c^*.
+\]</div>
+<p>Množstvo práce však rastie mierou <span class="math notranslate nohighlight">\(n=0,02\)</span>. V nasledujúcom období preto bude</p>
+<div class="math notranslate nohighlight">
+\[
+N'=(1+n)N=1,02\times1000=1020.
+\]</div>
+<p>Extenzívny kapitál v nasledujúcom období je</p>
+<div class="math notranslate nohighlight">
+\[
+K'^*=N'k^*=1020\times4,63\approx4722,22.
+\]</div>
+<p>Výstup je</p>
+<div class="math notranslate nohighlight">
+\[
+Y'^*=N'y^*=1020\times1,67\approx1700,00.
+\]</div>
+<p>Investície sú</p>
+<div class="math notranslate nohighlight">
+\[
+I'^*=N'i^*=1020\times0,56\approx566,67.
+\]</div>
+<p>Spotreba je</p>
+<div class="math notranslate nohighlight">
+\[
+C'^*=N'c^*=1020\times1,11\approx1133,33.
+\]</div>
+<p>Výsledky môžeme zhrnúť v tabuľke:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id10">
+<caption><span class="caption-number">Tab. 14.2 </span><span class="caption-text">Extenzívne premenné v prvých dvoch obdobiach</span><a class="headerlink" href="#id10" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Extenzívna premenná</p></th>
+<th class="head text-right"><p>Súčasné obdobie</p></th>
+<th class="head text-right"><p>Nasledujúce obdobie</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Kapitál <span class="math notranslate nohighlight">\(K^*\)</span></p></td>
+<td class="text-right"><p>4629,63</p></td>
+<td class="text-right"><p>4722,22</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Výstup <span class="math notranslate nohighlight">\(Y^*\)</span></p></td>
+<td class="text-right"><p>1666,67</p></td>
+<td class="text-right"><p>1700,00</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Investície <span class="math notranslate nohighlight">\(I^*\)</span></p></td>
+<td class="text-right"><p>555,56</p></td>
+<td class="text-right"><p>566,67</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Spotreba <span class="math notranslate nohighlight">\(C^*\)</span></p></td>
+<td class="text-right"><p>1111,11</p></td>
+<td class="text-right"><p>1133,33</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="miera-rastu-extenzivnych-premennych">
+<h5><span class="section-number">14.9.2.1.1. </span>Miera rastu extenzívnych premenných<a class="headerlink" href="#miera-rastu-extenzivnych-premennych" title="Link to this heading">#</a></h5>
+<p>Mieru rastu každej extenzívnej premennej môžeme vypočítať ako</p>
+<div class="math notranslate nohighlight">
+\[
+g(X)=\frac{X'^*}{X^*}-1.
+\]</div>
+<p>Pre kapitál dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+g(K)=\frac{4722,22}{4629,63}-1=0,02.
+\]</div>
+<p>Analogicky pre výstup</p>
+<div class="math notranslate nohighlight">
+\[
+g(Y)=\frac{1700}{1666,67}-1=0,02,
+\]</div>
+<p>pre investície</p>
+<div class="math notranslate nohighlight">
+\[
+g(I)=\frac{566,67}{555,56}-1=0,02
+\]</div>
+<p>a pre spotrebu</p>
+<div class="math notranslate nohighlight">
+\[
+g(C)=\frac{1133,33}{1111,11}-1=0,02.
+\]</div>
+<p>Všetky extenzívne premenné preto rastú mierou</p>
+<div class="math notranslate nohighlight">
+\[
+g(K)=g(Y)=g(I)=g(C)=n=0,02.
+\]</div>
+<p>Hoci sa ekonomika nachádza v ustálenom stave, jej extenzívne premenné sa v čase nezastavia. Intenzívne premenné <span class="math notranslate nohighlight">\(k^*\)</span>, <span class="math notranslate nohighlight">\(y^*\)</span>, <span class="math notranslate nohighlight">\(i^*\)</span> a <span class="math notranslate nohighlight">\(c^*\)</span> zostávajú konštantné, ale kapitál, výstup, investície a spotreba rastú spolu s množstvom práce mierou <span class="math notranslate nohighlight">\(n=2\,\%\)</span>.</p>
+</section>
+</section>
+<section id="id6">
+<h4><span class="section-number">14.9.2.2. </span>Python<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>V nasledovnom kóde vypočítame ustálený stav intenzívnych premenných.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">s</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">delta</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="n">n</span><span class="o">=</span><span class="mf">0.02</span>
+<span class="n">N0</span><span class="o">=</span><span class="mi">1000</span>
+
+<span class="n">k_us</span><span class="p">,</span><span class="n">y_us</span><span class="p">,</span><span class="n">i_us</span><span class="p">,</span><span class="n">c_us</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">us</span><span class="p">(</span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">)</span>
+
+<span class="n">df_us</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">"Označenie"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"k*"</span><span class="p">,</span><span class="s2">"y*"</span><span class="p">,</span><span class="s2">"i*"</span><span class="p">,</span><span class="s2">"c*"</span><span class="p">],</span>
+    <span class="s2">"Premenná"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">"Kapitál"</span><span class="p">,</span>
+        <span class="s2">"Výstup"</span><span class="p">,</span>
+        <span class="s2">"Investície"</span><span class="p">,</span>
+        <span class="s2">"Spotreba"</span>
+    <span class="p">],</span>
+    <span class="s2">"Hodnota"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">k_us</span><span class="p">,</span>
+        <span class="n">y_us</span><span class="p">,</span>
+        <span class="n">i_us</span><span class="p">,</span>
+        <span class="n">c_us</span>
+    <span class="p">]</span>
+<span class="p">})</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"Označenie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Intenzívne premenné v ustálenom stave"</span><span class="p">)</span>
+<span class="n">df_us</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Intenzívne premenné v ustálenom stave
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Premenná</th>
+      <th>Hodnota</th>
+    </tr>
+    <tr>
+      <th>Označenie</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>k*</th>
+      <td>Kapitál</td>
+      <td>4.629630</td>
+    </tr>
+    <tr>
+      <th>y*</th>
+      <td>Výstup</td>
+      <td>1.666667</td>
+    </tr>
+    <tr>
+      <th>i*</th>
+      <td>Investície</td>
+      <td>0.555556</td>
+    </tr>
+    <tr>
+      <th>c*</th>
+      <td>Spotreba</td>
+      <td>1.111111</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Ukážeme hodnoty extenzívnych premenných v súčasnom období a v nasledovnom období.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extenzívne premenné</span>
+
+<span class="n">k</span><span class="p">,</span><span class="n">index</span><span class="p">,</span><span class="n">N</span><span class="p">,</span><span class="o">*</span><span class="n">_</span> <span class="o">=</span> <span class="n">grafy</span><span class="o">.</span><span class="n">rady</span><span class="p">(</span><span class="n">k0</span><span class="o">=</span><span class="n">k_us</span><span class="p">,</span><span class="n">N0</span><span class="o">=</span><span class="n">N0</span><span class="p">,</span><span class="n">A0</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">,</span><span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">,</span><span class="n">T</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">c</span><span class="o">=</span> <span class="n">grafy</span><span class="o">.</span><span class="n">rovnice</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span><span class="n">A</span><span class="o">=</span><span class="n">A</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span><span class="n">s</span><span class="o">=</span><span class="n">s</span><span class="p">)</span>
+<span class="n">K</span><span class="o">=</span><span class="n">k</span><span class="o">*</span><span class="n">N</span>
+<span class="n">Y</span><span class="o">=</span><span class="n">y</span><span class="o">*</span><span class="n">N</span>
+<span class="n">I</span><span class="o">=</span><span class="n">i</span><span class="o">*</span><span class="n">N</span>
+<span class="n">C</span><span class="o">=</span><span class="n">c</span><span class="o">*</span><span class="n">N</span>
+<span class="n">DF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">"K*"</span><span class="p">:</span> <span class="n">K</span><span class="p">,</span><span class="s2">"Y*"</span><span class="p">:</span> <span class="n">Y</span><span class="p">,</span><span class="s2">"I*"</span><span class="p">:</span> <span class="n">I</span><span class="p">,</span><span class="s2">"C*"</span><span class="p">:</span> <span class="n">C</span><span class="p">,</span><span class="s2">"N"</span><span class="p">:</span><span class="n">N</span><span class="p">},</span><span class="n">index</span><span class="o">=</span><span class="n">index</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Extenzívne premenné v prvých dvoch obdobiach"</span><span class="p">)</span>
+<span class="n">DF</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Extenzívne premenné v prvých dvoch obdobiach
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>K*</th>
+      <th>Y*</th>
+      <th>I*</th>
+      <th>C*</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4629.629630</td>
+      <td>1666.666667</td>
+      <td>555.555556</td>
+      <td>1111.111111</td>
+      <td>1000.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4722.222222</td>
+      <td>1700.000000</td>
+      <td>566.666667</td>
+      <td>1133.333333</td>
+      <td>1020.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Výpočet</span> <span class="n">mier</span> <span class="n">rastu</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g_DF</span> <span class="o">=</span> <span class="n">DF</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Miery rastu extenzívnych premenných"</span><span class="p">)</span>
+<span class="n">g_DF</span><span class="o">.</span><span class="n">iloc</span><span class="p">[[</span><span class="mi">1</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Miery rastu extenzívnych premenných
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>K*</th>
+      <th>Y*</th>
+      <th>I*</th>
+      <th>C*</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="graf-priebehu-casoveho-radu">
+<h4><span class="section-number">14.9.2.3. </span>Graf priebehu časového radu<a class="headerlink" href="#graf-priebehu-casoveho-radu" title="Link to this heading">#</a></h4>
+<p>Znova môžeme využiť funkciu <code class="docutils literal notranslate"><span class="pre">grafy.plot_model_path</span></code> na zobrazenie priebehu celého časového radu. Napríklad <a class="reference internal" href="#graf-ye-solow"><span class="std std-numref">Obr. 14.8</span></a> môžeme získať nasledovným kódom.</p>
+<div class="cell tag_remove-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span><span class="n">ax</span><span class="p">,</span><span class="n">df</span><span class="o">=</span><span class="n">grafy</span><span class="o">.</span><span class="n">plot_model_path</span><span class="p">(</span>
+        <span class="n">Y</span><span class="p">,</span>
+        <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$Y_t$"</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="miery-rastu-extenzivnych-premennych-v-dalsich-obdobiach">
+<h4><span class="section-number">14.9.2.4. </span>Miery rastu extenzívnych premenných v ďalších obdobiach<a class="headerlink" href="#miery-rastu-extenzivnych-premennych-v-dalsich-obdobiach" title="Link to this heading">#</a></h4>
+<p>Presvedčme sa, že extenzívne premenné rastú mierou <span class="math notranslate nohighlight">\(n\)</span> v celej dĺžke časových radov.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g_DF</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>K*</th>
+      <th>Y*</th>
+      <th>I*</th>
+      <th>C*</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>45</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="priklad-zlate-pravidlo">
+<h3><span class="section-number">14.9.3. </span>Príklad: Zlaté pravidlo<a class="headerlink" href="#priklad-zlate-pravidlo" title="Link to this heading">#</a></h3>
+<p>Ak je agregovaná produkčná funkcia v Cobbovom-Douglasovom tvare s konštantnými výnosmi z rozsahu, odvoďte, pri akej hodnote miery sporenia je intenzívna spotreba v ustálenom stave maximálna.</p>
+<section id="id7">
+<h4><span class="section-number">14.9.3.1. </span>Riešenie<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Podmienka prvého rádu zlatého pravidla je <a class="reference internal" href="#equation-r-zlate">(14.14)</a>:</p>
+<div class="math notranslate nohighlight">
+\[
+mpk(k^{**})-\delta=n.
+\]</div>
+<p>Pri Cobbovej-Douglasovej produkčnej funkcii</p>
+<div class="math notranslate nohighlight">
+\[
+y=Ak^\alpha
+\]</div>
+<p>je hraničný produkt kapitálu</p>
+<div class="math notranslate nohighlight">
+\[
+mpk(k)=\alpha A k^{\alpha-1}.
+\]</div>
+<p>Podmienku zlatého pravidla preto môžeme zapísať ako</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha A(k^{**})^{\alpha-1}=n+\delta.
+\]</div>
+<p>Intenzívny kapitál v ustálenom stave pri Cobbovej-Douglasovej produkčnej funkcii je podľa <a class="reference internal" href="#equation-r-cd-us">(14.15)</a></p>
+<div class="math notranslate nohighlight">
+\[
+k^*=\left[\frac{sA}{n+\delta}\right]^{\frac{1}{1-\alpha}}.
+\]</div>
+<p>Ak má byť ustálený stav zároveň stavom, v ktorom je intenzívna spotreba maximálna, platí</p>
+<div class="math notranslate nohighlight">
+\[
+k^{**}=\left[\frac{s^*A}{n+\delta}\right]^{\frac{1}{1-\alpha}}.
+\]</div>
+<p>Dosadením do podmienky zlatého pravidla získame</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha A\left[\left(\frac{s^*A}{n+\delta}\right)^{\frac{1}{1-\alpha}}\right]^{\alpha-1}=n+\delta.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha-1}{1-\alpha}=-1
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha A\left( \frac{s^*A}{n+\delta}\right)^{-1}=n+\delta.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha A\frac{n+\delta}{s^*A}=n+\delta.
+\]</div>
+<p>Po vykrátení <span class="math notranslate nohighlight">\(A\)</span> a <span class="math notranslate nohighlight">\(n+\delta\)</span> získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha}{s^*}=1,
+\]</div>
+<p>a teda</p>
+<div class="math notranslate nohighlight" id="equation-r-s-zlate">
+<span class="eqno">(14.16)<a class="headerlink" href="#equation-r-s-zlate" title="Link to this equation">#</a></span>\[s^*=\alpha.\]</div>
+<p>Pri Cobbovej-Douglasovej produkčnej funkcii je preto intenzívna spotreba v ustálenom stave maximálna vtedy, keď sa <strong>miera sporenia rovná podielu kapitálu na výstupe</strong>.</p>
+</section>
+<section id="id8">
+<h4><span class="section-number">14.9.3.2. </span>Python<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<p>Na odvodenie využijeme symboly, ktoré sme deklarovali v príklade <a class="reference internal" href="#priklad-solow-zaklad"><span class="std std-ref">Príklad: Ustálený a prechodný stav</span></a>. Keďže sme si prepísali kapitál v ustálenom stave <code class="docutils literal notranslate"><span class="pre">k_us</span></code>, vyjadríme ho ešte raz.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Odvodenie kapitálu v ustálenom stave ešte raz</span>
+<span class="n">k_us</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">ss</span><span class="o">*</span><span class="n">As</span><span class="o">*</span><span class="n">k_star</span><span class="o">**</span><span class="n">alphas</span><span class="o">-</span><span class="p">(</span><span class="n">deltas</span><span class="o">+</span><span class="n">ns</span><span class="p">)</span><span class="o">*</span><span class="n">k_star</span><span class="p">,</span><span class="n">k_star</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">k_us</span><span class="o">=</span><span class="n">k_us</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">s_golden</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">alphas</span><span class="o">*</span><span class="n">As</span><span class="o">*</span><span class="n">k_us</span><span class="p">[</span><span class="n">k_star</span><span class="p">]</span><span class="o">**</span><span class="p">(</span><span class="n">alphas</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">ns</span><span class="o">-</span><span class="n">deltas</span><span class="p">,</span><span class="n">ss</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">s_golden</span><span class="o">=</span><span class="n">s_golden</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Miera sporenia v zlatom pravidle"</span><span class="p">)</span>
+<span class="n">simplify</span><span class="p">(</span><span class="n">s_golden</span><span class="p">[</span><span class="n">ss</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Miera sporenia v zlatom pravidle
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left(\alpha^{\frac{1}{\alpha - 1}}\right)^{\alpha - 1}\]</div>
+</div>
+</div>
+<p>Keďže sme v kóde deklarovali iba pozitívnosť parametra <span class="math notranslate nohighlight">\(\alpha\)</span>, SymPy neuvažuje predpoklad <span class="math notranslate nohighlight">\(0&lt;\alpha&lt;1\)</span>, ktorý používame v Cobbovej-Douglasovej produkčnej funkcii. Preto vo výstupe nie je ďalšie zjednodušenie výrazu. Pri <span class="math notranslate nohighlight">\(0&lt;\alpha&lt;1\)</span> však z odvodenia vyplýva <a class="reference internal" href="#equation-r-s-zlate">(14.16)</a>.</p>
+</section>
+</section>
+<section id="priklad-kalibracia-solowovho-modelu">
+<h3><span class="section-number">14.9.4. </span>Príklad: Kalibrácia Solowovho modelu<a class="headerlink" href="#priklad-kalibracia-solowovho-modelu" title="Link to this heading">#</a></h3>
+<p>Parametre Solowovho modelu môžeme priblížiť pomocou pozorovaných makroekonomických údajov. V databáze Penn World Table (PWT) vypočítame priemerný podiel investícií na HDP, podiel práce na HDP, mieru znehodnotenia kapitálu a mieru rastu populácie.</p>
+<p>Keďže v Solowovom modeli platí <span class="math notranslate nohighlight">\(S=I\)</span>, mieru sporenia <span class="math notranslate nohighlight">\(s\)</span> kalibrujeme pomocou priemerného podielu investícií na HDP. Podiel kapitálu na výstupe <span class="math notranslate nohighlight">\(\alpha\)</span> získame ako zvyšok podielu práce na výstupe do 1. Mieru rastu práce <span class="math notranslate nohighlight">\(n\)</span> aproximujeme mierou rastu populácie.</p>
+<div class="admonition-upozornenie admonition">
+<p class="admonition-title">Upozornenie</p>
+<p>Solowov model predpokladá uzavretú ekonomiku, v ktorej platí <span class="math notranslate nohighlight">\(S=I\)</span>. Skutočné ekonomiky sú však otvorené, a preto sa domáce úspory nemusia rovnať domácim investíciám. Pri kalibrácii preto používame podiel investícií na HDP ako aproximáciu modelovej miery sporenia. Táto aproximácia je tým presnejšia, čím menší je rozdiel medzi úsporami a investíciami.</p>
+</div>
+<p>Pripomeňme tiež <a class="reference internal" href="StaticModel.html#alpha-kalibracia"><span class="std std-ref">upozornenie</span></a> spojené s kalibráciou podielu kapitálu.</p>
+<p>Načítame databázu PWT. Cesta k súboru musí byť <code class="docutils literal notranslate"><span class="pre">Data/pwt110.xlsx</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># načítanie PWT</span>
+<span class="n">pwt</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"Data/pwt110.xlsx"</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s2">"Data"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vyberieme krajinu a obdobie.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pwt</span><span class="p">[</span>
+    <span class="p">(</span><span class="n">pwt</span><span class="p">[</span><span class="s2">"country"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Slovakia"</span><span class="p">)</span> <span class="o">&amp;</span>
+    <span class="p">(</span><span class="n">pwt</span><span class="p">[</span><span class="s2">"year"</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1991</span>
+    <span class="p">)</span>
+<span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Výpočet radu mier rastu populácie.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">"n"</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"pop"</span><span class="p">]</span><span class="o">.</span><span class="n">pct_change</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vypočítame priemery všetkých potrebných ukazovateľov.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"csh_i"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="s2">"labsh"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"delta"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s2">"n"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_parametre</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">"Označenie"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"s"</span><span class="p">,</span><span class="s2">"alpha"</span><span class="p">,</span><span class="s2">"delta"</span><span class="p">,</span><span class="s2">"n"</span><span class="p">],</span>
+    <span class="s2">"Premenná"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">"Miera sporenia"</span><span class="p">,</span>
+        <span class="s2">"Podiel kapitálu na HDP"</span><span class="p">,</span>
+        <span class="s2">"Miera znehodnotenia kapitálu"</span><span class="p">,</span>
+        <span class="s2">"Miera rastu práce"</span>
+    <span class="p">],</span>
+    <span class="s2">"Hodnota"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="n">s</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="p">,</span>
+        <span class="n">delta</span><span class="p">,</span>
+        <span class="n">n</span>
+    <span class="p">]</span>
+<span class="p">})</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">"Označenie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Parametre v slovenskej ekonomike"</span><span class="p">)</span>
+<span class="n">df_parametre</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Parametre v slovenskej ekonomike
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Premenná</th>
+      <th>Hodnota</th>
+    </tr>
+    <tr>
+      <th>Označenie</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>s</th>
+      <td>Miera sporenia</td>
+      <td>0.240362</td>
+    </tr>
+    <tr>
+      <th>alpha</th>
+      <td>Podiel kapitálu na HDP</td>
+      <td>0.488248</td>
+    </tr>
+    <tr>
+      <th>delta</th>
+      <td>Miera znehodnotenia kapitálu</td>
+      <td>0.043923</td>
+    </tr>
+    <tr>
+      <th>n</th>
+      <td>Miera rastu práce</td>
+      <td>0.001352</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">14.10. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-solowov-model">
+<h3><span class="section-number">14.10.1. </span>Príklad: Solowov model<a class="headerlink" href="#priklad-solowov-model" title="Link to this heading">#</a></h3>
+<p>O ekonomike poznáte tieto údaje: úroveň technológie (2), podiel kapitálu na reálnom HDP (0,5), množstvo kapitálu (40) a práce (10), mieru sporenia (12 %), mieru znehodnotenia kapitálu (4 %) a mieru rastu práce (2 %). Produkčná funkcia je v Cobbovom-Douglasovom tvare s konštantnými výnosmi z rozsahu.</p>
+<ol class="arabic simple">
+<li><p>Rozhodnite, či je ekonomika v prechodnom alebo ustálenom stave, rozhodnutie zdôvodnite.</p></li>
+<li><p>Vypočítajte intenzívny kapitál, HDP, spotrebu, investície a úspory v prvých dvoch obdobiach.</p></li>
+<li><p>Vypočítajte intenzívny kapitál, HDP, spotrebu, investície a úspory v ustálenom stave.</p></li>
+<li><p>Vypočítajte extenzívny kapitál, HDP, investície, úspory a spotrebu v prvých dvoch obdobiach.</p></li>
+<li><p>Predpokladajte teraz, že ekonomika začína v ustálenom stave a množstvo práce je <span class="math notranslate nohighlight">\(N=10\)</span>. Vypočítajte extenzívny kapitál, HDP, investície, úspory a spotrebu v súčasnom a nasledujúcom období a vypočítajte miery ich rastu.</p></li>
+<li><p>Pri akej miere sporenia je spotreba v ustálenom stave maximálna?</p></li>
+</ol>
+</section>
+<section id="id9">
+<h3><span class="section-number">14.10.2. </span>Príklad: Kalibrácia Solowovho modelu<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Vyberte krajinu, pre ktorú majú všetky potrebné ročné časové rady v databáze PWT každý aspoň 30 pozorovaní.</p></li>
+<li><p>Pre vybranú krajinu kalibrujte parametre Solowovho modelu.</p></li>
+<li><p>Normalizujte úroveň technológie na <span class="math notranslate nohighlight">\(A=1\)</span>. Vypočítajte hodnoty intenzívnych endogénnych premenných v poslednom dostupnom období a ich hodnoty v ustálenom stave. Porovnajte ich.</p></li>
+<li><p>Vypočítajte úroveň technológie <span class="math notranslate nohighlight">\(A\)</span>, pri ktorej by sa vybraná ekonomika pri kapitálovej vybavenosti v poslednom dostupnom období nachádzala v ustálenom stave.</p></li>
+<li><p>Vypočítajte mieru sporenia podľa zlatého pravidla. Porovnajte ju s kalibrovanou mierou sporenia a rozhodnite, či je podľa Solowovho modelu kalibrovaná miera sporenia vyššia alebo nižšia ako miera sporenia maximalizujúca intenzívnu spotrebu v ustálenom stave.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="DynMer.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">13. </span>Makroekonomické merania v čase a priestore</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Rast.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">15. </span>Konvergencia a ustálený rast</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#solowov-model-rastu">14.1. Solowov model rastu</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#produkcna-funkcia">14.1.1. Produkčná funkcia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu-prace">14.1.2. Miera rastu práce</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uspory">14.1.3. Úspory</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zakladna-rovnica-solowovho-modelu">14.2. Základná rovnica Solowovho modelu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-interpretacia-zakladnej-rovnice-solowovho-modelu">14.3. Grafická interpretácia základnej rovnice Solowovho modelu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#casove-rady">14.4. Časové rady</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ustaleny-stav">14.5. Ustálený stav</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graficka-identifikacia-ustaleneho-stavu">14.6. Grafická identifikácia ustáleného stavu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extenzivne-premenne-v-ustalenom-stave">14.7. Extenzívne premenné v ustálenom stave</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zlate-pravidlo">14.8. Zlaté pravidlo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">14.9. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-ustaleny-a-prechodny-stav">14.9.1. Príklad: Ustálený a prechodný stav</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">14.9.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">14.9.1.2. Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">14.9.1.3. Časové rady</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-extenzivne-premenne-v-ustalenom-stave">14.9.2. Príklad: Extenzívne premenné v ustálenom stave</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">14.9.2.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#miera-rastu-extenzivnych-premennych">14.9.2.1.1. Miera rastu extenzívnych premenných</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">14.9.2.2. Python</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#graf-priebehu-casoveho-radu">14.9.2.3. Graf priebehu časového radu</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#miery-rastu-extenzivnych-premennych-v-dalsich-obdobiach">14.9.2.4. Miery rastu extenzívnych premenných v ďalších obdobiach</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-zlate-pravidlo">14.9.3. Príklad: Zlaté pravidlo</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">14.9.3.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">14.9.3.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-kalibracia-solowovho-modelu">14.9.4. Príklad: Kalibrácia Solowovho modelu</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">14.10. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-solowov-model">14.10.1. Príklad: Solowov model</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">14.10.2. Príklad: Kalibrácia Solowovho modelu</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,2320 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>10. Systémy národných účtov a makroekonomická rovnováha &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Zaklad';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="11. Statický model všeobecnej rovnováhy" href="StaticModel.html" />
+    <link rel="prev" title="9. Teória všeobecnej rovnováhy" href="Rovnovaha.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Zaklad.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Systémy národných účtov a makroekonomická rovnováha</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-aktivita">10.1. Ekonomická aktivita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vydavkova-metoda">10.1.1. Výdavková metóda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prijmova-metoda">10.1.2. Príjmová metóda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-pridanej-hodnoty">10.1.3. Metóda pridanej hodnoty</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-narodnych-uctov">10.2. Systém národných účtov</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bezny-ucet-platobnej-bilancie">10.2.1. Bežný účet platobnej bilancie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-a-jeho-vyuzitie">10.2.2. Agregovaný príjem a jeho využitie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verejny-rozpocet">10.2.3. Verejný rozpočet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identita-uspor-a-investicii">10.2.4. Identita úspor a investícií</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulka-medziodvetvovych-vztahov">10.3. Tabuľka medziodvetvových vzťahov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">10.4. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vypocet-hdp">10.4.1. Príklad: Výpočet HDP</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">10.4.1.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.4.1.1.1. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10.4.1.1.2. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">10.4.1.1.3. Metóda pridanej hodnoty</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.4.1.1.4. Tabuľka medziodvetvových vzťahov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem">10.4.1.1.5. Agregovaný príjem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-zmena-stavu-zasob">10.4.2. Príklad: zmena stavu zásob</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.4.2.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.4.2.1.1. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.4.2.1.2. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-uspory-a-investicie">10.4.2.1.3. Agregovaný príjem, úspory a investície</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.4.2.1.4. Tabuľka medziodvetvových vzťahov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vztahy-so-zvyskom-sveta">10.4.3. Príklad: Vzťahy so zvyškom sveta</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.4.3.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.4.3.1.1. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.4.3.1.2. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.4.3.1.3. Metóda pridanej hodnoty</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-uspory-a-bezny-ucet">10.4.3.1.4. Agregovaný príjem, úspory a bežný účet</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.4.3.1.5. Tabuľka medziodvetvových vzťahov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">10.5. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-pridana-hodnota">10.5.1. Príklad: Pridaná hodnota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-polozky-systemu-narodnych-uctov">10.5.2. Príklad: Položky systému národných účtov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.5.3. Príklad: Výpočet HDP</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="systemy-narodnych-uctov-a-makroekonomicka-rovnovaha">
+<h1><span class="section-number">10. </span>Systémy národných účtov a makroekonomická rovnováha<a class="headerlink" href="#systemy-narodnych-uctov-a-makroekonomicka-rovnovaha" title="Link to this heading">#</a></h1>
+<p>V predchádzajúcej kapitole sme ukázali, že vo všeobecnej rovnováhe musia byť všetky trhy v ekonomike súčasne v rovnováhe. Pre každý statok sa preto agregátny dopyt rovná agregátnej ponuke a ekonomické rozhodnutia jednotlivých subjektov sú navzájom konzistentné.</p>
+<p>Pri skúmaní reálnych ekonomík však zvyčajne neanalyzujeme každý trh samostatne. Namiesto toho jednotlivé trhy a transakcie agregujeme do väčších celkov, ako sú spotreba, investície, vládne nákupy, export alebo dôchodky jednotlivých sektorov ekonomiky.</p>
+<p>Systémy národných účtov predstavujú sústavu identít, ktoré zachytávajú tieto agregované vzťahy. Podobne ako podmienky všeobecnej rovnováhy, aj identity národných účtov vyjadrujú rovnosť medzi rôznymi pohľadmi na tú istú ekonomickú aktivitu. Produkcia jedného subjektu je príjmom iného, výdavky jedného sektora sú príjmom iného a celkový výstup ekonomiky možno merať viacerými ekvivalentnými spôsobmi.</p>
+<p>V nasledujúcej kapitole preto prejdeme od všeobecnej rovnováhy jednotlivých trhov k agregovanému pohľadu na ekonomiku ako celok. Predstavíme systémy národných účtov a ukážeme, ako ich identity tvoria základ makroekonomickej analýzy a modelov makroekonomickej rovnováhy.</p>
+<section id="ekonomicka-aktivita">
+<h2><span class="section-number">10.1. </span>Ekonomická aktivita<a class="headerlink" href="#ekonomicka-aktivita" title="Link to this heading">#</a></h2>
+<p>Poznáme tri metódy ako merať ekonomickú aktivitu: výdavkovú metódu, príjmovú metódu a metódu pridanej hodnoty. Ekvivalencia týchto troch metód vyplýva z rovnovážnych vzťahov medzi jednotlivými sektormi ekonomiky a predstavuje agregovaný pohľad na všeobecnú rovnováhu.</p>
+<section id="vydavkova-metoda">
+<span id="kap-hdp"></span><h3><span class="section-number">10.1.1. </span>Výdavková metóda<a class="headerlink" href="#vydavkova-metoda" title="Link to this heading">#</a></h3>
+<p>Výdavkovou metódou meriame ekonomickú aktivitu tak, že sčítame všetky výdavky na konečnú spotrebu vyprodukovaných tovarov a služieb v ekonomike za isté časové obdobie (rok, štvrťrok …) v peňažných jednotkách (eurách). Tieto výdavky možno členiť podľa toho, kto ich nakupuje. V ekonomike sú štyri sektory: domácnosti, firmy, všetky úrovne verejnej sféry (resp. vlády) a zahraničie alebo zvyšok sveta. Hovoríme tak o konečnej spotrebe domácností, konečnej spotrebe verejnej sféry (budeme ju nazývať aj vládne nákupy), hrubé investície a čistý vývoz.</p>
+<dl class="simple myst" id="def-c">
+<dt>Konečná spotreba domácností</dt><dd><p>Do konečnej spotreby domácností sa započítavajú výdavky na vyprodukované tovary a služby v peňažných jednotkách, ktoré za dané obdobie spotrebujú domácnosti. Výnimku tvoria nehnuteľnosti, ktoré sa zaraďujú do hrubých investícií.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-i">
+<dt>Hrubé investície</dt><dd><p>Hrubé investície predstavujú výdavky na tvorbu kapitálu.</p>
+</dd>
+</dl>
+<p>Hrubé investície sú takisto vyjadrené v peňažných jednotkách v danom období. Môžeme ich členiť na fixné hrubé investície a zmenu stavu zásob.</p>
+<p>Fixné hrubé investície sú výdavky do nových kapitálových tovarov (do strojov, zariadení alebo nehnuteľností). Tieto kapitálové tovary sú trvalé a slúžia ako vstupy produkcie v období viac rokov. Započítavajú sa tu aj nákupy nových nehnuteľností domácnosťami. Zmena stavu zásob zachytáva zmeny na skladoch firiem a obchodov za dané obdobie. Pochopiteľne, záporná hodnota tejto položky nie je nič mimoriadne.</p>
+<p>Prívlastok „hrubé“ vyjadruje, že do investícií sa započítava nielen tvorba nového kapitálu, ale aj kapitál potrebný na nahradenie opotrebovaných kapitálových statkov.</p>
+<dl class="simple myst" id="def-odpisy">
+<dt>Odpisy</dt><dd><p>Peňažne vyjadrené opotrebenie kapitálu nazývame odpisy.</p>
+</dd>
+</dl>
+<p>Ak od hrubých investícií odpočítame odpisy, získame čisté investície.</p>
+<dl class="simple myst" id="def-ciste-i">
+<dt>Čisté investície</dt><dd><p>Čisté investície predstavujú prírastok kapitálovej zásoby ekonomiky za dané obdobie.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-g">
+<dt>Vládne nákupy</dt><dd><p>Vládne nákupy (konečná spotreba vlády) sú výdavky všetkých úrovní verejnej sféry (t. j. napr. úrad vlády, krajské úrady, polícia, armáda, verejné školy, štátne podniky, …) na tovary a služby v peňažných jednotkách za dané obdobie.</p>
+</dd>
+</dl>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>V makroekonómii budeme pod pojmom <strong>vláda</strong> rozumieť celý <strong>verejný sektor</strong>, nie iba vládu v politickom zmysle slova.</p>
+<p>Do sektora vlády preto zaraďujeme všetky úrovne verejnej správy a verejné inštitúcie, napríklad ministerstvá, úrady, políciu, armádu, súdy, verejné školy, obce, mestá a ďalšie organizácie financované z verejných zdrojov.</p>
+</div>
+<div class="admonition-upozornenie admonition">
+<p class="admonition-title">Upozornenie</p>
+<p>Rôzne metodiky merania výkonnosti ekonomiky sa líšia, podľa toho, či sa do hrubých investícií započítavajú iba hrubé súkromné (nákupy kapitálových tovarov súkromnými firmami a domácnosťami) alebo aj hrubé verejné investície. Americká metodika (National Income and Product Account, NIPA) vykazuje hrubé súkromné investície, do ktorých sa hrubé verejné investície nezapočítavajú. Európska metodika (Európsky systém národných účtov, ESA 2010) vykazuje hrubú tvorbu kapitálu, v ktorej sú započítané súkromné aj verejné hrubé investície.</p>
+<p>Vládne nákupy sú podľa metodiky ESA 2010 spotrebného charakteru, hovoríme o konečnej spotrebe verejnej správy. Podľa metodiky NIPA sú tovary, ktoré nakupuje verejný sektor aj spotrebného aj kapitálového charakteru, hovoríme o vládnych nákupoch tovarov a služieb a verejných investíciách. Metodika NIPA sleduje zvlášť vládne nákupy tovarov a služieb a zvlášť verejné investície. Verejnými investíciami sa zvyšuje verejný kapitál. Odteraz pod pojmom „vláda“ budeme rozumieť všetky úrovne verejnej sféry.</p>
+</div>
+<p>Ak je ekonomika otvorená, do výdavkov na konečnú spotrebu domácností, firiem a vlády sú započítané aj nákupy dovezených tovarov a služieb. Naopak, v týchto výdavkoch nie sú započítané tovary a služby vyprodukované v ekonomike, ale vyvezené do zahraničia. Preto ešte treba odpočítať dovoz a pripočítať vývoz.</p>
+<dl class="simple myst" id="def-x">
+<dt>Čistý vývoz</dt><dd><p>je rozdiel medzi vývozom a dovozom v peňažných jednotkách za dané obdobie.</p>
+</dd>
+</dl>
+<p>Čistý vývoz je bilančná položka obchodného vzťahu so zahraničím. Nazývame ho tiež obchodná bilancia. Často sa stáva, že čistý vývoz môže dosahovať zápornú hodnotu, podobne ako zmena stavu zásob. Záporná hodnota predstavuje deficit obchodnej bilancie, kladná prebytok obchodnej bilancie so zahraničím.</p>
+<p>Súčet konečnej spotreby domácností, vlády, hrubých investícií a čistého vývozu nazývame hrubý domáci produkt. Spôsob výpočtu rezultuje do definície výpočtu HDP.</p>
+<div class="admonition-znacenie admonition">
+<p class="admonition-title">Značenie</p>
+<p>V makroekonomickej literatúre sa čistý vývoz zvykne označovať <span class="math notranslate nohighlight">\(NX\)</span>. V našej učebnici by sa to mohlo pliesť s prácou <span class="math notranslate nohighlight">\(N\)</span>. Navyše označenie iba jedným písmenom <span class="math notranslate nohighlight">\(X\)</span> je z praktické z matematického hľadiska.</p>
+</div>
+<dl class="simple myst">
+<dt>Hrubý domáci produkt (HDP)</dt><dd><p>Sú to peňažne vyjadrené výdavky na konečnú spotrebu všetkých tovarov a služieb vyprodukovaných na území ekonomiky v danom období.</p>
+</dd>
+<dt>Čistý domáci produkt</dt><dd><p>Ak od hrubého domáceho produktu odpočítame odpisy, získame čistý domáci produkt.</p>
+</dd>
+</dl>
+<p>Čistý domáci produkt získame aj sčítaním konečnej spotreby domácností, vlády, čistých súkromných investícií a čistého vývozu.</p>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Pripomeňme, že do HDP sa započítava iba produkcia nových tovarov a služieb. Predaj už existujúcich tovarov sa do HDP nezapočítava, pretože ich hodnota bola do HDP zahrnutá už v období ich vzniku. Pri predaji ojazdeného auta sa preto do HDP môže započítať iba hodnota nových služieb súvisiacich s predajom, napríklad provízia autobazára.</p>
+</div>
+<p>Na <a class="reference internal" href="#graf-hdp-zlozky"><span class="std std-numref">Obr. 10.1</span></a> je zobrazený priebeh sezónne očistených reálnych štvrťročných časových radov HDP (<span class="math notranslate nohighlight">\(Y\)</span>) a konečnej spotreby domácnostií (<span class="math notranslate nohighlight">\(C\)</span>), vlády (<span class="math notranslate nohighlight">\(G\)</span>), investícií (<span class="math notranslate nohighlight">\(I\)</span>) a čistého vývozu (<span class="math notranslate nohighlight">\(X\)</span>). Údaje sme získali z databázy Eurostat <span class="bibtex-citation" id="id1">[<a class="reference internal" href="Literatura.html#id12" title="Eurostat. Eurostat database. 2026. Prístup: 11. september 2026. URL: https://ec.europa.eu/eurostat/data/database.">Eurostat26</a>]</span>.</p>
+<figure class="align-default" id="graf-hdp-zlozky">
+<img alt="_images/graf_HDP_zlozky.png" src="_images/graf_HDP_zlozky.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.1 </span><span class="caption-text">Reálny HDP a jeh zložky v slovenskej ekonomike</span><a class="headerlink" href="#graf-hdp-zlozky" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+<p>Z obrázka vidíme, že najväčšou zložkou slovenského HDP je konečná spotreba domácností <span class="math notranslate nohighlight">\(C\)</span>. Jej priebeh sa veľmi podobá priebehu HDP, avšak kolíše menej. Investície <span class="math notranslate nohighlight">\(I\)</span> vykazujú výraznejšie výkyvy než spotreba domácností a patria medzi najvolatilnejšie zložky agregátneho dopytu.</p>
+<p>Vládna spotreba <span class="math notranslate nohighlight">\(G\)</span> je v porovnaní s ostatnými zložkami relatívne stabilná. Naopak, čistý vývoz <span class="math notranslate nohighlight">\(X\)</span> sa výrazne mení v čase a počas časti sledovaného obdobia dosahuje záporné hodnoty. To znamená, že hodnota dovozu prevyšovala hodnotu vývozu.</p>
+<p>Obrázok zároveň ukazuje, že slovenská ekonomika dlhodobo rástla. Výraznejšie poklesy ekonomickej aktivity sú spojené najmä s globálnou finančnou krízou v rokoch 2008 až 2009 a pandémiou COVID-19 v roku 2020.</p>
+<p>Je zrejmé, že jednotlivé zložky HDP sa v čase správajú odlišne. Spotreba domácností je pomerne stabilná, zatiaľ čo investície vykazujú výraznejšie výkyvy. Toto pozorovanie je v súlade s Friedmanovou hypotézou trvalého príjmu (<a class="reference internal" href="Dynam.html#kap-friedman-trvaly"><span class="std std-ref">Friedmanova hypotéza trvalého príjmu</span></a>), podľa ktorej sa spotrebitelia snažia udržiavať relatívne stabilnú úroveň spotreby počas života (<a class="reference internal" href="Dynam.html#def-vyhladzovanie"><span class="std std-ref">Spotrebiteľské vyhladzovanie</span></a>).</p>
+<p>V nasledujúcich kapitolách ukážeme, že rozdielne správanie jednotlivých makroekonomických agregátov patrí medzi základné štylizované fakty hospodárskeho cyklu.</p>
+<p>Z obrázka možno pozorovať, že čistý vývoz bol počas značnej časti 90. rokov a začiatku 21. storočia záporný. Postupne sa však zvyšoval a po roku 2012 sa začal pohybovať prevažne v kladných hodnotách. Tento vývoj súvisel s rastúcou integráciou Slovenska do európskej ekonomiky, prílevom zahraničných investícií a rozvojom exportne orientovaného priemyslu po vstupe do EÚ.</p>
+</section>
+<section id="prijmova-metoda">
+<span id="kap-hnp"></span><h3><span class="section-number">10.1.2. </span>Príjmová metóda<a class="headerlink" href="#prijmova-metoda" title="Link to this heading">#</a></h3>
+<p>Výdavkovou metódou sme získali HDP. Tú istú ekonomickú aktivitu možno merať aj zo strany príjmov.</p>
+<p>Pri meraní ekonomickej výkonnosti príjmovou metódou sčítame všetky peňažne vyjadrené príjmy všetkých faktorov výroby v ekonomike v danom období.</p>
+<p>Medzi faktory produkcie patria práca, kapitál a pôda. Príjmy z faktorov výroby sú odmeny zamestnancom (mzdy), vlastnícke príjmy, renty, úroky. Existujú ďalšie bilančné položky, ktoré pripočítame (čisté podnikateľské transfery, čisté zisky vládnych podnikov) a odpočítame (vládne dotácie), aby sme získali národný príjem.</p>
+<dl class="simple myst" id="def-ni">
+<dt>Národný príjem (<span class="math notranslate nohighlight">\(NI\)</span>)</dt><dd><p>je súčet všetkých príjmov z faktorov výroby a ďalších bilančných položiek</p>
+</dd>
+</dl>
+<p>Dane z produkcie nie sú príjmom výrobných faktorov, a preto nie sú súčasťou národného príjmu, hoci sú zahrnuté v trhových cenách produkcie. Ak k národnému príjmu pripočítame dane z produkcie, získame Čistý národný produkt.</p>
+<dl class="simple myst" id="def-cnp">
+<dt>Čistý národný produkt (<span class="math notranslate nohighlight">\(ČNP\)</span>)</dt><dd><p>Súčet národného príjmu plus dane z produkcie.</p>
+</dd>
+</dl>
+<p>Ak k čistému národnému produktu pripočítame odpisy, získame hrubý národný produkt (HNP).</p>
+<dl class="simple myst" id="def-hnp">
+<dt>Hrubý národný produkt (<span class="math notranslate nohighlight">\(HNP\)</span>)</dt><dd><p>Hrubý národný produkt predstavuje trhovú hodnotu finálnych tovarov a služieb vytvorených výrobnými faktormi vo vlastníctve domácich rezidentov bez ohľadu na miesto produkcie.</p>
+</dd>
+</dl>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>V modernej metodike národných účtov (ESA 2010 a SNA 2008) sa namiesto tradičného pojmu <strong>hrubý národný produkt (HNP)</strong> častejšie používa pojem <strong>hrubý národný dôchodok (HND)</strong>. Rozdiel vyplýva zo skutočnosti, že súčasné systémy národných účtov kladú dôraz na dôchodky plynúce rezidentom, a nie na produkciu samotnú.</p>
+<p>V tejto učebnici používame označenie <strong>HNP</strong>, pretože nadväzuje na tradičnú makroekonomickú literatúru a pre študentov je intuitívnejšie pri vysvetľovaní rozdielu medzi domácim produktom a príjmami rezidentov. V jednoduchých príkladoch uvedených v tejto kapitole možno HNP interpretovať ako veličinu veľmi blízku dnešnému pojmu HND.</p>
+</div>
+<p>Ak sčítame príjmy výrobných faktorov, započítame aj príjmy subjektov, ktorí sú rezidentmi v hraniciach ekonomiky, ale ekonomicky sú aktívni v zahraničí, teda podieľajú sa na výrobe tovarov a služieb vyprodukovaných v hraniciach inej ekonomiky.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<p>Študent šiel v lete na brigádu do Nemecka. Jeho príjem predstavuje príjem z práce zo zahraničia a započíta sa do nemeckého HDP a slovenského <span class="math notranslate nohighlight">\(HNP\)</span>. Ak nemecký rezident prenajíma rekreačnú chatu na Slovensku, príjmy z rekreácie na chate predstavujú príjmy za kapitál do zahraničia a započítajú sa do nemeckého <span class="math notranslate nohighlight">\(HNP\)</span> a do slovenského $HDP.</p>
+</aside>
+<dl class="simple myst">
+<dt>Príjmy faktorov zo zahraničia</dt><dd><p>Príjmy z faktorov v zahraničí prijaté domácim rezidentom.</p>
+</dd>
+<dt>Platby faktorov do zahraničia</dt><dd><p>Príjmy zahraničných rezidentov z faktorov na území domácej ekonomiky.</p>
+</dd>
+</dl>
+<dl class="simple myst" id="def-nfi">
+<dt>Čisté príjmy faktorov zo zahraničia (<span class="math notranslate nohighlight">\(NFI\)</span>)</dt><dd><p>Príjmy z faktorov v zahraničí prijaté domácim rezidentom mínus príjmy faktorov do zahraničia.</p>
+</dd>
+</dl>
+<p>Čisté príjmy faktorov zo zahraničia predstavujú ďalšiu bilančnú položku vzťahu so zahraničím a môžu mať aj zápornú hodnotu.</p>
+<p>Hrubý domáci produkt získame odčítaním čistých príjmov z faktorov zo zahraničia od hrubého národného produktu</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = HNP - NFI.
+\]</div>
+</section>
+<section id="metoda-pridanej-hodnoty">
+<span id="pridana-hodnota"></span><h3><span class="section-number">10.1.3. </span>Metóda pridanej hodnoty<a class="headerlink" href="#metoda-pridanej-hodnoty" title="Link to this heading">#</a></h3>
+<p>Metóda pridanej hodnoty je známa aj pod názvom produktová metóda. V tejto metóde sa spočíta všetka peňažne vyjadrená pridaná hodnota v procese produkcie tovarov a služieb. Každý subjekt v procese výroby vytvára pridanú hodnotu, ktorú vypočítame ako rozdiel medzi hodnotou produkcie a hodnotou tovarov a služieb nakúpených na medzispotrebu. Tovary a služby určené na medzispotrebu sú vstupy spotrebované alebo použité pri výrobe iných tovarov a služieb počas daného obdobia (napr. uhlie na výrobu ocele, plechy na výrobu automobilov, drevo na výrobu nábytku …)</p>
+<p>Ak by sme sčítali tržby všetkých výrobcov v ekonomike, hodnotu mnohých tovarov by sme započítali viackrát. Pri výrobe automobilu sa napríklad najprv predá železná ruda, následne oceľ, potom plechy a nakoniec automobil. Súčet tržieb by preto nadhodnotil skutočnú ekonomickú aktivitu.</p>
+<p>Metóda pridanej hodnoty tento problém odstraňuje tým, že pri každom výrobcovi započítava iba hodnotu, ktorú do výrobného procesu sám pridal.</p>
+<p>Z pohľadu všeobecnej rovnováhy (<a class="reference internal" href="Rovnovaha.html"><span class="doc">Teória všeobecnej rovnováhy</span></a>) predstavuje medzispotreba obchod medzi jednotlivými výrobcami. To, čo je výdavkom jedného výrobcu, je súčasne príjmom iného výrobcu. Pri sčítaní pridanej hodnoty sa preto tieto medzistupne produkcie navzájom vyrušia a zostane iba hodnota produkcie určenej na konečnú spotrebu.</p>
+<p>Tri metódy merania ekonomickej aktivity nepredstavujú tri rôzne veličiny. Predstavujú tri rôzne pohľady na tú istú ekonomickú aktivitu.</p>
+</section>
+</section>
+<section id="system-narodnych-uctov">
+<h2><span class="section-number">10.2. </span>Systém národných účtov<a class="headerlink" href="#system-narodnych-uctov" title="Link to this heading">#</a></h2>
+<p>Štáty vykazujú svoju výkonnosť v systémoch národných účtov, ktoré pravidelne oficiálne zverejňujú. Identity systémov národných účtov zahrnujú všetky tri metódy výpočtu HDP.</p>
+<p>Zapíšme identitu výpočtu HDP výdavkovou metódou v tvare</p>
+<p>Existujú ďalšie identity, vytvárajúce rovnovážne vzťahy medzi ekonomickými agregátmi.</p>
+<section id="bezny-ucet-platobnej-bilancie">
+<span id="kap-ca"></span><h3><span class="section-number">10.2.1. </span>Bežný účet platobnej bilancie<a class="headerlink" href="#bezny-ucet-platobnej-bilancie" title="Link to this heading">#</a></h3>
+<p>Príjmovou metódou sa sčítajú všetky príjmy z faktorov v ekonomike. Okrem príjmov faktorov, môžu mať rezidenti príjmy zo zahraničia alebo výdavky do zahraničia v podobe darov. Ide o jednomsmerné (unilaterálne) príjmy či platby. Unilaterálne preto, že za tieto transakcie neexistuje protihodnota. Platca si od prijímateľa nič nekupuje, prijímateľ nič nepredáva.</p>
+<dl class="simple myst">
+<dt>Unilaterálne príjmy zo zahraničia</dt><dd><p>Príjmy domácich rezidentov zo zahraničia, za ktoré nie sú žiadne protihodnoty.</p>
+</dd>
+<dt>Unilaterálna platba do zahraničia</dt><dd><p>Platby domácich rezidentov do zahraničia, za ktoré nie sú žiadne protihodnoty.</p>
+</dd>
+</dl>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<p>Ak príbuzný zo zahraničia pošle domácej rodine hotovosť, transakcia je unilaterálny príjem zo zahraničia.</p>
+<p>Ak domáca vláda v rámci pomoci vojnou zasiahnutého zahraničného regiónu postaví poľnú nemocnicu, peňažné náklady nemocnice sa počítajú do unilaterálnej platby do zahraničia.</p>
+</aside>
+<dl class="simple myst" id="def-nut">
+<dt>Čisté unilaterálne príjmy zo zahraničia (<span class="math notranslate nohighlight">\(NUT\)</span>)</dt><dd><p>sú unilaterálne príjmy zo zahraničia mínus unilaterálna platba do zahraničia.</p>
+</dd>
+</dl>
+<p>Rovnako ako <span class="math notranslate nohighlight">\(X\)</span>, <span class="math notranslate nohighlight">\(NFI\)</span>, aj <span class="math notranslate nohighlight">\(NUT\)</span> je bilančná položka ekonomických vzťahov so zahraničím a môže dosahovať zápornú hodnotu.</p>
+<p>Bilancia so zvyškom sveta je bilancia všetkých troch bilančných položiek</p>
+<div class="math notranslate nohighlight" id="equation-r-ca">
+<span class="eqno">(10.1)<a class="headerlink" href="#equation-r-ca" title="Link to this equation">#</a></span>\[CA = X + NFI + NUT.\]</div>
+<p><a class="reference internal" href="#equation-r-ca">(10.1)</a> nazývame identitou bilancie so zvyškom sveta. V národných účtoch sa jej pravá strana označuje ako bežný účet platobnej bilancie. Bežný účet platobnej bilancie môže byť kladný (prebytok) alebo záporný (deficit).</p>
+</section>
+<section id="agregovany-prijem-a-jeho-vyuzitie">
+<span id="kap-agregovany-prijem"></span><h3><span class="section-number">10.2.2. </span>Agregovaný príjem a jeho využitie<a class="headerlink" href="#agregovany-prijem-a-jeho-vyuzitie" title="Link to this heading">#</a></h3>
+<p>Ak k <span class="math notranslate nohighlight">\(HNP\)</span> pripočítame <span class="math notranslate nohighlight">\(NUT\)</span>, získame všetky agregované príjmy domácich rezidentov.</p>
+<dl class="simple myst">
+<dt>Agregovaný príjem</dt><dd><p>Agregovaný príjem predstavuje všetky príjmy domácich rezidentov bez ohľadu na to, či vznikli doma alebo v zahraničí.</p>
+</dd>
+</dl>
+<p>Za agregovaný príjem si ľudia uspokoja spotrebu <span class="math notranslate nohighlight">\(C\)</span>, z časti zaplatia dane štátu a časť usporia.</p>
+<dl class="simple myst">
+<dt>Hrubé súkromné úspory <span class="math notranslate nohighlight">\(S\)</span></dt><dd><p>sú všetky súkromné domáce úspory rezidentov vrátane nerozdeleného zisku firiem.</p>
+</dd>
+</dl>
+<p>Do hrubých súkromných úspor sa započítavajú aj odpisy.</p>
+<dl class="simple myst">
+<dt>Čisté štátne daňové príjmy <span class="math notranslate nohighlight">\(T\)</span></dt><dd><p>sú všetky príjmy verejného sektora z daní, ciel, pokút a verejných poplatkov mínus štátne prerozdelovacie transfery ako verejné platby starobného a invalidného dôchodku, podpory nezamestnanosti a pod.</p>
+</dd>
+</dl>
+<p>Agregovaný príjem sa rozdelí na <span class="math notranslate nohighlight">\(C\)</span>, <span class="math notranslate nohighlight">\(S\)</span> a <span class="math notranslate nohighlight">\(T\)</span>.</p>
+<p>Zapíšme identitu výpočtu HDP ako</p>
+<div class="math notranslate nohighlight" id="equation-r-hdp">
+<span class="eqno">(10.2)<a class="headerlink" href="#equation-r-hdp" title="Link to this equation">#</a></span>\[Y = C + I + G + X,\]</div>
+<p>kde <span class="math notranslate nohighlight">\(Y\)</span> označuje hrubý domáci produkt. Hrubý národný príjem je <span class="math notranslate nohighlight">\(Y + NFI\)</span> a agregovaný príjem je <span class="math notranslate nohighlight">\(Y + NFI + NUT\)</span>.</p>
+<p>Potom identita použitia agregovaného príjmu je</p>
+<div class="math notranslate nohighlight" id="equation-r-agregovany-prijem">
+<span class="eqno">(10.3)<a class="headerlink" href="#equation-r-agregovany-prijem" title="Link to this equation">#</a></span>\[Y + NFI + NUT =  C + S + T.\]</div>
+</section>
+<section id="verejny-rozpocet">
+<span id="id2"></span><h3><span class="section-number">10.2.3. </span>Verejný rozpočet<a class="headerlink" href="#verejny-rozpocet" title="Link to this heading">#</a></h3>
+<p>Teraz už poznáme všetko, čo potrebujeme, aby sme vyjadrili rozpočet verejnej sféry. Verejné príjmy sú so znamienkom plus započítané v čistých daňových príjmoch <span class="math notranslate nohighlight">\(T\)</span>. Verejné výdavky sú výdavky na konečnú spotrebu <span class="math notranslate nohighlight">\(G\)</span> a vládne transfery započítané so znamienkom mínus v čistých daňových príjmoch. Hospodárenie verejnej sféry je teda vyjadrené rozidelom <span class="math notranslate nohighlight">\(T-G\)</span>.</p>
+<p>Ak <span class="math notranslate nohighlight">\(T-G &gt; 0\)</span>, rozpočet verejnej sféry je v prebytku. Ak <span class="math notranslate nohighlight">\(T-G&lt;0\)</span>, rozpočet verejnej sféry je v deficite.</p>
+<p><span class="math notranslate nohighlight">\(T-G\)</span> tiež nazývame verejné úspory a spolu so súkromnými úspormi <span class="math notranslate nohighlight">\(S\)</span> tvoria národné úspory. Národné úspory sú <span class="math notranslate nohighlight">\(S+T-G\)</span>.</p>
+<div class="admonition-upozornenie admonition">
+<p class="admonition-title">Upozornenie</p>
+<p>Čisté daňové príjmy <span class="math notranslate nohighlight">\(T\)</span> nie sú iba príjmami verejného sektora. Sú od nich odpočítané verejné transfery.</p>
+<p>Príjmy verejného sektora predstavujú iba položky, ktoré sa do <span class="math notranslate nohighlight">\(T\)</span> započítavajú so znamienkom <em>plus</em>.</p>
+<p>Vládne nákupy <span class="math notranslate nohighlight">\(G\)</span> nepredstavujú všetky výdavky verejného sektora, ale iba výdavky na nákup hotových tovarov a služieb.</p>
+<p>Okrem nákupu tovarov a služieb patria medzi verejné výdavky aj verejné transfery, ktoré sú do <span class="math notranslate nohighlight">\(T\)</span> započítané so znamienkom <em>mínus</em>.</p>
+<p>Celkové výdavky verejného sektora sú súčtom vládnych nákupov a transferov.</p>
+</div>
+<p>Priebeh bilancie slovenského verejného rozpočtu <span class="math notranslate nohighlight">\(T-G\)</span> je zobrazený na <a class="reference internal" href="#graf-t-g"><span class="std std-numref">Obr. 10.2</span></a>. Slovenská verejná správa hospodári počas celého sledovaného obdobia s deficitom, preto je hodnota <span class="math notranslate nohighlight">\(T-G\)</span> trvalo záporná.</p>
+<p>Najvýraznejšie deficity sa objavili počas globálnej finančnej krízy v rokoch 2009 a 2010, počas pandémie COVID-19 v rokoch 2020 a 2021 a opätovne v období rokov 2023 až 2025.</p>
+<figure class="align-default" id="graf-t-g">
+<img alt="_images/graf_T_G.png" src="_images/graf_T_G.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.2 </span><span class="caption-text">Bilancia slovenského verejného rozpočtu</span><a class="headerlink" href="#graf-t-g" title="Link to this image">#</a></p>
+<div class="legend">
+<p><em>Zdroj: vlastné spracovanie na základe údajov Eurostatu.</em></p>
+</div>
+</figcaption>
+</figure>
+</section>
+<section id="identita-uspor-a-investicii">
+<h3><span class="section-number">10.2.4. </span>Identita úspor a investícií<a class="headerlink" href="#identita-uspor-a-investicii" title="Link to this heading">#</a></h3>
+<p>Dosadením <a class="reference internal" href="#equation-r-hdp">(10.2)</a> do <a class="reference internal" href="#equation-r-agregovany-prijem">(10.3)</a>, získame</p>
+<div class="math notranslate nohighlight">
+\[
+C + I + G + X + NFI + NUT =  C + S + T.
+\]</div>
+<p>Postupnými úpravami a preusporiadaním členov dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+(S+T-G)=I + (X + NFI + NUT),
+\]</div>
+<p>teda, dosadením bežného účtu <a class="reference internal" href="#equation-r-ca">(10.1)</a>, získame</p>
+<div class="math notranslate nohighlight" id="equation-identita-s-i">
+<span class="eqno">(10.4)<a class="headerlink" href="#equation-identita-s-i" title="Link to this equation">#</a></span>\[S+T-G=I+CA.\]</div>
+<p>Na ľavej strane <a class="reference internal" href="#equation-identita-s-i">(10.4)</a> sú národné úspory; na pravej súčet investícií a bežného účtu platobnej bilancie. Rovnicu <a class="reference internal" href="#equation-identita-s-i">(10.4)</a> nazývame <strong>identita úspor a investícií</strong>.</p>
+<p>Identita úspor a investícií predstavuje agregovanú rovnováhu ekonomiky. Ukazuje, že národné úspory sa musia premietnuť buď do tvorby domáceho kapitálu prostredníctvom investícií, alebo do zmeny čistých pohľadávok voči zahraničiu prostredníctvom bežného účtu platobnej bilancie.</p>
+<p>Národné úspory môžeme interpretovať aj ako prírastok národného bohatstva. Keďže národné úspory sú súčtom hrubých (národných) investícií a bežného účtu bilancie, bohatstvo sa kumuluje dvoma spôsobmi. Prvý sú investície, ktoré sú aj prírastok národného stavu kapitálu. Stav kapitálu vyjadruje existujúce množstvo tovární, zariadení, nehnuteľností a zásob v danom období. Druhý spôsob akumulácie bohatstva je prostredníctvom bežného účtu platobnej bilancie. Prebytok bežného účtu interpretujeme ako prírastok pohľadávky voči zahraničiu. Za produkty vyvezené do zahraničia, plynú transfery zvyšujúce domáce bohatstvo. Prebytok bežného účtu je <em>tok</em>, kým pohľadávka voči zahraničiu je <em>stav</em>.</p>
+</section>
+</section>
+<section id="tabulka-medziodvetvovych-vztahov">
+<h2><span class="section-number">10.3. </span>Tabuľka medziodvetvových vzťahov<a class="headerlink" href="#tabulka-medziodvetvovych-vztahov" title="Link to this heading">#</a></h2>
+<p>Popri systéme národných účtov existujú ďalšie nástroje vhodné na meranie ekonomickej aktivity v danom období. Jedným z nich je tabuľka medziodvetvových vzťahov, v ktorej možno sledovať identity troch metód výpočtu produkcie v danom období v rámci rôznych odvetví.</p>
+<p>Táto tabuľka zachytáva pohyb platieb za tovary a služby v danom hospodárstve. V stĺpcoch sú príjemcovia tovarov a služieb, resp. platcovia a v riadkoch sú dodávatelia, resp. príjemcovia peňažných úhrad od platcov za poskytnuté tovary a služby.</p>
+<p>Tabuľka je zložená z kvadrantov. Kvadrant medziodvetvových vzťahov <span class="math notranslate nohighlight">\(\{x_{ij}\}\)</span> sleduje pohyb tovarov a služieb určených na medzispotrebu z odvetvia do odvetvia (napríklad oceliarne nakúpia uhlie od baní). Tieto pohyby sa nezapočítavajú do HDP, pretože to nie je konečná spotreba. Je to spotreba tovarov a služieb, ktoré sa použijú na ďalšiu výrobu (uhlie na výrobu ocele, oceľ na výrobu automobilu atď.)</p>
+<p>Kvadrant konečnej spotreby sleduje pohyb hotových výrobkov z každého odvetvia do zložiek výdavkov: konečná spotreba domácnosti, hrubé súkromné investície, vládne nákupy a čistý export. Súčet zložiek konečnej spotreby v každom odvetví (v riadkoch druhého kvadrantu) predstavuje ich konečnú spotrebu výstupu daného odvetvia. Tieto súčty tvoria vektor konečnej spotreby, ktorý sa označuje symbolom <span class="math notranslate nohighlight">\(\mathbf{y}\)</span>. Súčet všetkých prvkov vektora <span class="math notranslate nohighlight">\(\mathbf{y}\)</span> sa rovná <span class="math notranslate nohighlight">\(HDP\)</span>.</p>
+<p>Ak v každom odvetví sčítame všetku medzispotrebu a konečnú spotrebu (súčet v riadkoch prvého aj druhého kvadrantu), získame vektor hrubej produkcie, <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>. Každý prvok vektora <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> predstavuje hrubú produkciu v prislúchajúcom odvetví.</p>
+<p>Kvadrant pridanej hodnoty sleduje rozdelenie hodnoty vytvorenej v jednotlivých odvetviach medzi výrobné faktory, štát a obnovu kapitálu. Súčet zložiek pridanej hodnoty v každom odvetví (v stĺpcoch tretieho kvadrantu) tvorí vektor pridanej hodnoty <span class="math notranslate nohighlight">\(\mathbf{z}\)</span>. Súčet všetkých prvkov vektora <span class="math notranslate nohighlight">\(\mathbf{z}\)</span> je <span class="math notranslate nohighlight">\(HDP\)</span>. Ak v každom odvetví sčítame všetky zložky medzispotreby a pridanej hodnoty (súčet v stĺpcoch prvého aj tretieho kvadrantu), získame opäť vektor hrubej produkcie <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>. Posledný kvadrant je kvadrant prerozdelenia.</p>
+<p>Tabuľku medziodvetvových vzťahov možno interpretovať ako agregovaný opis tokov tovarov a služieb medzi trhmi v ekonomike. Každý riadok zachytáva ponuku produkcie jednotlivých odvetví a každý stĺpec jej použitie. Rovnosť riadkových a stĺpcových súčtov preto predstavuje odvetvovú obdobu podmienok všeobecnej rovnováhy.</p>
+<p>Schéma tabuľky medziodvetvových vzťahov je na <a class="reference internal" href="#graf-io"><span class="std std-numref">Obr. 10.3</span></a>. Položky <span class="math notranslate nohighlight">\(\{x_{ij}\}\)</span> predstavujú medzispotrebu tovarov a služieb pre odvetvie <span class="math notranslate nohighlight">\(j\)</span>, ktoré boli vyprodukované v odvetví <span class="math notranslate nohighlight">\(i\)</span>. Konečnú spotrebu tovarov a služieb v kažodm odvetví tvorí spotreba domácností <span class="math notranslate nohighlight">\(C\)</span>, verejného sektora <span class="math notranslate nohighlight">\(G\)</span>, hrubé súkromné investície <span class="math notranslate nohighlight">\(I\)</span> a čistý vývoz <span class="math notranslate nohighlight">\(X\)</span>. Pridanú hodnotu vytvorenú v <span class="math notranslate nohighlight">\(j\)</span>-tom odvetví možno rozdeliť na mzdy <span class="math notranslate nohighlight">\(w\)</span>, zisky <span class="math notranslate nohighlight">\(π\)</span>, renty <span class="math notranslate nohighlight">\(R\)</span>, dane z produkcie <span class="math notranslate nohighlight">\(T\)</span> a odpisy <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+<span class="s1">'font.size'</span><span class="p">:</span> <span class="mi">14</span>
+<span class="p">})</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># zvislé čiary</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">]:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">12</span><span class="p">],</span> <span class="p">[</span><span class="n">y</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+
+<span class="c1"># hlavičky</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="s2">"Spotrebujúce odvetvia"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mf">8.5</span><span class="p">,</span> <span class="s2">"Konečná spotreba"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="c1"># stĺpce medzispotreby</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$x_j$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="c1"># stĺpce konečného dopytu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">6.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$C$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">7.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$G$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">8.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$I$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">9.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$X$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="c1"># vektory</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">10.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{y}</span><span class="s2">$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">11.5</span><span class="p">,</span> <span class="mf">7.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="c1"># názvy kvadrantov</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span> <span class="s2">"Medzispotreba</span><span class="se">\n</span><span class="s2">$</span><span class="se">\\</span><span class="s2">{x_</span><span class="si">{ij}</span><span class="se">\\</span><span class="s2">}$"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span>
+        <span class="s2">"Konečná spotreba</span><span class="se">\n</span><span class="s2">$(C,G,I,X)$"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mi">4</span><span class="p">,</span> <span class="mf">3.</span><span class="p">,</span>
+    <span class="s2">"Pridaná hodnota"</span><span class="p">,</span>
+    <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span>
+    <span class="n">fontsize</span><span class="o">=</span><span class="mi">13</span>
+<span class="p">)</span>
+
+
+<span class="c1"># riadky pridanej hodnoty</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$w$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">3.1</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\pi$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.7</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$R$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">2.3</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$T$"</span><span class="p">)</span>
+
+<span class="c1"># vektor pridanej hodnoty</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{z}</span><span class="s2">$"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># vektor hrubej produkcie</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="c1"># prázdny 4. kvadrant</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span>
+        <span class="s2">"Prerozdelenie"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span> <span class="p">)</span>
+
+<span class="c1"># bočné popisy</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">,</span>
+        <span class="s2">"Dodávajúce</span><span class="se">\n</span><span class="s2">odvetvia"</span><span class="p">,</span>
+        <span class="n">ha</span><span class="o">=</span><span class="s2">"center"</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">"center"</span> <span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">12.2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">10.2</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"io_schema.png"</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-io">
+<img alt="_images/graf_io.png" src="_images/graf_io.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.3 </span><span class="caption-text">Schéma tabuľky medziodvetvových vzťahov</span><a class="headerlink" href="#graf-io" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">10.4. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-vypocet-hdp">
+<span id="priklad-snu"></span><h3><span class="section-number">10.4.1. </span>Príklad: Výpočet HDP<a class="headerlink" href="#priklad-vypocet-hdp" title="Link to this heading">#</a></h3>
+<div class="admonition-inspiracia admonition">
+<p class="admonition-title">Inšpirácia</p>
+<p>Upravený príklad bol prevzatý z učebnice Stephena D. Williamsona <em>Macroeconomics</em> cite}<code class="docutils literal notranslate"><span class="pre">williamson2018</span></code>.</p>
+</div>
+<p>Uvažujme, že na banánovom ostrove máme spotrebiteľov, vládu a dva druhy podnikateľských subjektov; zberači banánov a reštaurácie.</p>
+<p><strong>Zberači banánov</strong></p>
+<p>Zberači banánov vlastnia všetky banánovníky na ostrove. V sledovanom roku zozbierali 10 miliónov banánov, pričom každý predali za 2 €.</p>
+<p>Ich celkové tržby dosiahli 20 miliónov €. Na mzdy vyplatili 5 miliónov €, na úrokoch zaplatili 0,5 milióna € a dane z produkcie predstavovali 1,5 milióna €.</p>
+<p>Údaje k podnikaniu všetkých zberačov sú v <a class="reference internal" href="#tab-zberaci"><span class="std std-numref">Tab. 10.1</span></a>:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zberaci">
+<caption><span class="caption-number">Tab. 10.1 </span><span class="caption-text">Zberači banánov</span><a class="headerlink" href="#tab-zberaci" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Položka</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Celkový príjem</p></td>
+<td class="text-right"><p>20 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td class="text-right"><p>5 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Úroky z pôžičky</p></td>
+<td class="text-right"><p>0,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dane</p></td>
+<td class="text-right"><p>1,5 mil. €</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Reštaurácie</strong></p>
+<p>Z 10 miliónov zozbieraných banánov nakúpia reštaurácie 6 miliónov kusov. Reštaurácie sa špecializujú na prípravu banánových jedál mnohými spôsobmi.</p>
+<p>Zvyšné 4 milióny banánov nakúpia domácnosti na konečnú spotrebu.</p>
+<p>Banány sú medziproduktom. Môžu byť použité na ďalšiu výrobu v reštauráciách alebo môžu byť spotrebované domácnosťami.</p>
+<p>Reštaurácie v sledovanom roku predali jedlá v hodnote 30 miliónov €. Celkové náklady na nákup banánov predstavovali 12 miliónov €, na mzdách vyplatili 4 milióny € a vláde zaplatili dane v hodnote 3 miliónov €.</p>
+<p>Údaje o podnikaní všetkých reštaurácií sú uvedené v <a class="reference internal" href="#tab-restauracie"><span class="std std-numref">Tab. 10.2</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-restauracie">
+<caption><span class="caption-number">Tab. 10.2 </span><span class="caption-text">Reštaurácie</span><a class="headerlink" href="#tab-restauracie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Položka</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Celkový príjem</p></td>
+<td class="text-right"><p>30 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Náklady na banány</p></td>
+<td class="text-right"><p>12 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Mzdy</p></td>
+<td class="text-right"><p>4 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dane</p></td>
+<td class="text-right"><p>3 mil. €</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Spotrebitelia</strong></p>
+<p>Spotrebitelia nakúpia od zberačov banány v hodnote 8 miliónov €, v reštauráciách skonzumujú banánové jedlá v hodnote 30 miliónov € a zaplatia dane vláde v hodnote 1 milión €.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-spotrebitelia">
+<caption><span class="caption-number">Tab. 10.3 </span><span class="caption-text">Spotrebitelia</span><a class="headerlink" href="#tab-spotrebitelia" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Položka</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nákup banánov</p></td>
+<td class="text-right"><p>8 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nákup jedál</p></td>
+<td class="text-right"><p>30 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Dane</p></td>
+<td class="text-right"><p>1 mil. €</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Vláda</strong></p>
+<p>Vláda vyberie dane od zberačov banánov, reštaurácií a spotrebiteľov v celkovej hodnote 5,5 milióna €. Vybrané dane používa na financovanie ostrovnej bezpečnosti. Celú vybranú sumu vyplatí vo forme miezd ostrovným bezpečnostným odborníkom.</p>
+<p>Údaje o hospodárení vlády sú uvedené v <a class="reference internal" href="#tab-vlada"><span class="std std-numref">Tab. 10.4</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-vlada">
+<caption><span class="caption-number">Tab. 10.4 </span><span class="caption-text">Vláda</span><a class="headerlink" href="#tab-vlada" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Položka</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Dane</p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Úlohy</strong></p>
+<ol class="arabic simple">
+<li><p>Vypočítajte <span class="math notranslate nohighlight">\(HDP\)</span> na banánovom ostrove v danom roku všetkými troma metódami.</p></li>
+<li><p>Zobrazte tabuľku medziodvetvových vzťahov ekonomiky banánového ostrova.</p></li>
+<li><p>Vypočítajte agregovaný príjem na banánovom ostrove a zapíšte identitu rozdelenia agregovaného príjmu.</p></li>
+</ol>
+<section id="riesenie">
+<h4><span class="section-number">10.4.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<section id="id3">
+<h5><span class="section-number">10.4.1.1.1. </span>Príjmová metóda<a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
+<p>Príjmovou metódou sčítame všetky príjmy v ekonomike. Príjmy sú odmeny za prácu, úroky, príjem z kapitálu, z pôdy a zisky.</p>
+<p><strong>Mzdy</strong></p>
+<p>Mzdy platia zberači banánov, reštaurácie a vláda. Ich súčet je uvedený v <a class="reference internal" href="#tab-mzdy"><span class="std std-numref">Tab. 10.5</span></a>.</p>
+<div class="math notranslate nohighlight">
+\[
+W=14{,}5 \text{ mil. €}.
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-mzdy">
+<caption><span class="caption-number">Tab. 10.5 </span><span class="caption-text">Mzdy</span><a class="headerlink" href="#tab-mzdy" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zdroj miezd</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zberači banánov</p></td>
+<td class="text-right"><p>5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reštaurácie</p></td>
+<td class="text-right"><p>4 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Vláda</p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Súčet miezd</strong></p></td>
+<td class="text-right"><p><strong>14,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Zisky a úroky</strong></p>
+<p>Zisky podnikateľských subjektov sú počítané v nasledovných tabuľkách.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zisk-zberaci">
+<caption><span class="caption-number">Tab. 10.6 </span><span class="caption-text">Zisk zberačov banánov po zdanení</span><a class="headerlink" href="#tab-zisk-zberaci" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Náklady</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+<th class="head"><p>Príjmy</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mzdy</p></td>
+<td class="text-right"><p>5 mil. €</p></td>
+<td><p>Predaj banánov</p></td>
+<td class="text-right"><p>20 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Úroky z pôžičky</p></td>
+<td class="text-right"><p>0,5 mil. €</p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Dane z produkcie</p></td>
+<td class="text-right"><p>1,5 mil. €</p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zisk po zdanení</strong></p></td>
+<td class="text-right"><p><strong>13 mil. €</strong></p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zisk-restauracie">
+<caption><span class="caption-number">Tab. 10.7 </span><span class="caption-text">Zisk reštaurácií po zdanení</span><a class="headerlink" href="#tab-zisk-restauracie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Náklady</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+<th class="head"><p>Príjmy</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nákup banánov</p></td>
+<td class="text-right"><p>12 mil. €</p></td>
+<td><p>Predaj jedál</p></td>
+<td class="text-right"><p>30 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td class="text-right"><p>4 mil. €</p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Dane z produkcie</p></td>
+<td class="text-right"><p>3 mil. €</p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zisk po zdanení</strong></p></td>
+<td class="text-right"><p><strong>11 mil. €</strong></p></td>
+<td><p></p></td>
+<td class="text-right"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Vláda nevykonáva ziskovú činnosť. Celkové zisky vytvorené na banánovom ostrove preto predstavujú iba zisky zberačov banánov a reštaurácií.</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi = 13 + 11 = 24 \text{ mil. €}.
+\]</div>
+<p>Okrem ziskov plynú vlastníkom kapitálu aj úrokové príjmy v hodnote <span class="math notranslate nohighlight">\(0{,}5 \text{ mil. €}\)</span>.</p>
+<p><strong>Národný príjem</strong></p>
+<p>Sčítaním všetkých príjmov z výrobných faktorov získame národný príjem.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-ni">
+<caption><span class="caption-number">Tab. 10.8 </span><span class="caption-text">Národný príjem na banánovom ostrove</span><a class="headerlink" href="#tab-ni" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka príjmu</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mzdy</p></td>
+<td class="text-right"><p>14,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zisky</p></td>
+<td class="text-right"><p>24 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Úroky</p></td>
+<td class="text-right"><p>0,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Národný príjem</strong></p></td>
+<td class="text-right"><p><strong>39 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="math notranslate nohighlight">
+\[
+NI = 14{,}5 + 24 + 0{,}5 = 39 \text{ mil. €}.
+\]</div>
+<p><strong>Hrubý domáci produkt</strong></p>
+<p>Ak k národnému príjmu pripočítame dane z produkcie, získame čistý národný produkt.</p>
+<p>Na banánovom ostrove neexistujú odpisy a neexistujú ani ekonomické vzťahy so zahraničím. Čistý národný produkt sa preto rovná hrubému národnému produktu aj hrubému domácemu produktu.</p>
+<p>Národný príjem na banánovom ostrove je</p>
+<div class="math notranslate nohighlight">
+\[
+NI = 39 \text{ mil. €}.
+\]</div>
+<p>Dane z produkcie zaplatené zberačmi banánov a reštauráciami sú</p>
+<div class="math notranslate nohighlight">
+\[
+1{,}5 + 3 = 4{,}5 \text{ mil. €}.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 39 + 4{,}5 = 43{,}5 \text{ mil. €}.
+\]</div>
+</section>
+<section id="id4">
+<h5><span class="section-number">10.4.1.1.2. </span>Výdavková metóda<a class="headerlink" href="#id4" title="Link to this heading">#</a></h5>
+<p>Výdavkovou metódou vypočítame hrubý domáci produkt podľa identity <a class="reference internal" href="#equation-r-hdp">(10.2)</a>.</p>
+<p>Domácnosti nakúpia banány v hodnote 8 mil. € a jedlá podávané v reštauráciách v hodnote 30 mil. €. Celková konečná spotreba domácností je preto</p>
+<div class="math notranslate nohighlight">
+\[
+C = 38 \text{ mil. €}.
+\]</div>
+<p>Vláda vynaloží na zabezpečenie ostrovnej bezpečnosti 5,5 mil. €. Preto</p>
+<div class="math notranslate nohighlight">
+\[
+G = 5{,}5 \text{ mil. €}.
+\]</div>
+<p>V ekonomike neexistujú kapitálové tovary, preto</p>
+<div class="math notranslate nohighlight">
+\[
+I = 0.
+\]</div>
+<p>Banánový ostrov neobchoduje so zahraničím, preto</p>
+<div class="math notranslate nohighlight">
+\[
+X = 0.
+\]</div>
+<p>Hrubý domáci produkt je súčtom všetkých výdavkov na konečnú spotrebu:</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = C + I + G + X.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 38 + 0 + 5{,}5 + 0 = 43{,}5 \text{ mil. €}.
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-vydavkova">
+<caption><span class="caption-number">Tab. 10.9 </span><span class="caption-text">Výdavková metóda</span><a class="headerlink" href="#tab-vydavkova" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka HDP</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td class="text-right"><p>38 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(I\)</span></p></td>
+<td class="text-right"><p>0 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(G\)</span></p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(X\)</span></p></td>
+<td class="text-right"><p>0 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td class="text-right"><p><strong>43,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id5">
+<h5><span class="section-number">10.4.1.1.3. </span>Metóda pridanej hodnoty<a class="headerlink" href="#id5" title="Link to this heading">#</a></h5>
+<p>Metódou pridanej hodnoty sčítame pridanú hodnotu vytvorenú všetkými producentmi v ekonomike.</p>
+<p>Zberači banánov nakúpili na svoju produkciu nulovú medzispotrebu. Celá hodnota predaných banánov preto predstavuje ich pridanú hodnotu:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_Z = 20 \text{ mil. €}.
+\]</div>
+<p>Reštaurácie nakúpili banány za 12 mil. € a následne predali pripravené jedlá za 30 mil. €. Ich pridaná hodnota je rozdiel medzi hodnotou produkcie a medzispotrebou:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_R = 30 - 12 = 18 \text{ mil. €}.
+\]</div>
+<p>Vláda poskytuje služby ostrovnej bezpečnosti. Hodnota týchto služieb je vyjadrená mzdami bezpečnostných odborníkov:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_V = 5{,}5 \text{ mil. €}.
+\]</div>
+<p>Súčet pridanej hodnoty všetkých producentov je uvedený v <a class="reference internal" href="#tab-pridana-hodnota"><span class="std std-numref">Tab. 10.10</span></a>.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-pridana-hodnota">
+<caption><span class="caption-number">Tab. 10.10 </span><span class="caption-text">Pridaná hodnota na banánovom ostrove</span><a class="headerlink" href="#tab-pridana-hodnota" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Producent</p></th>
+<th class="head text-right"><p>Pridaná hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zberači banánov</p></td>
+<td class="text-right"><p>20 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reštaurácie</p></td>
+<td class="text-right"><p>18 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Vláda</p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td class="text-right"><p><strong>43,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 20 + 18 + 5{,}5 = 43{,}5 \text{ mil. €}.
+\]</div>
+<p>Výsledok sa zhoduje s výpočtom príjmovou aj výdavkovou metódou. Všetky tri metódy preto poskytujú rovnaké meranie ekonomickej aktivity na banánovom ostrove.</p>
+</section>
+<section id="id6">
+<h5><span class="section-number">10.4.1.1.4. </span>Tabuľka medziodvetvových vzťahov<a class="headerlink" href="#id6" title="Link to this heading">#</a></h5>
+<p>Na <a class="reference internal" href="#obr-io-priklad"><span class="std std-numref">Obr. 10.4</span></a> je zobrazená schéma tabuľky medziodvetvových vzťahov ekonomiky banánového ostrova. Prvý kvadrant je kvadrant medzispotreby, druhý kvadrant je kvadrant konečnej spotreby, tretí je kvadrant pridanej hodnoty a štvrtý je kvadrant prerozdelenia (v našom príklade prázdny).</p>
+<p>Vláda je do tabuľky zaradená ako samostatné odvetvie poskytujúce služby ostrovnej bezpečnosti, ktoré sú určené na konečnú spotrebu.</p>
+<p>V našom príklade nás zaujímajú iba prvé 3 kvadranty.  Položka v <span class="math notranslate nohighlight">\(i\)</span>-tom riadku a <span class="math notranslate nohighlight">\(j\)</span>-tom stĺpci predstavuje platbu od subjektu v stĺpci <span class="math notranslate nohighlight">\(j\)</span> subjektu v riadku <span class="math notranslate nohighlight">\(i\)</span>. Opačným smerom prúdi protihodnota vo forme tovarov a služieb.</p>
+<p>Vektory <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{y}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{z}\)</span> sú vektory hrubej produkcie, konečnej spotreby a pridanej hodnoty. Vektor hrubej produkcie <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> sú súčty v každom riadku kvadrantov medzispotreby a konečnej spotreby. Zároveň to sú súčty v každom stĺpci kvadrantov medzispotreby a pridanej hodnoty. Poznamenajme, že riadkové aj stĺpcové súčty dávajú ten istý vektor hrubej produkcie <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>. Táto rovnosť predstavuje odvetvovú obdobu podmienok všeobecnej rovnováhy.</p>
+<p>Vektor konečnej spotreby <span class="math notranslate nohighlight">\(\mathbf{y}\)</span> vzniká súčtom riadkov kvadrantu konečnej spotreby. Vektor pridanej hodnoty <span class="math notranslate nohighlight">\(\mathbf{z}\)</span> vzniká súčtom stĺpcov kvadrantu pridanej hodnoty.</p>
+<p>Súčet prvkov vektora konečnej spotreby sa rovná súčtu prvkov vektora pridanej hodnoty. Obe veličiny predstavujú hrubý domáci produkt:</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_i y_i=\sum_i z_i=HDP=43{,}5 \text{ mil. €}.
+\]</div>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">""</span><span class="p">,</span> <span class="s2">"Zberači"</span><span class="p">,</span> <span class="s2">"Rešt."</span><span class="p">,</span> <span class="s2">"Vláda"</span><span class="p">,</span> <span class="s2">"$C$"</span><span class="p">,</span> <span class="s2">"$G$"</span><span class="p">,</span> <span class="s2">"$\mathbf</span><span class="si">{y}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Zberači"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"12"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Rešt."</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Vláda"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Mzdy"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Úroky"</span><span class="p">,</span> <span class="s2">"0.5"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Zisky"</span><span class="p">,</span> <span class="s2">"13"</span><span class="p">,</span> <span class="s2">"11"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"Dane"</span><span class="p">,</span> <span class="s2">"1.5"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"$\mathbf</span><span class="si">{z}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"18"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+    <span class="p">[</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"20"</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+
+<span class="n">tab</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">table</span><span class="p">(</span>
+    <span class="n">cellText</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+    <span class="n">cellLoc</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s1">'center'</span>
+<span class="p">)</span>
+
+<span class="n">tab</span><span class="o">.</span><span class="n">auto_set_font_size</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tab</span><span class="o">.</span><span class="n">set_fontsize</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">tab</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+
+<span class="c1"># medzispotreba</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#d9ead3'</span><span class="p">)</span>
+
+<span class="c1"># konečná spotreba</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#cfe2f3'</span><span class="p">)</span>
+
+<span class="c1"># pridaná hodnota</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#fce5cd'</span><span class="p">)</span>
+
+<span class="c1"># vektor y</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="mi">6</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#eeeeee'</span><span class="p">)</span>
+
+<span class="c1"># vektor z</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="mi">8</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#eeeeee'</span><span class="p">)</span>
+
+<span class="c1"># vektor x</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#dddddd'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="mi">9</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#dddddd'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="obr-io-priklad">
+<img alt="_images/obr_io_priklad.png" src="_images/obr_io_priklad.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.4 </span><span class="caption-text">Tabuľka medziodvetvových vzťahov na banánovom ostrove</span><a class="headerlink" href="#obr-io-priklad" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="agregovany-prijem">
+<h5><span class="section-number">10.4.1.1.5. </span>Agregovaný príjem<a class="headerlink" href="#agregovany-prijem" title="Link to this heading">#</a></h5>
+<p>Agregovaný príjem získame, ak k <span class="math notranslate nohighlight">\(HDP\)</span> pripočítame Čisté príjmy z faktorov a čisté unilaterálne príjmy zo zahraničia. Banánový ostrov je zatvorená ekonomika a nemá vzťahy so zvyškom sveta, preto</p>
+<div class="math notranslate nohighlight">
+\[
+NFI = 0, 
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+NUT = 0
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+X =0.
+\]</div>
+<p>Keďže čisté príjmy zo zahraničia sa rovnajú 0, agregovaný príjem sa rovná <span class="math notranslate nohighlight">\(HDP\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+Y=43{,}5 \text{ mil. €}.
+\]</div>
+<p>Domáce subjekty nesporia,</p>
+<div class="math notranslate nohighlight">
+\[
+S=0.
+\]</div>
+<p>V danom období sa agregovaný príjem použil <a class="reference internal" href="#equation-r-agregovany-prijem">(10.3)</a> iba na osobnú spotrebu a čisté daňové príjmy vlády, pričom</p>
+<div class="math notranslate nohighlight">
+\[
+C = 38  \text{ mil. €}
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+T =  5{,}5 \text{ mil. €}.
+\]</div>
+<p>Preto identita rozdelenia agregovaného príjmu je</p>
+<div class="math notranslate nohighlight">
+\[
+43{,}5 = 38   + 5{,}5.
+\]</div>
+<p>Keďže rezidenti neusporia žiadnu časť príjmu a ekonomika neinvestuje ani neobchoduje so zahraničím, celý agregovaný príjem sa rozdelí medzi konečnú spotrebu domácností a čisté daňové príjmy vlády.</p>
+</section>
+</section>
+</section>
+<section id="priklad-zmena-stavu-zasob">
+<span id="priklad-zasoby"></span><h3><span class="section-number">10.4.2. </span>Príklad: zmena stavu zásob<a class="headerlink" href="#priklad-zmena-stavu-zasob" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Ako sa zmenia výpočty v predchádzajúcom príklade <a class="reference internal" href="#priklad-snu"><span class="std std-ref">Príklad: Výpočet HDP</span></a>, ak úroda banánov je <span class="math notranslate nohighlight">\(13\)</span> namiesto <span class="math notranslate nohighlight">\(10 \text{ mil. banánov}\)</span> a o zberači si extra úrodu <span class="math notranslate nohighlight">\(3 \text{ mil. banánov}\)</span> zvýšia stav zásob?</p></li>
+<li><p>Zostavte identitu úspor a investícií.</p></li>
+</ol>
+<section id="id7">
+<h4><span class="section-number">10.4.2.1. </span>Riešenie<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Zberači banánov tentoraz zozbierajú</p>
+<div class="math notranslate nohighlight">
+\[
+13 \text{ mil. banánov}.
+\]</div>
+<p>Cena jedného banánu zostáva</p>
+<div class="math notranslate nohighlight">
+\[
+2 \text{ €}.
+\]</div>
+<p>Hodnota celej produkcie zberačov je preto</p>
+<div class="math notranslate nohighlight">
+\[
+13 \cdot 2 = 26 \text{ mil. €}.
+\]</div>
+<p>Reštaurácie naďalej nakúpia 6 miliónov banánov za</p>
+<div class="math notranslate nohighlight">
+\[
+12 \text{ mil. €},
+\]</div>
+<p>a domácnosti nakúpia 4 milióny banánov za</p>
+<div class="math notranslate nohighlight">
+\[
+8 \text{ mil. €}.
+\]</div>
+<p>Zberači teda predajú iba</p>
+<div class="math notranslate nohighlight">
+\[
+10 \text{ mil. banánov}
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+3 \text{ mil. banánov}
+\]</div>
+<p>uložia na sklad.</p>
+<p>Hodnota prírastku zásob je</p>
+<div class="math notranslate nohighlight">
+\[
+3 \cdot 2 = 6 \text{ mil. €}.
+\]</div>
+<p>Táto hodnota predstavuje investície do zásob.</p>
+<div class="math notranslate nohighlight">
+\[
+I = 6 \text{ mil. €}.
+\]</div>
+<section id="id8">
+<h5><span class="section-number">10.4.2.1.1. </span>Výdavková metóda<a class="headerlink" href="#id8" title="Link to this heading">#</a></h5>
+<p>Konečná spotreba domácností zostáva</p>
+<div class="math notranslate nohighlight">
+\[
+C = 38 \text{ mil. €}.
+\]</div>
+<p>Vládne nákupy sú</p>
+<div class="math notranslate nohighlight">
+\[
+G = 5{,}5 \text{ mil. €}.
+\]</div>
+<p>Prírastok zásob predstavuje investície</p>
+<div class="math notranslate nohighlight">
+\[
+I = 6 \text{ mil. €}.
+\]</div>
+<p>Ekonomika neobchoduje so zahraničím</p>
+<div class="math notranslate nohighlight">
+\[
+X=0.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+HDP=C+I+G+X=38+6+5{,}5+0=49{,}5 \text{ mil. €}.
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-vydavkova-zasoby">
+<caption><span class="caption-number">Tab. 10.11 </span><span class="caption-text">Výdavková metóda (zásoby)</span><a class="headerlink" href="#tab-vydavkova-zasoby" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka HDP</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td class="text-right"><p>38 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong><span class="math notranslate nohighlight">\(I\)</span> (zmena stavu zásob)</strong></p></td>
+<td class="text-right"><p><strong>6 mil. €</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(G\)</span></p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td class="text-right"><p><strong>(43,5 + 6) = 49,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id9">
+<h5><span class="section-number">10.4.2.1.2. </span>Príjmová metóda<a class="headerlink" href="#id9" title="Link to this heading">#</a></h5>
+<p>Zberači banánov:</p>
+<div class="math notranslate nohighlight">
+\[
+\text{Príjem}=26 \text{ mil. €}.
+\]</div>
+<p>Ich zisk po zdanení je</p>
+<div class="math notranslate nohighlight">
+\[
+26-5-0{,}5-1{,}5=19 \text{ mil. €}.
+\]</div>
+<p>Toky hotovosti reštaurácií sú nezmenené:</p>
+<div class="math notranslate nohighlight">
+\[
+\pi_R=30-12-4-3=11 \text{ mil. €}.
+\]</div>
+<p>Mzdy:</p>
+<div class="math notranslate nohighlight">
+\[
+W=5+4+5{,}5=14{,}5 \text{ mil. €}.
+\]</div>
+<p>Úroky:</p>
+<div class="math notranslate nohighlight">
+\[
+INT=0{,}5 \text{ mil. €}.
+\]</div>
+<p>Zisky:</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi=19+11=30 \text{ mil. €}.
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-ni-zasoby">
+<caption><span class="caption-number">Tab. 10.12 </span><span class="caption-text">Národný príjem na banánovom ostrove so zásobami</span><a class="headerlink" href="#tab-ni-zasoby" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka príjmu</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mzdy</p></td>
+<td class="text-right"><p>14,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zisky</p></td>
+<td class="text-right"><p>(24 + 6) = 30 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Úroky</p></td>
+<td class="text-right"><p>0,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Národný príjem</strong></p></td>
+<td class="text-right"><p><strong>(39 + 6) = 45 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Dane z produkcie sú</p>
+<div class="math notranslate nohighlight">
+\[
+1{,}5+3=4{,}5 \text{ mil. €}.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+HDP=14{,}5+0{,}5+30+4{,}5=49{,}5 \text{ mil. €}.
+\]</div>
+<p><strong>Metóda pridanej hodnoty</strong></p>
+<p>Pridaná hodnota zberačov:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_Z=26 \text{ mil. €}.
+\]</div>
+<p>Pridaná hodnota reštaurácií:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_R=30-12=
+18 \text{ mil. €}.
+\]</div>
+<p>Pridaná hodnota vlády:</p>
+<div class="math notranslate nohighlight">
+\[
+PH_V=5{,}5 \text{ mil. €}.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+HDP=26+18+5{,}5=49{,}5 \text{ mil. €}.
+\]</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-pridana-hodnota-zasoby">
+<caption><span class="caption-number">Tab. 10.13 </span><span class="caption-text">Pridaná hodnota na banánovom ostrove so zásobami</span><a class="headerlink" href="#tab-pridana-hodnota-zasoby" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Producent</p></th>
+<th class="head"><p>Pridaná hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zberači banánov</p></td>
+<td><p>(20 + 6) = 26 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reštaurácie</p></td>
+<td><p>18 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Vláda</p></td>
+<td><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td><p><strong>(43,5 + 6) = 49,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Všetky tri metódy dávajú rovnaký výsledok.</p>
+</section>
+<section id="agregovany-prijem-uspory-a-investicie">
+<h5><span class="section-number">10.4.2.1.3. </span>Agregovaný príjem, úspory a investície<a class="headerlink" href="#agregovany-prijem-uspory-a-investicie" title="Link to this heading">#</a></h5>
+<p>Ekonomika je uzavretá:</p>
+<div class="math notranslate nohighlight">
+\[
+CA=0.
+\]</div>
+<p>Agregovaný príjem je</p>
+<div class="math notranslate nohighlight">
+\[
+Y=49{,}5 \text{ mil. €}.
+\]</div>
+<p>Spotreba domácností:</p>
+<div class="math notranslate nohighlight">
+\[
+C=38 \text{ mil. €}.
+\]</div>
+<p>Čisté daňové príjmy:</p>
+<div class="math notranslate nohighlight">
+\[
+T=5{,}5 \text{ mil. €}.
+\]</div>
+<p>Úspory sú preto</p>
+<div class="math notranslate nohighlight">
+\[
+S=Y-C-T=49{,}5-38-5{,}5=6 \text{ mil. €}.
+\]</div>
+<p>Identita rozdelenia <a class="reference internal" href="#equation-r-agregovany-prijem">(10.3)</a> agregovaného príjmu je</p>
+<div class="math notranslate nohighlight">
+\[
+49{,}5 = 38 + 6 + 5{,}5.
+\]</div>
+<p>Identita úspor a investícií je <a class="reference internal" href="#equation-identita-s-i">(10.4)</a>. Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+T-G=5{,}5-5{,}5=0
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+CA=0,
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+6+0=6+0.
+\]</div>
+<p>Platí teda</p>
+<div class="math notranslate nohighlight">
+\[
+S=I=6 \text{ mil. €}.
+\]</div>
+<p>Prírastok zásob vo výške 6 mil. € predstavuje súčasne investície aj úspory ekonomiky.</p>
+</section>
+<section id="id10">
+<h5><span class="section-number">10.4.2.1.4. </span>Tabuľka medziodvetvových vzťahov<a class="headerlink" href="#id10" title="Link to this heading">#</a></h5>
+<p>Schéma tabuľky medziodvetvových vzťahov je na <a class="reference internal" href="#obr-io-zasoby"><span class="std std-numref">Obr. 10.5</span></a>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">[</span><span class="s2">""</span><span class="p">,</span> <span class="s2">"Zberači"</span><span class="p">,</span> <span class="s2">"Rešt."</span><span class="p">,</span> <span class="s2">"Vláda"</span><span class="p">,</span>
+     <span class="s2">"$C$"</span><span class="p">,</span> <span class="s2">"$I$"</span><span class="p">,</span> <span class="s2">"$G$"</span><span class="p">,</span>
+     <span class="s2">"$</span><span class="se">\\</span><span class="s2">mathbf</span><span class="si">{y}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"$</span><span class="se">\\</span><span class="s2">mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Zberači"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"12"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">"8"</span><span class="p">,</span> <span class="s2">"6"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">"14"</span><span class="p">,</span> <span class="s2">"26"</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Rešt."</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">"30"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">"30"</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Vláda"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span>
+     <span class="s2">"5.5"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Mzdy"</span><span class="p">,</span> <span class="s2">"5"</span><span class="p">,</span> <span class="s2">"4"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Úroky"</span><span class="p">,</span> <span class="s2">"0.5"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Zisky"</span><span class="p">,</span> <span class="s2">"19"</span><span class="p">,</span> <span class="s2">"11"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"Dane"</span><span class="p">,</span> <span class="s2">"1.5"</span><span class="p">,</span> <span class="s2">"3"</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"$</span><span class="se">\\</span><span class="s2">mathbf</span><span class="si">{z}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"26"</span><span class="p">,</span> <span class="s2">"18"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">],</span>
+
+    <span class="p">[</span><span class="s2">"$</span><span class="se">\\</span><span class="s2">mathbf</span><span class="si">{x}</span><span class="s2">$"</span><span class="p">,</span> <span class="s2">"26"</span><span class="p">,</span> <span class="s2">"30"</span><span class="p">,</span> <span class="s2">"5.5"</span><span class="p">,</span>
+     <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">,</span> <span class="s2">""</span><span class="p">]</span>
+<span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">'off'</span><span class="p">)</span>
+
+<span class="n">tab</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">table</span><span class="p">(</span>
+    <span class="n">cellText</span><span class="o">=</span><span class="n">data</span><span class="p">,</span>
+    <span class="n">cellLoc</span><span class="o">=</span><span class="s1">'center'</span><span class="p">,</span>
+    <span class="n">loc</span><span class="o">=</span><span class="s1">'center'</span>
+<span class="p">)</span>
+
+<span class="n">tab</span><span class="o">.</span><span class="n">auto_set_font_size</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">tab</span><span class="o">.</span><span class="n">set_fontsize</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">tab</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">)</span>
+
+<span class="c1"># medzispotreba</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#d9ead3'</span><span class="p">)</span>
+
+<span class="c1"># konečná spotreba</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#cfe2f3'</span><span class="p">)</span>
+
+<span class="c1"># pridaná hodnota</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">):</span>
+        <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#fce5cd'</span><span class="p">)</span>
+
+<span class="c1"># vektor y</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="mi">7</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#eeeeee'</span><span class="p">)</span>
+
+<span class="c1"># vektor z</span>
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="mi">8</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#eeeeee'</span><span class="p">)</span>
+
+<span class="c1"># vektor x</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="mi">8</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#dddddd'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+    <span class="n">tab</span><span class="p">[(</span><span class="mi">9</span><span class="p">,</span><span class="n">j</span><span class="p">)]</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">'#dddddd'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="obr-io-zasoby">
+<img alt="_images/obr_io_zasoby.png" src="_images/obr_io_zasoby.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.5 </span><span class="caption-text">Tabuľka medziodvetvových vzťahov na banánovom ostrove</span><a class="headerlink" href="#obr-io-zasoby" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+<section id="priklad-vztahy-so-zvyskom-sveta">
+<h3><span class="section-number">10.4.3. </span>Príklad: Vzťahy so zvyškom sveta<a class="headerlink" href="#priklad-vztahy-so-zvyskom-sveta" title="Link to this heading">#</a></h3>
+<p>V rozšírení predchádzajúcich príkladov (<a class="reference internal" href="#priklad-snu"><span class="std std-ref">Príklad: Výpočet HDP</span></a> a <a class="reference internal" href="#priklad-zasoby"><span class="std std-ref">Príklad: zmena stavu zásob</span></a> ) predpokladajme tieto zmeny:</p>
+<ul class="simple">
+<li><p>Extra produkciu 3 milión banánov zberači neuskladnia, ale podarí sa im ju vyviesť do Európy za cenu 2 € za banán.</p></li>
+<li><p>Zberači nie sú rezidenti banánového ostrova ale Európania. To znamená, že zisky zberačov nie sú príjmom žiadneho z rezidentov.</p></li>
+<li><p>Časť obyvateľstva si v danom roku zarobila v Európe a priviezla si 1 milión € vo forme mzdy ako odmenu za ich prácu.</p></li>
+<li><p>Obyvatelia posielajú dary jednému zo spriatelených ostrovov vo výške 0,5 milión €.</p></li>
+</ul>
+<p>Ako sa tieto zmeny prejavia v systéme národných účtov?</p>
+<section id="id11">
+<h4><span class="section-number">10.4.3.1. </span>Riešenie<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
+<section id="id12">
+<h5><span class="section-number">10.4.3.1.1. </span>Príjmová metóda<a class="headerlink" href="#id12" title="Link to this heading">#</a></h5>
+<p>Zisk zberačov banánov je rovnako ako v príklade so zásobami vyšší o 6 mil. € a dosahuje 19 mil. €. Keďže zberači nie sú rezidentmi banánového ostrova, tento zisk nie je súčasťou národného príjmu rezidentov.</p>
+<p>Rezidentom patria iba reštaurácie, ktorých zisk je</p>
+<div class="math notranslate nohighlight">
+\[
+11 \text{ mil. €}.
+\]</div>
+<p>Na druhej strane si časť obyvateľov ostrova zarobila v Európe 1 mil. € vo forme miezd. Táto suma sa započítava do príjmov rezidentov.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-ni-zahranicie">
+<caption><span class="caption-number">Tab. 10.14 </span><span class="caption-text">Národný príjem na banánovom ostrove so vzťahmi so zvyškom sveta</span><a class="headerlink" href="#tab-ni-zahranicie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka príjmu</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mzdy</p></td>
+<td class="text-right"><p>(14,5 + 1) = 15,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zisky</p></td>
+<td class="text-right"><p>(24-13) = 11 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Úroky</p></td>
+<td class="text-right"><p>0,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Národný príjem</strong></p></td>
+<td class="text-right"><p><strong>27 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+NI = 15{,}5 + 11 + 0{,}5 = 27 \text{ mil. €}.
+\]</div>
+<p>Dane z produkcie sa nezmenili a zostávajú vo výške <span class="math notranslate nohighlight">\(4{,}5 \text{ mil. €}\)</span>.</p>
+<p>Hrubý národný produkt je preto</p>
+<div class="math notranslate nohighlight">
+\[
+HNP = 27 + 4{,}5 = 31{,}5 \text{ mil. €}.
+\]</div>
+<p>Čisté príjmy faktorov zo zahraničia sú</p>
+<div class="math notranslate nohighlight">
+\[
+NFI = 1 - 19 = -18 \text{ mil. €},
+\]</div>
+<p>pretože rezidenti získali mzdy zo zahraničia vo výške 1 mil. € a nerezidenti získali príjmy z kapitálu vo výške 19 mil. €.</p>
+<p>Hrubý domáci produkt získame zo vzťahu</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = HNP - NFI.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 31{,}5 - (-18)
+      = 31{,}5 + 18
+      = 49{,}5 \text{ mil. €}.
+\]</div>
+</section>
+<section id="id13">
+<h5><span class="section-number">10.4.3.1.2. </span>Výdavková metóda<a class="headerlink" href="#id13" title="Link to this heading">#</a></h5>
+<p>Vo výdavkovej metóde sa oproti pôvodnému príkladu objaví čistý vývoz vo výške 6 mil. €. Predstavuje hodnotu 3 miliónov banánov vyvezených do Európy.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-vydavkova-zahranicie">
+<caption><span class="caption-number">Tab. 10.15 </span><span class="caption-text">Výdavková metóda (zvyšok sveta)</span><a class="headerlink" href="#tab-vydavkova-zahranicie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Zložka HDP</p></th>
+<th class="head text-right"><p>Hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(C\)</span></p></td>
+<td class="text-right"><p>38 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(G\)</span></p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p><strong><span class="math notranslate nohighlight">\(X\)</span></strong></p></td>
+<td class="text-right"><p><strong>6 mil. €</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td class="text-right"><p><strong>(43,5 + 6) = 49,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = C + I + G + X.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 38 + 0 + 5{,}5 + 6 = 49{,}5 \text{ mil. €}.
+\]</div>
+</section>
+<section id="id14">
+<h5><span class="section-number">10.4.3.1.3. </span>Metóda pridanej hodnoty<a class="headerlink" href="#id14" title="Link to this heading">#</a></h5>
+<p>Pridaná hodnota zberačov banánov je vyššia o 6 mil. €, pretože celková úroda dosiahla hodnotu 26 mil. €. Nezáleží pritom na tom, či boli banány uskladnené alebo vyvezené do zahraničia.</p>
+<p>Pridaná hodnota reštaurácií a vlády sa oproti pôvodnému príkladu nezmenila.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-pridana-hodnota-zahranicie">
+<caption><span class="caption-number">Tab. 10.16 </span><span class="caption-text">Pridaná hodnota na banánovom ostrove so zvyškom sveta</span><a class="headerlink" href="#tab-pridana-hodnota-zahranicie" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Producent</p></th>
+<th class="head text-right"><p>Pridaná hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zberači banánov</p></td>
+<td class="text-right"><p>(20 + 6) = 26 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p>Reštaurácie</p></td>
+<td class="text-right"><p>18 mil. €</p></td>
+</tr>
+<tr class="row-even"><td><p>Vláda</p></td>
+<td class="text-right"><p>5,5 mil. €</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Hrubý domáci produkt</strong></p></td>
+<td class="text-right"><p><strong>(43,5 + 6) = 49,5 mil. €</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+HDP = 26 + 18 + 5{,}5 = 49{,}5 \text{ mil. €}.
+\]</div>
+<p>Rovnako ako pri zvýšení zásob sa aj pri vývoze dodatočná produkcia započítava do HDP. Produktová metóda nerozlišuje, či bola produkcia spotrebovaná doma, uskladnená alebo vyvezená do zahraničia.</p>
+</section>
+<section id="agregovany-prijem-uspory-a-bezny-ucet">
+<h5><span class="section-number">10.4.3.1.4. </span>Agregovaný príjem, úspory a bežný účet<a class="headerlink" href="#agregovany-prijem-uspory-a-bezny-ucet" title="Link to this heading">#</a></h5>
+<p>Bežný účet platobnej bilancie je <a class="reference internal" href="#equation-r-ca">(10.1)</a>. Tentoraz sú všetky 3 položky bežného účtu rôzne od 0.</p>
+<p>Vieme už, že</p>
+<div class="math notranslate nohighlight">
+\[
+X = 6 \text{ mil. €},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+NFI = -18 \text{ mil. €}.
+\]</div>
+<p>Okrem toho časť obyvateľstva poslalo platby priateľom v inom ostrove;</p>
+<div class="math notranslate nohighlight">
+\[
+NUT = -0,5 \text{ mil. €}. 
+\]</div>
+<p>Získame tak, že v danom roku je na ostrove deficit bežného účtu platobnej bilancie.</p>
+<div class="math notranslate nohighlight">
+\[
+CA =6 -18 - 0,5 = -12,5 \text{ mil. €}.
+\]</div>
+<p>Agregovaný príjem je</p>
+<div class="math notranslate nohighlight">
+\[
+Y + NFI + NUT = 31 \text{ mil. €}.
+\]</div>
+<p>Obyvatelia z neho zaplatia dane vo výške 5,5 mil. € a spotrebujú tovary a služby v hodnote 38 mil. €. Úspory rezidentov sú preto záporné:</p>
+<div class="math notranslate nohighlight">
+\[
+S = 31 - 38 - 5,5 = -12,5 \text{ mil. €}.
+\]</div>
+<p>Záporné úspory znamenajú, že rezidenti spotrebovali viac, než dosiahol ich agregovaný príjem.</p>
+<p>Podľa identity úspor a investícií</p>
+<div class="math notranslate nohighlight">
+\[
+S + T - G = I + CA.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+T-G=0,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+I=0,
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+CA=-12,5 \text{ mil. €},
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+S+T-G=I+CA=-12,5 \text{ mil. €}.
+\]</div>
+<p>Deficit bežného účtu je teda financovaný zápornými úsporami rezidentov.</p>
+</section>
+<section id="id15">
+<h5><span class="section-number">10.4.3.1.5. </span>Tabuľka medziodvetvových vzťahov<a class="headerlink" href="#id15" title="Link to this heading">#</a></h5>
+<p>Schéma tabuľky na <a class="reference internal" href="#obr-io-zahranicie"><span class="std std-numref">Obr. 10.6</span></a> sa líši od <a class="reference internal" href="#obr-io-zasoby"><span class="std std-numref">Obr. 10.5</span></a> iba stĺpcom čistého vývozu namiesto investícií v kvadrante konečnej spotreby.</p>
+<figure class="align-default" id="obr-io-zahranicie">
+<img alt="_images/obr_io_zahranicie.png" src="_images/obr_io_zahranicie.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 10.6 </span><span class="caption-text">Tabuľka medziodvetvových vzťahov na banánovom ostrove</span><a class="headerlink" href="#obr-io-zahranicie" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">10.5. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-pridana-hodnota">
+<h3><span class="section-number">10.5.1. </span>Príklad: Pridaná hodnota<a class="headerlink" href="#priklad-pridana-hodnota" title="Link to this heading">#</a></h3>
+<p>Uvažujme zjednodušený príklad, v ktorom sa za rok postaví jeden dom, čo predstavuje všetku ekonomickú aktivitu v ekonomike. Na výrobe domu sa podieľa niekoľko domácich subjektov. Výrobcovia tehál vyrobia tehly v hodnote 90 000 €. Potrebujú však energiu od elektrární v hodnote 20 000 €. Všetky tehly nakúpia murári a premenia ich na dom. Tí ho predajú realitnej kancelárii za 130 000 €, ktorá ho predá konečnému zákazníkovi za 150 000 €. Aká je pridaná hodnota všetkých subjektov pri výrobe domu?</p>
+</section>
+<section id="priklad-polozky-systemu-narodnych-uctov">
+<h3><span class="section-number">10.5.2. </span>Príklad: Položky systému národných účtov<a class="headerlink" href="#priklad-polozky-systemu-narodnych-uctov" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="#tab-priklad-snu-polozky"><span class="std std-numref">Tab. 10.17</span></a> sumarizuje položky SNÚ v ekonomike v skúmanom období.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-priklad-snu-polozky">
+<caption><span class="caption-number">Tab. 10.17 </span><span class="caption-text">Položky systému národných účtov v danom období</span><a class="headerlink" href="#tab-priklad-snu-polozky" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>položka</p></th>
+<th class="head"><p>suma</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Vývoz tovarov</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zisky</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-even"><td><p>Dovoz tovarov</p></td>
+<td><p>130</p></td>
+</tr>
+<tr class="row-odd"><td><p>Príjmy z kapitálu zo zahraničia</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-even"><td><p>Vývoz služieb</p></td>
+<td><p>140</p></td>
+</tr>
+<tr class="row-odd"><td><p>Platby za kapitál nerezidentov</p></td>
+<td><p>170</p></td>
+</tr>
+<tr class="row-even"><td><p>Dovoz služieb</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-odd"><td><p>úroky</p></td>
+<td><p>80</p></td>
+</tr>
+<tr class="row-even"><td><p>odpisy</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Renty</p></td>
+<td><p>30</p></td>
+</tr>
+<tr class="row-even"><td><p>mzdy</p></td>
+<td><p>200</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nepriame dane</p></td>
+<td><p>190</p></td>
+</tr>
+<tr class="row-even"><td><p>Príjmy z práce zo zahraničia</p></td>
+<td><p>200</p></td>
+</tr>
+<tr class="row-odd"><td><p>Výdavky vlády</p></td>
+<td><p>350</p></td>
+</tr>
+<tr class="row-even"><td><p>Platby za prácu nerezidentov</p></td>
+<td><p>190</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vládne nákupy</p></td>
+<td><p>200</p></td>
+</tr>
+<tr class="row-even"><td><p>Unilaterálne prevody do zahraničia</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Príjmy vlády</p></td>
+<td><p>280</p></td>
+</tr>
+<tr class="row-even"><td><p>Súkromné úspory</p></td>
+<td><p>300</p></td>
+</tr>
+<tr class="row-odd"><td><p>Unilaterálne prevody zo zahraničia</p></td>
+<td><p>40</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Vypočítajte</p>
+<ol class="arabic simple">
+<li><p>národný príjem,</p></li>
+<li><p>čistý národný produkt,</p></li>
+<li><p>hrubý národný produkt,</p></li>
+<li><p>hrubý domáci produkt,</p></li>
+<li><p>národné úspory,</p></li>
+<li><p>spotrebu domácností,</p></li>
+<li><p>hrubé investície,</p></li>
+<li><p>bežný účet platobnej bilancie,</p></li>
+<li><p>čistý príjem z investícií a</p></li>
+<li><p>overte identitu úspor a investícií.</p></li>
+</ol>
+</section>
+<section id="id16">
+<h3><span class="section-number">10.5.3. </span>Príklad: Výpočet HDP<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<p>V ekonomike sú prítomné subjekty: zberači kokosových orechov, reštaurácie a úrady, ktoré zriadila vláda na správu verejných záležitostí. Ekonomické ročné toky sumarizujú nasledovné tabuľky.</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zberaci-orechy">
+<caption><span class="caption-number">Tab. 10.18 </span><span class="caption-text">Zberači orechov</span><a class="headerlink" href="#tab-zberaci-orechy" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>položka</p></th>
+<th class="head"><p>hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Predaj</p></td>
+<td><p>300</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-even"><td><p>Renty</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dane</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Oprava strojov / odpisy</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zásoby kokosových orechov na začiatku roka</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Zásoby kokosových orechov na konci roka</p></td>
+<td><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-restauracie-orechy">
+<caption><span class="caption-number">Tab. 10.19 </span><span class="caption-text">Reštaurácie</span><a class="headerlink" href="#tab-restauracie-orechy" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>položka</p></th>
+<th class="head"><p>hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Predaj</p></td>
+<td><p>800</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-even"><td><p>Dane</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nákup kokosových orechov</p></td>
+<td><p>100</p></td>
+</tr>
+<tr class="row-even"><td><p>Oprava strojov / odpisy</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zásoby kokosových orechov na začiatku roka</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-even"><td><p>Zásoby kokosových orechov na konci roka</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-urady-orechy">
+<caption><span class="caption-number">Tab. 10.20 </span><span class="caption-text">Úrady</span><a class="headerlink" href="#tab-urady-orechy" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>položka</p></th>
+<th class="head"><p>hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Predaj služieb</p></td>
+<td><p>300</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mzdy</p></td>
+<td><p>300</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zahranicie-orechy">
+<caption><span class="caption-number">Tab. 10.21 </span><span class="caption-text">Zvyšok sveta</span><a class="headerlink" href="#tab-zahranicie-orechy" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>položka</p></th>
+<th class="head"><p>hodnota</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Oprava strojov zberačom a reštauráciám</p></td>
+<td><p>150</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dane</p></td>
+<td><p>50</p></td>
+</tr>
+<tr class="row-even"><td><p>Nákup kokosových orechov</p></td>
+<td><p>100</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Spotrebitelia platia dane 100 mil. €. Úrady sú financované z výberu daní. Vypočítajte HDP výdavkovou, príjmovou metódou a metódou pridanej hodnoty. Vypočítajte čistý domáci produkt.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Rovnovaha.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">9. </span>Teória všeobecnej rovnováhy</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="StaticModel.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">11. </span>Statický model všeobecnej rovnováhy</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-aktivita">10.1. Ekonomická aktivita</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vydavkova-metoda">10.1.1. Výdavková metóda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#prijmova-metoda">10.1.2. Príjmová metóda</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#metoda-pridanej-hodnoty">10.1.3. Metóda pridanej hodnoty</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#system-narodnych-uctov">10.2. Systém národných účtov</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bezny-ucet-platobnej-bilancie">10.2.1. Bežný účet platobnej bilancie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-a-jeho-vyuzitie">10.2.2. Agregovaný príjem a jeho využitie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verejny-rozpocet">10.2.3. Verejný rozpočet</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identita-uspor-a-investicii">10.2.4. Identita úspor a investícií</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tabulka-medziodvetvovych-vztahov">10.3. Tabuľka medziodvetvových vzťahov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">10.4. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vypocet-hdp">10.4.1. Príklad: Výpočet HDP</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">10.4.1.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">10.4.1.1.1. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">10.4.1.1.2. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">10.4.1.1.3. Metóda pridanej hodnoty</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">10.4.1.1.4. Tabuľka medziodvetvových vzťahov</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem">10.4.1.1.5. Agregovaný príjem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-zmena-stavu-zasob">10.4.2. Príklad: zmena stavu zásob</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">10.4.2.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">10.4.2.1.1. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">10.4.2.1.2. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-uspory-a-investicie">10.4.2.1.3. Agregovaný príjem, úspory a investície</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">10.4.2.1.4. Tabuľka medziodvetvových vzťahov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vztahy-so-zvyskom-sveta">10.4.3. Príklad: Vzťahy so zvyškom sveta</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">10.4.3.1. Riešenie</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">10.4.3.1.1. Príjmová metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">10.4.3.1.2. Výdavková metóda</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">10.4.3.1.3. Metóda pridanej hodnoty</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#agregovany-prijem-uspory-a-bezny-ucet">10.4.3.1.4. Agregovaný príjem, úspory a bežný účet</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">10.4.3.1.5. Tabuľka medziodvetvových vzťahov</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">10.5. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-pridana-hodnota">10.5.1. Príklad: Pridaná hodnota</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-polozky-systemu-narodnych-uctov">10.5.2. Príklad: Položky systému národných účtov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">10.5.3. Príklad: Výpočet HDP</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

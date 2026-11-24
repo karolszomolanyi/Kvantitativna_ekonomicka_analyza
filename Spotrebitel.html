@@ -1,0 +1,1984 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>5. Správanie spotrebiteľa &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Spotrebitel';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="6. Dopyt spotrebiteľa" href="Porovn.html" />
+    <link rel="prev" title="4. Náklady firmy" href="Naklad.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Spotrebitel.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Správanie spotrebiteľa</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#existencia-funkcie-uzitocnosti">5.1. Existencia funkcie užitočnosti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rozpocet-spotrebitela">5.2. Rozpočet spotrebiteľa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.3. Správanie spotrebiteľa.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-interpretacia-ppr">5.3.1. Ekonomická interpretácia PPR</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">5.4. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-spravanie-spotrebitela">5.4.1. Príklad: Správanie spotrebiteľa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">5.4.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">5.4.1.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">5.5. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.5.1. Príklad: Správanie spotrebiteľa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-spotreba-troch-statkov">5.5.2. Príklad: Spotreba troch statkov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-funkcia-uzitocnosti-v-semilogaritmickom-tvare">5.5.3. Príklad: Funkcia užitočnosti v semilogaritmickom tvare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-indiferencne-krivky-su-kruhy">5.5.4. Príklad: Indiferenčné krivky sú kruhy</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="spravanie-spotrebitela">
+<h1><span class="section-number">5. </span>Správanie spotrebiteľa<a class="headerlink" href="#spravanie-spotrebitela" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Firma vyrába statky; spotrebiteľ, teda zákazník firmy, ich spotrebúva.</p></li>
+<li><p>Firma statky <strong>ponúka</strong> (<a class="reference internal" href="Naklad.html#ponuka-firmy"><span class="std std-ref">Ponuka firmy</span></a>); spotrebiteľ ich <strong>dopytuje</strong>.</p></li>
+<li><p>Správanie spotrebiteľa charakterizujeme úlohou matematického programovania (<a class="reference internal" href="Matematika.html#viazany-extrem"><span class="std std-ref">Úloha na viazaný extrém</span></a>), v ktorej sa spotrebiteľ usiluje maximalizovať svoj <em>blahobyt</em> vzhľadom na svoj <em>rozpočet</em>.</p></li>
+<li><p>Blahobyt spotrebiteľa vyjadruje <strong>funkcia užitočnosti</strong>.</p></li>
+<li><p>Rozpočet spotrebiteľa vyjadruje <strong>rozpočtová funkcia</strong>.</p></li>
+</ul>
+<p>Existujú dva základné prístupy k modelovaniu správania spotrebiteľa:</p>
+<ol class="arabic simple">
+<li><p>formulácia preferencií spotrebiteľa a odvodenie funkcie užitočnosti za predpokladu racionálneho správania,</p></li>
+<li><p>odvodenie preferencií z pozorovaných individuálnych výberov prostredníctvom určitých konzistentných predpokladov o preferenciách.</p></li>
+</ol>
+<p>Prvý prístup sa označuje ako <strong>teória užitočnosti</strong> (<em>utility theory</em>) a druhý ako <strong>teória odhalených preferencií</strong> (<em>revealed preference theory</em>).</p>
+<p>Na bakalárskej úrovni mikroekonómie sa zvyčajne využíva prvý prístup. Predpokladáme, že preferencie spotrebiteľa možno reprezentovať funkciou užitočnosti a že spotrebiteľ sa správa racionálne. Jeho cieľom je zvoliť taký spotrebný kôš, ktorý maximalizuje užitočnosť pri danom rozpočtovom obmedzení.</p>
+<section id="existencia-funkcie-uzitocnosti">
+<span id="kapitola-uzitocnost"></span><h2><span class="section-number">5.1. </span>Existencia funkcie užitočnosti<a class="headerlink" href="#existencia-funkcie-uzitocnosti" title="Link to this heading">#</a></h2>
+<p>Spotrebiteľ spotrebúva niekoľko statkov. Môže zvažovať nákup rôznych kombinácií statkov. Takýmto kombináciám hovoríme spotrebiteľské koše.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<p>V obchode naplníte obchodný košík chlebom, desiatimi rožkami, 100 grammi masla, dvoma litrami mlieka, kilom cukru a kilom soli. Toto je príklad spotrebiteľského koša, kombinácie statkov, ktoré nakúpite. Obsah vášho spotrebiteľského koša možno vyjadriť vektorom <span class="math notranslate nohighlight">\(\mathbf{x^a} = [1,10,100,2,1,1]\)</span>. Možno uvažovať aj o rôznorodejších kombináciách — spotrebiteľských košoch — než len o potravinách. Spotrebiteľské koše môžu byť rôznorodejšie. Napríklad v jednom spotrebiteľskom koši môže byť spotreba počítača a príslušenstva, nábytku do obývačky, auta a pod.</p>
+</aside>
+<p id="spotrebitelsky-kos">Spotrebiteľský kôš
+Vektor spotreby rôznych statkov jedným spotrebiteľom v jednotkách statkov.</p>
+<p>Množina spotrebiteľských možností
+Množina spotrebiteľských košov, ktoré sú pre spotrebiteľa prípustné.</p>
+<p>Predpokladajme, že množina spotrebiteľských možností je</p>
+<ul class="simple">
+<li><p>uzavretá a</p></li>
+<li><p>konvexná.</p></li>
+</ul>
+<p>Uzavretosť zabezpečuje existenciu optimálneho spotrebiteľského koša. Ak sa spotrebiteľ môže približovať k určitému spotrebiteľskému košu prostredníctvom postupnosti prípustných spotrebiteľských košov, potom je prípustný aj tento hraničný spotrebiteľský kôš.</p>
+<p>Konvexnosť vyjadruje možnosť kombinovať spotrebiteľské koše. Ak sú spotrebiteľské koše <span class="math notranslate nohighlight">\(\mathbf{x^a}\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> prípustné, potom je prípustný aj každý spotrebiteľský kôš tvaru</p>
+<div class="math notranslate nohighlight">
+\[
+\lambda \mathbf{x^a}
++
+(1-\lambda)\mathbf{x^b},
+\qquad
+0\le\lambda\le1.
+\]</div>
+<p>Geometricky to znamená, že úsečka spájajúca ľubovoľné dva prípustné spotrebiteľské koše leží celá v množine spotrebiteľských možností.</p>
+<p>Na <a class="reference internal" href="#graf-konvexnost-spotrebitelskych-moznosti"><span class="std std-numref">Obr. 5.1</span></a> je zobrazená konvexná a nekonvexná množina spotrebiteľských možností pre dva statky. Spotreba prvého statku je označená ako <span class="math notranslate nohighlight">\(x_1\)</span> a spotreba druhého ako <span class="math notranslate nohighlight">\(x_2\)</span>.</p>
+<p>Na ľavom paneli je zobrazená konvexná množina spotrebiteľských možností. Pre ľubovoľné dva spotrebiteľské koše <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span> patrí do množiny aj každá ich konvexná kombinácia. Geometricky to znamená, že celá úsečka spájajúca body <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span> leží v množine spotrebiteľských možností.</p>
+<p>Na pravom paneli je zobrazená nekonvexná množina spotrebiteľských možností. Existujú v nej spotrebiteľské koše <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span>, pre ktoré časť úsečky spájajúcej tieto body leží mimo množiny.</p>
+<p>V ďalšom texte bude množina spotrebiteľských možností určená rozpočtovým ohraničením spotrebiteľa (<a class="reference internal" href="#kapitola-rozpocet-spotrebitela"><span class="std std-ref">Rozpočet spotrebiteľa</span></a>).</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># Konvexná množina</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mf">1.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"lightblue"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="n">xa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>
+<span class="n">xb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">2.4</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">xa</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">xb</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span>
+    <span class="p">[</span><span class="n">xa</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xb</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span>
+    <span class="n">lw</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">xa</span><span class="p">,</span> <span class="s2">"ko"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">xb</span><span class="p">,</span> <span class="s2">"ko"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xa</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">xa</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.15</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">^a$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">xb</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.15</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">^b$"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Konvexná množina"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">"$x_1$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">"$x_2$"</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># Nekonvexná množina</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">+</span> <span class="mf">0.7</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">r</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"salmon"</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
+
+<span class="n">xa</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">])</span>
+<span class="n">xb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.2</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="p">[</span><span class="n">xa</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">xb</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span>
+    <span class="p">[</span><span class="n">xa</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">xb</span><span class="p">[</span><span class="mi">1</span><span class="p">]],</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span>
+    <span class="n">lw</span><span class="o">=</span><span class="mi">2</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">xa</span><span class="p">,</span> <span class="s2">"ko"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">*</span><span class="n">xb</span><span class="p">,</span> <span class="s2">"ko"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xa</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">xa</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.15</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">^a$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">xb</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.05</span><span class="p">,</span> <span class="n">xb</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="mf">0.15</span><span class="p">,</span> <span class="sa">r</span><span class="s2">"$\mathbf</span><span class="si">{x}</span><span class="s2">^b$"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Nekonvexná množina"</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">4.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s2">"$x_1$"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-konvexnost-spotrebitelskych-moznosti">
+<img alt="_images/graf_konvexnost_spotrebitelskych_moznosti.png" src="_images/graf_konvexnost_spotrebitelskych_moznosti.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.1 </span><span class="caption-text">Konvexná a nekonvexná množina spotrebiteľských možností</span><a class="headerlink" href="#graf-konvexnost-spotrebitelskych-moznosti" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<dl class="simple myst">
+<dt>Preferencie</dt><dd><p>Schopnosť spotrebiteľa porovnávať spotrebiteľské koše z hľadiska ich žiaducnosti.</p>
+</dd>
+<dt>Preferenčný vzťah</dt><dd><p>Vzťah medzi dvoma spotrebiteľskými košmi <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span> z hľadiska preferencií spotrebiteľa.</p>
+</dd>
+</dl>
+<p>O preferenčných vzťahoch predpokladáme</p>
+<ul class="simple">
+<li><p><strong>reflexívnosť</strong>; <span class="math notranslate nohighlight">\(\forall \mathbf{x^a} \in \mathbb{X}, \mathbf{x^a} \succsim \mathbf{x^a}\)</span> a</p></li>
+<li><p><strong>tranzitívnosť</strong>; <span class="math notranslate nohighlight">\(\forall \mathbf{x^a}, \mathbf{x^b}, \mathbf{x^c} \in \mathbb{X}\)</span>, ak <span class="math notranslate nohighlight">\(\mathbf{x^a} \succsim \mathbf{x^b}\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x^b} \succsim \mathbf{x^c}\)</span>, potom <span class="math notranslate nohighlight">\(\mathbf{x^a} \succsim \mathbf{x^c}\)</span>.</p></li>
+</ul>
+<p>Reflexívnosť znamená, že ak spotrebiteľ porovnáva dva úplne rovnaké spotrebiteľské koše, uzná, že oba sú pre neho aspoň rovnako dobré.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad (reflexívnosť)</p>
+<p>Fero si v obchode naplnil nákupný vozík (spotrebiteľský kôš). Pri sladkostiach bola veľká tlačenica, preto vozík zaparkoval v blízkej prázdnej uličke obchodného domu. Keď sa vrátil od oddelenia sladkostí, zistil, že vedľa jeho vozíka stojí ďalší s úplne rovnakým obsahom. Fero nevie, ktorý z vozíkov je jeho. Oba spotrebiteľské koše sú pre neho rovnako dobré. Ak by Fero preferoval jeden z dvoch identických spotrebiteľských košov, nebol by racionálny.</p>
+</aside>
+<p>Podľa tranzitívnej vlastnosti, ak spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x^a}\)</span> je aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> a zároveň <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> je aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x^c}\)</span>, potom kôš <span class="math notranslate nohighlight">\(\mathbf{x^a}\)</span> musí byť aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x^c}\)</span>.</p>
+<p>Uveďme ďalšie označenie,</p>
+<div class="math notranslate nohighlight" id="equation-aspon-tak-dobry">
+<span class="eqno">(5.1)<a class="headerlink" href="#equation-aspon-tak-dobry" title="Link to this equation">#</a></span>\[\mathbf{x^b} \precsim \mathbf{x^a}, \text{ ak  } \mathbf{x^a} \succsim \mathbf{x^b},\]</div>
+<div class="math notranslate nohighlight" id="equation-indiferencia">
+<span class="eqno">(5.2)<a class="headerlink" href="#equation-indiferencia" title="Link to this equation">#</a></span>\[\mathbf{x^b} \sim \mathbf{x^c}, \text{ ak  } \mathbf{x^b} \succsim \mathbf{x^c} \text{ a  } \mathbf{x^b} \precsim \mathbf{x^c}\]</div>
+<div class="math notranslate nohighlight" id="equation-preferencia">
+<span class="eqno">(5.3)<a class="headerlink" href="#equation-preferencia" title="Link to this equation">#</a></span>\[\mathbf{x^a} \succ \mathbf{x^d}, \text{ ak  } \mathbf{x^a} \succsim \mathbf{x^d} \text{ a  } \mathbf{x^a} \not\sim \mathbf{x^d}\]</div>
+<p>Vzťah dominancie možno zapísať dvoma spôsobmi <a class="reference internal" href="#equation-aspon-tak-dobry">(5.1)</a></p>
+<p>Spotrebiteľ sa nevie rozhodnúť  medzi košmi <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x^c}\)</span>, pretože <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> je aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x^c}\)</span> a zároveň <span class="math notranslate nohighlight">\(\mathbf{x^c}\)</span> je aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x^b}\)</span> <a class="reference internal" href="#equation-indiferencia">(5.2)</a>. Hovoríme, že spotrebiteľ je voči týmto dvom košom <strong>indiferentný</strong>.</p>
+<p>Vo vzťahu <a class="reference internal" href="#equation-preferencia">(5.3)</a> spotrebiteľ preferuje spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> pred košom <span class="math notranslate nohighlight">\(\mathbf{x}^d\)</span>. Kôš <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> je aspoň tak dobrý ako <span class="math notranslate nohighlight">\(\mathbf{x}^d\)</span> a zároveň spotrebiteľ nie je voči týmto dvom košom indiferentný.</p>
+<p>Ak spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> dominuje spotrebiteľskému košu <span class="math notranslate nohighlight">\(\mathbf{x}^d\)</span> (<a class="reference internal" href="Matematika.html#dominancia-efektivnost"><span class="std std-ref">Dominancia a efektívnosť</span></a>), potom je prirodzené predpokladať</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^a \succ \mathbf{x}^d.
+\]</div>
+<p>Ďalšie predpoklady o preferenčných vzťahoch potrebné k odvodeniu funkcie užitočnosti sú:</p>
+<ul class="simple">
+<li><p><strong>Úplnosť</strong>; spotrebiteľ dokáže porovnať ľubovoľné dva spotrebiteľské koše. Pre každé dva spotrebiteľské koše <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span> platí</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^a \succsim \mathbf{x}^b,
+\]</div>
+<p>alebo</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^a \precsim \mathbf{x}^b,
+\]</div>
+<p>alebo</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^a \sim \mathbf{x}^b.
+\]</div>
+<ul class="simple">
+<li><p><strong>Spojitosť</strong>; malé zmeny spotrebiteľského koša vedú len k malým zmenám preferencií spotrebiteľa.</p></li>
+</ul>
+<p>Preferencie nazývame racionálne, ak sú reflexívne, tranzitívne a úplné.</p>
+<p>Ak sú preferencie úplné, tranzitívne a spojité, potom na uzavretej množine spotrebiteľských možností existuje funkcia užitočnosti, ktorá ich reprezentuje. Spotrebiteľ tak dokáže všetkým spotrebiteľským košom priradiť číselné hodnoty tak, aby ich poradie zodpovedalo jeho preferenciám.</p>
+<p><a class="reference internal" href="#graf-kose"><span class="std std-numref">Obr. 5.2</span></a> zobrazuje rozhodovanie spotrebiteľa medzi dvoma statkami. Hovoríme o dvojrozmernom rozhodovacom priestore spotrebiteľa. Spotrebiteľský kôš označujeme vektorom</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}=[x_1,x_2],
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(x_1\)</span> je spotreba prvého statku a <span class="math notranslate nohighlight">\(x_2\)</span> je spotreba druhého statku.</p>
+<p>Na obrázku je zobrazených päť spotrebiteľských košov
+<span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span>, <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span>, <span class="math notranslate nohighlight">\(\mathbf{x}^c\)</span>, <span class="math notranslate nohighlight">\(\mathbf{x}^d\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^e\)</span>.</p>
+<p>Ak má spotrebiteľ úplné preferencie, dokáže porovnať ľubovoľné dva spotrebiteľské koše.</p>
+<p>Na obrázku spotrebiteľ preferuje kôš <span class="math notranslate nohighlight">\(\mathbf{x}^d\)</span> pred košom <span class="math notranslate nohighlight">\(\mathbf{x}^c\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^d \succ \mathbf{x}^c.
+\]</div>
+<p>Spotrebiteľ je indiferentný medzi košmi <span class="math notranslate nohighlight">\(\mathbf{x}^c\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^c \sim \mathbf{x}^b.
+\]</div>
+<p>Spotrebiteľ preferuje kôš <span class="math notranslate nohighlight">\(\mathbf{x}^b\)</span> pred košom <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^b \succ \mathbf{x}^a.
+\]</div>
+<p>Ak sú preferencie tranzitívne, z týchto tvrdení vyplýva</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^d \succ \mathbf{x}^b,
+\]</div>
+<p>a zároveň</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^c \succ \mathbf{x}^a,
+\qquad
+\mathbf{x}^d \succ \mathbf{x}^a.
+\]</div>
+<p>Úplnosť preferencií znamená, že spotrebiteľ dokáže obdobným spôsobom porovnať ľubovoľnú dvojicu spotrebiteľských košov, nielen tie zobrazené na obrázku.</p>
+<p>Spojitosť preferencií predpokladá, že malé zmeny spotrebiteľského koša vedú len k malým zmenám preferencií spotrebiteľa. Spotrebiteľ preto dokáže porovnať aj veľmi podobné spotrebiteľské koše. Napríklad môže porovnať kôš <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> s košom <span class="math notranslate nohighlight">\(\mathbf{x}^e\)</span>, ktorý obsahuje o málo viac prvého statku a o málo menej druhého statku.</p>
+<p><a class="reference internal" href="#graf-kose"><span class="std std-numref">Obr. 5.2</span></a> zobrazuje aj indiferenčné krivky.</p>
+<dl class="simple myst">
+<dt>Indiferenčné krivky</dt><dd><p>množiny spotrebiteľských košov, voči ktorým je spotrebiteľ indiferentný.</p>
+</dd>
+</dl>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^c \sim \mathbf{x}^b,
+\]</div>
+<p>oba spotrebiteľské koše ležia na rovnakej indiferenčnej krivke.</p>
+<div class="cell tag_hide-input tag_remove_output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">"figure.figsize"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1">#set default figure size</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ik</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">u</span><span class="o">**</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">ucka</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mf">4.8</span><span class="p">)</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">body_x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mf">3.1</span><span class="p">]</span>
+<span class="n">body_y</span> <span class="o">=</span> <span class="p">[</span><span class="n">ik</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span><span class="n">ik</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span><span class="n">ik</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span><span class="n">ik</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="mi">15</span><span class="p">),</span><span class="n">ik</span><span class="p">(</span><span class="mf">3.1</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="mf">4.8</span><span class="p">)]</span>
+<span class="n">legendy</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'$\mathbf{x^a}$'</span><span class="p">,</span><span class="s1">'$\mathbf{x^b}$'</span><span class="p">,</span><span class="s1">'$\mathbf{x^c}$'</span><span class="p">,</span><span class="s1">'$\mathbf{x^d}$'</span><span class="p">,</span><span class="s1">'$\mathbf{x^e}$'</span><span class="p">]</span>
+<span class="n">farby</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="s1">'y'</span><span class="p">,</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'m'</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">uu</span> <span class="ow">in</span> <span class="n">ucka</span><span class="p">:</span>
+    <span class="n">x_2</span> <span class="o">=</span> <span class="n">ik</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="n">uu</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">x_2</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">leg</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">body_x</span><span class="p">,</span> <span class="n">body_y</span><span class="p">,</span> <span class="n">farby</span><span class="p">,</span> <span class="n">legendy</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">leg</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">xx</span><span class="p">,</span><span class="n">xx</span><span class="p">],</span> <span class="p">[</span><span class="n">yy</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="s1">':'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">xx</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">yy</span><span class="p">,</span><span class="n">yy</span><span class="p">],</span> <span class="s1">':'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s1">'$x_1$'</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">'$x_2$'</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">25</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">))</span>
+
+<span class="n">xd</span><span class="p">,</span> <span class="n">xh</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">()</span>
+<span class="n">yd</span><span class="p">,</span> <span class="n">yh</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span>
+
+<span class="c1">#osy</span>
+<span class="c1">#ax.arrow(xd,0,xh-xd,0)</span>
+<span class="c1">#ax.arrow(0,yd,0,yh-yd)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-kose">
+<img alt="_images/graf_kose.png" src="_images/graf_kose.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.2 </span><span class="caption-text">Spotrebiteľské koše a indiferenčné krivky</span><a class="headerlink" href="#graf-kose" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Z vlastnosti spojitých preferencií vyplývajú dve vlastnosti indiferenčných kriviek:</p>
+<ul class="simple">
+<li><p>indiferenčné krivky sú <strong>spojité</strong>,</p></li>
+<li><p>medzi ľubovoľnými dvoma indiferenčnými krivkami existujú ďalšie indiferenčné krivky.</p></li>
+</ul>
+<p>Spotrebiteľ vie porovnať každé dva spotrebiteľské koše z množiny spotrebiteľských možností.</p>
+<p>Podľa <a class="reference internal" href="#graf-kose"><span class="std std-numref">Obr. 5.2</span></a> dokáže spotrebiteľ porovnať aj spotrebiteľské koše <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}^e\)</span>. Keďže neležia na rovnakej indiferenčnej krivke, spotrebiteľ voči nim nie je indiferentný. Zároveň sú tieto dva spotrebiteľské koše veľmi podobné, pretože sa nachádzajú na dvoch veľmi blízkych indiferenčných krivkách.</p>
+<p>Keďže preferencie spotrebiteľa sú spojité, na množine spotrebiteľských možností existuje spojitá mapa indiferenčných kriviek. Takáto mapa je zobrazená na <a class="reference internal" href="#graf-mapa"><span class="std std-numref">Obr. 5.3</span></a>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># mapa indiferenčných kriviek</span>
+
+<span class="c1"># pôvodná dvojrozmerná funkcia</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">):</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">y</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="c1"># os x</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># vytvorí stĺpcový vektor; na zmenu tvaru matice slúži .reshape</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># farebné obrysy</span>
+<span class="n">contours</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">))</span> <span class="c1"># https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.contourf.html</span>
+<span class="c1"># .flatten() vytvorí zo stĺpcových vektorov naspäť riadkový, pri f(x1,x2) však potrebujeme kombinovať riadkový (x1) so stĺpcovým (x2). </span>
+<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">contours</span><span class="p">)</span> <span class="c1">#colorbar v pravej časti obrázku</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"$x_1$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"$x_2$"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-mapa">
+<img alt="_images/graf_mapa.png" src="_images/graf_mapa.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.3 </span><span class="caption-text">Mapa indiferenčných kriviek</span><a class="headerlink" href="#graf-mapa" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Predpokladajme, že spotrebiteľ preferuje vyššiu spotrebu oboch statkov pred nižšou. Potom možno odvodiť aj ďalšie vlastnosti indiferenčných kriviek.</p>
+<ul class="simple">
+<li><p>Spotrebiteľ preferuje spotrebiteľské koše ležiace na indiferenčných krivkách vzdialenejších od začiatku súradnicového systému pred košmi ležiacimi na indiferenčných krivkách bližších k začiatku súradnicového systému.</p></li>
+</ul>
+<p>Podľa <a class="reference internal" href="#graf-kose"><span class="std std-numref">Obr. 5.2</span></a> platí</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}^a \succ \mathbf{x}^e,
+\]</div>
+<p>pretože spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x}^a\)</span> leží na vyššej indiferenčnej krivke než spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x}^e\)</span>.</p>
+<p>Na {numref}graf_mapa sú jednotlivé indiferenčné krivky rozlíšené farbou. Svetlejšie oblasti zodpovedajú vyšším úrovniam užitočnosti, a preto obsahujú spotrebiteľské koše, ktoré spotrebiteľ preferuje pred košmi v tmavších oblastiach.</p>
+<p>Ak porovnávame dva spotrebiteľské koše s rovnakou spotrebou druhého statku <span class="math notranslate nohighlight">\(x_2\)</span>, spotrebiteľ preferuje kôš s vyššou spotrebou prvého statku <span class="math notranslate nohighlight">\(x_1\)</span>. V grafe sa preto pri pohybe vodorovne doprava dostávame na vyššie indiferenčné krivky.</p>
+<p>Analogicky, ak porovnávame dva spotrebiteľské koše s rovnakou spotrebou prvého statku <span class="math notranslate nohighlight">\(x_1\)</span>, spotrebiteľ preferuje kôš s vyššou spotrebou druhého statku <span class="math notranslate nohighlight">\(x_2\)</span>. V grafe sa preto pri pohybe zvisle nahor dostávame na vyššie indiferenčné krivky.</p>
+<ul class="simple">
+<li><p>Indiferenčné krivky sú (striktne) klesajúce.</p></li>
+</ul>
+<p>Ak má spotrebiteľ zostať indiferentný medzi dvoma spotrebiteľskými košmi, zvýšenie spotreby jedného statku musí byť kompenzované znížením spotreby druhého statku.</p>
+<ul class="simple">
+<li><p>Indiferenčné krivky sa nesmú pretínať.</p></li>
+</ul>
+<p>Táto vlastnosť vyplýva z tranzitívnosti preferencií. Ak by sa dve indiferenčné krivky pretínali, bolo by možné zostrojiť spotrebiteľské koše, pri ktorých by došlo k porušeniu tranzitívnosti preferenčného vzťahu.</p>
+<dl class="simple myst">
+<dt>Hraničná miera spotrebiteľskej substitúcie</dt><dd><p>vyjadruje, koľkých jednotiek druhého statku (<span class="math notranslate nohighlight">\(x_2\)</span>) sa musí spotrebiteľ vzdať, aby mohol zvýšiť spotrebu prvého statku (<span class="math notranslate nohighlight">\(x_1\)</span>) o jednotku a pritom zostal voči obom spotrebiteľským košom indiferentný.</p>
+</dd>
+</dl>
+<p>Predpokladáme, že s rastom spotreby prvého statku hraničná miera spotrebiteľskej substitúcie klesá. Čím viac prvého statku spotrebiteľ spotrebúva, tým menej jednotiek druhého statku je ochotný obetovať za získanie ďalšej jednotky prvého statku.</p>
+<p>Z tohto predpokladu vyplýva vlastnosť:</p>
+<ul class="simple">
+<li><p>indiferenčné krivky sú (striktne) <strong>konvexné</strong>.</p></li>
+</ul>
+<p>Indiferenčné krivky tvoria <a class="reference internal" href="Matematika.html#vrstevnica-funkcie"><span class="std std-ref">Vrstevnica funkcie</span></a> užitočnosti spotrebiteľa</p>
+<div class="math notranslate nohighlight">
+\[
+u = u(\mathbf{x}).
+\]</div>
+<p>Čím je spotrebiteľ spokojnejší, tým vyššia je funkčná hodnota užitočnosti zobrazená indiferenčnou krivkou viac vzdialenejšia od začiatku súradnicového systému.</p>
+<p>Ak je spotrebiteľov rozhodvací priestor dvojrozmerný, funkciu užitočnosti možno zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u = u(x_1,x_2).
+\]</div>
+<p>Na <a class="reference internal" href="#graf-mapa"><span class="std std-ref">Mapa indiferenčných kriviek</span></a> je spotrebiteľova spokojnosť s košmi na stupnici od 0 (tmavomodré) po 20 (svetložlté).</p>
+<p>Indiferenčné krivky tvoria <a class="reference internal" href="Matematika.html#vrstevnica-funkcie"><span class="std std-ref">Vrstevnica funkcie</span></a> funkcie užitočnosti spotrebiteľa</p>
+<div class="math notranslate nohighlight">
+\[
+u=u(\mathbf{x}).
+\]</div>
+<p>Čím je spotrebiteľ spokojnejší, tým vyššia je hodnota funkcie užitočnosti a tým ďalej od začiatku súradnicového systému sa nachádza príslušná indiferenčná krivka.</p>
+<p>Ak je rozhodovací priestor spotrebiteľa dvojrozmerný, funkciu užitočnosti možno zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u=u(x_1,x_2).
+\]</div>
+<p>Na <a class="reference internal" href="#graf-mapa"><span class="std std-numref">Obr. 5.3</span></a> sú farebne zobrazené úrovne funkcie užitočnosti. Tmavšie oblasti zodpovedajú nižším hodnotám užitočnosti, zatiaľ čo svetlejšie oblasti zodpovedajú vyšším hodnotám užitočnosti.</p>
+<p>Každá indiferenčná krivka predstavuje množinu spotrebiteľských košov, ktorým funkcia užitočnosti priraďuje rovnakú hodnotu. Spotrebiteľ je preto voči všetkým spotrebiteľským košom ležiacim na tej istej indiferenčnej krivke indiferentný.</p>
+<p>Z vlastností indiferenčných kriviek možno odvodiť vlastnosti funkcie užitočnosti;</p>
+<ul class="simple">
+<li><p>keďže sú indiferenčné krivky spojité, funkcia užitočnosti je spojitá,</p></li>
+<li><p>keďže sú indiferenčné krivky (striktne) klesajúce, funkcia užitočnosti je (striktne) rastúca v spotrebe všetkých statkov,</p></li>
+<li><p>keďže sú indiferenčné krivky (striktne) konvexné, funkcia užitočnosti je (striktne) kvázikonkávna.</p></li>
+</ul>
+<p>Kvázikonkávnosť vyjadruje preferenciu spotrebiteľa pre vyvážené spotrebiteľské koše. Spotrebiteľ spravidla uprednostňuje kombináciu viacerých statkov pred extrémom, akým je spotreba iba jedného z nich.</p>
+<dl class="simple myst" id="mu-i">
+<dt>Hraničná užitočnosť spotreby</dt><dd><p>multiplikátor užitočnosti podľa spotreby statku <span class="math notranslate nohighlight">\(i\)</span>. Vyjadruje, ako zvýšenie funkčnej hodnoty užitočnosť, zapríčinené zvýšením spotreby statku <span class="math notranslate nohighlight">\(i\)</span>.</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-r-mu-i">
+<span class="eqno">(5.4)<a class="headerlink" href="#equation-r-mu-i" title="Link to this equation">#</a></span>\[MU_i(\mathbf{x}) = \frac{\partial{u(\mathbf{x})}}{\partial{x_i}} &gt; 0, \forall{i}. \]</div>
+<p>Hraničná miera spotrebiteľskej substitúcie je sklon indiferenčnej krivky (<a class="reference internal" href="Matematika.html#sklon-vrstevnice"><span class="std std-ref">Sklon vrstevnice</span></a>) a podľa <a class="reference internal" href="Matematika.html#equation-r-mrs-mat">(1.16)</a> ju vieme vyjadriť v tvare</p>
+<div class="math notranslate nohighlight" id="equation-r-mrs-x-ij">
+<span class="eqno">(5.5)<a class="headerlink" href="#equation-r-mrs-x-ij" title="Link to this equation">#</a></span>\[MRS(x_i,x_j) = \frac{MU_i(\mathbf{x})}{MU_j(\mathbf{x})}, \forall{i,j}.\]</div>
+</section>
+<section id="rozpocet-spotrebitela">
+<span id="kapitola-rozpocet-spotrebitela"></span><h2><span class="section-number">5.2. </span>Rozpočet spotrebiteľa<a class="headerlink" href="#rozpocet-spotrebitela" title="Link to this heading">#</a></h2>
+<p>Spotrebiteľ je obmedzený výškou svojho peňažného disponibilného rozpočtu <span class="math notranslate nohighlight">\(M\)</span> a cenami statkov</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{p} = \begin{pmatrix} p_1 \\ p_2 \\ \vdots \\ p_n \end{pmatrix}.
+\end{split}\]</div>
+<p>Príjem aj ceny sú vyjadrené v peňažných jednotkách (€).</p>
+<div class="admonition-poznamka admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Peňažný disponibilný rozpočet spotrebiteľa označujeme symbolom <span class="math notranslate nohighlight">\(M\)</span>. V ďalšom texte budeme pre jednoduchosť hovoriť o rozpočte spotrebiteľa, pričom v mnohých situáciách ho možno interpretovať aj ako jeho disponibilný príjem.</p>
+</div>
+<p>Rozpočtové ohraničenie spotrebiteľa je</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{p}^T\mathbf{x}-M \le 0.
+\]</div>
+<p>Po rozpísaní skalárneho súčinu získame</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1 + p_2x_2 + \cdots p_nx_n \le M
+\]</div>
+<p>Ľavá strana vyjadruje celkové výdavky spotrebiteľa na spotrebný kôš <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> a pravá strana jeho disponibilný rozpočet.</p>
+<p>Spotrebiteľ môže zvoliť iba také spotrebiteľské koše, na ktoré celkové výdavky neprevyšujú jeho rozpočet. Množina všetkých spotrebiteľských košov spĺňajúcich rozpočtové obmedzenie sa je množina spotrebiteľských možností.</p>
+<dl class="simple myst" id="mnozina-spotrebitel">
+<dt>Množina spotrebiteľských možností</dt><dd><p>je množina spotrebiteľských košov, ktorá vyhovuje rozpočtovému ohraničeniu <a class="reference internal" href="#equation-rozpocet-spotrebitel">(5.7)</a>.</p>
+</dd>
+<dt>Hranica spotrebiteľských možností</dt><dd><p>Na hranici spotrebiteľských možností sa spotrebiteľovo rozpočtové ohraničenie spĺňa ako rovnosť;</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{p^T}\mathbf{x} = M
+\]</div>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<p>Kôš, na ktorý spotrebiteľ minie celý príjem do posledného centu leží na hranici spotrebiteľských možností.</p>
+</aside>
+<p>Ak zúžime spotrebiteľský priestor na dva statky, môžeme rozpočtové ohraničenie zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1+p_2x_2\le M.
+\]</div>
+<p>Na hranici spotrebiteľských možností platí</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1+p_2x_2 = M.
+\]</div>
+<p>Po vyjadrení spotreby druhého statku získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac{M}{p_2}
+-
+\frac{p_1}{p_2}x_1.
+\]</div>
+<p>Množina spotrebiteľských možností v dvojrozmernom priestore je zobrazená zelenou farbou na <a class="reference internal" href="#graf-rozpocet"><span class="std std-numref">Obr. 5.4</span></a>.</p>
+<p>Hranica spotrebiteľských možností je na obrázku zobrazená čiernou úsečkou. Každý bod na tejto úsečke predstavuje spotrebiteľský kôš, pri ktorom spotrebiteľ minie celý svoj rozpočet.</p>
+<p>Body pod hranicou spotrebiteľských možností predstavujú spotrebiteľské koše, pri ktorých spotrebiteľ minie iba časť svojho príjmu. Body nad hranicou spotrebiteľských možností sú neprípustné, pretože ich náklady prevyšujú spotrebiteľov rozpočet.</p>
+<p>Záporná hodnota sklonu hranice spotrebiteľských možností se rovná pomeru cien oboch statkov,
+ 
+$<span class="math notranslate nohighlight">\(
+-\frac{dx_2}{dx_1}=
+\frac{p_1}{p_2}.
+\)</span>$
+ 
+Tento pomer interpretujeme ako <strong>hraničnú mieru rozpočtovej substitúcie</strong>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ir</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">M</span><span class="o">/</span><span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span><span class="o">/</span><span class="n">p2</span><span class="o">*</span><span class="n">x1</span>
+
+<span class="n">p_1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">p_2</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mi">40</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">M</span><span class="o">/</span><span class="n">p_1</span><span class="p">)</span>
+<span class="n">x_2</span> <span class="o">=</span> <span class="n">ir</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p_1</span><span class="p">,</span><span class="n">p_2</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">x_2</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'k'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">x_2</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'lightgreen'</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s1">'$x_1$'</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">'$x_2$'</span><span class="p">,</span> <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">M</span><span class="o">/</span><span class="n">p_2</span><span class="o">+</span><span class="mf">.3</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">M</span><span class="o">/</span><span class="n">p_1</span><span class="o">+</span><span class="mf">.3</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="n">M</span><span class="o">/</span><span class="n">p_1</span><span class="p">,</span>
+    <span class="mf">0.1</span><span class="p">,</span>
+    <span class="sa">r</span><span class="s1">'$\frac</span><span class="si">{M}{p_1}</span><span class="s1">$'</span><span class="p">,</span>
+    <span class="n">ha</span><span class="o">=</span><span class="s1">'center'</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">0.05</span><span class="p">,</span>
+    <span class="n">M</span><span class="o">/</span><span class="n">p_2</span><span class="o">+</span><span class="mf">.1</span><span class="p">,</span>
+    <span class="sa">r</span><span class="s1">'$\frac</span><span class="si">{M}{p_2}</span><span class="s1">$'</span><span class="p">,</span>
+    <span class="n">va</span><span class="o">=</span><span class="s1">'center'</span>
+<span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-rozpocet">
+<img alt="_images/graf_rozpocet.png" src="_images/graf_rozpocet.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.4 </span><span class="caption-text">Hranica a množina spotrebiteľských možností</span><a class="headerlink" href="#graf-rozpocet" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Vo všeobecnosti možno hraničnú mieru rozpočtovej substitúcie medzi statkami <span class="math notranslate nohighlight">\(i\)</span> a <span class="math notranslate nohighlight">\(j\)</span> vyjadriť ako</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{dx_j}{dx_i}
+=
+MBS(x_i,x_j)
+=
+\frac{p_i}{p_j},
+\qquad
+i \ne j.
+\]</div>
+<p>Hranica spotrebiteľských možností závisí od príjmu spotrebiteľa a cien spotrebúvaných statkov;</p>
+<ul class="simple">
+<li><p>zmena príjmu posúva hranicu spotrebiteľských možností,</p></li>
+<li><p>zmena cien mení hraničnú mieru rozpočtovej substitúcie.</p></li>
+</ul>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">product</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">):</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span> <span class="ow">in</span> <span class="n">product</span><span class="p">(</span><span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">):</span>
+        <span class="n">x_2</span> <span class="o">=</span> <span class="n">ir</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">rf</span><span class="s2">"$M = </span><span class="si">{</span><span class="n">M</span><span class="si">}</span><span class="s2">,\; p_1 = </span><span class="si">{</span><span class="n">p1</span><span class="si">}</span><span class="s2">,\; p_2 = </span><span class="si">{</span><span class="n">p2</span><span class="si">}</span><span class="s2">$"</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'$x_1$'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'$x_2$'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">40</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper right'</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
+
+<span class="c1"># Parameters (Mka, p1ky, p2ky)</span>
+<span class="n">set1</span> <span class="o">=</span> <span class="p">([</span><span class="mf">30.</span><span class="p">,</span> <span class="mf">40.</span><span class="p">,</span> <span class="mf">50.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.</span><span class="p">])</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">([</span><span class="mf">40.</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.</span><span class="p">,</span><span class="mf">5.</span><span class="p">,</span><span class="mf">8.</span><span class="p">],</span> <span class="p">[</span><span class="mf">10.</span><span class="p">])</span>
+<span class="n">set3</span> <span class="o">=</span> <span class="p">([</span><span class="mf">40.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">],</span> <span class="p">[</span><span class="mf">5.</span><span class="p">,</span> <span class="mf">10.</span><span class="p">,</span> <span class="mf">15.</span><span class="p">])</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">exo</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">,</span> <span class="n">set3</span><span class="p">)):</span>
+    <span class="n">yny</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span> <span class="o">=</span> <span class="n">exo</span>
+    <span class="n">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">yny</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Zmena príjmu"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Zmena ceny prvého statku"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Zmena ceny druhého statku"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-rozpocet-zmeny">
+<img alt="_images/graf_rozpocet_zmeny.png" src="_images/graf_rozpocet_zmeny.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.5 </span><span class="caption-text">Vplyv disponibilného rozpočtu a cien na hranicu spotrebiteľských možností</span><a class="headerlink" href="#graf-rozpocet-zmeny" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Na <a class="reference internal" href="#graf-rozpocet-zmeny"><span class="std std-numref">Obr. 5.5</span></a> sú zobrazené zmeny hranice spotrebiteľských možností spôsobené zmenou disponibilného rozpočtu (príjmu) a cien statkov.</p>
+<p>Horný panel zobrazuje vplyv zmeny rozpočtu. Rast príjmu posúva hranicu spotrebiteľských možností smerom od začiatku súradnicového systému, pokles rozpočtu ju posúva smerom k začiatku súradnicového systému.</p>
+<p>Prostredný panel zobrazuje vplyv zmeny ceny prvého statku. Zmena ceny prvého statku mení sklon hranice spotrebiteľských možností a otáča ju okolo priesečníka s osou <span class="math notranslate nohighlight">\(x_2\)</span>.</p>
+<p>Dolný panel zobrazuje vplyv zmeny ceny druhého statku. Zmena ceny druhého statku mení sklon hranice spotrebiteľských možností a otáča ju okolo priesečníka s osou <span class="math notranslate nohighlight">\(x_1\)</span>.</p>
+</section>
+<section id="id1">
+<h2><span class="section-number">5.3. </span>Správanie spotrebiteľa.<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>Správanie spotrebiteľa možno charakterizovať úlohou matematického programovania v ktorej spotrebiteľ výberom koša maximalizuje svoj <strong>blahobyt</strong> vyjadrený funkciou užitočnosti</p>
+<div class="math notranslate nohighlight" id="equation-funkcia-uzitocnosti">
+<span class="eqno">(5.6)<a class="headerlink" href="#equation-funkcia-uzitocnosti" title="Link to this equation">#</a></span>\[u_{\max} = \max_{\mathbf{x}}{u(\mathbf{x})},\]</div>
+<p>vzhľadom na rozpočtové ohraničenie</p>
+<div class="math notranslate nohighlight" id="equation-rozpocet-spotrebitel">
+<span class="eqno">(5.7)<a class="headerlink" href="#equation-rozpocet-spotrebitel" title="Link to this equation">#</a></span>\[\mathbf{p^T}\mathbf{x} - M \le 0\]</div>
+<p>a vzhľadom na nezápornosť spotreby statkov</p>
+<div class="math notranslate nohighlight" id="equation-spotrebitel-nezapornost">
+<span class="eqno">(5.8)<a class="headerlink" href="#equation-spotrebitel-nezapornost" title="Link to this equation">#</a></span>\[\mathbf{x} \ge \mathbf{0}.\]</div>
+<p>Úlohu riešime ako úlohu na viazaný extrém (<a class="reference internal" href="Matematika.html#viazany-extrem"><span class="std std-ref">Úloha na viazaný extrém</span></a>).</p>
+<p><a class="reference internal" href="Matematika.html#mnozina-pripustnych-rieseni"><span class="std std-ref">Množina prípustných riešení</span></a> je množina spotrebiteľských možností.</p>
+<p><a class="reference internal" href="Matematika.html#hranica-pripustnych-rieseni"><span class="std std-ref">Hranica prípustných riešení</span></a> je hranica spotrebiteľských možností.</p>
+<p>Podľa podmienok prvého rádu <a class="reference internal" href="Matematika.html#equation-ppr-viazany1">(1.17)</a> a <a class="reference internal" href="Matematika.html#equation-ppr-viazany2">(1.18)</a></p>
+<ol class="arabic simple">
+<li><p>optimálny spotrebiteľský kôš leží na hranici spotrebiteľských možností a</p></li>
+<li><p>v optimálnom spotrebiteľskom koši sa hraničná miera spotrebiteľskej substitúcie rovná s hraničnou mierou rozpočtovej substitúcie</p></li>
+</ol>
+<p>Ak optimálny bod neleží na hraniciach definičného oboru (optimálne hodnoty <span class="math notranslate nohighlight">\(x_i^*&gt;0\)</span> pre všetky <span class="math notranslate nohighlight">\(i\)</span>), podmienky prvého rádu sú:</p>
+<div class="math notranslate nohighlight" id="equation-r-ppr-spotrebitel1">
+<span class="eqno">(5.9)<a class="headerlink" href="#equation-r-ppr-spotrebitel1" title="Link to this equation">#</a></span>\[\mathbf{p^T}\mathbf{x} = M\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight" id="equation-r-ppr-spotrebitel2">
+<span class="eqno">(5.10)<a class="headerlink" href="#equation-r-ppr-spotrebitel2" title="Link to this equation">#</a></span>\[MRS(x_i,x_j) = \frac{p_i}{p_j} \quad i \ne j.\]</div>
+<p>Na ľavej strane <a class="reference internal" href="#equation-r-ppr-spotrebitel2">(5.10)</a> je hraničná miera spotrebiteľskej substitúcie <a class="reference internal" href="#equation-r-mrs-x-ij">(5.5)</a>. Na pravej strane je hraničná miera rozpočtovej substitúcie.</p>
+<p>Vzhľadom na vlastnosti preferencií je funkcia užitočnosti spojitá, rastúca a striktne kvázikonkávna. Rozpočtová funkcia je lineárna. Vzhľadom na striktne kvázikonkávnu funkciu užitočnosti a lineárne rozpočtové ohraničenie sú podmienky prvého rádu postačujúce na určenie globálneho optima.</p>
+<section id="ekonomicka-interpretacia-ppr">
+<h3><span class="section-number">5.3.1. </span>Ekonomická interpretácia PPR<a class="headerlink" href="#ekonomicka-interpretacia-ppr" title="Link to this heading">#</a></h3>
+<p>Podľa <a class="reference internal" href="#equation-r-ppr-spotrebitel2">(5.10)</a> sa v bode optima hraničná miera spotrebiteľskej substitúcie rovná hraničnej miere rozpočtovej substitúcie.</p>
+<p>Hraničnú mieru spotrebiteľskej substitúcie <span class="math notranslate nohighlight">\(MRS\)</span> interpretujeme ako internú spotrebiteľovu mieru substitúcie. Vyjadruje pomer, v akom je spotrebiteľ ochotný zamieňať dva statky bez zmeny svojho blahobytu.</p>
+<p>Hraničnú mieru rozpočtovej substitúcie <span class="math notranslate nohighlight">\(p_i / p_j \)</span> interpretujeme ako externú, trhovú mieru substitúcie medzi statkami. Vyjadruje pomer, v akom možno statky zamieňať na trhu pri nezmenenom rozpočte spotrebiteľa.</p>
+<ul class="simple">
+<li><p>Ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_i}{p_j}
+&gt;
+\frac{MU_i}{MU_j},
+\]</div>
+<p>potom je statok <span class="math notranslate nohighlight">\(i\)</span> vzhľadom na statok <span class="math notranslate nohighlight">\(j\)</span> trhovo drahší, než ako ho spotrebiteľ subjektívne hodnotí. Spotrebiteľ môže zvýšiť svoj blahobyt znížením spotreby statku <span class="math notranslate nohighlight">\(i\)</span> a zvýšením spotreby statku <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<ul class="simple">
+<li><p>Ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_i}{p_j}
+&lt;
+\frac{MU_i}{MU_j},
+\]</div>
+<p>potom je statok <span class="math notranslate nohighlight">\(i\)</span> vzhľadom na statok <span class="math notranslate nohighlight">\(j\)</span> trhovo lacnejší, než ako ho spotrebiteľ subjektívne hodnotí. Spotrebiteľ môže zvýšiť svoj blahobyt zvýšením spotreby statku <span class="math notranslate nohighlight">\(i\)</span> a znížením spotreby statku <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<ul class="simple">
+<li><p>V bode optima platí</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{MU_i}{MU_j}
+=
+\frac{p_i}{p_j},
+\]</div>
+<p>pretože subjektívna miera substitúcie spotrebiteľa sa zhoduje s objektívnou mierou substitúcie určovanou trhom.</p>
+<p>Na <a class="reference internal" href="#graf-spotrebitel"><span class="std std-numref">Obr. 5.6</span></a> je geometrická interpretácia úlohy spotrebiteľa v dvojrozmernom rozhodovacom priestore. Optimálny spotrebiteľský kôš zodpovedá bodu dotyku indiferenčnej krivky (modrá) a hranice spotrebiteľských možností (zelená).</p>
+<p>Pripomeňme, že sklon indiferenčnej krivky zodpovedá hraničnej miere spotrebiteľskej substitúcie a sklon hranice spotrebiteľských možností zodpovedá hraničnej miere rozpočtovej substitúcie. V bode optima sa tieto sklony rovnajú, pretože indiferenčná krivka je v tomto bode tečnou k hranici spotrebiteľských možností.</p>
+<p>Pre optimálny spotrebiteľský kôš preto platí <a class="reference internal" href="#equation-r-ppr-spotrebitel2">(5.10)</a>.</p>
+<p>V bode optima sa tak subjektívna miera substitúcie statkov spotrebiteľom zhoduje s objektívnou mierou substitúcie určovanou trhovými cenami.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="n">p_1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">p_2</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">x1opt</span> <span class="o">=</span> <span class="n">M</span><span class="o">/</span><span class="mi">3</span><span class="o">/</span><span class="n">p_1</span>
+<span class="n">x2opt</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="mi">3</span><span class="o">/</span><span class="n">p_2</span>
+<span class="n">x1opt</span><span class="p">,</span> <span class="n">x2opt</span>
+<span class="n">uopt</span> <span class="o">=</span> <span class="n">x1opt</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">x2opt</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+
+
+<span class="n">iuzit</span> <span class="o">=</span> <span class="n">ik</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="n">uopt</span><span class="p">)</span>
+<span class="n">irozp</span> <span class="o">=</span> <span class="n">ir</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p_1</span><span class="p">,</span><span class="n">p_2</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">iuzit</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s1">'indiferenčná krivka'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">irozp</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'g'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s1">'hranica spotrebiteľských možností'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">x1opt</span><span class="p">,</span>
+    <span class="n">x2opt</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">'r'</span><span class="p">,</span>
+    <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="n">x1opt</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="n">x2opt</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="sa">r</span><span class="s1">'$\mathbf</span><span class="si">{x}</span><span class="s1">^*$'</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_1$'</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_2$'</span><span class="p">,</span>
+    <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span>
+    <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-spotrebitel">
+<img alt="_images/graf_spotrebitel.png" src="_images/graf_spotrebitel.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 5.6 </span><span class="caption-text">Geometrická interpretácia úlohy spotrebiteľa</span><a class="headerlink" href="#graf-spotrebitel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">5.4. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-spravanie-spotrebitela">
+<h3><span class="section-number">5.4.1. </span>Príklad: Správanie spotrebiteľa<a class="headerlink" href="#priklad-spravanie-spotrebitela" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=x_1^{1/3}x_2^{2/3}
+\]</div>
+<p>Nech spotrebiteľov rozpočet je 300 €, cena prvého statku 5 € a druhého 10 €.</p>
+<ol class="arabic simple">
+<li><p>Vyjadrite hraničnú mieru spotrebiteľskej substitúcie.</p></li>
+<li><p>Vyjadrite hraničnú mieru rozpočtovej substitúcie.</p></li>
+<li><p>Vypočítajte optimálnu spotrebu oboch statkov.</p></li>
+<li><p>Zapíšte správanie spotrebiteľa úlohou matematického programovania.</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa spotrebiteľov rozpočet zvýši o 20 %?</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa cena prvého statku zníži o 40 %?</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa cena druhého statku zdvojnásobí?</p></li>
+</ol>
+<section id="riesenie">
+<h4><span class="section-number">5.4.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<p><strong>Hraničná miera spotrebiteľskej substitúcie</strong> je <a class="reference internal" href="#equation-r-mrs-x-ij">(5.5)</a>. Najsôr potrebujem hraničné užitočnosti.</p>
+<p>Pre prvý statok</p>
+<div class="math notranslate nohighlight">
+\[
+MU_1(x_1,x_2)=\frac{\partial u(x_1,x_2)}{\partial x_1}=
+\frac{1}{3}
+x_1^{-2/3}
+x_2^{2/3}.
+\]</div>
+<p>Pre druhý statok</p>
+<div class="math notranslate nohighlight">
+\[
+MU_2(x_1,x_2)=\frac{\partial u(x_1,x_2)}{\partial x_2}=
+\frac{2}{3}
+x_1^{1/3}
+x_2^{-1/3}.
+\]</div>
+<p>Dosadením do <a class="reference internal" href="#equation-r-mrs-x-ij">(5.5)</a> získame</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)=
+\frac{
+\frac{1}{3}x_1^{-2/3}x_2^{2/3}
+}{
+\frac{2}{3}x_1^{1/3}x_2^{-1/3}
+}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{MRS(x_1,x_2)=
+\frac{x_2}{2x_1}.
+}
+\]</div>
+<p>Hraničná miera spotrebiteľskej substitúcie vyjadruje, koľkých jednotiek statku <span class="math notranslate nohighlight">\(x_2\)</span> je spotrebiteľ ochotný sa vzdať za dodatočnú jednotku statku <span class="math notranslate nohighlight">\(x_1\)</span> bez zmeny úrovne užitočnosti. Vidíme, že s rastom spotreby statku <span class="math notranslate nohighlight">\(x_1\)</span> a pri nezmenenej spotrebe statku <span class="math notranslate nohighlight">\(x_2\)</span> hodnota <span class="math notranslate nohighlight">\(MRS\)</span> klesá, čo je v súlade s predpokladom klesajúcej hraničnej miery spotrebiteľskej substitúcie.</p>
+<p><strong>Hraničná miera rozpočtovej substitúcie</strong> podiel cien oboch statkov <span class="math notranslate nohighlight">\(p_1/p_2\)</span>.</p>
+<p>Po dosadení cien</p>
+<div class="math notranslate nohighlight">
+\[
+p_1 = 5,
+\qquad
+p_2 = 10
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{5}{10}=
+\frac{1}{2}.
+\]</div>
+<p>Teda</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{MBS(x_1,x_2)=
+\frac{1}{2}.
+}
+\]</div>
+<p>Hraničná miera rozpočtovej substitúcie vyjadruje, že pri nezmenenom rozpočte môže spotrebiteľ zvýšiť spotrebu prvého statku o jednu jednotku iba za cenu zníženia spotreby druhého statku o polovicu jednotky.</p>
+<p>Rovnaký výsledok dostaneme zo sklonu hranice spotrebiteľských možností</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{dx_2}{dx_1}=\frac{p_1}{p_2}=
+\frac{1}{2}.
+\]</div>
+<p><strong>Správanie sporebiteľa zapíšeme úlohou</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{max} = \max_{x_1,x_2} {{x_1^{1/3}x_2^{2/3}}},\\
+5x_1 + 10x_2 \le 300.
+\end{split}\]</div>
+<p><strong>Optimálny spotrebný kôš</strong> získame riešením podmienok prvého rádu <a class="reference internal" href="#equation-r-ppr-spotrebitel1">(5.9)</a> a <a class="reference internal" href="#equation-r-ppr-spotrebitel2">(5.10)</a>.</p>
+<p>Dosadením do <a class="reference internal" href="#equation-r-ppr-spotrebitel2">(5.10)</a> získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x_2}{2x_1}=
+\frac{1}{2}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=x_1.
+\]</div>
+<p>Zároveň spotrebiteľský kôš musí ležať na rozpočtovomn ohraničení <a class="reference internal" href="#equation-r-ppr-spotrebitel1">(5.9)</a></p>
+<div class="math notranslate nohighlight">
+\[
+5x_1+10x_2=300.
+\]</div>
+<p>Dosadením</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=x_1
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+5x_1+10x_1=300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+15x_1=300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1=20.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=20.
+\]</div>
+<p>Optimálny spotrebiteľský kôš je</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\mathbf{x}^*=
+(20,20).
+}
+\]</div>
+<p>Spotrebiteľ pri optimálnej spotrebe nakúpi 20 jednotiek prvého statku a 20 jednotiek druhého statku.</p>
+<p>Ak sa spotrebiteľov <strong>rozpočet zvýši</strong> o 20 %, nový rozpočet bude</p>
+<div class="math notranslate nohighlight">
+\[
+M=1.2 \cdot 300=
+360.
+\]</div>
+<p>Hraničná miera rozpočtovej substitúcie závisí iba na cenách statkov. Keďže sa ceny statkov nezmenili jej hodnota zostáva nezmenená</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_1}{p_2} = {1}{2}
+\]</div>
+<p>Na podmienke prvého rádu</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)=
+\frac{p_1}{p_2}.
+\]</div>
+<p>sa nič nezmení a naďalej platí</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=x_1.
+\]</div>
+<p>Druhá podmienka sa zmení</p>
+<div class="math notranslate nohighlight">
+\[
+5x_1+10x_2=360,
+\]</div>
+<p>po dosadení získame</p>
+<div class="math notranslate nohighlight">
+\[
+5x_1+10x_1=360,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+15x_1=360,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1=24.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=24.
+\]</div>
+<p>Nový optimálny spotrebiteľský kôš je</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{\mathbf{x}^*=
+(24,24).
+}
+\]</div>
+<p>V porovnaní s pôvodným optimálnym spotrebným košom</p>
+<div class="math notranslate nohighlight">
+\[
+[20,20]
+\]</div>
+<p>sa spotreba oboch statkov zvýšila o 20 %.</p>
+<p>Spotreba oboch statkov sa zvýši v rovnakom pomere ako rozpočet.</p>
+<p>Ak sa <strong>cena prvého statku zníži</strong> o 40 %, nová cena bude</p>
+<div class="math notranslate nohighlight">
+\[
+p_1=0.6 \cdot 5=
+3.
+\]</div>
+<p>Cena druhého statku a rozpočet sa nemenia</p>
+<div class="math notranslate nohighlight">
+\[
+p_2=10,
+\qquad
+M=300.
+\]</div>
+<p><em>Hraničná miera rozpočtovej substitúcie</em> je</p>
+<div class="math notranslate nohighlight">
+\[
+MBS(x_1,x_2)=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Po dosadení nových cien dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+MBS(x_1,x_2)=
+\frac{3}{10}.
+\]</div>
+<p>Teda</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{MBS(x_1,x_2)
+=\frac{3}{10}.
+}
+\]</div>
+<p>V porovnaní s pôvodnou hodnotou 0,5 sa hraničná miera rozpočtovej substitúcie znížila. Prvý statok sa stal relatívne lacnejším v porovnaní s druhým statkom.</p>
+<p><em>Optimálny spotrebiteľský kôš</em></p>
+<p>Podľa podmienky optima musí platiť</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)
+=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x_2}{2x_1}
+=
+\frac{3}{10}.
+\]</div>
+<p>Po odvodení <span class="math notranslate nohighlight">\(x_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac{3}{5}x_1.
+\]</div>
+<p>Tento vzťah dosadíme do ďalšej podmienky</p>
+<div class="math notranslate nohighlight">
+\[
+3x_1+10x_2=300.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+3x_1
++
+10\cdot\frac35x_1
+=
+300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+9x_1
+=
+300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1
+=
+\frac{100}{3}
+\approx
+33.33.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac35\frac{100}{3}
+=
+20.
+\]</div>
+<p>Optimálny spotrebiteľský kôš je</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\mathbf{x}^*
+=
+\left(
+\frac{100}{3},
+20
+\right).
+}
+\]</div>
+<p>Spotreba prvého statku sa zvýši, pretože sa stal relatívne lacnejším, zatiaľ čo optimálna spotreba druhého statku zostáva nezmenená.</p>
+<p>Ak sa <strong>cena druhého statku zdvojnásobí</strong>, nová cena bude</p>
+<div class="math notranslate nohighlight">
+\[
+p_2
+=
+2 \cdot 10
+=
+20.
+\]</div>
+<p>Cena prvého statku a rozpočet sa nemenia</p>
+<div class="math notranslate nohighlight">
+\[
+p_1=5,
+\qquad
+M=300.
+\]</div>
+<p><strong>Hraničná miera rozpočtovej substitúcie</strong> je</p>
+<div class="math notranslate nohighlight">
+\[
+MBS(x_1,x_2)
+=
+\frac{p_1}{p_2} = \frac{5}{20}
+=
+\frac14.
+\]</div>
+<p>V porovnaní s pôvodnou hodnotou 0,5 sa hraničná miera rozpočtovej substitúcie znížila.</p>
+<p><strong>Optimálny spotrebiteľský kôš</strong></p>
+<p>Podľa podmienky optima musí platiť</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)
+=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)
+=
+\frac{x_2}{2x_1},
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x_2}{2x_1}
+=
+\frac14.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac12 x_1.
+\]</div>
+<p>Tento vzťah dosadíme do hranice spotrebiteľských možností</p>
+<div class="math notranslate nohighlight">
+\[
+5x_1+20x_2=300.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+5x_1
++
+20\cdot\frac12 x_1
+=
+300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+15x_1
+=
+300,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1
+=
+20.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+10.
+\]</div>
+<p>Optimálny spotrebiteľský kôš je</p>
+<div class="math notranslate nohighlight">
+\[
+\boxed{
+\mathbf{x}^*
+=
+(20,10).
+}
+\]</div>
+<p>Spotreba druhého statku klesne na polovicu, pretože sa stal relatívne drahším. Spotreba prvého statku zostane nezmenená.</p>
+</section>
+<section id="python">
+<h4><span class="section-number">5.4.1.2. </span>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h4>
+<p>Použité knižnice sú nasledovné:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">simplify</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zadanie príkladu.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x1,x2'</span><span class="p">,</span><span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">p1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">M</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">u</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">rozpocet</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="n">x1</span> <span class="o">+</span> <span class="n">p2</span><span class="o">*</span><span class="n">x2</span> <span class="o">-</span> <span class="n">M</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Hraničná</span> <span class="n">miera</span> <span class="n">spotrebiteľskej</span> <span class="n">substitúcie</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MRS</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x1</span> <span class="p">)</span><span class="o">/</span> <span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hraničná miera spotrebiteľskej substitúcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MRS</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hraničná miera spotrebiteľskej substitúcie
+0.5*x2**1.0/x1**1.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Hraničná</span> <span class="n">miera</span> <span class="n">rozpočtovej</span> <span class="n">substitúcie</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">MRB</span> <span class="o">=</span> <span class="n">p1</span><span class="o">/</span><span class="n">p2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hraničná miera rozpočtovej substitúcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MRB</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hraničná miera rozpočtovej substitúcie
+0.5
+</pre></div>
+</div>
+</div>
+</div>
+<p>Optimálny spotrebiteľský kôš.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kos</span> <span class="o">=</span> <span class="n">solve</span><span class="p">([</span><span class="n">MRS</span><span class="o">-</span><span class="n">MRB</span><span class="p">,</span>
+            <span class="n">rozpocet</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span>
+           <span class="nb">dict</span><span class="o">=</span><span class="kc">True</span>
+           <span class="p">)</span>
+<span class="n">kos</span> <span class="o">=</span> <span class="n">kos</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">kos</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">kos</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Optimálny spotrebiteľský kôš"</span><span class="p">)</span>
+<span class="n">kos</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimálny spotrebiteľský kôš
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{x1: 20.0000000000000, x2: 20.0000000000000}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zmena M z 300 na 360.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">M_5</span> <span class="o">=</span> <span class="n">M</span><span class="o">*</span><span class="mf">1.2</span>
+
+<span class="n">rozpocet5</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="n">x1</span><span class="o">+</span><span class="n">p2</span><span class="o">*</span><span class="n">x2</span><span class="o">-</span><span class="n">M_5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Nová hodnota hraničnej miery rozpočtovej substitúcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MRB</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">kos5</span> <span class="o">=</span> <span class="n">solve</span><span class="p">([</span><span class="n">MRS</span><span class="o">-</span><span class="n">MRB</span><span class="p">,</span>
+            <span class="n">rozpocet5</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span>
+           <span class="nb">dict</span><span class="o">=</span><span class="kc">True</span>
+           <span class="p">)</span>
+<span class="n">kos5</span> <span class="o">=</span> <span class="n">kos5</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">kos5</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">kos5</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Optimálny spotrebiteľský kôš"</span><span class="p">)</span>
+<span class="n">kos5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nová hodnota hraničnej miery rozpočtovej substitúcie
+0.5
+
+Optimálny spotrebiteľský kôš
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{x1: 24.0000000000000, x2: 24.0000000000000}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zníženie ceny prvého statku o 40 %.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p1_6</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="mf">0.6</span>
+
+<span class="n">rozpocet6</span> <span class="o">=</span> <span class="n">p1_6</span><span class="o">*</span><span class="n">x1</span><span class="o">+</span><span class="n">p2</span><span class="o">*</span><span class="n">x2</span><span class="o">-</span><span class="n">M</span>
+
+<span class="n">MRB6</span> <span class="o">=</span> <span class="n">p1_6</span><span class="o">/</span><span class="n">p2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Nová hodnota hraničnej miery rozpočtovej substitúcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MRB6</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">kos6</span> <span class="o">=</span> <span class="n">solve</span><span class="p">([</span><span class="n">MRS</span><span class="o">-</span><span class="n">MRB6</span><span class="p">,</span>
+            <span class="n">rozpocet6</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span>
+           <span class="nb">dict</span><span class="o">=</span><span class="kc">True</span>
+           <span class="p">)</span>
+<span class="n">kos6</span> <span class="o">=</span> <span class="n">kos6</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">kos6</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">kos6</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Optimálny spotrebiteľský kôš"</span><span class="p">)</span>
+<span class="n">kos6</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nová hodnota hraničnej miery rozpočtovej substitúcie
+0.3
+
+Optimálny spotrebiteľský kôš
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{x1: 33.3333333333333, x2: 20.0000000000000}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Zdvojnásobenie ceny druhého statku.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">p2_7</span> <span class="o">=</span> <span class="n">p2</span><span class="o">*</span><span class="mi">2</span>
+
+<span class="n">rozpocet7</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="n">x1</span><span class="o">+</span><span class="n">p2_7</span><span class="o">*</span><span class="n">x2</span><span class="o">-</span><span class="n">M</span>
+
+<span class="n">MRB7</span> <span class="o">=</span> <span class="n">p1</span><span class="o">/</span><span class="n">p2_7</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Nová hodnota hraničnej miery rozpočtovej substitúcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">MRB7</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">kos7</span> <span class="o">=</span> <span class="n">solve</span><span class="p">([</span><span class="n">MRS</span><span class="o">-</span><span class="n">MRB7</span><span class="p">,</span>
+            <span class="n">rozpocet7</span><span class="p">],</span>
+           <span class="p">[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span>
+           <span class="nb">dict</span><span class="o">=</span><span class="kc">True</span>
+           <span class="p">)</span>
+<span class="n">kos7</span> <span class="o">=</span> <span class="n">kos7</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">kos7</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">kos7</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Optimálny spotrebiteľský kôš"</span><span class="p">)</span>
+<span class="n">kos7</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Nová hodnota hraničnej miery rozpočtovej substitúcie
+0.25
+
+Optimálny spotrebiteľský kôš
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{x1: 20.0000000000000, x2: 10.0000000000000}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">5.5. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3><span class="section-number">5.5.1. </span>Príklad: Správanie spotrebiteľa<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=x_1^{3/4}x_2^{1/4}.
+\]</div>
+<p>Nech spotrebiteľov rozpočet je 800 €, cena prvého statku 10 € a druhého 10 €.</p>
+<ol class="arabic simple">
+<li><p>Vyjadrite hraničnú mieru spotrebiteľskej substitúcie.</p></li>
+<li><p>Vyjadrite hraničnú mieru rozpočtovej substitúcie.</p></li>
+<li><p>Vypočítajte optimálnu spotrebu oboch statkov.</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa spotrebiteľov rozpočet zníži na polovicu?</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa cena prvého statku zdvojnásobí?</p></li>
+<li><p>Ako sa zmení hraničná miera rozpočtovej substitúcie a optimálny spotrebný kôš, ak sa cena druhého statku zníži o 20 %?</p></li>
+</ol>
+</section>
+<section id="priklad-spotreba-troch-statkov">
+<h3><span class="section-number">5.5.2. </span>Príklad: Spotreba troch statkov<a class="headerlink" href="#priklad-spotreba-troch-statkov" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=x_1^{1/2} x_2^{1/3} x_3^{1/6}.
+\]</div>
+<p>Nech spotrebiteľov rozpočet je 600 €, cena prvého statku 6 €, druhého 4 €.</p>
+<p>Vypočítajte optimálny spotrebiteľský kôš.</p>
+</section>
+<section id="priklad-funkcia-uzitocnosti-v-semilogaritmickom-tvare">
+<h3><span class="section-number">5.5.3. </span>Príklad: Funkcia užitočnosti v semilogaritmickom tvare<a class="headerlink" href="#priklad-funkcia-uzitocnosti-v-semilogaritmickom-tvare" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)= 2 \ln{x_1} + 4 \ln {x_2}.
+\]</div>
+<p>Nech spotrebiteľov rozpočet je 600 €, cena prvého statku 7,50 € a druhého 7,50 €.</p>
+<p>Vypočítajte optimálny spotrebiteľský kôš.</p>
+</section>
+<section id="priklad-indiferencne-krivky-su-kruhy">
+<h3><span class="section-number">5.5.4. </span>Príklad: Indiferenčné krivky sú kruhy<a class="headerlink" href="#priklad-indiferencne-krivky-su-kruhy" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)= 100 - \left[ (x_1-20)^2  + (x_2-20)^2 \right].
+\]</div>
+<p>Nech spotrebiteľov rozpočet je 100 €, cena prvého statku 4 € a druhého 8 €.</p>
+<p>Vypočítajte optimálny spotrebiteľský kôš.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Naklad.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Náklady firmy</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Porovn.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Dopyt spotrebiteľa</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#existencia-funkcie-uzitocnosti">5.1. Existencia funkcie užitočnosti</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rozpocet-spotrebitela">5.2. Rozpočet spotrebiteľa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">5.3. Správanie spotrebiteľa.</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-interpretacia-ppr">5.3.1. Ekonomická interpretácia PPR</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">5.4. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-spravanie-spotrebitela">5.4.1. Príklad: Správanie spotrebiteľa</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">5.4.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">5.4.1.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">5.5. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">5.5.1. Príklad: Správanie spotrebiteľa</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-spotreba-troch-statkov">5.5.2. Príklad: Spotreba troch statkov</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-funkcia-uzitocnosti-v-semilogaritmickom-tvare">5.5.3. Príklad: Funkcia užitočnosti v semilogaritmickom tvare</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-indiferencne-krivky-su-kruhy">5.5.4. Príklad: Indiferenčné krivky sú kruhy</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

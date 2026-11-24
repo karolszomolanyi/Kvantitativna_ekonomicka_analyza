@@ -1,0 +1,2916 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>6. Dopyt spotrebiteľa &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Porovn';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. Voľný čas a spotreba" href="Stati.html" />
+    <link rel="prev" title="5. Správanie spotrebiteľa" href="Spotrebitel.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Porovn.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Dopyt spotrebiteľa</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marshallove-dopytove-funkcie">6.1. Marshallove dopytové funkcie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-rozpoctu-na-spotrebu-statkov">6.2. Vplyv zmeny rozpočtu na spotrebu statkov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-cien-na-spotrebu-statkov">6.3. Vplyv zmeny cien na spotrebu statkov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksove-dopytove-funkcie">6.4. Hicksove dopytové funkcie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vydavkova-funkcia">6.5. Výdavková funkcia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vztah-medzi-marshallovymi-a-hicksovymi-dopytovymi-funkciami">6.6. Vzťah medzi Marshallovými a Hicksovými dopytovými funkciami</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rozklad-vplyvu-zmeny-ceny">6.7. Rozklad vplyvu zmeny ceny</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksova-interpretacia-prijmoveho-a-substitucneho-efektu">6.8. Hicksova interpretácia príjmového a substitučného efektu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksov-rozklad-cenoveho-efektu">6.9. Hicksov rozklad cenového efektu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slutskeho-rovnica">6.10. Slutského rovnica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slutskeho-rozklad-celkoveho-efektu-na-prijmovy-a-substitucny">6.11. Slutského rozklad celkového efektu na príjmový a substitučný</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">6.12. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-marshallove-dopytove-funkcie">6.12.1. Príklad: Marshallove dopytové funkcie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">6.12.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">6.12.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-komparativna-statika">6.12.2. Príklad: Komparatívna statika</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.12.2.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.12.2.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-hicksove-dopytove-funkcie">6.12.3. Príklad: Hicksove dopytové funkcie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">6.12.3.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vydavkova-funkcia">6.12.4. Príklad: Výdavková funkcia</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6.12.4.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-substitucny-prijmovy-a-celkovy-efekt">6.12.5. Príklad: Substitučný, príjmový a celkový efekt</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.12.5.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-rozklad-cenoveho-efektu">6.12.6. Príklad: Rozklad cenového efektu</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6.12.6.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">6.12.6.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-substituty-a-rozklad-cenoveho-efektu">6.12.7. Príklad: Substitúty a rozklad cenového efektu</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">6.12.7.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">6.12.7.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">6.13. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-cobbov-douglasov-tvar-funkcie-uzitocnosti">6.13.1. Príklad: Cobbov-Douglasov tvar funkcie užitočnosti</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-rozne-tvary-preferencii">6.13.2. Príklad: Rôzne tvary preferencií</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-ekonometricky-odhad-spotrebnej-elasticity-uzitocnosti">6.13.3. Príklad: Ekonometrický odhad spotrebnej elasticity užitočnosti</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="dopyt-spotrebitela">
+<h1><span class="section-number">6. </span>Dopyt spotrebiteľa<a class="headerlink" href="#dopyt-spotrebitela" title="Link to this heading">#</a></h1>
+<section id="marshallove-dopytove-funkcie">
+<h2><span class="section-number">6.1. </span>Marshallove dopytové funkcie<a class="headerlink" href="#marshallove-dopytove-funkcie" title="Link to this heading">#</a></h2>
+<p>Správanie spotrebiteľa sme opísali úlohou na viazaný extrém, v ktorej spotrebiteľ výberom spotreby <span class="math notranslate nohighlight">\(\mathbf{x}\)</span> maximalizuje <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a> vzhľadom na spotrebiteľov rozpočet <a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a> pri nezápornosti rozhodovacích premenných <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a>. V ďalšom texte budeme túto úlohu nazývať aj Marshallova úloha.</p>
+<dl class="simple myst" id="def-marshall-uloha">
+<dt>Marshallova úloha</dt><dd><p>spotrebiteľova úloha maximilizovať užitočnosť <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a> vzhľadom na rozpočet <a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a> a <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a></p>
+</dd>
+</dl>
+<p>Podmienky prvého rádu úlohy sú <a class="reference internal" href="Spotrebitel.html#equation-r-ppr-spotrebitel1">(5.9)</a> a <a class="reference internal" href="Spotrebitel.html#equation-r-ppr-spotrebitel2">(5.10)</a>.</p>
+<p>Riešením úlohy maximalizácie užitočnosti alebo ekvivalentne riešením podmienok prvého rádu získame redukovaný tvar úlohy.</p>
+<dl class="simple myst">
+<dt>Marshallove dopytové funkcie</dt><dd><p><a class="reference internal" href="Matematika.html#redukovany-tvar"><span class="std std-ref">Redukovaný tvar modelu</span></a> <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a>, <a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a> a <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a>.</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-marshall">
+<span class="eqno">(6.1)<a class="headerlink" href="#equation-marshall" title="Link to this equation">#</a></span>\[\mathbf{x^*} = \mathbf{x}(M,\mathbf{p}).\]</div>
+<p>Marshallove dopytové funkcie vyjadrujú spotrebiteľov dopyt po jednotlivých statkoch v závislosti od rozpočtu spotrebiteľa a cien statkov.</p>
+<p><a class="reference internal" href="Matematika.html#komparativna-statika"><span class="std std-ref">Komparatívna statika</span></a> ako sa mení optimálny spotrebiteľský kôš pri zmenách rozpočtu spotrebiteľa a cien statkov.</p>
+</section>
+<section id="vplyv-zmeny-rozpoctu-na-spotrebu-statkov">
+<h2><span class="section-number">6.2. </span>Vplyv zmeny rozpočtu na spotrebu statkov<a class="headerlink" href="#vplyv-zmeny-rozpoctu-na-spotrebu-statkov" title="Link to this heading">#</a></h2>
+<p>Ako sa zmení spotreba statkov, ak sa spotrebiteľovi zmení rozpočet, <em>{ref}(cp-label)</em>?</p>
+<ul class="simple">
+<li><p>Statok je <strong>normálny</strong>, ak sa zvyšením príjmu, <em>ceteris paribus</em>, <strong>nezníži</strong> jeho spotreba,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial M} \ge 0.
+\]</div>
+<ul class="simple">
+<li><p>Statok je <strong>podradný</strong>, ak sa zvyšením príjmu, <em>ceteris paribus</em>, <strong>zníži</strong> jeho spotreba,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial M} &lt; 0.
+\]</div>
+<p>Ak uvažujeme o normálnmych statkoch, možno ich klasifikovať podľa príjmovej elasticity (<a class="reference internal" href="Matematika.html#elasticita-label"><span class="std std-ref">Elasticita</span></a>)</p>
+<div class="math notranslate nohighlight" id="equation-r-prijmova-elasticita">
+<span class="eqno">(6.2)<a class="headerlink" href="#equation-r-prijmova-elasticita" title="Link to this equation">#</a></span>\[\varepsilon_M = \frac{\partial x_i(M,\mathbf{p})}{\partial M} \frac{M}{x_i(M,\mathbf{p})}.\]</div>
+<ul class="simple">
+<li><p>statok je luxusný, ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_M &gt; 1,
+\]</div>
+<ul class="simple">
+<li><p>statok je nevyhnutný (základný), ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+0 &lt; \varepsilon_M &lt; 1.
+\]</div>
+<ul class="simple">
+<li><p>statok je <strong>zberateľský</strong>, ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_M = 1.
+\]</div>
+<p>Spotreba zberateľských statkov sa mení rovnakým pomerom ako sa mení spotrebiteľov rozpočet, <em>ceteris paribus</em>.</p>
+<p>Statky s jednotkovou príjmovou elasticitou sa v slovenskej mikroekonomickej literatúre často označujú ako zberateľské statky.</p>
+<p>Na <a class="reference internal" href="#graf-prijmovy-spotrebitel"><span class="std std-numref">Obr. 6.1</span></a> sú oba statky normálne a zberateľské.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">"figure.figsize"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># funkcie</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">x_opt</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">alpha</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">beta</span><span class="p">)</span> <span class="o">*</span> <span class="n">M</span><span class="o">/</span><span class="n">p</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">uzitocnost</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x2</span><span class="o">**</span><span class="n">beta</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">rozpocet</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">M</span><span class="o">/</span><span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span><span class="o">/</span><span class="n">p2</span> <span class="o">*</span> <span class="n">x1</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">indiferencna_krivka</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">u</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">u</span> <span class="o">/</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">beta</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># parametre</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="n">p1</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">p2</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">M_values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">600</span><span class="p">,</span> <span class="mi">900</span><span class="p">]</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-6</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># graf</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">opt_x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">opt_y</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">M</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">M_values</span><span class="p">):</span>
+
+    <span class="c1"># optimum</span>
+    <span class="n">x1_opt</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">)</span>
+    <span class="n">x2_opt</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span>
+
+    <span class="n">u_opt</span> <span class="o">=</span> <span class="n">uzitocnost</span><span class="p">(</span>
+        <span class="n">x1_opt</span><span class="p">,</span>
+        <span class="n">x2_opt</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="p">,</span>
+        <span class="n">beta</span>
+    <span class="p">)</span>
+
+    <span class="c1"># rozpočtová priamka</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">x1</span><span class="p">,</span>
+        <span class="n">rozpocet</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">),</span>
+        <span class="n">label</span><span class="o">=</span><span class="sa">rf</span><span class="s1">'$M=</span><span class="si">{</span><span class="n">M</span><span class="si">}</span><span class="s1">$'</span>
+    <span class="p">)</span>
+
+    <span class="c1"># indiferenčná krivka</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">x1</span><span class="p">,</span>
+        <span class="n">indiferencna_krivka</span><span class="p">(</span>
+            <span class="n">x1</span><span class="p">,</span>
+            <span class="n">u_opt</span><span class="p">,</span>
+            <span class="n">alpha</span><span class="p">,</span>
+            <span class="n">beta</span>
+        <span class="p">),</span>
+        <span class="n">color</span><span class="o">=</span><span class="s1">'C'</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span>
+        <span class="n">lw</span><span class="o">=</span><span class="mi">2</span>
+    <span class="p">)</span>
+
+    <span class="c1"># optimum</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+        <span class="n">x1_opt</span><span class="p">,</span>
+        <span class="n">x2_opt</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">,</span>
+        <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span>
+    <span class="p">)</span>
+
+    <span class="n">label</span> <span class="o">=</span> <span class="s1">'a'</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'b'</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+        <span class="n">x1_opt</span> <span class="o">+</span> <span class="mi">8</span><span class="p">,</span>
+        <span class="n">x2_opt</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span>
+        <span class="sa">rf</span><span class="s1">'$\mathbf</span><span class="se">{{</span><span class="s1">x</span><span class="se">}}</span><span class="s1">^</span><span class="se">{{</span><span class="s1">*</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="se">}}</span><span class="s1">$'</span>
+    <span class="p">)</span>
+
+    <span class="n">opt_x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x1_opt</span><span class="p">)</span>
+    <span class="n">opt_y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x2_opt</span><span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># príjmová cesta</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="c1"># príjmová cesta</span>
+
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">450</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">xp</span><span class="p">,</span>
+    <span class="n">xp</span><span class="p">,</span>
+    <span class="s1">'r--'</span><span class="p">,</span>
+    <span class="n">lw</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s1">'príjmová cesta'</span>
+<span class="p">)</span>
+
+<span class="c1"># --------------------------------------------------</span>
+<span class="c1"># vzhľad</span>
+<span class="c1"># --------------------------------------------------</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_1$'</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_2$'</span><span class="p">,</span>
+    <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">450</span><span class="p">),</span>
+    <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">225</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">'Príjmový efekt'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-prijmovy-spotrebitel">
+<img alt="_images/graf_prijmovy_spotrebitel.png" src="_images/graf_prijmovy_spotrebitel.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 6.1 </span><span class="caption-text">Vplyv zvýšenia rozpočtu na správanie spotrebiteľa</span><a class="headerlink" href="#graf-prijmovy-spotrebitel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Klasifikácia statkov podľa reakcie spotreby na zmenu rozpočtu</p>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-prijmovy-efekt">
+<caption><span class="caption-number">Tab. 6.1 </span><span class="caption-text">Klasifikácia statkov podľa reakcie spotreby na zmenu rozpočtu</span><a class="headerlink" href="#tab-prijmovy-efekt" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Typ statku</p></th>
+<th class="head"><p>Podmienka</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>normálny</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial M}\ge 0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>podradný</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial M}&lt;0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>luxusný</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \varepsilon_M&gt;1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>zberateľský</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \varepsilon_M=1\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>nevyhnutný (základný)</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle 0&lt;\varepsilon_M&lt;1\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="vplyv-zmeny-cien-na-spotrebu-statkov">
+<h2><span class="section-number">6.3. </span>Vplyv zmeny cien na spotrebu statkov<a class="headerlink" href="#vplyv-zmeny-cien-na-spotrebu-statkov" title="Link to this heading">#</a></h2>
+<p>Ako sa zmení spotrebiteľova spotreba statkov, ak sa zmení cena niektorého zo statkov, <a class="reference internal" href="Matematika.html#cp-label"><span class="std std-ref">Ceteris paribus</span></a>?</p>
+<p>Rozlišujme vplyv zmeny vlastnej ceny a krížovej ceny.</p>
+<dl class="simple myst">
+<dt>Vplyv zmeny vlastnej ceny</dt><dd><p>Zaujíma nás, ako sa zmení spotrebiteľovi spotreba statku, ak sa <em>jeho</em> cena zmení, <em>ceteris paribus</em>.</p>
+</dd>
+<dt>Vplyv zmeny krížovej ceny</dt><dd><p>Zaujíma nás, ako sa zmení spotrebiteľovi spotreba statku, ak sa zmení cena <em>iného</em> statku, <em>ceteris paribus</em>.</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><p>Statok je <strong>štandardný</strong>, ak sa zvyšením jeho ceny, <em>ceteris paribus</em>, jeho spotreba <strong>nezvýši</strong>,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial p_i} \le 0.
+\]</div>
+<ul class="simple">
+<li><p>Statok je <strong>Giffenov</strong>, ak sa zvyšením jeho ceny, <em>ceteris paribus</em>, jeho spotreba <strong>zvýši</strong>,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial p_i} &gt; 0.
+\]</div>
+<ul class="simple">
+<li><p>Dva statky sú <strong>substitúty</strong>, ak sa zvýšením ceny jedného, <em>ceteris paribus</em>, <strong>zvýši</strong> spotreba druhého (cukor, med),</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial p_j} &gt; 0 \quad i \ne j.
+\]</div>
+<ul class="simple">
+<li><p>Dva statky sú <strong>komplementárne</strong>, ak sa zvýšením ceny jedného, <em>ceteris paribus</em>, <strong>zníži</strong> spotreba druhého (benzín, automobil),</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_i(M,\mathbf{p})}{\partial p_j} &lt; 0 \quad i \ne j.
+\]</div>
+<p>Ak uvažujeme o štandardných statkoch, možno ich klasifikovať podľa cenovej elasticity (<a class="reference internal" href="Matematika.html#elasticita-label"><span class="std std-ref">Elasticita</span></a>)</p>
+<div class="math notranslate nohighlight" id="equation-r-cenova-elasticita">
+<span class="eqno">(6.3)<a class="headerlink" href="#equation-r-cenova-elasticita" title="Link to this equation">#</a></span>\[\varepsilon_p = \frac{\partial x_i(M,\mathbf{p})}{\partial p_i} \frac{p_i}{x_i(M,\mathbf{p})}.\]</div>
+<ul class="simple">
+<li><p>statok je elastický, ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+|\varepsilon_p| &gt; 1,
+\]</div>
+<ul class="simple">
+<li><p>statok je neelastický, ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+|\varepsilon_p| &lt; 1.
+\]</div>
+<ul class="simple">
+<li><p>statok je jednotkovo-elastický, ak</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+|\varepsilon_p| = 1.
+\]</div>
+<p>Na <a class="reference internal" href="#graf-standardny-spotrebitel"><span class="std std-numref">Obr. 6.2</span></a> sú oba statky štandardné. Krížové cenové efekty sú nulové, preto statky nie sú ani substitúty, ani komplementy.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">):</span>
+    
+    <span class="k">for</span> <span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">o</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">,</span> <span class="n">farby</span><span class="p">,</span> <span class="n">ozn</span><span class="p">):</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">rozpocet</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">)</span> <span class="c1"># rozpočet</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">r</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">rf</span><span class="s2">"$p_1 = </span><span class="si">{</span><span class="n">p1</span><span class="si">}</span><span class="s2">,\; p_2 = </span><span class="si">{</span><span class="n">p2</span><span class="si">}</span><span class="s2">$"</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">)</span>
+        <span class="n">xx1</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">𝛼</span><span class="p">,</span> <span class="n">𝛽</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">)</span>
+        <span class="n">xx2</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">𝛽</span><span class="p">,</span> <span class="n">𝛼</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p2</span><span class="p">)</span>
+        <span class="n">h</span> <span class="o">=</span> <span class="n">uzitocnost</span><span class="p">(</span><span class="n">xx1</span><span class="p">,</span><span class="n">xx2</span><span class="p">,</span><span class="n">𝛼</span><span class="p">,</span> <span class="n">𝛽</span><span class="p">)</span>
+        <span class="n">ind</span> <span class="o">=</span> <span class="n">h</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">𝛽</span><span class="p">)</span> <span class="o">/</span> <span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="n">𝛼</span><span class="o">/</span><span class="n">𝛽</span><span class="p">)</span> <span class="c1"># indiferenčná krivka</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">ind</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">)</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xx1</span><span class="p">,</span><span class="n">xx2</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">o</span><span class="p">)</span>
+        
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'$x_1$'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'$x_2$'</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Parameters</span>
+<span class="n">𝛼</span><span class="p">,</span> <span class="n">𝛽</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="n">set1</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">])</span>
+<span class="n">set2</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">8.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">])</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">exo</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="p">(</span><span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">)):</span>
+    <span class="n">M</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">,</span> <span class="n">farby</span><span class="p">,</span> <span class="n">ozn</span> <span class="o">=</span> <span class="n">exo</span>
+    <span class="n">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">300</span><span class="p">],[</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">],</span> <span class="s1">':'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'black'</span><span class="p">)</span> <span class="c1"># čiary cez pôvodný kôš, horizontálna</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">],</span> <span class="s1">':'</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'black'</span><span class="p">)</span> <span class="c1"># vertikálna</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">160</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper right'</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-standardny-spotrebitel">
+<img alt="_images/graf_standardny_spotrebitel.png" src="_images/graf_standardny_spotrebitel.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 6.2 </span><span class="caption-text">Vplyv zvýšenia ceny na správanie spotrebiteľa</span><a class="headerlink" href="#graf-standardny-spotrebitel" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="pst-scrollable-table-container"><table class="table" id="tab-zmena-ceny">
+<caption><span class="caption-number">Tab. 6.2 </span><span class="caption-text">Klasifikácia statkov podľa reakcie spotreby na zmenu ceny</span><a class="headerlink" href="#tab-zmena-ceny" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Typ statku</p></th>
+<th class="head"><p>Podmienka</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>štandardný</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial p_i}\le 0\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Giffenov</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial p_i}&gt;0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>substitút</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial p_j}&gt;0,\quad i\neq j\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>komplement</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial p_j}&lt;0,\quad i\neq j\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>nezávislý statok</p></td>
+<td><p><span class="math notranslate nohighlight">\(\displaystyle \frac{\partial x_i(M,\mathbf{p})}{\partial p_j}=0,\quad i\neq j\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Marshallove dopytové funkcie opisujú optimálne rozhodnutie spotrebiteľa pri danom rozpočte.</p>
+<p>Pri zmene ceny statku sa však súčasne menia:</p>
+<ul class="simple">
+<li><p>relatívne ceny statkov,</p></li>
+<li><p>kúpna sila spotrebiteľa.</p></li>
+</ul>
+<p>Z celkovej zmeny spotreby preto nie je možné priamo určiť, aká časť zmeny je spôsobená zmenou relatívnych cien a aká časť zmenou kúpnej sily spotrebiteľa.</p>
+<p>Ako oddeliť tieto dva vplyvy?</p>
+<p>V <a class="reference internal" href="#priklad-marshall"><span class="std std-ref">Príklad: Marshallove dopytové funkcie</span></a> odvodíme Marshallove dopytové funkcie dvoch statkov <a class="reference internal" href="#equation-marshall-cd">(6.13)</a> spotrebiteľa s preferenciami opísanými Cobbovou-Douglasovou funkciou užitočnosti s konštatntnými výnosmi z rozsahu <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a>.</p>
+<p>S danými preferenciami, dva statky (<a class="reference internal" href="#priklad-spotrebitel-ks"><span class="std std-ref">Príklad: Komparatívna statika</span></a>)</p>
+<ul class="simple">
+<li><p>sú normálne a zberateľské; príjmové elasticity spotreby sa rovnajú 1,</p></li>
+<li><p>sú štandardné a jednotkovo-elastické,</p></li>
+<li><p>nie sú ani substitúty ani komplementy.</p></li>
+</ul>
+</section>
+<section id="hicksove-dopytove-funkcie">
+<h2><span class="section-number">6.4. </span>Hicksove dopytové funkcie<a class="headerlink" href="#hicksove-dopytove-funkcie" title="Link to this heading">#</a></h2>
+<p>Doteraz sme správanie spotrebiteľa opisovali ako úlohu maximalizácie užitočnosti <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a> pri danom rozpočte <a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a>.</p>
+<p>Rovnaké rozhodovanie možno opísať aj opačne.</p>
+<p>Predpokladajme, že spotrebiteľ požaduje dosiahnuť úroveň užitočnosti <span class="math notranslate nohighlight">\(\bar u\)</span>. Ktorý spotrebiteľský kôš mu umožní dosiahnuť túto úroveň užitočnosti pri minimálnych výdavkoch?</p>
+<p>Takúto úlohu spotrebiteľa zapíšeme v tvare</p>
+<div class="math notranslate nohighlight" id="equation-hicks-ul">
+<span class="eqno">(6.4)<a class="headerlink" href="#equation-hicks-ul" title="Link to this equation">#</a></span>\[M_{min} = \min_{\mathbf{x}}
+\quad
+\mathbf{p}^\top\mathbf{x},\]</div>
+<p>vzhľadom na ohraničenie</p>
+<div class="math notranslate nohighlight" id="equation-hicks-obm">
+<span class="eqno">(6.5)<a class="headerlink" href="#equation-hicks-obm" title="Link to this equation">#</a></span>\[u(\mathbf{x}) - \bar u \ge 0,\]</div>
+<p>a nezápornosť rozhodovacích premenných</p>
+<div class="math notranslate nohighlight" id="equation-hicks-nezap">
+<span class="eqno">(6.6)<a class="headerlink" href="#equation-hicks-nezap" title="Link to this equation">#</a></span>\[\mathbf{x} \ge 0.\]</div>
+<dl class="simple myst" id="def-hicks-uloha">
+<dt>Hicksova úloha</dt><dd><p>spotrebiteľova úloha minimalizovať výdavky <a class="reference internal" href="#equation-hicks-ul">(6.4)</a> vzhľadom na užitočnosť <a class="reference internal" href="#equation-hicks-obm">(6.5)</a> a <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a></p>
+</dd>
+</dl>
+<p>Na <a class="reference internal" href="#graf-hicks-ul"><span class="std std-numref">Obr. 6.3</span></a> je znázornená úloha minimalizácie výdavkov spotrebiteľa.</p>
+<p>Zelená krivka predstavuje hranicu prípustných riešení, teda všetky spotrebiteľské koše poskytujúce požadovanú úroveň užitočnosti
+<span class="math notranslate nohighlight">\(\bar u\)</span>.</p>
+<p>Modrá priamka predstavuje vrstevnicu výdavkovej (rozpočtovej) funkcie. Každý bod na nej vyžaduje rovnaké výdavky.</p>
+<p>Optimálny spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{h}^*\)</span> vzniká v bode dotyku hranice prípustných riešení a vrstevnice výdavkovej funkcie.</p>
+<p>V tomto bode sú minimálne výdavky potrebné na dosiahnutie úrovne užitočnosti <span class="math notranslate nohighlight">\(\bar u\)</span>.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ik</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">u</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">u</span><span class="o">**</span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ir</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">M</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">M</span> <span class="o">/</span> <span class="n">p2</span> <span class="o">-</span> <span class="n">p1</span> <span class="o">/</span> <span class="n">p2</span> <span class="o">*</span> <span class="n">x1</span>
+
+<span class="n">M</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="n">p_1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">p_2</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">x1opt</span> <span class="o">=</span> <span class="n">M</span><span class="o">/</span><span class="mi">3</span><span class="o">/</span><span class="n">p_1</span>
+<span class="n">x2opt</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="mi">3</span><span class="o">/</span><span class="n">p_2</span>
+<span class="n">x1opt</span><span class="p">,</span> <span class="n">x2opt</span>
+<span class="n">uopt</span> <span class="o">=</span> <span class="n">x1opt</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">x2opt</span><span class="o">**</span><span class="p">(</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+
+<span class="n">iuzit</span> <span class="o">=</span> <span class="n">ik</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">u</span><span class="o">=</span><span class="n">uopt</span><span class="p">)</span>
+<span class="n">irozp</span> <span class="o">=</span> <span class="n">ir</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">p_1</span><span class="p">,</span><span class="n">p_2</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">iuzit</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'green'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s1">'hranica prípustných riešení'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">irozp</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'b'</span><span class="p">,</span>
+    <span class="n">label</span><span class="o">=</span><span class="s1">'vrstevnica rozpočovej funkcie'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">iuzit</span><span class="p">,</span><span class="n">y2</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'lightgreen'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+               <span class="n">label</span> <span class="o">=</span> <span class="s1">'množina prípustných riešení'</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span>
+    <span class="n">x1opt</span><span class="p">,</span>
+    <span class="n">x2opt</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="s1">'r'</span><span class="p">,</span>
+    <span class="n">zorder</span><span class="o">=</span><span class="mi">5</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="n">x1opt</span> <span class="o">+</span> <span class="mf">0.2</span><span class="p">,</span>
+    <span class="n">x2opt</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">,</span>
+    <span class="sa">r</span><span class="s1">'$\mathbf</span><span class="si">{h}</span><span class="s1">^*$'</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_1$'</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$x_2$'</span><span class="p">,</span>
+    <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">),</span>
+    <span class="n">ylim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-hicks-ul">
+<img alt="_images/graf_hicks_ul.png" src="_images/graf_hicks_ul.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 6.3 </span><span class="caption-text">Hicksova úloha minimalizácie užitočnosti vzhľadom na pevný rozpočet</span><a class="headerlink" href="#graf-hicks-ul" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Ak optimálny spotrebiteľský kôš leží vo vnútri definičného oboru, potom platia podmienky prvého rádu.</p>
+<ol class="arabic simple">
+<li><p>Optimálny spotrebiteľský kôš leží na hranici prípustných riešení</p></li>
+</ol>
+<div class="math notranslate nohighlight" id="equation-r-hicks-ul-u">
+<span class="eqno">(6.7)<a class="headerlink" href="#equation-r-hicks-ul-u" title="Link to this equation">#</a></span>\[u(\mathbf{x})
+=
+\bar u.\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Hraničná miera spotrebiteľskej substitúcie sa rovná pomeru cien statkov</p></li>
+</ol>
+<div class="math notranslate nohighlight" id="equation-r-hicks-ul">
+<span class="eqno">(6.8)<a class="headerlink" href="#equation-r-hicks-ul" title="Link to this equation">#</a></span>\[MRS(x_1,x_2)
+=
+\frac{p_1}{p_2}.\]</div>
+<p>Podmienka prvého rádu <a class="reference internal" href="#equation-r-hicks-ul">(6.8)</a> sa zhoduje s podmienkou Marshallovej úlohy <a class="reference internal" href="#equation-marshall">(6.1)</a>. Rozdiel dvoch úloh spočíva v interpretácii.</p>
+<p>V Marshallovej úlohe (<a class="reference internal" href="#def-marshall-uloha"><span class="std std-ref">Marshallova úloha</span></a>) hľadáme najvyššiu dosiahnuteľnú úroveň užitočnosti pri danom rozpočte.</p>
+<p>V Hicksovej úlohe (<a class="reference internal" href="#def-hicks-uloha"><span class="std std-ref">Hicksova úloha</span></a>) hľadáme najnižšie výdavky potrebné na dosiahnutie danej úrovne užitočnosti.</p>
+<p>Riešením úlohy minimalizácie výdavkov získame redukovaný tvar úlohy.</p>
+<dl class="simple myst">
+<dt>Hicksove dopytové funkcie</dt><dd><p><a class="reference internal" href="Matematika.html#redukovany-tvar"><span class="std std-ref">Redukovaný tvar modelu</span></a> úlohy <a class="reference internal" href="#equation-hicks-ul">(6.4)</a>, <a class="reference internal" href="#equation-hicks-obm">(6.5)</a> a <a class="reference internal" href="#equation-hicks-nezap">(6.6)</a>.</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-hicks">
+<span class="eqno">(6.9)<a class="headerlink" href="#equation-hicks" title="Link to this equation">#</a></span>\[\mathbf{x^*}=\mathbf{h}(\bar u,\mathbf p).\]</div>
+<p>Hicksove dopytové funkcie vyjadrujú spotrebiteľov dopyt po jednotlivých statkoch v závislosti od jeho požadovaného blahobytu a cien statkov.</p>
+<p>Pre odvodenie Hicksových dopytových funkcií s preferenciami <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a> pozri <a class="reference internal" href="#priklad-spotrebitel-hicks"><span class="std std-ref">Príklad: Hicksove dopytové funkcie</span></a>.</p>
+</section>
+<section id="vydavkova-funkcia">
+<h2><span class="section-number">6.5. </span>Výdavková funkcia<a class="headerlink" href="#vydavkova-funkcia" title="Link to this heading">#</a></h2>
+<p>Dosadením Hicksových dopytových funkcií do výdavkov spotrebiteľa získame výdavkovú funkciu.</p>
+<dl class="simple myst">
+<dt>Výdavková funkcia</dt><dd><p>Optimálna hodnota účelovej funkcie <a class="reference internal" href="#equation-hicks-ul">(6.4)</a>.</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-vydavkova-funkcia">
+<span class="eqno">(6.10)<a class="headerlink" href="#equation-vydavkova-funkcia" title="Link to this equation">#</a></span>\[e(\bar u,\mathbf p) = \mathbf p^\top \mathbf h(\bar u,\mathbf p).\]</div>
+<p>Výdavková funkcia vyjadruje minimálne výdavky potrebné na dosiahnutie úrovne užitočnosti <span class="math notranslate nohighlight">\(\bar u\)</span> pri daných cenách statkov.</p>
+</section>
+<section id="vztah-medzi-marshallovymi-a-hicksovymi-dopytovymi-funkciami">
+<h2><span class="section-number">6.6. </span>Vzťah medzi Marshallovými a Hicksovými dopytovými funkciami<a class="headerlink" href="#vztah-medzi-marshallovymi-a-hicksovymi-dopytovymi-funkciami" title="Link to this heading">#</a></h2>
+<p>Marshallove dopytové funkcie <a class="reference internal" href="#equation-marshall">(6.1)</a> vyjadrujú optimálny spotrebiteľský kôš pri danom rozpočte a cenách statkov.</p>
+<p>Hicksove dopytové funkcie <a class="reference internal" href="#equation-hicks">(6.9)</a> vyjadrujú najlacnejší spotrebiteľský kôš, ktorý umožňuje dosiahnuť úroveň užitočnosti <span class="math notranslate nohighlight">\(\bar u\)</span> pri daných cenách statkov.</p>
+<p>V úlohe <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a>, <a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a> a <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a> (Marshall) je daný rozpočet a výsledkom je dosiahnutá úroveň užitočnosti. V úlohe <a class="reference internal" href="#equation-hicks-ul">(6.4)</a>, <a class="reference internal" href="#equation-hicks-obm">(6.5)</a> a <a class="reference internal" href="#equation-hicks-nezap">(6.6)</a> (Hicks) je daná úroveň užitočnosti a výsledkom sú minimálne výdavky potrebné na jej dosiahnutie.</p>
+<p>Dosadením Marshallových dopytových funkcií pri rozpočte <span class="math notranslate nohighlight">\(M\)</span> do funkcie užitočnosti získame úroveň užitočnosti</p>
+<div class="math notranslate nohighlight">
+\[
+\bar u
+=
+u(\mathbf{x}(M,\mathbf p)).
+\]</div>
+<p>Potom Hicksove dopytové funkcie pri tejto úrovni užitočnosti vedú k rovnakému optimálnemu spotrebiteľskému košu</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{h}(\bar u,\mathbf p)
+=
+\mathbf{x}(M,\mathbf p).
+\]</div>
+<p>Naopak, ak pri úrovni užitočnosti <span class="math notranslate nohighlight">\(\bar u\)</span> označíme minimálne výdavky</p>
+<div class="math notranslate nohighlight">
+\[
+M
+=
+e(\bar u,\mathbf p),
+\]</div>
+<p>potom Marshallove dopytové funkcie vedú k rovnakému optimálnemu spotrebiteľskému košu</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}(e(\bar u,\mathbf p),\mathbf p)
+=
+\mathbf{h}(\bar u,\mathbf p).
+\]</div>
+<p>Marshallove a Hicksove dopytové funkcie preto opisujú rovnaké správanie spotrebiteľa z dvoch rôznych pohľadov.</p>
+<p>Marshallove dopytové funkcie sú vhodné na analýzu správania spotrebiteľa pri danom rozpočte. Hicksove dopytové funkcie umožňujú analyzovať správanie spotrebiteľa pri nezmenenej úrovni užitočnosti, čo je základom rozkladu vplyvu zmeny ceny na substitučný a príjmový efekt.</p>
+</section>
+<section id="rozklad-vplyvu-zmeny-ceny">
+<h2><span class="section-number">6.7. </span>Rozklad vplyvu zmeny ceny<a class="headerlink" href="#rozklad-vplyvu-zmeny-ceny" title="Link to this heading">#</a></h2>
+<p>Uvažujme ďalej o dvoch štandardných a normálnych statkoch.</p>
+<p>Ak sa cena jedného statku zvýši, jeho spotreba klesne, pretože ide o štandardný statok. Ako sa však zmení spotreba druhého statku?</p>
+<p>Vieme, že ak sa spotreba druhého statku zvýši, oba statky sú substitúty. Ak sa spotreba druhého statku zníži, oba statky sú
+komplementy.</p>
+<p>Celkový vplyv zmeny ceny možno rozdeliť na príjmový a substitučný efekt.</p>
+<p>Ak sa zvýši cena jedného zo statkov, spotrebiteľovi klesne reálny príjem. Peňažný rozpočet spotrebiteľa sa síce nezmení, ale za rovnaký rozpočet si už nemôže dovoliť niektoré spotrebiteľské koše, ktoré si mohol dovoliť pred zvýšením ceny.</p>
+<p>Pri normálnych statkoch vedie pokles reálneho príjmu k poklesu spotreby oboch statkov. Tento vplyv nazývame príjmový efekt.</p>
+<p>Zároveň sa zmení pomer cien statkov. Statok, ktorého cena sa zvýšila, sa stáva relatívne drahším a druhý statok relatívne lacnejším.</p>
+<p>Substitučným efektom spotrebiteľ reaguje na zmenu relatívnych cien tak, že znižuje spotrebu relatívne drahšieho statku a zvyšuje
+spotrebu relatívne lacnejšieho statku.</p>
+<p>Z uvedeného vyplýva, že zvýšenie ceny jedného zo statkov spôsobí:</p>
+<ul class="simple">
+<li><p>príjmovým efektom pokles spotreby oboch statkov,</p></li>
+<li><p>substitučným efektom pokles spotreby statku, ktorého cena sa zvýšila,
+a rast spotreby druhého statku.</p></li>
+</ul>
+<p>Celkový efekt je súčtom príjmového a substitučného efektu.</p>
+<p>Spotreba statku, ktorého cena sa zvýšila, klesá príjmovým aj substitučným efektom. Celkovým efektom zvýšenia ceny je preto pokles spotreby tohto statku.</p>
+<p>Pri druhom statku pôsobia oba efekty opačným smerom. Príjmový efekt znižuje jeho spotrebu, zatiaľ čo substitučný efekt ju zvyšuje.</p>
+<p>Preto:</p>
+<ul class="simple">
+<li><p>ak sa spotreba druhého statku zvýši, substitučný efekt prevláda nad príjmovým efektom a oba statky sú substitúty,</p></li>
+<li><p>ak sa spotreba druhého statku zníži, príjmový efekt prevláda nad substitučným efektom a oba statky sú komplementy,</p></li>
+<li><p>ak sa spotreba druhého statku nezmení, príjmový a substitučný efekt sa navzájom vykompenzujú.</p></li>
+</ul>
+</section>
+<section id="hicksova-interpretacia-prijmoveho-a-substitucneho-efektu">
+<h2><span class="section-number">6.8. </span>Hicksova interpretácia príjmového a substitučného efektu<a class="headerlink" href="#hicksova-interpretacia-prijmoveho-a-substitucneho-efektu" title="Link to this heading">#</a></h2>
+<p>V predchádzajúcej časti sme ukázali, že zmena ceny statku ovplyvňuje spotrebu prostredníctvom príjmového a substitučného efektu.</p>
+<p>Pri pozorovaní zmeny Marshallových dopytových funkcií však vidíme iba celkový efekt zmeny ceny. Samotné Marshallove dopytové funkcie neumožňujú určiť, aká časť zmeny spotreby bola spôsobená zmenou relatívnych cien a aká časť zmenou reálneho príjmu spotrebiteľa.</p>
+<p>Na oddelenie oboch efektov využijeme Hicksove dopytové funkcie.</p>
+<dl class="simple myst">
+<dt>Hicksova interpretácia príjmového a substitučného efektu</dt><dd><p>Rozklad celkového efektu zmeny ceny na substitučný a príjmový efekt pri nezmenenej úrovni užitočnosti spotrebiteľa.</p>
+</dd>
+</dl>
+<p>Predpokladajme, že sa zvýši cena prvého statku <span class="math notranslate nohighlight">\(p_1\)</span>.</p>
+<p>Pôvodný optimálny spotrebiteľský kôš je <span class="math notranslate nohighlight">\(\mathbf{x_a}\)</span>.</p>
+<p>Po zvýšení ceny sa zmení sklon hranice spotrebiteľských možností <span class="math notranslate nohighlight">\(p_1/p_2\)</span> a nový optimálny spotrebiteľský kôš je <span class="math notranslate nohighlight">\(\mathbf{x_b}\)</span>.</p>
+<p>Táto zmena predstavuje celkový efekt zmeny ceny.</p>
+<p>Aby sme oddelili substitučný efekt od príjmového efektu, kompenzujeme spotrebiteľovi zvýšenie ceny tak, aby zostal na pôvodnej
+úrovni užitočnosti. Napríklad mu vláda poskytne dodatočný príjem kompenzujúci zvýšenie ceny. Tým sa podľa Hicksovej koncepcie eliminuje príjmový efekt.</p>
+<p>Pri tejto kompenzácii spotrebiteľ zvolí nový optimálny spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span>.</p>
+<p>Presun z bodu <span class="math notranslate nohighlight">\(\mathbf{x_a}\)</span> do bodu <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span> predstavuje substitučný efekt.</p>
+<p>Presun z bodu <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span> do bodu <span class="math notranslate nohighlight">\(\mathbf{x_b}\)</span> predstavuje príjmový efekt.</p>
+<p>Na <a class="reference internal" href="#graf-hicks"><span class="std std-numref">Obr. 6.4</span></a> je v hornom paneli zobrazený rozklad celkového efektu zmeny ceny prvého statku na substitučný a príjmový efekt.</p>
+<p>V dolnom paneli je zobrazený rozklad celkového efektu zmeny ceny druhého statku.</p>
+<p>Pôvodný optimálny spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x_a}\)</span> je zobrazený zelenou farbou.</p>
+<p>Nový optimálny spotrebiteľský kôš <span class="math notranslate nohighlight">\(\mathbf{x_b}\)</span> je zobrazený červenou farbou.</p>
+<p>Elimináciu príjmového efektu kompenzáciou zvýšenia ceny predstavuje posun červenej hranice spotrebiteľských možností do modrej. Modrá hranica spotrebiteľských možností je rovnobežná s červenou hranicou, pretože obe zodpovedajú rovnakému pomeru cien <span class="math notranslate nohighlight">\(p_1/p_2\)</span>.</p>
+<p>Hranica spotrebiteľských možností sa posúva dovtedy, kým sa nedotkne pôvodnej indiferenčnej krivky, ktorá predstavuje pôvodnú úroveň užitočnosti spotrebiteľa.</p>
+<p>Bod dotyku <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span> je zobrazený modrou farbou. Presun z bodu <span class="math notranslate nohighlight">\(\mathbf{x_a}\)</span> do bodu <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span> predstavuje substitučný efekt. Presun z bodu <span class="math notranslate nohighlight">\(\mathbf{x_s}\)</span> do bodu <span class="math notranslate nohighlight">\(\mathbf{x_b}\)</span> predstavuje príjmový efekt.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1a</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">α</span><span class="p">,</span> <span class="n">β</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">x2a</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">β</span><span class="p">,</span> <span class="n">α</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="n">u0</span> <span class="o">=</span> <span class="n">uzitocnost</span><span class="p">(</span><span class="n">x1a</span><span class="p">,</span> <span class="n">x2a</span><span class="p">,</span> <span class="n">α</span><span class="p">,</span> <span class="n">β</span><span class="p">)</span>
+
+<span class="n">Mh1</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">u0</span>
+    <span class="o">*</span> <span class="n">set1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="n">α</span>
+    <span class="o">*</span> <span class="n">set1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="n">β</span>
+    <span class="o">/</span> <span class="p">(</span><span class="n">α</span><span class="o">**</span><span class="n">α</span> <span class="o">*</span> <span class="n">β</span><span class="o">**</span><span class="n">β</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">Mh2</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="n">u0</span>
+    <span class="o">*</span> <span class="n">set2</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="n">α</span>
+    <span class="o">*</span> <span class="n">set2</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="n">β</span>
+    <span class="o">/</span> <span class="p">(</span><span class="n">α</span><span class="o">**</span><span class="n">α</span> <span class="o">*</span> <span class="n">β</span><span class="o">**</span><span class="n">β</span><span class="p">)</span>
+<span class="p">)</span>
+
+<span class="n">set1h</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">,</span><span class="n">Mh1</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_s}</span><span class="s1">$'</span><span class="p">])</span>
+<span class="n">set2h</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">,</span><span class="n">Mh2</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">8.</span><span class="p">,</span><span class="mf">8.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_s}</span><span class="s1">$'</span><span class="p">])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">exo</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="p">(</span><span class="n">set1h</span><span class="p">,</span> <span class="n">set2h</span><span class="p">)):</span>
+    <span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">,</span> <span class="n">farby</span><span class="p">,</span> <span class="n">ozn</span> <span class="o">=</span> <span class="n">exo</span>
+    <span class="n">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper right'</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Zmena ceny prvého statku"</span><span class="p">)</span>
+<span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Zmena ceny druhého statku"</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-hicks">
+<img alt="_images/graf_hicks.png" src="_images/graf_hicks.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 6.4 </span><span class="caption-text">Rozklad celkového efektu zmeny ceny na substitučný a príjmový podľa Hicksovej koncepcie</span><a class="headerlink" href="#graf-hicks" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="hicksov-rozklad-cenoveho-efektu">
+<h2><span class="section-number">6.9. </span>Hicksov rozklad cenového efektu<a class="headerlink" href="#hicksov-rozklad-cenoveho-efektu" title="Link to this heading">#</a></h2>
+<p>Označme Marshallov dopyt po statku <span class="math notranslate nohighlight">\(i\)</span> ako <span class="math notranslate nohighlight">\(x_i(M,\mathbf p)\)</span> a Hicksov dopyt <span class="math notranslate nohighlight">\(h_i(\bar u,\mathbf p)\)</span>.</p>
+<p>Pri zmene ceny statku <span class="math notranslate nohighlight">\(p_j\)</span> možno celkový efekt rozdeliť na:</p>
+<ul class="simple">
+<li><p>substitučný efekt,</p></li>
+<li><p>príjmový efekt.</p></li>
+</ul>
+<p>Substitučný efekt zachytáva zmenu Hicksovho dopytu</p>
+<div class="math notranslate nohighlight">
+\[
+se = \frac{\partial h_i(\bar u,\mathbf p)}{\partial p_j}.
+\]</div>
+<p>Celkový efekt zachytáva zmenu Marshallovho dopytu</p>
+<div class="math notranslate nohighlight">
+\[
+ce = \frac{\partial x_i(M,\mathbf p)}{\partial p_j}.
+\]</div>
+<p>Príjmový efekt vzniká preto, že zmena ceny mení reálny rozpočet
+spotrebiteľa.</p>
+<p>Ak sa zmení cena statku <span class="math notranslate nohighlight">\(j\)</span>, rozpočet potrebný na kúpu pôvodného
+spotrebiteľského koša sa zmení o</p>
+<div class="math notranslate nohighlight">
+\[
+dM=x_j\,dp_j.
+\]</div>
+<p>Vplyv tejto zmeny rozpočtu na spotrebu statku <span class="math notranslate nohighlight">\(i\)</span> je</p>
+<div class="math notranslate nohighlight">
+\[
+pe
+=
+\frac{\partial x_i(M,\mathbf p)}
+{\partial M}
+\frac{dM}{dp_j}.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dM}{dp_j}
+=
+x_j,
+\]</div>
+<p>dostávame</p>
+<div class="math notranslate nohighlight">
+\[
+pe
+=
+x_j
+\frac{\partial x_i(M,\mathbf p)}
+{\partial M}.
+\]</div>
+</section>
+<section id="slutskeho-rovnica">
+<h2><span class="section-number">6.10. </span>Slutského rovnica<a class="headerlink" href="#slutskeho-rovnica" title="Link to this heading">#</a></h2>
+<p>Celkový efekt zmeny ceny sa rovná súčtu substitučného a príjmového efektu.</p>
+<div class="math notranslate nohighlight" id="equation-slutsky">
+<span class="eqno">(6.11)<a class="headerlink" href="#equation-slutsky" title="Link to this equation">#</a></span>\[\frac{\partial x_i(M,\mathbf p)}{\partial p_j}
+=
+\frac{\partial h_i(\bar u,\mathbf p)}{\partial p_j}
+-
+x_j(M,\mathbf p)
+\frac{\partial x_i(M,\mathbf p)}{\partial M}.\]</div>
+<p>Ak <span class="math notranslate nohighlight">\(i=j\)</span>, rovnica <a class="reference internal" href="#equation-slutsky">(6.11)</a> opisuje rozklad vlastného cenového efektu.</p>
+<p>Ak <span class="math notranslate nohighlight">\(i\neq j\)</span>, rovnica <a class="reference internal" href="#equation-slutsky">(6.11)</a> opisuje rozklad krížového cenového efektu.</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial x_i(M,\mathbf p)}{\partial p_j}
+=
+\frac{\partial h_i(\bar u,\mathbf p)}{\partial p_j}
+-
+x_j(M,\mathbf p)
+\frac{\partial x_i(M,\mathbf p)}{\partial M}. \]</div>
+<p>Ľavá strana <a class="reference internal" href="#equation-slutsky">(6.11)</a> predstavuje celkový efekt zmeny ceny.</p>
+<p>Prvý člen na pravej strane <a class="reference internal" href="#equation-slutsky">(6.11)</a> predstavuje substitučný efekt.</p>
+<p>Druhý člen na pravej strane <a class="reference internal" href="#equation-slutsky">(6.11)</a> predstavuje príjmový efekt.</p>
+<p>Pri zvýšení ceny statku sa spotrebiteľ snaží nahradiť relatívne
+drahší statok relatívne lacnejšími statkami. Tento vplyv vyjadruje
+substitučný efekt.</p>
+<p>Súčasne sa znižuje reálna hodnota jeho rozpočtu. Tento vplyv
+vyjadruje príjmový efekt.</p>
+<p>Hicksova koncepcia poskytuje ekonomickú interpretáciu substitučného efektu. Slutského rovnica umožňuje substitučný efekt vypočítať priamo z Marshallových dopytových funkcií bez riešenia Hicksovho problému.</p>
+</section>
+<section id="slutskeho-rozklad-celkoveho-efektu-na-prijmovy-a-substitucny">
+<h2><span class="section-number">6.11. </span>Slutského rozklad celkového efektu na príjmový a substitučný<a class="headerlink" href="#slutskeho-rozklad-celkoveho-efektu-na-prijmovy-a-substitucny" title="Link to this heading">#</a></h2>
+<p>Alternatívou Hicksovej kompenzácie je Slutského kompenzácia, ktorá zachováva schopnosť kúpiť pôvodný optimálny spotrebiteľský kôš.</p>
+<p>Na <a class="reference internal" href="#graf-slutsky"><span class="std std-numref">Obr. 6.5</span></a> to znamená kompenzáciu rozpočtu až do bodu, v ktorom hranica spotrebiteľských možností prechádza pôvodným optimálnym spotrebiteľským košom.</p>
+<p>Slutského kompenzácia zachováva pri eliminácii príjmového efektu spotrebiteľovu kúpnu silu spotrebiteľa, zatiaľ čo Hicksova kompenzácia zachováva jeho úroveň užitočnosti.</p>
+<p>V ďalšom texte budeme používať predovšetkým Hicksovu koncepciu.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1a</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">𝛼</span><span class="p">,</span> <span class="n">𝛽</span><span class="p">,</span> <span class="n">set1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">set1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">x2a</span> <span class="o">=</span> <span class="n">x_opt</span><span class="p">(</span><span class="n">𝛽</span><span class="p">,</span> <span class="n">𝛼</span><span class="p">,</span> <span class="n">set1</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">set1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">Ms1</span> <span class="o">=</span> <span class="n">x1a</span><span class="o">*</span><span class="n">set1</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">x2a</span><span class="o">*</span><span class="n">set1</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">Ms2</span> <span class="o">=</span> <span class="n">x1a</span><span class="o">*</span><span class="n">set2</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">x2a</span><span class="o">*</span><span class="n">set2</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">set1s</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">,</span><span class="n">Ms1</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">,</span><span class="mf">4.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_s}</span><span class="s1">$'</span><span class="p">])</span>
+<span class="n">set2s</span> <span class="o">=</span> <span class="p">([</span><span class="mf">600.</span><span class="p">,</span><span class="mf">600.</span><span class="p">,</span><span class="n">Ms2</span><span class="p">],</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">2.</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.</span><span class="p">,</span><span class="mf">8.</span><span class="p">,</span><span class="mf">8.</span><span class="p">],[</span><span class="s1">'g'</span><span class="p">,</span><span class="s1">'r'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">],</span> <span class="p">[</span><span class="s1">'$\mathbf</span><span class="si">{x_a}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_b}</span><span class="s1">$'</span><span class="p">,</span><span class="s1">'$\mathbf</span><span class="si">{x_s}</span><span class="s1">$'</span><span class="p">])</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">16</span><span class="p">))</span>
+
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">500</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">exo</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="p">(</span><span class="n">set1s</span><span class="p">,</span> <span class="n">set2s</span><span class="p">)):</span>
+    <span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">,</span> <span class="n">farby</span><span class="p">,</span> <span class="n">ozn</span> <span class="o">=</span> <span class="n">exo</span>
+    <span class="n">zobraz</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">Mka</span><span class="p">,</span> <span class="n">p1ky</span><span class="p">,</span> <span class="n">p2ky</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'upper right'</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="_images/16127ccf758bc06adc8bd75c38244c5b23f7caa2ad2ff6602ca6a8c37323eebc.png" src="_images/16127ccf758bc06adc8bd75c38244c5b23f7caa2ad2ff6602ca6a8c37323eebc.png" />
+</div>
+</div>
+<figure class="align-default" id="graf-slutsky">
+<img alt="_images/graf_slutsky.png" src="_images/graf_slutsky.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 6.5 </span><span class="caption-text">Rozklad celkového efektu zmeny ceny na substitučný a príjmový podľa Slutského koncepcie</span><a class="headerlink" href="#graf-slutsky" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">6.12. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<p>Pri práci s Pythonom využijeme knižnice:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">sqrt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="priklad-marshallove-dopytove-funkcie">
+<span id="priklad-marshall"></span><h3><span class="section-number">6.12.1. </span>Príklad: Marshallove dopytové funkcie<a class="headerlink" href="#priklad-marshallove-dopytove-funkcie" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti v tvare:</p>
+<div class="math notranslate nohighlight" id="uzitocnost-cd-kvr">
+<span id="equation-uzitocnost-cd-kvr"></span><span class="eqno">(6.12)<a class="headerlink" href="#uzitocnost-cd-kvr" title="Link to this equation">#</a></span>\[u(x_1,x_2) = x_1^{\alpha}x_2^{1-\alpha}.\]</div>
+<p>Odvoďte Marshallove dopytové funkcie.</p>
+<section id="riesenie">
+<h4><span class="section-number">6.12.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<p>Podmienky prvého rádu <a class="reference internal" href="Spotrebitel.html#equation-r-ppr-spotrebitel1">(5.9)</a> a <a class="reference internal" href="Spotrebitel.html#equation-r-ppr-spotrebitel2">(5.10)</a> zapíšeme v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+x_1 p_1 + x_2 p_2 = M
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\frac {\alpha x_1^{\alpha-1}x_2^{1-\alpha}}{(1-\alpha)x_1^{\alpha}x_2^{-\alpha} } = \frac{p_1}{p_2}
+\]</div>
+<p>Po úprave ľavej strany získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha}{1-\alpha}\frac{x_2}{x_1}
+=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+x_1.
+\]</div>
+<p>Dosadením do rozpočtového ohraničenia</p>
+<div class="math notranslate nohighlight">
+\[
+x_1p_1+
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+x_1 p_2
+=
+M
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_1p_1+
+\frac{1-\alpha}{\alpha}
+p_1x_1
+=
+M,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1
+\left(
+1+\frac{1-\alpha}{\alpha}
+\right)
+=
+M.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+1+\frac{1-\alpha}{\alpha}
+=
+\frac{1}{\alpha},
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_1x_1}{\alpha}
+=
+M.
+\]</div>
+<p>Dopyt po prvom statku je preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf{p})
+=
+\alpha \frac{M}{p_1}.
+\]</div>
+<p>Dosadením do rozpočtového obmedzenia získame dopyt po druhom statku</p>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf{p})
+=
+(1-\alpha)\frac{M}{p_2}.
+\]</div>
+<p>Marshallove dopytové funkcie sú</p>
+<div class="math notranslate nohighlight" id="equation-marshall-cd">
+<span class="eqno">(6.13)<a class="headerlink" href="#equation-marshall-cd" title="Link to this equation">#</a></span>\[\mathbf{x}(M,\mathbf{p})
+=
+\left(
+\alpha\frac{M}{p_1},
+(1-\alpha)\frac{M}{p_2}
+\right).\]</div>
+<p>Spotrebiteľ vynakladá podiel <span class="math notranslate nohighlight">\(\alpha\)</span> svojho rozpočtu na prvý statok a podiel <span class="math notranslate nohighlight">\(1-\alpha\)</span> na druhý statok.</p>
+</section>
+<section id="python">
+<h4><span class="section-number">6.12.1.2. </span>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x1,x2,p1,p2,M,alpha'</span><span class="p">,</span><span class="n">Positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">u</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="c1"># funkcia užitočnosti všeobecne</span>
+
+<span class="c1"># podmienky prvého rádu všeobecne</span>
+<span class="n">ppr</span> <span class="o">=</span> <span class="p">[</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">-</span><span class="n">p1</span><span class="o">/</span><span class="n">p2</span><span class="p">,</span>
+      <span class="n">p1</span><span class="o">*</span><span class="n">x1</span> <span class="o">+</span> <span class="n">p2</span><span class="o">*</span><span class="n">x2</span> <span class="o">-</span> <span class="n">M</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Marshallové dopytové funkcie"</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Marshallové dopytové funkcie {x1: M*alpha/p1, x2: M*(1 - alpha)/p2}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="priklad-komparativna-statika">
+<span id="priklad-spotrebitel-ks"></span><h3><span class="section-number">6.12.2. </span>Príklad: Komparatívna statika<a class="headerlink" href="#priklad-komparativna-statika" title="Link to this heading">#</a></h3>
+<p>Rozhodnite, či v statky z <a class="reference internal" href="#priklad-marshall"><span class="std std-ref">Príklad: Marshallove dopytové funkcie</span></a> sú</p>
+<ol class="arabic simple">
+<li><p>normálne alebo podradné,</p></li>
+<li><p>štandardné alebo Giffenove.</p></li>
+<li><p>Vyjadrite príjmové elasticity spotreby.</p></li>
+<li><p>Vyjadrite cenové elasticity spotreby.</p></li>
+</ol>
+<section id="id1">
+<h4><span class="section-number">6.12.2.1. </span>Riešenie<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<p>Marshallove dopytové funkcie z <a class="reference internal" href="#priklad-marshall"><span class="std std-ref">Príklad: Marshallove dopytové funkcie</span></a> sú</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\alpha \frac{M}{p_1},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf p)
+=
+(1-\alpha)\frac{M}{p_2}.
+\]</div>
+<p><strong>1. Normálne alebo podradné statky</strong></p>
+<p>Parciálne derivácie podľa rozpočtu sú</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1(M,\mathbf p)}{\partial M}
+=
+\frac{\alpha}{p_1}
+&gt;0,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_2(M,\mathbf p)}{\partial M}
+=
+\frac{1-\alpha}{p_2}
+&gt;0.
+\]</div>
+<p>Oba statky sú preto normálne.</p>
+<p><strong>2. Štandardné alebo Giffenove statky</strong></p>
+<p>Parciálne derivácie podľa vlastných cien sú</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1(M,\mathbf p)}{\partial p_1}
+=
+-\alpha\frac{M}{p_1^2}
+&lt;0,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_2(M,\mathbf p)}{\partial p_2}
+=
+-(1-\alpha)\frac{M}{p_2^2}
+&lt;0.
+\]</div>
+<p>Oba statky sú preto štandardné.</p>
+<p><strong>3. Príjmové elasticity spotreby</strong></p>
+<p>Pre prvý statok</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_{M,1}
+=
+\frac{\partial x_1(M,\mathbf p)}{\partial M}
+\frac{M}{x_1(M,\mathbf p)}
+=
+\frac{\alpha}{p_1}
+\frac{M}{\alpha M/p_1}
+=
+1.
+\]</div>
+<p>Pre druhý statok</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_{M,2}
+=
+\frac{\partial x_2(M,\mathbf p)}{\partial M}
+\frac{M}{x_2(M,\mathbf p)}
+=
+\frac{1-\alpha}{p_2}
+\frac{M}{(1-\alpha)M/p_2}
+=
+1.
+\]</div>
+<p>Príjmová elasticita oboch statkov sa rovná jednej. Oba statky sú
+zberateľské.</p>
+<p><strong>4. Cenové elasticity spotreby</strong></p>
+<p>Pre prvý statok</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_{p_1}=\frac{\partial x_1(M,\mathbf p)}{\partial p_1}\frac{p_1}{x_1(M,\mathbf p)}=-\alpha\frac{M}{p_1^2}\frac{p_1}{\alpha M/p_1}=
+-1.
+\]</div>
+<p>Pre druhý statok</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_{p_2}=\frac{\partial x_2(M,\mathbf p)}{\partial p_2}\frac{p_2}{x_2(M,\mathbf p)}=-(1-\alpha)\frac{M}{p_2^2}\frac{p_2}{(1-\alpha)M/p_2}=-1.
+\]</div>
+<p>Oba statky sú preto jednotkovo elastické.
+ 
+Napokon</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1(M,\mathbf p)}{\partial p_2}=
+0,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_2(M,\mathbf p)}{\partial p_1}=
+0.
+\]</div>
+<p>Statky preto nie sú ani substitúty, ani komplementy.</p>
+</section>
+<section id="id2">
+<h4><span class="section-number">6.12.2.2. </span>Python<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Vplyv príjmu na spotrebu "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmový multiplikátor spotreby prvého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">M</span><span class="p">),</span><span class="s2">"&gt; 0;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmový multiplikátor spotreby druhého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">M</span><span class="p">),</span><span class="s2">"&gt; 0;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span>      <span class="s2">"Statky sú normálne."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmová elasticita spotreby prvého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">M</span><span class="p">)</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmová elasticita spotreby druhého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">M</span><span class="p">)</span><span class="o">*</span><span class="n">M</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span>      <span class="s2">"Statky sú zberateľské."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vplyv ceny prvého statku na spotrebu "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vlastný cenový multiplikátor spotreby prvého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">p1</span><span class="p">),</span><span class="s2">"&lt; 0;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Krížový cenový multiplikátor spotreby druhého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Prvý statok je štandardný, statky nie sú substitúty ani komplementárne"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vlastná cenová elasticita spotreby prvého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">p1</span><span class="p">)</span><span class="o">*</span><span class="n">p1</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Krížová cenová elasticita spotreby druhého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p1</span><span class="p">)</span><span class="o">*</span><span class="n">p1</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dopyt prvého statku je jednotkovo elastický"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vplyv ceny druhého statku na spotrebu "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Krížový cenový multiplikátor spotreby prvého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">p2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vlastný cenový multiplikátor spotreby druhého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p2</span><span class="p">),</span><span class="s2">"&lt; 0;"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Druhý statok je štandardný."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Krížová cenová elasticita spotreby prvého statku je"</span><span class="p">,</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">p2</span><span class="p">)</span><span class="o">*</span><span class="n">p2</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Vlastná cenová elasticita spotreby druhého statku je"</span><span class="p">,</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p2</span><span class="p">)</span><span class="o">*</span><span class="n">p2</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dopyt druhého statku je jednotkovo elastický"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Vplyv príjmu na spotrebu 
+Príjmový multiplikátor spotreby prvého statku je alpha/p1 &gt; 0;
+Príjmový multiplikátor spotreby druhého statku je (1 - alpha)/p2 &gt; 0;
+Statky sú normálne.
+Príjmová elasticita spotreby prvého statku je 1
+Príjmová elasticita spotreby druhého statku je 1
+Statky sú zberateľské.
+
+Vplyv ceny prvého statku na spotrebu 
+Vlastný cenový multiplikátor spotreby prvého statku je -M*alpha/p1**2 &lt; 0;
+Krížový cenový multiplikátor spotreby druhého statku je 0
+Prvý statok je štandardný, statky nie sú substitúty ani komplementárne
+Vlastná cenová elasticita spotreby prvého statku je -1
+Krížová cenová elasticita spotreby druhého statku je 0
+Dopyt prvého statku je jednotkovo elastický
+
+Vplyv ceny druhého statku na spotrebu 
+Krížový cenový multiplikátor spotreby prvého statku je 0
+Vlastný cenový multiplikátor spotreby druhého statku je -M*(1 - alpha)/p2**2 &lt; 0;
+Druhý statok je štandardný.
+Krížová cenová elasticita spotreby prvého statku je 0
+Vlastná cenová elasticita spotreby druhého statku je -1
+Dopyt druhého statku je jednotkovo elastický
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="priklad-hicksove-dopytove-funkcie">
+<span id="priklad-spotrebitel-hicks"></span><h3><span class="section-number">6.12.3. </span>Príklad: Hicksove dopytové funkcie<a class="headerlink" href="#priklad-hicksove-dopytove-funkcie" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie charakterizuje funkcia užitočnosti <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a>. Odvoďte Hicksove dopytové funkcie.</p>
+<section id="id3">
+<h4><span class="section-number">6.12.3.1. </span>Riešenie<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p>Podmienky prvého rádu zapíšeme v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+x_1^\alpha x_2^{1-\alpha}=
+\bar u
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha x_1^{\alpha-1}x_2^{1-\alpha}}{(1-\alpha)x_1^\alpha x_2^{-\alpha}}=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Po odvodení <span class="math notranslate nohighlight">\(x_2\)</span> z druhej podmienky získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_2=
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+x_1.
+\]</div>
+<p>Dosadením do prvej podmienky získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_1^\alpha\left(\frac{1-\alpha}{\alpha}\frac{p_1}{p_2}x_1\right)^{1-\alpha}=
+\bar u.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha+(1-\alpha)=1,
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+x_1\left(\frac{1-\alpha}{\alpha}\frac{p_1}{p_2}\right)^{1-\alpha}=
+\bar u.
+\]</div>
+<p>Po úprave dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)=
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha}.
+\]</div>
+<p>Dosadením do vzťahu medzi oboma statkami získame</p>
+<div class="math notranslate nohighlight">
+\[
+h_2(\bar u,\mathbf p)=
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+\right)^\alpha.
+\]</div>
+<p>Hicksove dopytové funkcie sú teda</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)=
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_2(\bar u,\mathbf p)=
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+\right)^\alpha.
+\]</div>
+</section>
+</section>
+<section id="priklad-vydavkova-funkcia">
+<span id="id4"></span><h3><span class="section-number">6.12.4. </span>Príklad: Výdavková funkcia<a class="headerlink" href="#priklad-vydavkova-funkcia" title="Link to this heading">#</a></h3>
+<p>Odvoďte výdavkovú funkciu pre preferencie <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a>.</p>
+<section id="id5">
+<h4><span class="section-number">6.12.4.1. </span>Riešenie<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>Výdavková funkcia je definovaná ako hodnota účelovej funkcie Hicksovej úlohy (<a class="reference internal" href="#def-hicks-uloha"><span class="std std-ref">Hicksova úloha</span></a>) v optime</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+p_1 h_1(\bar u,\mathbf p)
++
+p_2 h_2(\bar u,\mathbf p).
+\]</div>
+<p>Do tohto vzťahu dosadíme Hicksove dopytové funkcie</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_2(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+\right)^\alpha.
+\]</div>
+<p>Získame</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+p_1
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha}
++
+p_2
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+\right)^\alpha.
+\]</div>
+<p>Po vyňatí spoločných premenných</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+\bar u
+p_1^\alpha p_2^{1-\alpha}
+\left[
+\left(
+\frac{\alpha}{1-\alpha}
+\right)^{1-\alpha}
++
+\left(
+\frac{1-\alpha}{\alpha}
+\right)^\alpha
+\right].
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\left(
+\frac{\alpha}{1-\alpha}
+\right)^{1-\alpha}
++
+\left(
+\frac{1-\alpha}{\alpha}
+\right)^\alpha
+=
+\frac{1}
+{\alpha^\alpha(1-\alpha)^{1-\alpha}},
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+\bar u
+\frac{
+p_1^\alpha p_2^{1-\alpha}
+}{
+\alpha^\alpha
+(1-\alpha)^{1-\alpha}
+}.
+\]</div>
+<p>Výdavková funkcia je preto</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+\bar u
+\frac{
+p_1^\alpha p_2^{1-\alpha}
+}{
+\alpha^\alpha
+(1-\alpha)^{1-\alpha}
+}.
+\]</div>
+</section>
+</section>
+<section id="priklad-substitucny-prijmovy-a-celkovy-efekt">
+<h3><span class="section-number">6.12.5. </span>Príklad: Substitučný, príjmový a celkový efekt<a class="headerlink" href="#priklad-substitucny-prijmovy-a-celkovy-efekt" title="Link to this heading">#</a></h3>
+<p>Pre funkciu užitočnosti <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a> vyjadrite substitučný, príjmový a celkový efekt zmeny ceny prvého statku.</p>
+<section id="id6">
+<h4><span class="section-number">6.12.5.1. </span>Riešenie<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<p>Marshallov dopyt po prvom statku je</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\alpha \frac{M}{p_1}.
+\]</div>
+<p>Celkový efekt zmeny ceny prvého statku je preto</p>
+<div class="math notranslate nohighlight">
+\[
+CE
+=
+\frac{\partial x_1(M,\mathbf p)}
+{\partial p_1}
+=
+-\alpha \frac{M}{p_1^2}.
+\]</div>
+<p>Hicksov dopyt po prvom statku je</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha}.
+\]</div>
+<p>Substitučný efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+\frac{\partial h_1(\bar u,\mathbf p)}
+{\partial p_1}.
+\]</div>
+<p>Po derivovaní dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+-(1-\alpha)
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha}
+\frac{1}{p_1}.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{p_2}{p_1}
+\right)^{1-\alpha},
+\]</div>
+<p>možno substitučný efekt zapísať aj v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+-(1-\alpha)
+\frac{h_1(\bar u,\mathbf p)}
+{p_1}.
+\]</div>
+<p>Príjmový efekt je rozdiel medzi celkovým a substitučným efektom</p>
+<div class="math notranslate nohighlight">
+\[
+PE
+=
+CE-SE.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+PE
+=
+-\alpha \frac{M}{p_1^2}
++
+(1-\alpha)
+\frac{h_1(\bar u,\mathbf p)}
+{p_1}.
+\]</div>
+<p>Celkový efekt zmeny ceny sa teda rozkladá na</p>
+<div class="math notranslate nohighlight">
+\[
+CE
+=
+SE+PE.
+\]</div>
+<p>Substitučný efekt zachytáva zmenu spotreby spôsobenú zmenou
+relatívnych cien pri nezmenenej úrovni užitočnosti.</p>
+<p>Príjmový efekt zachytáva zmenu spotreby spôsobenú zmenou reálneho
+rozpočtu spotrebiteľa.</p>
+<p>Súčet oboch efektov tvorí celkový efekt zmeny ceny.</p>
+<p>Pre druhý statok je Marshallov dopyt</p>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf p)
+=
+(1-\alpha)\frac{M}{p_2}.
+\]</div>
+<p>Celkový efekt zmeny ceny prvého statku na spotrebu druhého statku je</p>
+<div class="math notranslate nohighlight">
+\[
+CE
+=
+\frac{\partial x_2(M,\mathbf p)}
+{\partial p_1}
+=
+0.
+\]</div>
+<p>Marshallov dopyt po druhom statku teda nezávisí od ceny prvého
+statku.</p>
+<p>Hicksov dopyt po druhom statku je</p>
+<div class="math notranslate nohighlight">
+\[
+h_2(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{p_1}{p_2}
+\right)^\alpha.
+\]</div>
+<p>Substitučný efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+\frac{\partial h_2(\bar u,\mathbf p)}
+{\partial p_1}.
+\]</div>
+<p>Teda v našom príklade</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+\alpha
+\bar u
+\left(
+\frac{1-\alpha}{\alpha}
+\right)^\alpha
+\frac{p_1^{\alpha-1}}
+     {p_2^\alpha}
+&gt;0.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+CE=0,
+\]</div>
+<p>príjmový efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+PE
+=
+CE-SE
+=
+-SE.
+\]</div>
+<p>Pre druhý statok sa teda substitučný a príjmový efekt navzájom
+presne kompenzujú</p>
+<div class="math notranslate nohighlight">
+\[
+CE
+=
+SE+PE
+=
+0.
+\]</div>
+<p>Zvýšenie ceny prvého statku preto nemení spotrebu druhého statku.</p>
+<p>Tento výsledok je špecifický pre Cobbovu-Douglasovu funkciu
+užitočnosti. Pri Cobbových-Douglasových preferenciách je spotreba
+každého statku závislá iba od jeho vlastnej ceny a od rozpočtu
+spotrebiteľa</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\alpha\frac{M}{p_1},
+\qquad
+x_2(M,\mathbf p)
+=
+(1-\alpha)\frac{M}{p_2}.
+\]</div>
+<p>Preto platí</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1(M,\mathbf p)}{\partial p_2}
+=
+0,
+\qquad
+\frac{\partial x_2(M,\mathbf p)}{\partial p_1}
+=
+0.
+\]</div>
+<p>Vo všeobecnosti však krížové cenové efekty nemusia byť nulové.
+Substitučný a príjmový efekt sa spravidla nekompenzujú presne a
+výsledkom môže byť rast alebo pokles spotreby druhého statku.</p>
+<p>Príjmový efekt možno určiť aj priamo pomocou reakcie spotreby na
+zmenu rozpočtu.</p>
+<p>Platí</p>
+<div class="math notranslate nohighlight">
+\[
+PE
+=
+x_j(M,\mathbf p)
+\frac{\partial x_i(M,\mathbf p)}
+{\partial M}.
+\]</div>
+<p>Pre prvý statok je</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\alpha\frac{M}{p_1},
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1(M,\mathbf p)}
+{\partial M}
+=
+\frac{\alpha}{p_1}.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+PE
+=
+\alpha\frac{M}{p_1}
+\frac{\alpha}{p_1}
+=
+\alpha^2
+\frac{M}{p_1^2}.
+\]</div>
+<p>Substitučný efekt tak môžeme vypočítať aj bez použitia Hicksových
+dopytových funkcií</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+CE+PE.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+-\alpha\frac{M}{p_1^2}
++
+\alpha^2\frac{M}{p_1^2},
+\]</div>
+<p>a teda</p>
+<div class="math notranslate nohighlight">
+\[
+SE
+=
+-\alpha(1-\alpha)
+\frac{M}{p_1^2}.
+\]</div>
+<p>Hicksove dopytové funkcie poskytujú ekonomickú interpretáciu
+substitučného efektu. Slutského rovnica však umožňuje vypočítať
+substitučný efekt priamo z Marshallových dopytových funkcií bez
+riešenia Hicksovej úlohy.</p>
+</section>
+</section>
+<section id="priklad-rozklad-cenoveho-efektu">
+<h3><span class="section-number">6.12.6. </span>Príklad: Rozklad cenového efektu<a class="headerlink" href="#priklad-rozklad-cenoveho-efektu" title="Link to this heading">#</a></h3>
+<p>Predpokladajme preferencie</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=x_1^{1/3}x_2^{2/3}.
+\]</div>
+<p>Spotrebiteľov rozpočet je</p>
+<div class="math notranslate nohighlight">
+\[
+M=600
+\]</div>
+<p>a ceny</p>
+<div class="math notranslate nohighlight">
+\[
+p_1=2,
+\qquad
+p_2=4.
+\]</div>
+<ul class="simple">
+<li><p>Vypočítajte spotrebiteľov optimálny spotrebný kôš a optimálnu funkčnú hodnotu užitočnosti.</p></li>
+<li><p>Preukážte, že Hicksove dopytové funkcie pri tejto úrovni užitočnosti vedú k rovnakému optimálnemu spotrebiteľskému košu.</p></li>
+<li><p>Preukážte, že hodnota výdavkovej funkcie pri tejto úrovni užitočnosti sa rovná spotrebiteľovmu rozpočtu.</p></li>
+<li><p>Rozložte celkový efekt zvýšenia ceny prvého statku na substitučný a príjmový pri zmene ceny na</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+p_1'=4.
+\]</div>
+<section id="id7">
+<h4><span class="section-number">6.12.6.1. </span>Riešenie<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Marshallove dopytové funkcie sú <a class="reference internal" href="#equation-marshall-cd">(6.13)</a></p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\frac13\frac{M}{p_1},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf p)
+=
+\frac23\frac{M}{p_2}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+M=600,
+\qquad
+p_1=2,
+\qquad
+p_2=4
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+x_1
+=
+\frac13\frac{600}{2}
+=
+100,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac23\frac{600}{4}
+=
+100.
+\]</div>
+<p>Optimálny spotrebiteľský kôš je</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x_a}
+=
+(100,100).
+\]</div>
+<p>Optimálna hodnota funkcie užitočnosti je</p>
+<div class="math notranslate nohighlight">
+\[
+\bar u
+=
+100^{1/3}100^{2/3}
+=
+100.
+\]</div>
+<p>Hicksove dopytové funkcie majú tvar</p>
+<div class="math notranslate nohighlight">
+\[
+h_1(\bar u,\mathbf p)
+=
+\bar u
+\left(
+\frac{1}{2}
+\frac{p_2}{p_1}
+\right)^{2/3},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_2(\bar u,\mathbf p)
+=
+\bar u
+\left(
+2
+\frac{p_1}{p_2}
+\right)^{1/3}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+\bar u=100,
+\qquad
+p_1=2,
+\qquad
+p_2=4
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+h_1
+=
+100,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_2
+=
+100.
+\]</div>
+<p>Teda</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf h(\bar u,\mathbf p)
+=
+(100,100)
+=
+\mathbf x(M,\mathbf p).
+\]</div>
+<p>Hicksova a Marshallova úloha preto vedú k rovnakému optimálnemu
+spotrebiteľskému košu.</p>
+<p>Výdavková funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+\bar u
+\frac
+{
+p_1^{1/3}p_2^{2/3}
+}
+{
+(1/3)^{1/3}(2/3)^{2/3}
+}.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+\bar u=100,
+\qquad
+p_1=2,
+\qquad
+p_2=4
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+600.
+\]</div>
+<p>Hodnota výdavkovej funkcie sa teda rovná spotrebiteľovmu rozpočtu</p>
+<div class="math notranslate nohighlight">
+\[
+e(\bar u,\mathbf p)
+=
+M.
+\]</div>
+<p>Na rozklad využijeme Slutského rovnicu.</p>
+<p>Marshallov dopyt po prvom statku je</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\frac13\frac{M}{p_1}.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1}{\partial p_1}
+=
+-\frac13\frac{M}{p_1^2},
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1}{\partial M}
+=
+\frac{1}{3p_1}.
+\]</div>
+<p>V pôvodnom optime platí</p>
+<div class="math notranslate nohighlight">
+\[
+x_1=100,
+\qquad
+p_1=2.
+\]</div>
+<p>Príjmový efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+pe
+=
+x_1
+\frac{\partial x_1}{\partial M}
+=
+100\cdot\frac{1}{6}
+=
+16.67.
+\]</div>
+<p>Celkový efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+ce
+=
+-\frac13\frac{600}{2^2}
+=
+-50.
+\]</div>
+<p>Substitučný efekt podľa Slutského rovnice je</p>
+<div class="math notranslate nohighlight">
+\[
+se
+=
+ce+pe
+=
+-50+16.67
+=
+-33.33.
+\]</div>
+</section>
+<section id="id8">
+<h4><span class="section-number">6.12.6.2. </span>Python<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">latex</span>
+
+<span class="n">u_bar</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'u_bar'</span><span class="p">,</span> <span class="n">Positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">u</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="c1"># funkcia užitočnosti všeobecne</span>
+
+<span class="c1"># podmienky prvého rádu všeobecne</span>
+<span class="n">ppr</span> <span class="o">=</span> <span class="p">[</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">-</span><span class="n">p1</span><span class="o">/</span><span class="n">p2</span><span class="p">,</span>
+      <span class="n">u</span><span class="o">-</span><span class="n">u_bar</span><span class="p">]</span>
+
+<span class="n">h</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">h</span>
+
+<span class="n">h1</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">x1</span><span class="p">])</span>
+<span class="n">h2</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">h</span><span class="p">[</span><span class="n">x2</span><span class="p">])</span>
+
+<span class="n">e</span> <span class="o">=</span> <span class="n">p1</span><span class="o">*</span><span class="n">h1</span> <span class="o">+</span> <span class="n">p2</span><span class="o">*</span><span class="n">h2</span>
+
+<span class="n">ce</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">p1</span><span class="p">))</span>
+<span class="n">pe</span> <span class="o">=</span> <span class="n">simplify</span><span class="p">(</span> <span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span> <span class="o">*</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">M</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Celkový efekt"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">ce</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmový efekt"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pe</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># čísla</span>
+<span class="n">dosad_do_Marshall</span> <span class="o">=</span> <span class="p">{</span><span class="n">p1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">p2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">M</span><span class="p">:</span><span class="mi">600</span><span class="p">,</span><span class="n">alpha</span><span class="p">:</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">x1_star</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Marshall</span><span class="p">)</span>
+<span class="n">x2_star</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Marshall</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Marshallova úloha"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotreba prvého statku"</span><span class="p">,</span> <span class="n">x1_star</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotreba prvého statku"</span><span class="p">,</span> <span class="n">x2_star</span> <span class="p">)</span>
+<span class="n">dosad_do_u</span> <span class="o">=</span> <span class="p">{</span><span class="n">x1</span><span class="p">:</span><span class="n">x1_star</span><span class="p">,</span><span class="n">x2</span><span class="p">:</span><span class="n">x2_star</span><span class="p">,</span><span class="n">alpha</span><span class="p">:</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">u_star</span> <span class="o">=</span> <span class="n">u</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_u</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"funkčná hodnota užitočnosti"</span><span class="p">,</span><span class="n">u_star</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="n">dosad_do_Hicks</span> <span class="o">=</span> <span class="p">{</span><span class="n">p1</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="n">p2</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">u_bar</span><span class="p">:</span><span class="n">u_star</span><span class="p">,</span><span class="n">alpha</span><span class="p">:</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">h1_star</span> <span class="o">=</span> <span class="n">h1</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Hicks</span><span class="p">)</span>
+<span class="n">h2_star</span> <span class="o">=</span> <span class="n">h2</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Hicks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hicksova úloha"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotreba prvého statku"</span><span class="p">,</span> <span class="n">h1_star</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotreba prvého statku"</span><span class="p">,</span> <span class="n">h2_star</span> <span class="p">)</span>
+<span class="n">e_star</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Hicks</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"funkčná hodnota výdavkov"</span><span class="p">,</span> <span class="n">e_star</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Cenový rozklad"</span><span class="p">)</span>
+<span class="n">ce_hodn</span> <span class="o">=</span> <span class="n">ce</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Marshall</span><span class="p">)</span>
+<span class="n">pe_hodn</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad_do_Marshall</span><span class="p">)</span>
+<span class="n">se_hodn</span> <span class="o">=</span> <span class="n">se_hodn</span> <span class="o">-</span> <span class="n">pe_hodn</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Celkový efekt"</span><span class="p">,</span> <span class="n">ce_hodn</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Substitučný efekt"</span><span class="p">,</span> <span class="n">se_hodn</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmový efekt"</span><span class="p">,</span> <span class="n">pe_hodn</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Celkový efekt
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - \frac{M \alpha}{p_{1}^{2}}\]</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Príjmový efekt
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{M \alpha^{2}}{p_{1}^{2}}\]</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Marshallova úloha
+spotreba prvého statku 100.000000000000
+spotreba prvého statku 100.000000000000
+funkčná hodnota užitočnosti 100.000000000000
+
+Hicksova úloha
+spotreba prvého statku 100.000000000000
+spotreba prvého statku 100.000000000000
+funkčná hodnota výdavkov 600.000000000000
+
+Cenový rozklad
+Celkový efekt -50.0000000000000
+Substitučný efekt -66.6666666666667
+Príjmový efekt 16.6666666666667
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="priklad-substituty-a-rozklad-cenoveho-efektu">
+<h3><span class="section-number">6.12.7. </span>Príklad: Substitúty a rozklad cenového efektu<a class="headerlink" href="#priklad-substituty-a-rozklad-cenoveho-efektu" title="Link to this heading">#</a></h3>
+<p>Spotrebiteľove preferencie sú charakterizované funkciou užitočnosti</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=2\sqrt{x_1}+x_2.
+\]</div>
+<ol class="arabic simple">
+<li><p>Odvoďte Marshallove dopytové funkcie.</p></li>
+<li><p>Rozhodnite, či sú statky substitúty alebo komplementy.</p></li>
+<li><p>Vyjadrite celkový efekt zvýšenia ceny prvého statku na spotrebu druhého statku.</p></li>
+<li><p>Rozložte tento efekt na substitučný a príjmový efekt. Ktorý z efektov prevláda.</p></li>
+</ol>
+<section id="id9">
+<h4><span class="section-number">6.12.7.1. </span>Riešenie<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
+<p>Podmienka prvého rádu je</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)
+=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Pre funkciu užitočnosti</p>
+<div class="math notranslate nohighlight">
+\[
+u(x_1,x_2)=2\sqrt{x_1}+x_2
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+MU_1
+=
+\frac{1}{\sqrt{x_1}},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MU_2
+=
+1.
+\]</div>
+<p>Preto</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_1,x_2)
+=
+\frac{MU_1}{MU_2}
+=
+\frac{1}{\sqrt{x_1}}.
+\]</div>
+<p>Z podmienky optima dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{\sqrt{x_1}}
+=
+\frac{p_1}{p_2}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{x_1}
+=
+\frac{p_2}{p_1},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\left(
+\frac{p_2}{p_1}
+\right)^2.
+\]</div>
+<p>Dosadením do hranice spotrebiteľských možností</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1+p_2x_2=M
+\]</div>
+<p>získame</p>
+<div class="math notranslate nohighlight">
+\[
+p_1
+\left(
+\frac{p_2}{p_1}
+\right)^2
++
+p_2x_2
+=
+M.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf p)
+=
+\frac{M}{p_2}
+-
+\frac{p_2}{p_1}.
+\]</div>
+<p>Marshallove dopytové funkcie sú preto</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(M,\mathbf p)
+=
+\left(
+\frac{p_2}{p_1}
+\right)^2,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_2(M,\mathbf p)
+=
+\frac{M}{p_2}
+-
+\frac{p_2}{p_1}.
+\]</div>
+<p>Preskúmame vzájomný cenový vzťah</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_1}{\partial p_2}=\frac{2 p_{1}}{p_{2}^{2}} &gt; 0.
+\]</div>
+<p>Zvýšenie ceny druhého statku zvyšuje spotrebu prvého statku.</p>
+<p>Pre druhý statok je</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_2}{\partial p_1}
+=
+\frac{p_2}{p_1^2}
+&gt;
+0.
+\]</div>
+<p>Zvýšenie ceny prvého statku zvyšuje spotrebu druhého statku.</p>
+<p>Statky sú substitúty.</p>
+<p>Celkový efekt zvýšenia ceny prvého statku na spotrebu druhého statku je</p>
+<div class="math notranslate nohighlight">
+\[
+ce
+=
+\frac{\partial x_2}{\partial p_1}
+=
+\frac{p_2}{p_1^2}.
+\]</div>
+<p>Príjmový efekt je</p>
+<div class="math notranslate nohighlight">
+\[
+pe
+=
+-x_1
+\frac{\partial x_2}{\partial M}.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial x_2}{\partial M}
+=
+\frac{1}{p_2},
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+pe
+=
+-\left(
+\frac{p_2}{p_1}
+\right)^2
+\frac{1}{p_2}
+=
+-\frac{p_2}{p_1^2}.
+\]</div>
+<p>Substitučný efekt určíme pomocou Slutského rovnice</p>
+<div class="math notranslate nohighlight">
+\[
+ce
+=
+se+pe.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+se
+=
+ce-pe.
+\]</div>
+<p>Po dosadení</p>
+<div class="math notranslate nohighlight">
+\[
+se
+=
+\frac{p_2}{p_1^2}
++
+\frac{p_2}{p_1^2}
+=
+\frac{2p_2}{p_1^2}.
+\]</div>
+<p>Substitučný efekt je teda väčší ako absolútna hodnota príjmového efektu</p>
+<div class="math notranslate nohighlight">
+\[
+se &gt; |pe|.
+\]</div>
+<p>Substitučný efekt zvyšuje spotrebu druhého statku a príjmový efekt ju
+znižuje. Keďže substitučný efekt prevláda, celkový efekt zvýšenia ceny
+prvého statku na spotrebu druhého statku je kladný.</p>
+<p>Pri týchto preferenciách sú preto statky <span class="math notranslate nohighlight">\(x_1\)</span> a <span class="math notranslate nohighlight">\(x_2\)</span> substitúty.</p>
+</section>
+<section id="id10">
+<h4><span class="section-number">6.12.7.2. </span>Python<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">u</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span> <span class="o">+</span> <span class="n">x2</span> <span class="c1"># funkcia užitočnosti všeobecne</span>
+
+<span class="c1"># podmienky prvého rádu všeobecne</span>
+<span class="n">ppr</span> <span class="o">=</span> <span class="p">[</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">-</span><span class="n">p1</span><span class="o">/</span><span class="n">p2</span><span class="p">,</span>
+      <span class="n">p1</span><span class="o">*</span><span class="n">x1</span> <span class="o">+</span> <span class="n">p2</span><span class="o">*</span><span class="n">x2</span> <span class="o">-</span> <span class="n">M</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Marshallové dopytové funkcie"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">],</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Celkový efekt"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p1</span><span class="p">)</span>  <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Príjmový efekt"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span> <span class="o">*</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">M</span><span class="p">)</span>  <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Substitučný efekt"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">p1</span><span class="p">)</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span> <span class="o">*</span> <span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">x2</span><span class="p">],</span><span class="n">M</span><span class="p">)</span>  <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Marshallové dopytové funkcie
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{p_{2}^{2}}{p_{1}^{2}}\]</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{M}{p_{2}} - \frac{p_{2}}{p_{1}}\]</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Celkový efekt
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{p_{2}}{p_{1}^{2}}\]</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Príjmový efekt
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - \frac{p_{2}}{p_{1}^{2}}\]</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Substitučný efekt
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{2 p_{2}}{p_{1}^{2}}\]</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">6.13. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad-cobbov-douglasov-tvar-funkcie-uzitocnosti">
+<h3><span class="section-number">6.13.1. </span>Príklad: Cobbov-Douglasov tvar funkcie užitočnosti<a class="headerlink" href="#priklad-cobbov-douglasov-tvar-funkcie-uzitocnosti" title="Link to this heading">#</a></h3>
+<p>Predpokladajte preferencie <a class="reference internal" href="#equation-uzitocnost-cd-kvr">()</a>. Pre množiny exogénnych premenných</p>
+<div class="math notranslate nohighlight">
+\[
+\left\{ \alpha = 1/2, M = 300, p_1 = 5, p_2 = 10 \right\},
+\left\{ \alpha = 1/4, M = 1000, p_1 = 10, p_2 = 10 \right\}
+\left\{ \alpha = 3/5, M = 500, p_1 = 10, p_2 = 2 \right\}
+\]</div>
+<ul class="simple">
+<li><p>Vypočítajte spotrebiteľov optimálny spotrebný kôš a optimálnu funkčnú hodnotu užitočnosti.</p></li>
+<li><p>Vyjadrite ekonomické charakteristiky daných dvoch statkov a vypočítajte príjmové a cenové elasticity spotreby.</p></li>
+<li><p>Preukážte, že Hicksove dopytové funkcie pri tejto úrovni užitočnosti vedú k rovnakému optimálnemu spotrebiteľskému košu.</p></li>
+<li><p>Preukážte, že hodnota výdavkovej funkcie pri tejto úrovni užitočnosti sa rovná spotrebiteľovmu rozpočtu.</p></li>
+<li><p>Rozložte celkový efekt zvýšenia ceny prvého statku na substitučný a príjmový ak sa ceny statkov zvýšia o 10 %.</p></li>
+</ul>
+</section>
+<section id="priklad-rozne-tvary-preferencii">
+<h3><span class="section-number">6.13.2. </span>Príklad: Rôzne tvary preferencií<a class="headerlink" href="#priklad-rozne-tvary-preferencii" title="Link to this heading">#</a></h3>
+<p>Uvažujte preferencie v tvare:</p>
+<ul>
+<li><p>všeobecnejší Cobbov-Douglasov tvar
+$<span class="math notranslate nohighlight">\(
+  u(x1,x2) = x_1^{\alpha} x_2^{\beta},
+  \)</span>$</p></li>
+<li><p>semilogaritmické
+$<span class="math notranslate nohighlight">\(
+  u(x1,x2) = \alpha \ln{x_1} + (1-\alpha)\ln{x_1},
+  \)</span>$</p></li>
+<li><p>elipsové indiferenčné krivky
+$<span class="math notranslate nohighlight">\(
+  u(x_1,x_2)= A - \left[ (x_1-a)^2  + (x_2-b)^2 \right]; 
+  \)</span>$</p>
+<div class="math notranslate nohighlight">
+\[
+    \left\{ A = 100, a = 15, b = 25, M = 100, p_1 = 4, p_2 = 8 \right\}.
+    \]</div>
+</li>
+</ul>
+<p>Pre všetky tvary</p>
+<ul class="simple">
+<li><p>odvoďte Marshallove dopytové krivky,</p></li>
+<li><p>vypočítajte príjmové a spotrebné elasticity spotreby a rozhodnite, aké sú charakteristiky statkov,</p></li>
+<li><p>rozložte cenové vplyvy na substitučné a príjmové efekty.</p></li>
+</ul>
+</section>
+<section id="priklad-ekonometricky-odhad-spotrebnej-elasticity-uzitocnosti">
+<h3><span class="section-number">6.13.3. </span>Príklad: Ekonometrický odhad spotrebnej elasticity užitočnosti<a class="headerlink" href="#priklad-ekonometricky-odhad-spotrebnej-elasticity-uzitocnosti" title="Link to this heading">#</a></h3>
+<p>Uvažujte o ekonometrickom modeli spotreby v tvare:</p>
+<div class="math notranslate nohighlight">
+\[
+y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + u_i,
+\]</div>
+<p>kde</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(y\)</span> je rad prirodzeného logaritmu spotreby statku, <span class="math notranslate nohighlight">\( y = \ln{c} \)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_1\)</span> je rad prirodzeného logaritmu disponibilného príjmu <span class="math notranslate nohighlight">\( x_1 = \ln{m} \)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\(x_2\)</span>  je rad prirodzeného logaritmu vlastnej ceny statku <span class="math notranslate nohighlight">\( x_2 = \ln{p} \)</span>,</p></li>
+<li><p><span class="math notranslate nohighlight">\( \beta_0, \beta_1, \beta_2 \)</span> sú parametre modelu.</p></li>
+</ul>
+<p>Verifikácia modelu viedla k týmto zisteniam:</p>
+<ul class="simple">
+<li><p>zamietate hypotézu, že parameter <span class="math notranslate nohighlight">\(\beta_0 = -1,0986\)</span> sa rovná 0,</p></li>
+<li><p>nezamietate hypotézu <span class="math notranslate nohighlight">\(\beta_1 = 1\)</span>,</p></li>
+<li><p>nezamietate hypotézu <span class="math notranslate nohighlight">\(\beta_2 = -1\)</span>.</p></li>
+</ul>
+<p>Úlohy:</p>
+<ol class="arabic">
+<li><p>Rozhodnite, či Cobbov Douglasov tvar funkcie užitočnosti môže opísať preferencie spotrebiteľov daného statku. Ak navyše predpokladáte funkčný tvar s konštantným výnosom z rozsahu, akú hodnotu spotrebnej elasticity užitočnosti <span class="math notranslate nohighlight">\(\alpha\)</span> odhadujete?</p></li>
+<li><p>Rozhodli ste sa rozšíriť ekonometrický model o cenu iného statku,</p>
+<div class="math notranslate nohighlight">
+\[
+    y_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \beta_3 x_{i3} + u_i,
+    \]</div>
+<p>kde <span class="math notranslate nohighlight">\(x_3\)</span>  je rad prirodzeného logaritmu ceny iného statku.</p>
+<p>Zároveň nezamietate hypotézu <span class="math notranslate nohighlight">\(\beta_3 = 0\)</span>. Je Cobbov Douglasov tvar funkcie užitočnosti stále vhodným funkčným tvarom charakterizujúce preferencie dvoch statkov?</p>
+</li>
+<li><p>Čo znamená, ak nezamietate hypotézu <span class="math notranslate nohighlight">\(\beta_3 &gt; 0\)</span> a ak <span class="math notranslate nohighlight">\(\beta_3 &lt; 0\)</span>?</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Spotrebitel.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Správanie spotrebiteľa</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Stati.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7. </span>Voľný čas a spotreba</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marshallove-dopytove-funkcie">6.1. Marshallove dopytové funkcie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-rozpoctu-na-spotrebu-statkov">6.2. Vplyv zmeny rozpočtu na spotrebu statkov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vplyv-zmeny-cien-na-spotrebu-statkov">6.3. Vplyv zmeny cien na spotrebu statkov</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksove-dopytove-funkcie">6.4. Hicksove dopytové funkcie</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vydavkova-funkcia">6.5. Výdavková funkcia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vztah-medzi-marshallovymi-a-hicksovymi-dopytovymi-funkciami">6.6. Vzťah medzi Marshallovými a Hicksovými dopytovými funkciami</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rozklad-vplyvu-zmeny-ceny">6.7. Rozklad vplyvu zmeny ceny</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksova-interpretacia-prijmoveho-a-substitucneho-efektu">6.8. Hicksova interpretácia príjmového a substitučného efektu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hicksov-rozklad-cenoveho-efektu">6.9. Hicksov rozklad cenového efektu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slutskeho-rovnica">6.10. Slutského rovnica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#slutskeho-rozklad-celkoveho-efektu-na-prijmovy-a-substitucny">6.11. Slutského rozklad celkového efektu na príjmový a substitučný</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">6.12. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-marshallove-dopytove-funkcie">6.12.1. Príklad: Marshallove dopytové funkcie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">6.12.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">6.12.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-komparativna-statika">6.12.2. Príklad: Komparatívna statika</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.12.2.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.12.2.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-hicksove-dopytove-funkcie">6.12.3. Príklad: Hicksove dopytové funkcie</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">6.12.3.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vydavkova-funkcia">6.12.4. Príklad: Výdavková funkcia</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6.12.4.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-substitucny-prijmovy-a-celkovy-efekt">6.12.5. Príklad: Substitučný, príjmový a celkový efekt</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.12.5.1. Riešenie</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-rozklad-cenoveho-efektu">6.12.6. Príklad: Rozklad cenového efektu</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">6.12.6.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">6.12.6.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-substituty-a-rozklad-cenoveho-efektu">6.12.7. Príklad: Substitúty a rozklad cenového efektu</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">6.12.7.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">6.12.7.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">6.13. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-cobbov-douglasov-tvar-funkcie-uzitocnosti">6.13.1. Príklad: Cobbov-Douglasov tvar funkcie užitočnosti</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-rozne-tvary-preferencii">6.13.2. Príklad: Rôzne tvary preferencií</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-ekonometricky-odhad-spotrebnej-elasticity-uzitocnosti">6.13.3. Príklad: Ekonometrický odhad spotrebnej elasticity užitočnosti</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

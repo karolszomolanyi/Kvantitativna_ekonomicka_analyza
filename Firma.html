@@ -1,0 +1,1816 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Správanie firmy &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Firma';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Náklady firmy" href="Naklad.html" />
+    <link rel="prev" title="2. Produkcia firmy" href="Produk.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Rovnovaha.html">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Firma.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Správanie firmy</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximalizacia-zisku-vyberom-vstupov">3.1. Maximalizácia zisku výberom vstupov</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-po-vyrobnych-faktoroch">3.1.1. Dopyt po výrobných faktoroch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zisk-firmy-a-konstantne-vynosy-z-rozsahu">3.1.2. Zisk firmy a konštantné výnosy z rozsahu</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimalizacia-nakladov-pri-konstantnom-objeme-vyroby">3.2. Minimalizácia nákladov pri konštantnom objeme výroby</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-interpretacia-ppr">3.2.1. Ekonomická interpretácia PPR</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximalizacia-zisku-vyberom-vystupu">3.3. Maximalizácia zisku výberom výstupu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kratkodobe-spravanie-firmy">3.4. Krátkodobé správanie firmy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">3.5. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad">3.5.1. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">3.5.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">3.5.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.5.2. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.5.3. Riešenie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.5.4. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3.5.4.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3.5.4.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3.5.5. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">3.5.5.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.5.5.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">3.6. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">3.6.1. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3.6.2. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3.6.3. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">3.6.4. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">3.6.5. Príklad</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="spravanie-firmy">
+<h1><span class="section-number">3. </span>Správanie firmy<a class="headerlink" href="#spravanie-firmy" title="Link to this heading">#</a></h1>
+<p>V analýze správania firmy potrebujeme poznať zisk firmy.</p>
+<dl class="simple myst">
+<dt>Zisk firmy</dt><dd><p>Rozdiel medzi príjmami a ekonomickými nákladmi firmy.</p>
+</dd>
+</dl>
+<dl class="simple myst">
+<dt>Príjmy firmy</dt><dd><p>tržby z predaja produkcie.</p>
+</dd>
+</dl>
+<dl class="simple myst">
+<dt>Náklady firmy</dt><dd><p>ekonomické náklady, respektíve príležitostné náklady.</p>
+</dd>
+</dl>
+<p>Náklady pozostávajú z</p>
+<ul class="simple">
+<li><p>kapitálu,</p></li>
+<li><p>práce,</p></li>
+<li><p>materiálu,</p></li>
+<li><p>pôdy.</p></li>
+</ul>
+<p>Nech firma realizuje <span class="math notranslate nohighlight">\(n\)</span> aktivít.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{a}
+=
+\begin{pmatrix}
+a_1\\
+a_2\\
+\vdots\\
+a_n
+\end{pmatrix},
+\end{split}\]</div>
+<p>kde <span class="math notranslate nohighlight">\(a_i\)</span> predstavuje rozsah <span class="math notranslate nohighlight">\(i\)</span>-tej aktivity firmy.</p>
+<p>Zisk firmy je v tvare:</p>
+<div class="math notranslate nohighlight" id="equation-pi-a">
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-pi-a" title="Link to this equation">#</a></span>\[\Pi(\mathbf{a}) = R(\mathbf{a}) - C(\mathbf{a}),\]</div>
+<p>kde <span class="math notranslate nohighlight">\(\Pi(\mathbf{a})\)</span> je zisková funkcia, <span class="math notranslate nohighlight">\(R(\mathbf{a})\)</span> príjmová funkcia a <span class="math notranslate nohighlight">\(C(\mathbf{a})\)</span> nákladová funkcia.</p>
+<p>Firma sa usiluje výberom aktivít <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> maximalizovať ziskovú funkciu <a class="reference internal" href="#equation-pi-a">(3.1)</a>. Rieši úlohu na voľný extrém (<a class="reference internal" href="Matematika.html#volny-extrem"><span class="std std-ref">Úloha na voľný extrém</span></a>), ktorej podmienky prvého rádu sú v tvare:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial \Pi(\mathbf a)}
+     {\partial a_i}
+=
+\frac{\partial R(\mathbf a)}
+     {\partial a_i}
+-
+\frac{\partial C(\mathbf a)}
+     {\partial a_i}
+=
+0,
+\qquad
+\forall i=1,\ldots n.
+\]</div>
+<p>Označme</p>
+<div class="math notranslate nohighlight">
+\[
+MR_i(\mathbf a)
+=
+\frac{\partial R(\mathbf a)}
+     {\partial a_i}
+\]</div>
+<p>ako hraničný príjem z aktivity <span class="math notranslate nohighlight">\(i\)</span> a</p>
+<div class="math notranslate nohighlight">
+\[
+MC_i(\mathbf a)
+=
+\frac{\partial C(\mathbf a)}
+     {\partial a_i}
+\]</div>
+<p>ako hraničný náklad aktivity <span class="math notranslate nohighlight">\(i\)</span>.</p>
+<p>Iný zápis podmienok prvého rádu je:</p>
+<div class="math notranslate nohighlight" id="equation-ppr">
+<span class="eqno">(3.2)<a class="headerlink" href="#equation-ppr" title="Link to this equation">#</a></span>\[MR_i(\mathbf{a}) = MC_i(\mathbf{a}),\qquad \forall i=1,\ldots n,\]</div>
+<p>kde <span class="math notranslate nohighlight">\(MR_i(\mathbf{a})\)</span> sú hraničné príjmy a <span class="math notranslate nohighlight">\(MC_i(\mathbf{a})\)</span> hraničné náklady.</p>
+<p>Firma zvyšuje rozsah aktivity dovtedy, kým dodatočný príjem z aktivity je vyšší ako dodatočný náklad. V optimálnom riešení sa hraničný príjem a hraničný náklad každej aktivity rovnajú.</p>
+<dl class="simple myst">
+<dt>Firma v dokonalej konkurencii</dt><dd><p>Nedokáže ovplyvniť ceny vstupov ani výstupov. Považuje ich za dané.</p>
+</dd>
+</dl>
+<p>Neskôr sa budeme zaoberať správaním firmy v podmienkach nedokonalej konkurencie.</p>
+<p>V tejto časti budú aktivity firmy <span class="math notranslate nohighlight">\(\mathbf{a}\)</span> vyjadrené vektorom vstupov <span class="math notranslate nohighlight">\(\mathbf{x}.\)</span></p>
+<p>V nasledujúcej časti budú aktivity firmy vyjadrené objemom výstupu <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Predstavíme tri základné koncepty správania firmy:</p>
+<ol class="arabic simple">
+<li><p>maximalizáciu zisku výberom vstupov,</p></li>
+<li><p>minimalizáciu nákladov pri danom výstupe,</p></li>
+<li><p>maximalizáciu zisku výberom výstupu.</p></li>
+</ol>
+<section id="maximalizacia-zisku-vyberom-vstupov">
+<span id="max-zisk-vstupy"></span><h2><span class="section-number">3.1. </span>Maximalizácia zisku výberom vstupov<a class="headerlink" href="#maximalizacia-zisku-vyberom-vstupov" title="Link to this heading">#</a></h2>
+<p>Funkcia zisku je v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi(x_1,x_2,\ldots,x_n)
+=
+pf(x_1,x_2,\ldots,x_n)
+-
+(c_1x_1+c_2x_2+\cdots+c_nx_n).
+\]</div>
+<ul class="simple">
+<li><p>Cena výstupu je <span class="math notranslate nohighlight">\(p&gt;0\)</span>.</p></li>
+<li><p>Cena vstupu <span class="math notranslate nohighlight">\(i\)</span> je <span class="math notranslate nohighlight">\(c_i&gt;0\)</span>.</p></li>
+<li><p>Množstvo vstupu <span class="math notranslate nohighlight">\(i\)</span> je <span class="math notranslate nohighlight">\(x_i\ge0\)</span>.</p></li>
+<li><p>Produkčná funkcia je <span class="math notranslate nohighlight">\(f(x_1,x_2,\ldots,x_n)\)</span>.</p></li>
+</ul>
+<p>Firma maximalizuje zisk výberom vstupov
+<span class="math notranslate nohighlight">\(x_1,x_2,\ldots,x_n\)</span>.</p>
+<p>Správanie firmy maximalizujúcej zisk možno formulovať ako úlohu na voľný extrém (<a class="reference internal" href="Matematika.html#volny-extrem"><span class="std std-ref">Úloha na voľný extrém</span></a>. Podmienky prvého rádu sú</p>
+<div class="math notranslate nohighlight" id="equation-ppr-x">
+<span class="eqno">(3.3)<a class="headerlink" href="#equation-ppr-x" title="Link to this equation">#</a></span>\[p\frac{\partial f(x_1,x_2,\ldots,x_n)}{\partial x_i}
+-c_i
+=0,
+\qquad
+\forall i=1,\ldots n.\]</div>
+<p>Parciálna derivácia produkčnej funkcie podľa vstupu je hraničný produkt vstupu <a class="reference internal" href="Produk.html#equation-mp-i">(2.4)</a>.
+Podmienky prvého rádu potom možno zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+MP_i(x_1,x_2,\ldots,x_n)
+=
+\frac{c_i}{p},
+\qquad
+\forall i=1,\ldots n.
+\]</div>
+<p>Pre každý vstup sa hraničný produkt musí rovnať pomeru ceny vstupu a ceny výstupu.</p>
+<p>Ekvivalentne</p>
+<div class="math notranslate nohighlight">
+\[
+p\,MP_i(x_1,x_2,\ldots,x_n)
+=
+c_i,
+\qquad
+\forall i=1,\ldots n.
+\]</div>
+<p>Hodnota hraničného produktu vstupu sa musí rovnať cene vstupu.</p>
+<p>Sú podmienky prvého rádu postačujúce?</p>
+<p>Otázku zodpovieme na prípade jedného vstupu.</p>
+<p>Firma výberom vstupu maximalizuje funkciu zisku</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi(x)=pf(x)-cx.
+\]</div>
+<p>Podmienka prvého rádu je</p>
+<div class="math notranslate nohighlight">
+\[
+pf'(x)-c=0.
+\]</div>
+<p>Derivácia produkčnej funkcie je hraničný produkt vstupu,</p>
+<div class="math notranslate nohighlight">
+\[
+f'(x) = MPx.
+\]</div>
+<p>Racionálna firma zvyšuje vstup dovtedy, kým sa hodnota dodatočného výstupu rovná nákladom na dodatočnú jednotku vstupu:</p>
+<div class="math notranslate nohighlight">
+\[
+p\,MPx=c.
+\]</div>
+<p>Po vydelení cenou výstupu získame</p>
+<div class="math notranslate nohighlight">
+\[
+MPx=\frac{c}{p}.
+\]</div>
+<p>Geometrická interpretácia úlohy je na <a class="reference internal" href="Produk.html#pf-optimal"><span class="std std-numref">Obr. 2.5</span></a>. Optimálna stratégia firmy sa realizuje na hranici výrobných možností.</p>
+<p>Podmienka druhého rádu je</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi''(x)=pf''(x)
+\le 0.
+\]</div>
+<p>Keďže</p>
+<div class="math notranslate nohighlight">
+\[
+p&gt;0,
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi''(x)\le 0
+\quad \Leftrightarrow \quad
+f''(x)\le 0.
+\]</div>
+<p>Ak je produkčná funkcia konkávna, riešenie podmienok prvého rádu predstavuje kandidáta na globálne maximum. Pre určenie globálneho maxima je potrebné jeho hodnotu porovnať s hodnotami ziskovej funkcie na hraniciach definičného oboru.</p>
+<p>Pri produkčnej funkcii s viacerými vstupmi predstavuje riešenie podmienok prvého rádu kandidáta na globálne maximum ziskovej funkcie. Ak je produkčná funkcia konkávna, toto riešenie je maximom. Pri hľadaní globálneho maxima je však potrebné porovnať hodnotu ziskovej funkcie aj na hraniciach definičného oboru. Ekonomicky konkávna produkčná funkcia znamená, že hraničné produkty vstupov klesajú (pozri tiež <a class="reference internal" href="Produk.html#hranicne-produkty-vstupov"><span class="std std-ref">Hraničné produkty vstupov</span></a>).</p>
+<p>Riešením podmienok prvého rádu <a class="reference internal" href="#equation-ppr-x">(3.3)</a> získame <a class="reference internal" href="Matematika.html#redukovany-tvar"><span class="std std-ref">Redukovaný tvar modelu</span></a> úlohy firmy maximalizujúcej zisk v tvare</p>
+<div class="math notranslate nohighlight" id="equation-dopyt-firmy">
+<span class="eqno">(3.4)<a class="headerlink" href="#equation-dopyt-firmy" title="Link to this equation">#</a></span>\[\begin{split}\mathbf{x}(\mathbf{c},p)
+=
+\begin{pmatrix}
+x_1(c_1,c_2,\ldots,c_n,p) \\
+x_2(c_1,c_2,\ldots,c_n,p) \\
+\vdots \\
+x_n(c_1,c_2,\ldots,c_n,p)
+\end{pmatrix}.\end{split}\]</div>
+<p>Rovnice <a class="reference internal" href="#equation-dopyt-firmy">(3.4)</a> vyjadrujú dopytové funkcie firmy. Dopyt po <span class="math notranslate nohighlight">\(i\)</span>-tom vstupe závisí od cien vstupov a ceny výstupu.</p>
+<p>Dosadením dopytových funkcií do produkčnej funkcie firmy získame ponukovú funkciu firmy</p>
+<div class="math notranslate nohighlight" id="equation-ponuka-firmy-x">
+<span class="eqno">(3.5)<a class="headerlink" href="#equation-ponuka-firmy-x" title="Link to this equation">#</a></span>\[y
+=
+f(\mathbf{x})
+=
+f[\mathbf{x}(\mathbf{c},p)].\]</div>
+<p>Firma dopytuje vstupy <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>, napríklad kapitál, prácu, materiály alebo pôdu.</p>
+<p>Firma ponúka výstup <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Správanie firmy je preto úplne opísané dopytovými funkciami <a class="reference internal" href="#equation-dopyt-firmy">(3.4)</a> a ponukovou funkciou <a class="reference internal" href="#equation-ponuka-firmy-x">(3.5)</a>.</p>
+<p>Dopyt po vstupoch aj ponuka výstupu závisia od cien vstupov a ceny výstupu <span class="math notranslate nohighlight">\((\mathbf{c},p)\)</span>.</p>
+<section id="dopyt-po-vyrobnych-faktoroch">
+<h3><span class="section-number">3.1.1. </span>Dopyt po výrobných faktoroch<a class="headerlink" href="#dopyt-po-vyrobnych-faktoroch" title="Link to this heading">#</a></h3>
+<p>Z makroekonomického hľadiska uvažujme dva vstupy ako výrobné faktory:</p>
+<ul class="simple">
+<li><p>kapitál <span class="math notranslate nohighlight">\(K\)</span>,</p></li>
+<li><p>prácu <span class="math notranslate nohighlight">\(N\)</span>.</p></li>
+</ul>
+<p>Označme dopyt po kapitáli <span class="math notranslate nohighlight">\(K^d\)</span> a dopyt po práci <span class="math notranslate nohighlight">\(N^d\)</span>. Pre firmu maximalizujúcu zisk platia podmienky prvého rádu</p>
+<div class="math notranslate nohighlight" id="equation-ppr-mpk">
+<span class="eqno">(3.6)<a class="headerlink" href="#equation-ppr-mpk" title="Link to this equation">#</a></span>\[MPK(K^d,N^d)=\frac qP,\]</div>
+<div class="math notranslate nohighlight" id="equation-ppr-mpn">
+<span class="eqno">(3.7)<a class="headerlink" href="#equation-ppr-mpn" title="Link to this equation">#</a></span>\[MPN(K^d,N^d)=\frac \omega P,\]</div>
+<p>kde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(q\)</span> je cena jednotky kapitálu,</p></li>
+<li><p><span class="math notranslate nohighlight">\(\omega\)</span> je mzdová sadzba (cena jednotky práce),</p></li>
+<li><p><span class="math notranslate nohighlight">\(P\)</span> je cena výstupu.</p></li>
+</ul>
+<p>Tieto rovnice určujú optimálny dopyt firmy po kapitáli a práci.</p>
+<p>Ak ostatné premenné považujeme za konštantné, klesajúce hraničné produkty faktorov implikujú klesajúci dopyt po kapitáli a práci.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">"figure.figsize"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+
+<span class="n">α</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">MPK</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">α</span> <span class="o">*</span> <span class="n">N</span> <span class="o">/</span> <span class="n">K</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">MPN</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">α</span><span class="p">)</span> <span class="o">*</span> <span class="n">K</span> <span class="o">/</span> <span class="n">N</span>
+
+<span class="n">K</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+
+<span class="n">N0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">K0</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Dopyt po kapitáli</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">K</span><span class="p">,</span>
+    <span class="n">MPK</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">N0</span><span class="p">),</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"navy"</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Dopyt po kapitáli"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"$K^d$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"$q/P$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Dopyt po práci</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">N</span><span class="p">,</span>
+    <span class="n">MPN</span><span class="p">(</span><span class="n">K0</span><span class="p">,</span> <span class="n">N</span><span class="p">),</span>
+    <span class="n">color</span><span class="o">=</span><span class="s2">"darkgreen"</span><span class="p">,</span>
+    <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span>
+<span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Dopyt po práci"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"$N^d$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">"$\omega/P$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="dopyt-faktory">
+<img alt="_images/dopyt_faktory.png" src="_images/dopyt_faktory.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 3.1 </span><span class="caption-text">Vplyv zvýšenia kapitálu na intenzívny výstup a produkty kapitálu</span><a class="headerlink" href="#dopyt-faktory" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Pokiaľ sú hraničné produkty vstupov firmy klesajúce, dopyt firmy po týchto vstupoch je tiež klesajúci.</p>
+</section>
+<section id="zisk-firmy-a-konstantne-vynosy-z-rozsahu">
+<h3><span class="section-number">3.1.2. </span>Zisk firmy a konštantné výnosy z rozsahu<a class="headerlink" href="#zisk-firmy-a-konstantne-vynosy-z-rozsahu" title="Link to this heading">#</a></h3>
+<p>Za predpokladu konštantných výnosov z rozsahu možno podľa Eulerovej vety rozložiť výstup na príspevky výrobných faktorov <a class="reference internal" href="Produk.html#equation-prispevky-vstupov">(2.17)</a>.</p>
+<p>Zisková funkcia s makroekonomickou produkčnou funkciou je:</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi = P \times AF(K,N) - qK - \omega N. 
+\]</div>
+<p>Dosaďme do nej podmienky prvého rádu <a class="reference internal" href="#equation-ppr-mpk">(3.6)</a>, <a class="reference internal" href="#equation-ppr-mpn">(3.7)</a> za ceny vstupov:</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi = P \times Y - P \cdot MPK \cdot K - P \cdot MPN \cdot N. 
+\]</div>
+<p>Po vyjmutí ceny výstupu <span class="math notranslate nohighlight">\(P\)</span> platí</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi = P (Y - MPK \cdot K - MPN \cdot N).
+\]</div>
+<p>Kombináciou s <a class="reference internal" href="Produk.html#equation-prispevky-vstupov">(2.17)</a> získame</p>
+<div class="math notranslate nohighlight" id="equation-pi-0">
+<span class="eqno">(3.8)<a class="headerlink" href="#equation-pi-0" title="Link to this equation">#</a></span>\[\Pi = P (Y - Y) = 0.\]</div>
+<p>Ekonomické zdôvodnenie tejto vlastnosti vyplýva z predpokladu konštantných výnosov z rozsahu a z podmienok dokonalej konkurencie.</p>
+<p>Neskôr budeme uvažovať o rôznych trhových štruktúrach. Základný predpoklad, ktorého sa doteraz držíme je, že firma pôsobí v štruktúre dokonalej konkurencie, v ktorej pôsobí veľký počet identických firiem. Dopyt po výstupe firiem je dokonale elastický, jeho cenu firma nedokáže ovplyvniť, firma môže slobodne vstúpiť aj opustiť trh. V krátkom období môžu firmy dosahovať kladný aj záporný ekonomický zisk. Ak je záporný, firmy odchádzajú z trhu, naopak ak je kladný, na trhu pribúdajú nové firmy. Z dlhodobého hľadiska sa rovnováha ustáli pri nulovom zisku.</p>
+<p>Skutočnosť, že zisk sa rovná <span class="math notranslate nohighlight">\(0\)</span> neznamená, že vlastník firmy neprofituje z podnikania. V reálnom svete si podľa účtovných štandardov vlastník firmy vypláca odmenu za podnikanie vo forme zisku. V modeli firmy predpokladáme, že podnikanie je činnosť, ktorá vyžaduje prácu aj kapitál. Vlastník firmy získa odmenu vo forme mzdy za svoju prácu a renty za prenájom kapitálu (nehnuteľností, strojov a zariadení, ktoré vlastní).</p>
+</section>
+</section>
+<section id="minimalizacia-nakladov-pri-konstantnom-objeme-vyroby">
+<h2><span class="section-number">3.2. </span>Minimalizácia nákladov pri konštantnom objeme výroby<a class="headerlink" href="#minimalizacia-nakladov-pri-konstantnom-objeme-vyroby" title="Link to this heading">#</a></h2>
+<p>V nasledovnom probléme predpokladáme, že firma má splniť objednávku na konštantný objem výroby <span class="math notranslate nohighlight">\(y_0\)</span>. Firma sa snaží splniť objednávku s minimálnymi nákladmi. Úlohu možno zapísať v tvare:</p>
+<div class="math notranslate nohighlight">
+\[
+\min_{x_1,x_2,\ldots x_n}
+\;
+C(x_1,x_2,\ldots x_n)
+=
+c_1x_1+c_2x_2+\cdots c_nx_n,
+\]</div>
+<p>pri podmienke</p>
+<div class="math notranslate nohighlight">
+\[
+f(x_1,x_2,\ldots,x_n) - y_0 \ge 0.
+\]</div>
+<p>Firma hľadá najlacnejšiu kombináciu vstupov, ktorá umožňuje vyrobiť požadovaný objem produkcie.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\min_{x_1,x_2 \cdots x_n}{C(x_1,x_2 \cdots x_n) = c_1x_1 + c_2x_2 + \cdots c_nx_n},\\
+f(x_1,x_2...x_n) \ge y_0.
+\end{split}\]</div>
+<p>Podľa podmienok prvého rádu úlohy (<a class="reference internal" href="Matematika.html#ppr-vseobecne"><span class="std std-ref">Podmienky prvého rádu vo všeobecnom prípade</span></a>) optimálny bod leží na hranici prípustných riešení</p>
+<div class="math notranslate nohighlight">
+\[
+f(x_1,x_2,\ldots,x_n) - y_0 = 0
+\]</div>
+<p>a zároveň hraničné miery substitúcie účelovej a ohraničujúcej funkcie sa rovnajú. Pre ľubovoľnú dvojicu rozhodovacích premenných <span class="math notranslate nohighlight">\(x_i\)</span> a <span class="math notranslate nohighlight">\(x_j\)</span> preto platí</p>
+<div class="math notranslate nohighlight">
+\[
+MRCS(x_i,x_j)
+=
+MRTS(x_i,x_j),
+\qquad
+i\neq j,
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(MRCS(x_i,x_j)\)</span> je hraničná miera substitúcie nákladovej funkcie <span class="math notranslate nohighlight">\(C(x_1,x_2,\ldots,x_n)\)</span>,</p>
+<p><span class="math notranslate nohighlight">\(MRTS(x_i,x_j)\)</span> je hraničná miera substitúcie produkčnej funkcie.</p>
+<p>Hraničná miera substitúcie nákladovej funkcie je</p>
+<div class="math notranslate nohighlight">
+\[
+MRCS(x_i,x_j)
+=
+\frac{\dfrac{\partial C}{\partial x_i}}
+     {\dfrac{\partial C}{\partial x_j}}
+=
+\frac{c_i}{c_j}.
+\]</div>
+<p>Je to sklon vrstevnice nákladovej funkcie (<a class="reference internal" href="Matematika.html#vrstevnica-funkcie"><span class="std std-ref">Vrstevnica funkcie</span></a>). Vrstevnica nákladovej funkcie sa nazýva <strong>izonákladová funkcia</strong> a vyjadruje všetky kombinácie vstupov, ktoré vedú k rovnakým celkovým nákladom.</p>
+<p>Hraničná miera substitúcie produkčnej funkcie je <a class="reference internal" href="Produk.html#mrts"><span class="std std-ref">Hraničná miera technickej substitúcie</span></a></p>
+<div class="math notranslate nohighlight">
+\[
+MRTS(x_i,x_j) = \frac{\frac{\partial f}{\partial x_i}}
+     {\frac{\partial f}{\partial x_j}}
+=
+\frac{MP_i}{MP_j}\qquad i\neq j.
+\]</div>
+<p>Je to sklon izokvanty (<a class="reference internal" href="Produk.html#izokvanta"><span class="std std-ref">Izokvanta</span></a>).</p>
+<p>Preto podmienky prvého rádu možno zapísať v tvare</p>
+<div class="math notranslate nohighlight" id="equation-ppr-min-naklady-obj1">
+<span class="eqno">(3.9)<a class="headerlink" href="#equation-ppr-min-naklady-obj1" title="Link to this equation">#</a></span>\[\frac{MP_i(x_1,x_2,\ldots,x_n)}
+     {MP_j(x_1,x_2,\ldots,x_n)}
+=
+\frac{c_i}{c_j},
+\qquad
+i\neq j\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight" id="equation-ppr-min-naklady-obj2">
+<span class="eqno">(3.10)<a class="headerlink" href="#equation-ppr-min-naklady-obj2" title="Link to this equation">#</a></span>\[f(x_1,x_2,\ldots,x_n) - y_0.\]</div>
+<p>Na <a class="reference internal" href="#graf-fix-vystup"><span class="std std-numref">Obr. 3.2</span></a> je grafická interpretácia úlohy v dvojrozmernom rozhodovacom priestore firmy <span class="math notranslate nohighlight">\([x_1,x_2]\)</span>. <a class="reference internal" href="Matematika.html#mnozina-pripustnych-rieseni"><span class="std std-ref">Množina prípustných riešení</span></a> je zobrazená zelenou plochou ohraničenou modrou krivkou, ktorá predstavuje hranicu prípustných riešení</p>
+<div class="math notranslate nohighlight">
+\[
+f(x_1,x_2)=y_0.
+\]</div>
+<p>Opäť platí interpretácia, podľa ktorej množina prípustných riešení predstavuje <a class="reference internal" href="Produk.html#mnozina-vyrob-moznosti"><span class="std std-ref">Množina výrobných možností</span></a> a hranica prípustných riešení predstavuje <a class="reference internal" href="Produk.html#hvm"><span class="std std-ref">Hranica výrobných možností</span></a>.</p>
+<p>Optimálne rozhodnutie firmy sa nachádza v bode, v ktorom sa niektorá z izonákladových čiar dotýka hranice prípustných riešení.</p>
+<p>V optimálnom bode majú izonákladová funkcia a izokvanta rovnaký sklon. Preto sa hraničná miera technickej substitúcie výrobných faktorov rovná pomeru cien vstupov.</p>
+<p>Z grafickej interpretácie úlohy s dvoma vstupmi vyplýva, že riešenie podmienok prvého rádu predstavuje kandidáta na lokálne minimum nákladov. Ak sú izokvanty produkčnej funkcie klesajúce a konvexné, tento bod predstavuje lokálne minimum nákladov pri danom objeme výroby. Pri hľadaní globálneho minima je potrebné porovnať náklady v bode určenom podmienkami prvého rádu s nákladmi na hraniciach definičného oboru.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># obr. Minimalizácia nákladov pri konštantnom objeme výroby</span>
+
+<span class="c1"># Príklad y = x1^(1/3) x2^(2/3), c1 = 1/3, c2 = 2/3, y0 = 1</span>
+<span class="c1"># Riešenie x1 = x2 = C = 1.</span>
+
+<span class="c1"># izokvanta</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">h</span><span class="p">(</span><span class="n">y0</span><span class="p">,</span><span class="n">x1</span><span class="p">):</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="n">y0</span><span class="o">**</span><span class="p">(</span><span class="mf">1.5</span><span class="p">)</span><span class="o">*</span><span class="n">x1</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mf">.5</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">x2</span>
+
+<span class="c1">#izonákladová čiara</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">x1</span><span class="p">):</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="n">C</span><span class="o">*</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">x1</span>
+    <span class="k">return</span> <span class="n">x2</span>
+
+<span class="n">y0</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">C</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">x_1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.001</span><span class="p">,</span><span class="mf">3.</span><span class="p">)</span> <span class="c1">#definičný obor funkcií</span>
+
+<span class="n">izokvanta</span> <span class="o">=</span> <span class="n">h</span><span class="p">(</span><span class="n">y0</span><span class="p">,</span><span class="n">x_1</span><span class="p">)</span>
+<span class="n">izonaklad</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">C</span><span class="p">,</span><span class="n">x_1</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">izokvanta</span><span class="p">,</span><span class="n">label</span><span class="o">=</span> <span class="sa">r</span><span class="s2">"Izokvanta $y_0$"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">fill_between</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">izokvanta</span><span class="p">,</span><span class="n">y2</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">'lightgreen'</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_1</span><span class="p">,</span><span class="n">izonaklad</span><span class="p">,</span><span class="n">label</span><span class="o">=</span> <span class="s1">'Izonákladová čiara'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"black"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s2">"$x_1$"</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s2">"$x_2$"</span><span class="p">,</span><span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">3.</span><span class="p">),</span> <span class="n">xlim</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">3.</span><span class="p">))</span>
+
+<span class="c1">#bod</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="n">zorder</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
+    <span class="mf">1.05</span><span class="p">,</span>
+    <span class="mf">1.05</span><span class="p">,</span>
+    <span class="sa">r</span><span class="s2">"$(x_1^*,x_2^*)$"</span>
+<span class="p">)</span>
+
+<span class="c1"># pomocné čiary</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">":"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">":"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"gray"</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-fix-vystup">
+<img alt="_images/graf_fix_vystup.png" src="_images/graf_fix_vystup.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 3.2 </span><span class="caption-text">Rozhodovanie firmy minimalizujúcej náklady pri konštantnom objeme</span><a class="headerlink" href="#graf-fix-vystup" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p id="podmieneny-dopyt">Riešením podmienok <a class="reference internal" href="#equation-ppr-min-naklady-obj1">(3.9)</a> a <a class="reference internal" href="#equation-ppr-min-naklady-obj2">(3.10)</a> získame <a class="reference internal" href="Matematika.html#redukovany-tvar"><span class="std std-ref">Redukovaný tvar modelu</span></a> úlohy firmy minimalizujúcej náklady pri konštantnom objeme výroby v tvare</p>
+<div class="math notranslate nohighlight" id="equation-podmieneny-dopyt">
+<span class="eqno">(3.11)<a class="headerlink" href="#equation-podmieneny-dopyt" title="Link to this equation">#</a></span>\[\mathbf{x}
+=
+\mathbf{x}(y,\mathbf{c}).\]</div>
+<p>Funkcie <a class="reference internal" href="#equation-podmieneny-dopyt">(3.11)</a> sú <strong>podmienené</strong> dopytové funkcie.</p>
+<p>Zodpovedajúca <strong>nákladová funkcia</strong> je</p>
+<div class="math notranslate nohighlight" id="equation-nakladova-funkcia">
+<span class="eqno">(3.12)<a class="headerlink" href="#equation-nakladova-funkcia" title="Link to this equation">#</a></span>\[C(y)=c_1x_1(y,\mathbf{c}) + c_2x_2(y,\mathbf{c}) + \cdots c_nx_n(y,\mathbf{c})\]</div>
+<p>Podmienené dopytové funkcie nezodpovedajú dopytovým funkciám v úlohe maximalizácie zisku (<a class="reference internal" href="#max-zisk-vstupy"><span class="std std-ref">Maximalizácia zisku výberom vstupov</span></a>). Dopyt firmy po vstupoch je v tomto prípade <strong>podmienený</strong> objemom výroby <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Objem výroby nie je rozhodovacou (endogénnou) premennou. Je zadaný exogénne a firma hľadá najlacnejšiu kombináciu vstupov potrebnú na jeho dosiahnutie.</p>
+<p>Zodpovedajúca nákladová funkcia závisí od objemu výroby <span class="math notranslate nohighlight">\(y\)</span>. Takéto nákladové funkcie pužijeme v nasledovnej kapitole.</p>
+<section id="ekonomicka-interpretacia-ppr">
+<h3><span class="section-number">3.2.1. </span>Ekonomická interpretácia PPR<a class="headerlink" href="#ekonomicka-interpretacia-ppr" title="Link to this heading">#</a></h3>
+<p>Podľa PPR <a class="reference internal" href="#equation-ppr-min-naklady-obj1">(3.9)</a> a <a class="reference internal" href="#equation-ppr-min-naklady-obj2">(3.10)</a> sa v optimálnom riešení hraničná miera technickej substitúcie rovná pomeru cien vstupov.</p>
+<p>Hraničnú mieru technickej substitúcie</p>
+<div class="math notranslate nohighlight">
+\[
+MRTS(x_i,x_j)
+=
+\frac{MP_i}{MP_j}
+\]</div>
+<p>interpretujeme ako internú mieru substitúcie medzi vstupmi. Vyjadruje, v akom pomere možno nahradiť vstup <span class="math notranslate nohighlight">\(x_j\)</span> vstupom <span class="math notranslate nohighlight">\(x_i\)</span> bez zmeny objemu výroby.</p>
+<p>Pomer cien vstupov <span class="math notranslate nohighlight">\(c_i/c_j\)</span> predstavuje externú, trhovú mieru substitúcie medzi vstupmi. Vyjadruje, v akom pomere možno nahrádzať vstupy bez zmeny celkových nákladov.</p>
+<p>V optimálnom riešení sa interná a externá miera substitúcie rovnajú.</p>
+<ul>
+<li><p>Ak</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{c_i}{c_j}
+  &gt;
+  \frac{MP_i}{MP_j},
+  \]</div>
+<p>vstup <span class="math notranslate nohighlight">\(i\)</span> je relatívne drahý vzhľadom na jeho prínos k produkcii. Firma by mala znížiť využívanie vstupu <span class="math notranslate nohighlight">\(i\)</span> a zvýšiť využívanie vstupu <span class="math notranslate nohighlight">\(j\)</span>.</p>
+</li>
+<li><p>Ak</p>
+<div class="math notranslate nohighlight">
+\[
+  \frac{c_i}{c_j}
+  &lt;
+  \frac{MP_i}{MP_j},
+  \]</div>
+<p>vstup <span class="math notranslate nohighlight">\(i\)</span> je relatívne lacný vzhľadom na jeho prínos k produkcii. Firma by mala zvýšiť využívanie vstupu <span class="math notranslate nohighlight">\(i\)</span> a znížiť využívanie vstupu <span class="math notranslate nohighlight">\(j\)</span>.</p>
+</li>
+</ul>
+</section>
+</section>
+<section id="maximalizacia-zisku-vyberom-vystupu">
+<h2><span class="section-number">3.3. </span>Maximalizácia zisku výberom výstupu<a class="headerlink" href="#maximalizacia-zisku-vyberom-vystupu" title="Link to this heading">#</a></h2>
+<p>Ak poznáme nákladovú funkciu <a class="reference internal" href="#equation-nakladova-funkcia">(3.12)</a>, môžeme ziskovú funkciu firmy zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi(y)=py-C(y).
+\]</div>
+<p>Správanie firmy maximalizujúcej zisk výberom výstupu možno formulovať ako úlohu na <a class="reference internal" href="Matematika.html#volny-extrem"><span class="std std-ref">Úloha na voľný extrém</span></a>. Podmienka prvého rádu je</p>
+<div class="math notranslate nohighlight" id="equation-ppr-y">
+<span class="eqno">(3.13)<a class="headerlink" href="#equation-ppr-y" title="Link to this equation">#</a></span>\[p=C'(y)=MC(y),\]</div>
+<p>kde <span class="math notranslate nohighlight">\(MC(y)\)</span> sú hraničné náklady,</p>
+<div class="math notranslate nohighlight">
+\[
+MC(y)=C'(y).
+\]</div>
+<dl class="simple myst" id="def-mc">
+<dt>Hraničné náklady</dt><dd><p>výstupný <a class="reference internal" href="Matematika.html#multiplikator-label"><span class="std std-ref">Multiplikátor</span></a> nákladov.</p>
+</dd>
+</dl>
+<p>Podmienka <a class="reference internal" href="#equation-ppr-y">(3.13)</a> je postačujúca, ak</p>
+<div class="math notranslate nohighlight">
+\[
+C''(y)
+=
+MC'(y)
+\ge 0.
+\]</div>
+<p>Teda ak je nákladová funkcia konvexná.</p>
+<p>Firma zvyšuje výrobu dovtedy, kým príjem z poslednej vyrobenej jednotky prevyšuje náklady na jej výrobu. V optimálnom riešení sa cena výstupu rovná hraničným nákladom.</p>
+</section>
+<section id="kratkodobe-spravanie-firmy">
+<h2><span class="section-number">3.4. </span>Krátkodobé správanie firmy<a class="headerlink" href="#kratkodobe-spravanie-firmy" title="Link to this heading">#</a></h2>
+<p>Z krátkodobého hľadiska predpokladáme, že firma nemôže zmeniť hodnotu niektorých vstupov. Rozlišujeme:</p>
+<ul class="simple">
+<li><p><strong>variabilné vstupy</strong>, ktoré môže firma krátkodobo meniť,</p></li>
+<li><p><strong>fixné vstupy</strong>, ktorých objem je v krátkom období daný.</p></li>
+</ul>
+<p>Pre zjednodušenie predpokladajme dva vstupy. Kapitál <span class="math notranslate nohighlight">\(K\)</span> je fixný vstup a práca <span class="math notranslate nohighlight">\(N\)</span> je variabilný vstup:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{x}
+=
+\begin{pmatrix}
+K\\
+N
+\end{pmatrix}.
+\end{split}\]</div>
+<p>Ceny vstupov sú ceny jednotky práce a kapitálu</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{c}
+=
+\begin{pmatrix}
+q\\
+\omega
+\end{pmatrix}.
+\end{split}\]</div>
+<p>Krátkodobá zisková funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi
+=
+pf(K,N)
+-
+(qK+\omega N),
+\]</div>
+<p>kde:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(w\)</span> je mzdová sadzba,</p></li>
+<li><p><span class="math notranslate nohighlight">\(q\)</span> je cena jednotky kapitálu.</p></li>
+</ul>
+<p>Keďže vstup <span class="math notranslate nohighlight">\(K\)</span> je fixný, náklad</p>
+<div class="math notranslate nohighlight">
+\[
+qK
+\]</div>
+<p>je v krátkom období konštantný. Pri rozhodovaní firmy preto neovplyvňuje optimálnu voľbu práce <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>Krátkodobá variabilná zisková funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi_v
+=
+pf(K,N)-\omega N.
+\]</div>
+<p>Krátkodobá nákladová funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+SC(K,N)
+=
+qK+\omega N.
+\]</div>
+<p>Krátkodobá variabilná nákladová funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+SVC(N)
+=
+\omega N.
+\]</div>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">3.5. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<p>Použité knižnice sú</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">simplify</span><span class="p">,</span> <span class="n">ask</span><span class="p">,</span> <span class="n">Q</span><span class="p">,</span> <span class="n">Rational</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="priklad">
+<h3><span class="section-number">3.5.1. </span>Príklad<a class="headerlink" href="#priklad" title="Link to this heading">#</a></h3>
+<p>Odvoďte dopytovú a ponukovú funkciu firmy, ktorej produkčná funkcia je v Cobbovom-Douglasovom tvare</p>
+<div class="math notranslate nohighlight">
+\[
+y=x^\alpha,
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(c\)</span> je cena vstupu a <span class="math notranslate nohighlight">\(p\)</span> cena výstupu.</p>
+<p>Preukážte, že dopytová a ponuková funkcia sú rastúce v <span class="math notranslate nohighlight">\(p\)</span> a klesajúce v <span class="math notranslate nohighlight">\(c\)</span>.</p>
+<section id="riesenie">
+<h4><span class="section-number">3.5.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<p>Podľa podmienky prvého rádu <a class="reference internal" href="#equation-ppr-x">(3.3)</a> platí</p>
+<div class="math notranslate nohighlight">
+\[
+MP(x)=\frac{c}{p}.
+\]</div>
+<p>Pre Cobbovu-Douglasovu produkčnú funkciu</p>
+<div class="math notranslate nohighlight">
+\[
+y=x^\alpha
+\]</div>
+<p>je hraničný produkt</p>
+<div class="math notranslate nohighlight">
+\[
+MP(x)
+=
+\frac{\mathrm{d}y}{\mathrm{d}x}
+=
+\alpha x^{\alpha-1}.
+\]</div>
+<p>Po dosadení do podmienky prvého rádu získame</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha x^{\alpha-1}
+=
+\frac{c}{p}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x^{\alpha-1}
+=
+\frac{c}{\alpha p}.
+\]</div>
+<p>Optimálny dopyt po vstupe je teda</p>
+<div class="math notranslate nohighlight">
+\[
+x(p,c)
+=
+\left(
+\frac{\alpha p}{c}
+\right)^{\frac{1}{1-\alpha}}.
+\]</div>
+<p>Dosadením dopytovej funkcie do produkčnej funkcie získame ponukovú funkciu</p>
+<div class="math notranslate nohighlight">
+\[
+y(p,c)
+=
+\left(
+\frac{\alpha p}{c}
+\right)^{\frac{\alpha}{1-\alpha}}.
+\]</div>
+<p>Pretože</p>
+<div class="math notranslate nohighlight">
+\[
+0&lt;\alpha&lt;1,
+\]</div>
+<p>platí</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{1}{1-\alpha}&gt;0,
+\qquad
+\frac{\alpha}{1-\alpha}&gt;0.
+\]</div>
+<p>Dopytová funkcia aj ponuková funkcia sú preto rastúce v cene výstupu <span class="math notranslate nohighlight">\(p\)</span> a klesajúce v cene vstupu <span class="math notranslate nohighlight">\(c\)</span>.</p>
+</section>
+<section id="python">
+<h4><span class="section-number">3.5.1.2. </span>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">α</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span>
+    <span class="s1">'α p c x'</span><span class="p">,</span>
+    <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">real</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="n">alpha</span> <span class="c1"># produkčná funkcia všeobecne</span>
+
+<span class="n">ppr</span> <span class="o">=</span> <span class="n">diff</span><span class="p">(</span><span class="n">f</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">c</span><span class="o">/</span><span class="n">p</span> <span class="c1"># podmienka prvého rádu</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># rieš podmienku prvého rádu ppr</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">s</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dopytová funkcia x(c,p) = "</span><span class="p">,</span> <span class="n">s</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Ponuková funkcia y(c,p) ="</span><span class="p">,</span> <span class="n">f</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">s</span><span class="p">[</span><span class="n">x</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Dopytová funkcia x(c,p) =  c**(1/(alpha - 1))/(alpha*p)**(1/(alpha - 1))
+Ponuková funkcia y(c,p) = (c**(1/(alpha - 1))/(alpha*p)**(1/(alpha - 1)))**alpha
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="id1">
+<h3><span class="section-number">3.5.2. </span>Príklad<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Uvažujme firmu s Cobbovou-Douglasovou produkčnou funkciou</p>
+<div class="math notranslate nohighlight">
+\[
+y=x_1^\alpha x_2^{1-\alpha},
+\]</div>
+<p>kde ceny vstupov sú <span class="math notranslate nohighlight">\(c_1\)</span> a <span class="math notranslate nohighlight">\(c_2\)</span> a cena výstupu je <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Ukážte, že podmienky prvého rádu maximalizácie zisku implikujú podmienky prvého rádu minimalizácie nákladov pri konštantnom objeme.</p>
+</section>
+<section id="id2">
+<h3><span class="section-number">3.5.3. </span>Riešenie<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Podľa podmienok prvého rádu <a class="reference internal" href="#equation-ppr-x">(3.3)</a> platí</p>
+<div class="math notranslate nohighlight">
+\[
+MP_1=\frac{c_1}{p},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MP_2=\frac{c_2}{p}.
+\]</div>
+<p>Po vydelení oboch rovníc dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{MP_1}{MP_2}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Výsledok sa zhoduje s podmienkou prvého rádu úlohy minimalizácie nákladov <a class="reference internal" href="#equation-ppr-min-naklady-obj1">(3.9)</a>, <a class="reference internal" href="#equation-ppr-min-naklady-obj2">(3.10)</a>.</p>
+<p>Pre Cobbovu-Douglasovu produkčnú funkciu sú hraničné produkty</p>
+<div class="math notranslate nohighlight">
+\[
+MP_1
+=
+\alpha x_1^{\alpha-1}x_2^{1-\alpha},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MP_2
+=
+(1-\alpha)x_1^\alpha x_2^{-\alpha}.
+\]</div>
+<p>Po dosadení do podmienky prvého rádu získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha x_1^{\alpha-1}x_2^{1-\alpha}}
+     {(1-\alpha)x_1^\alpha x_2^{-\alpha}}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha}{1-\alpha}
+\frac{x_2}{x_1}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Optimálny pomer vstupov je preto</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x_2}{x_1}
+=
+\frac{1-\alpha}{\alpha}
+\frac{c_1}{c_2}.
+\]</div>
+<p>Podmienky maximalizácie zisku teda určujú nielen optimálny rozsah výroby, ale aj nákladovo efektívny pomer vstupov. Ten sa zhoduje s riešením úlohy minimalizácie nákladov pri danom objeme výroby.</p>
+</section>
+<section id="id3">
+<h3><span class="section-number">3.5.4. </span>Príklad<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Odvoďte podmienené dopytové funkcie a nákladovú funkciu firmy s Cobbovou-Douglasovou produkčnou funkciou</p>
+<div class="math notranslate nohighlight">
+\[
+y=x_1^\alpha x_2^{1-\alpha},
+\]</div>
+<p>kde ceny vstupov sú <span class="math notranslate nohighlight">\(c_1\)</span> a <span class="math notranslate nohighlight">\(c_2\)</span>.</p>
+<section id="id4">
+<h4><span class="section-number">3.5.4.1. </span>Riešenie<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p>Podľa podmienok prvého rádu <a class="reference internal" href="#equation-ppr-min-naklady-obj1">(3.9)</a> a <a class="reference internal" href="#equation-ppr-min-naklady-obj2">(3.10)</a> platí</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{MP_1}{MP_2}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Pre Cobbovu-Douglasovu produkčnú funkciu sú hraničné produkty</p>
+<div class="math notranslate nohighlight">
+\[
+MP_1
+=
+\alpha x_1^{\alpha-1}x_2^{1-\alpha},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MP_2
+=
+(1-\alpha)x_1^\alpha x_2^{-\alpha}.
+\]</div>
+<p>Po dosadení dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha x_1^{\alpha-1}x_2^{1-\alpha}}
+     {(1-\alpha)x_1^\alpha x_2^{-\alpha}}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha}{1-\alpha}
+\frac{x_2}{x_1}
+=
+\frac{c_1}{c_2}.
+\]</div>
+<p>Odtiaľ</p>
+<div class="math notranslate nohighlight">
+\[
+x_2
+=
+\frac{1-\alpha}{\alpha}
+\frac{c_1}{c_2}
+x_1.
+\]</div>
+<p>Dosadením do produkčnej podmienky</p>
+<div class="math notranslate nohighlight">
+\[
+x_1^\alpha x_2^{1-\alpha}
+=
+y
+\]</div>
+<p>dostaneme</p>
+<div class="math notranslate nohighlight">
+\[
+x_1^\alpha
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{c_1}{c_2}
+x_1
+\right)^{1-\alpha}
+=
+y.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_1
+=
+y
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{c_2}{c_1}
+\right)^{1-\alpha}.
+\]</div>
+<p>Podmienený dopyt po prvom vstupe je</p>
+<div class="math notranslate nohighlight">
+\[
+x_1(y,c_1,c_2)
+=
+y
+\left(
+\frac{\alpha}{1-\alpha}
+\frac{c_2}{c_1}
+\right)^{1-\alpha}.
+\]</div>
+<p>Dosadením do vzťahu pre <span class="math notranslate nohighlight">\(x_2\)</span> získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_2(y,c_1,c_2)
+=
+y
+\left(
+\frac{1-\alpha}{\alpha}
+\frac{c_1}{c_2}
+\right)^{\alpha}.
+\]</div>
+<p>Nákladová funkcia je</p>
+<div class="math notranslate nohighlight">
+\[
+C(y)
+=
+c_1x_1(y,c_1,c_2)
++
+c_2x_2(y,c_1,c_2).
+\]</div>
+<p>Po dosadení podmienených dopytov získame</p>
+<div class="math notranslate nohighlight">
+\[
+C(y)
+=
+\frac{
+c_1^\alpha c_2^{1-\alpha}
+}{
+\alpha^\alpha
+(1-\alpha)^{1-\alpha}
+}
+\,y.
+\]</div>
+<p>Nákladová funkcia je lineárna v objeme výroby <span class="math notranslate nohighlight">\(y\)</span>, čo je dôsledok konštantných výnosov z rozsahu Cobbovej-Douglasovej produkčnej funkcie.</p>
+</section>
+<section id="id5">
+<h4><span class="section-number">3.5.4.2. </span>Python<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>Ak úlohu zjednodušíme dosadením konkrétnej hodnoty vstupnej elasticity výstupu</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha=\frac13.
+\]</div>
+<p>Dokáže použitím symbolov vyriešiť úlohu aj počítačový algebraický systém.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">3</span>
+
+<span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">c_1</span><span class="p">,</span> <span class="n">c_2</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x1,x2,c_1,c_2,y'</span><span class="p">,</span><span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">f2</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span>
+
+<span class="n">ppr</span> <span class="o">=</span> <span class="p">[</span><span class="n">diff</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="n">diff</span><span class="p">(</span><span class="n">f2</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">-</span><span class="n">c_1</span><span class="o">/</span><span class="n">c_2</span><span class="p">,</span>
+      <span class="n">f2</span><span class="o">-</span><span class="n">y</span><span class="p">]</span>
+
+<span class="n">s2</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,(</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">),</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="n">s2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">s2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Podmienené dopytové funkcie"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Nákladová funkcia"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">simplify</span><span class="p">(</span> <span class="n">c_1</span><span class="o">*</span><span class="n">s2</span><span class="p">[</span><span class="n">x1</span><span class="p">]</span> <span class="o">+</span> <span class="n">c_2</span><span class="o">*</span><span class="n">s2</span><span class="p">[</span><span class="n">x2</span><span class="p">]</span>  <span class="p">)</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Podmienené dopytové funkcie
+{x1: 0.629960524947437*c_2**(2/3)*y/c_1**(2/3), x2: 1.25992104989487*c_1**(1/3)*y/c_2**(1/3)}
+Nákladová funkcia
+1.88988157484231*c_1**(1/3)*c_2**(2/3)*y
+</pre></div>
+</div>
+</div>
+</div>
+<p>Výrazy sa zhodujú so všeobecným analytickým riešením pre <span class="math notranslate nohighlight">\(\alpha=1/3\)</span>.</p>
+</section>
+</section>
+<section id="id6">
+<h3><span class="section-number">3.5.5. </span>Príklad<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Nákladová funkcia firmy je</p>
+<div class="math notranslate nohighlight">
+\[
+C(y)=y^2-3y+4,
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(y\)</span> je objem výroby. Cena jednotky výstupu je</p>
+<div class="math notranslate nohighlight">
+\[
+p=3.
+\]</div>
+<p>Vypočítajte:</p>
+<ol class="arabic simple">
+<li><p>optimálny objem výroby,</p></li>
+<li><p>náklady,</p></li>
+<li><p>zisk firmy.</p></li>
+</ol>
+<section id="id7">
+<h4><span class="section-number">3.5.5.1. </span>Riešenie<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
+<p>Firma maximalizuje zisk</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi(y)=py-C(y).
+\]</div>
+<p>Podľa podmienky prvého rádu <a class="reference internal" href="#equation-ppr-y">(3.13)</a> platí</p>
+<div class="math notranslate nohighlight">
+\[
+p=MC(y).
+\]</div>
+<p>Hraničné náklady sú</p>
+<div class="math notranslate nohighlight">
+\[
+MC(y)=C'(y)=2y-3.
+\]</div>
+<p>Po dosadení ceny výstupu získame</p>
+<div class="math notranslate nohighlight">
+\[
+3=2y-3.
+\]</div>
+<p>Odtiaľ</p>
+<div class="math notranslate nohighlight">
+\[
+y=3.
+\]</div>
+<p>Optimálny objem výroby je</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=3.
+\]</div>
+<p>Náklady firmy sú</p>
+<div class="math notranslate nohighlight">
+\[
+C(3)=3^2-3\times3+4=4.
+\]</div>
+<p>Príjmy firmy sú</p>
+<div class="math notranslate nohighlight">
+\[
+R(3)=3\times3=9.
+\]</div>
+<p>Zisk firmy je</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi(3)=9-4=5.
+\]</div>
+<p>Firma preto vyrába</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=3,
+\]</div>
+<p>jej náklady sú</p>
+<div class="math notranslate nohighlight">
+\[
+C=4,
+\]</div>
+<p>a zisk</p>
+<div class="math notranslate nohighlight">
+\[
+\Pi=5.
+\]</div>
+</section>
+<section id="id8">
+<h4><span class="section-number">3.5.5.2. </span>Python<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">solve</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'y'</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># cena výstupu</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="c1"># nákladová funkcia</span>
+<span class="n">C</span> <span class="o">=</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="mi">4</span>
+
+<span class="c1"># hraničné náklady</span>
+<span class="n">MC</span> <span class="o">=</span> <span class="n">diff</span><span class="p">(</span><span class="n">C</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># PPR: p = MC</span>
+<span class="n">riesenie</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">MC</span> <span class="o">-</span> <span class="n">p</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="nb">dict</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+<span class="n">riesenie</span> <span class="o">=</span> <span class="n">riesenie</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">riesenie</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">riesenie</span> 
+<span class="n">y_star</span> <span class="o">=</span> <span class="n">riesenie</span><span class="p">[</span><span class="n">y</span><span class="p">]</span>
+
+<span class="c1"># náklady</span>
+<span class="n">C_star</span> <span class="o">=</span> <span class="n">C</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_star</span><span class="p">)</span>
+
+<span class="c1"># príjmy</span>
+<span class="n">R_star</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">y_star</span>
+
+<span class="c1"># zisk</span>
+<span class="n">Pi_star</span> <span class="o">=</span> <span class="n">R_star</span> <span class="o">*</span> <span class="n">C_star</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Optimálny výstup"</span><span class="p">,</span> <span class="n">y_star</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Náklady:"</span><span class="p">,</span> <span class="n">C_star</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Zisk:"</span><span class="p">,</span> <span class="n">Pi_star</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimálny výstup 3
+Náklady: 4
+Zisk: 36
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">3.6. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h3><span class="section-number">3.6.1. </span>Príklad<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Firma má produkčnú funkciu</p>
+<div class="math notranslate nohighlight">
+\[
+y=x^{1/2},
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(c\)</span> je cena vstupu a <span class="math notranslate nohighlight">\(p\)</span> cena výstupu.</p>
+<p>Odvoďte:</p>
+<ol class="arabic simple">
+<li><p>dopytovú funkciu firmy,</p></li>
+<li><p>ponukovú funkciu firmy.</p></li>
+</ol>
+</section>
+<section id="id10">
+<h3><span class="section-number">3.6.2. </span>Príklad<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Výroba firmy zodpovedá Cobbovej-Douglasovej produkčnej funkcii</p>
+<div class="math notranslate nohighlight">
+\[
+y=x_1^{1/4}x_2^{3/4},
+\]</div>
+<p>kde ceny vstupov sú <span class="math notranslate nohighlight">\(c_1\)</span> a <span class="math notranslate nohighlight">\(c_2\)</span>.</p>
+<p>Odvoďte podmienené dopytové funkcie firmy.</p>
+</section>
+<section id="id11">
+<h3><span class="section-number">3.6.3. </span>Príklad<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>Výroba firmy zodpovedá Cobbovej-Douglasovej produkčnej funkcii</p>
+<div class="math notranslate nohighlight">
+\[
+y=x_1^{1/3}x_2^{2/3}.
+\]</div>
+<p>Ceny vstupov sú</p>
+<div class="math notranslate nohighlight">
+\[
+c_1=\frac{1}{3},
+\qquad
+c_2=\frac{2}{3}.
+\]</div>
+<p>Firma má vyrobiť</p>
+<div class="math notranslate nohighlight">
+\[
+y_0=8.
+\]</div>
+<p>Vypočítajte:</p>
+<ol class="arabic simple">
+<li><p>optimálne množstvo vstupu <span class="math notranslate nohighlight">\(x_1\)</span>,</p></li>
+<li><p>optimálne množstvo vstupu <span class="math notranslate nohighlight">\(x_2\)</span>,</p></li>
+<li><p>objem výroby,</p></li>
+<li><p>celkové náklady firmy.</p></li>
+</ol>
+</section>
+<section id="id12">
+<h3><span class="section-number">3.6.4. </span>Príklad<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>Nákladová funkcia firmy je</p>
+<div class="math notranslate nohighlight">
+\[
+C(y)=y^2-2y+5,
+\]</div>
+<p>kde <span class="math notranslate nohighlight">\(y\)</span> je objem výroby.</p>
+<p>Cena výstupu je</p>
+<div class="math notranslate nohighlight">
+\[
+p=4.
+\]</div>
+<p>Vypočítajte:</p>
+<ol class="arabic simple">
+<li><p>optimálny objem výroby,</p></li>
+<li><p>náklady,</p></li>
+<li><p>príjmy,</p></li>
+<li><p>zisk.</p></li>
+</ol>
+</section>
+<section id="id13">
+<h3><span class="section-number">3.6.5. </span>Príklad<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<p>Produkčná funkcia firmy je</p>
+<div class="math notranslate nohighlight">
+\[
+y=K^{1/3}N^{2/3}.
+\]</div>
+<p>Kapitál je v krátkom období fixný na úrovni</p>
+<div class="math notranslate nohighlight">
+\[
+K=8.
+\]</div>
+<p>Mzdová sadzba je <span class="math notranslate nohighlight">\(\omega\)</span> a cena výstupu <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Odvoďte podmienku prvého rádu pre optimálny dopyt firmy po práci.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Produk.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Produkcia firmy</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Naklad.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Náklady firmy</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximalizacia-zisku-vyberom-vstupov">3.1. Maximalizácia zisku výberom vstupov</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dopyt-po-vyrobnych-faktoroch">3.1.1. Dopyt po výrobných faktoroch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#zisk-firmy-a-konstantne-vynosy-z-rozsahu">3.1.2. Zisk firmy a konštantné výnosy z rozsahu</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimalizacia-nakladov-pri-konstantnom-objeme-vyroby">3.2. Minimalizácia nákladov pri konštantnom objeme výroby</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ekonomicka-interpretacia-ppr">3.2.1. Ekonomická interpretácia PPR</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maximalizacia-zisku-vyberom-vystupu">3.3. Maximalizácia zisku výberom výstupu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kratkodobe-spravanie-firmy">3.4. Krátkodobé správanie firmy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">3.5. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad">3.5.1. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">3.5.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">3.5.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.5.2. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3.5.3. Riešenie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.5.4. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3.5.4.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3.5.4.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">3.5.5. Príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">3.5.5.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.5.5.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">3.6. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">3.6.1. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">3.6.2. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">3.6.3. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">3.6.4. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">3.6.5. Príklad</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,1798 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>9. Teória všeobecnej rovnováhy &#8212; Ekonomická analýza</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=6a604523" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script data-sd-tabs-storage-prefix="sphinx-design-tab-id-" src="_static/design-tabs.js?v=fcb327ea"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Rovnovaha';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="10. Systémy národných účtov a makroekonomická rovnováha" href="Zaklad.html" />
+    <link rel="prev" title="8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou" href="Dynam.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="Uvod.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Ekonomická analýza - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Ekonomická analýza - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Uvod.html">
+                    Kvantitatívna ekonomická analýza
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Základné pojmy a matematický aparát</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Matematika.html">1. Matematický aparát</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória firmy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Produk.html">2. Produkcia firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Firma.html">3. Správanie firmy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Naklad.html">4. Náklady firmy</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória spotrebiteľa</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Spotrebitel.html">5. Správanie spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Porovn.html">6. Dopyt spotrebiteľa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Stati.html">7. Voľný čas a spotreba</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Dynam.html">8. Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória všeobecnej rovnováhy</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">9. Teória všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Zaklad.html">10. Systémy národných účtov a makroekonomická rovnováha</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StaticModel.html">11. Statický model všeobecnej rovnováhy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Finan.html">12. Model prídelovej ekonomiky a nedokonalosti na finančných trhoch</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Dynamické ekonomické merania</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="DynMer.html">13. Makroekonomické merania v čase a priestore</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Teória rastu</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="UvodRast.html">14. Úvod do teórie rastu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rast.html">15. Konvergencia a ustálený rast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HladPrac.html">16. Model vyhľadávania a trh práce</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Investície vo výrobnej ekonomike</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Vyrob.html">17. Dynamický model zatvorenej výrobnej ekonomiky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Otvorena.html">18. Modely reálnej otvorenej ekonomiky</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Peniaze a teórie hospodárskych cyklov</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Peniaze.html">19. Peniaze, banky a menová politika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Pruzne.html">20. Modely hospodárskych cyklov s pružnými cenami a mzdami</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nepruzne.html">21. Súčasné keynesovské modely: nepružné ceny</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Literatúra a prílohy</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Literatura.html">22. Literatúra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Obrazky.html">23. Použité obrázky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data.html">24. Údaje</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Rovnovaha.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Teória všeobecnej rovnováhy</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrowov-debreuov-svet">9.1. Arrowov-Debreuov svet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cisto-vymenna-ekonomika">9.2. Čisto-výmenná ekonomika</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hranicny-diagram">9.3. Hraničný diagram</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pridelovy-bod">9.3.1. Prídelový bod</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rozpoctova-hranica">9.3.2. Rozpočtová hranica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konkurencna-rovnovaha">9.4. Konkurenčná rovnováha</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#walrasov-zakon">9.5. Walrasov zákon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenova-normalizacia">9.5.1. Cenová normalizácia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paretova-efektivnost">9.6. Paretova efektívnosť</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#walrasove-vety-o-blahobyte">9.7. Walrasove vety o blahobyte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">9.8. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vseobecna-rovnovaha-v-cisto-vymennej-ekonomike">9.8.1. Príklad: Všeobecná rovnováha v čisto-výmennej ekonomike</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">9.8.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">9.8.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numericky-priklad">9.8.2. Numerický príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.8.2.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.8.2.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">9.9. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad">9.9.1. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-tri-statky">9.9.2. Príklad: Tri statky</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="teoria-vseobecnej-rovnovahy">
+<h1><span class="section-number">9. </span>Teória všeobecnej rovnováhy<a class="headerlink" href="#teoria-vseobecnej-rovnovahy" title="Link to this heading">#</a></h1>
+<p>V predchádzajúcich kapitolách sme skúmali správanie spotrebiteľov a firiem na jednotlivých trhoch. Predpokladali sme, že ceny sú exogénne. Spotrebitelia aj firmy ich považovali za dané a prispôsobovali im svoje rozhodnutia.</p>
+<p>Takýto prístup je vhodný pri analýze jednotlivých trhov. Ak sa však snažíme vysvetliť fungovanie hospodárstva ako celku, vzniká prirodzená otázka:</p>
+<blockquote>
+<div><p>Ak spotrebitelia a firmy považujú ceny za dané, kto ich vlastne určuje?</p>
+</div></blockquote>
+<p>V ekonomike s veľkým počtom trhov sa ceny nevytvárajú izolovane. Zmeny na jednom trhu ovplyvňujú ostatné trhy a naopak. Ceny preto musia byť určené spoločne.</p>
+<p>V teórii všeobecnej rovnováhy preto ceny nevystupujú ako exogénne, ale ako endogénne premenné modelu.</p>
+<dl class="simple myst">
+<dt>Čiastočná (parciálna) rovnováha</dt><dd><p>rovnováha na jednotlivom trhu pri daných cenách ostatných statkov.</p>
+</dd>
+<dt>Všeobecná rovnováha</dt><dd><p>stav, v ktorom sú všetky trhy v ekonomike súčasne v rovnováhe.</p>
+</dd>
+</dl>
+<p>Koncept rovnováhy možno aplikovať na jednotlivý trh, odvetvie alebo celé hospodárstvo. Vo všeobecnej rovnováhe sa však neanalyzujú iba vzťahy v rámci jednotlivých trhov, ale aj vzťahy medzi trhmi.</p>
+<p>Tento rozdiel je dôležitý, pretože niektoré ceny nemožno vysvetliť izolovanou analýzou jedného trhu. Sú výsledkom interakcie viacerých trhov a celej ekonomiky. Typickým príkladom je úroková miera, ktorá súvisí s rozhodnutiami domácností o úsporách, rozhodnutiami firiem o investíciách a fungovaním finančných trhov.</p>
+<p>Najdôležitejší rozdiel medzi čiastočnou a všeobecnou rovnováhou spočíva v tom, že v čiastočnej rovnováhe sú niektoré ceny považované za dané, zatiaľ čo vo všeobecnej rovnováhe sú všetky ceny určované endogénne.</p>
+<section id="arrowov-debreuov-svet">
+<h2><span class="section-number">9.1. </span>Arrowov-Debreuov svet<a class="headerlink" href="#arrowov-debreuov-svet" title="Link to this heading">#</a></h2>
+<p>Moderná teória všeobecnej rovnováhy je spojená najmä s prácou Kennetha Arrowa a Gérarda Debreua <span class="bibtex-citation" id="id1">[<a class="reference internal" href="Literatura.html#id6" title="Kenneth J. Arrow and Gérard Debreu. Existence of an equilibrium for a competitive economy. Econometrica, 22(3):265–290, 1954. URL: https://www.jstor.org/stable/1907353, doi:10.2307/1907353.">AD54</a>]</span>.</p>
+<p>Arrow a Debreu ukázali, že za určitých podmienok existuje súbor cien, pri ktorom sú všetky trhy v ekonomike súčasne v rovnováhe. Ich model vytvoril základ modernej mikroekonomickej teórie a dodnes predstavuje štandardný rámec pre analýzu fungovania trhového hospodárstva.</p>
+<p>Pri opise hospodárstva používajú Arrow a Debreu veľmi široké chápanie statku.</p>
+<dl class="simple myst">
+<dt>Arrowov-Debreuov statok</dt><dd><p>statok definovaný svojimi fyzickými vlastnosťami, miestom dodania, časom dodania a prípadne stavom sveta, v ktorom bude dodaný.</p>
+</dd>
+</dl>
+<p>Preto nie je dôležité iba to, <strong>čo</strong> sa spotrebúva, ale aj <strong>kedy</strong> a <strong>kde</strong> sa spotrebúva.</p>
+<aside class="sidebar">
+<p class="sidebar-title">Príklad</p>
+<ul class="simple">
+<li><p>jeden kilogram pšenice dnes predstavuje iný statok ako jeden kilogram pšenice o rok,</p></li>
+<li><p>elektrina dodaná v Bratislave predstavuje iný statok ako elektrina dodaná v Košiciach,</p></li>
+<li><p>spotreba v súčasnosti predstavuje iný statok ako spotreba v budúcnosti.</p></li>
+</ul>
+</aside>
+<p>Tento spôsob uvažovania sme už implicitne použili v predchádzajúcej kapitole. Spotrebu v prvom období sme označovali ako <span class="math notranslate nohighlight">\(c\)</span> a spotrebu v druhom období ako <span class="math notranslate nohighlight">\(c'\)</span>. Hoci ide o ten istý fyzický statok, z pohľadu Arrowovho-Debreuovho modelu ide o dva rôzne statky, pretože sú spotrebované v rôznom čase.</p>
+<p>Arrowov-Debreuov svet preto poskytuje jednotný rámec na analýzu:</p>
+<ul class="simple">
+<li><p>spotreby a výroby,</p></li>
+<li><p>medziregionálneho obchodu,</p></li>
+<li><p>medzičasového rozhodovania,</p></li>
+<li><p>neistoty a rizika.</p></li>
+</ul>
+<p>V nasledujúcom texte budeme pracovať s jednoduchšími verziami tohto všeobecného modelu. Hlavnou otázkou bude, ako ceny koordinujú rozhodnutia jednotlivých ekonomických subjektov a za akých podmienok môže vzniknúť všeobecná rovnováha.</p>
+<p>Model Arrowa a Debreua opisuje idealizované hospodárstvo, v ktorom sú splnené viaceré predpoklady umožňujúce koordináciu všetkých ekonomických rozhodnutí prostredníctvom cien.</p>
+<dl class="simple myst">
+<dt>Arrowov-Debreuov svet</dt><dd><p>idealizovaná ekonomika, v ktorej sú splnené podmienky potrebné pre fungovanie modelu všeobecnej rovnováhy.</p>
+</dd>
+</dl>
+<div class="admonition-vsimnite-si admonition">
+<p class="admonition-title">Všimnite si</p>
+<p>Arrowov-Debreuov svet nepredstavuje opis skutočného hospodárstva.</p>
+<p>V reálnych ekonomikách existujú dane, transakčné náklady, externality, monopolná sila a asymetrické informácie. Význam Arrowovho-Debreuovho modelu spočíva predovšetkým v tom, že poskytuje východiskový bod, voči ktorému možno porovnávať reálne ekonomiky.</p>
+</div>
+<p>Predpokladáme, že:</p>
+<ul class="simple">
+<li><p><strong>trhy sú úplné</strong>; pre každý statok existuje trh, na ktorom ho možno nakupovať alebo predávať;</p></li>
+<li><p><strong>trhy sú dokonalé</strong>; neexistujú transakčné náklady, dane ani iné trhové obmedzenia;</p></li>
+<li><p>platí <strong>dokonalá konkurencia</strong>; všetky ekonomické subjekty považujú ceny za dané;</p></li>
+<li><p><strong>neexistujú spotrebiteľské externality</strong>; užitočnosť spotrebiteľa závisí iba od jeho vlastnej spotreby;</p></li>
+<li><p><strong>neexistujú výrobné externality</strong>; produkcia firmy závisí iba od jej vlastných vstupov;</p></li>
+<li><p><strong>informácie sú symetrické</strong>; všetci účastníci trhu disponujú rovnakými informáciami;</p></li>
+<li><p><strong>informácie sú úplné</strong>; preferencie spotrebiteľov a technológie firiem sú všeobecne známe.</p></li>
+</ul>
+<p>Arrowov-Debreuov model predstavuje referenčný bod modernej mikroekonómie. Neopisuje hospodárstvo presne tak, ako funguje v realite. Umožňuje však pochopiť, ako trhy koordinujú ekonomické rozhodnutia prostredníctvom cien.</p>
+<p>Za uvedených predpokladov možno analyzovať podmienky, za ktorých sú všetky trhy v ekonomike súčasne v rovnováhe.</p>
+<p>Princípy modelov všeobecnej rovnováhy si ukážeme na najjednoduchšom type ekonomiky, ktorý nazývame čisto-výmenná ekonomika. V čisto-výmennej ekonomike neexistuje výroba. Spotrebitelia disponujú iba počiatočnými zásobami statkov, ktoré si navzájom vymieňajú. Takáto ekonomika je dostatočne jednoduchá na analýzu a zároveň obsahuje všetky základné myšlienky všeobecnej rovnováhy.</p>
+</section>
+<section id="cisto-vymenna-ekonomika">
+<h2><span class="section-number">9.2. </span>Čisto-výmenná ekonomika<a class="headerlink" href="#cisto-vymenna-ekonomika" title="Link to this heading">#</a></h2>
+<p>Skonštruujme model, v ktorom pôsobí konečný počet spotrebiteľov, ktorí obchodujú s konečným množstvom statkov.</p>
+<ul class="simple">
+<li><p>Počet spotrebiteľov je <span class="math notranslate nohighlight">\(n\)</span>; individuálny spotrebiteľ je označený indexom <span class="math notranslate nohighlight">\(i = 1, 2 ... n\)</span>.</p></li>
+<li><p>Počet statkov je <span class="math notranslate nohighlight">\(k\)</span>; individuálny statok označíme indexom <span class="math notranslate nohighlight">\(j = 1, 2 ... k\)</span>.</p></li>
+<li><p>Každý spotrebiteľ má <em>prídel</em> statkov. Prídel statku <span class="math notranslate nohighlight">\(j\)</span> pre spotrebiteľa <span class="math notranslate nohighlight">\(i\)</span> je <span class="math notranslate nohighlight">\(y_{ij}\)</span>. <em>Prídelový kôš</em> spotrebiteľa <span class="math notranslate nohighlight">\(i\)</span> označme vektorom  <span class="math notranslate nohighlight">\(\mathbf{y_i} = [y_{i1}, y_{i2} ... y_{ik}]\)</span>.</p></li>
+<li><p>Preferencie každého spotrebiteľa charakterizuje funkcia užitočnosti v tvare <span class="math notranslate nohighlight">\(u_i = u_i(\mathbf{x_i})\)</span>, kde vektor <span class="math notranslate nohighlight">\(\mathbf{x_i} = [x_{i1}, x_{i2} ... x_{ik}]\)</span> je spotrebiteľský kôš <span class="math notranslate nohighlight">\(i\)</span>. Predpokladajme, že preferencie spotrebiteľa zodpovedajú vlastnostiam predstaveným v teórii spotrebiteľa (<a class="reference internal" href="Spotrebitel.html#kapitola-uzitocnost"><span class="std std-ref">Existencia funkcie užitočnosti</span></a>).</p></li>
+<li><p>Spotrebitelia si slobodne vymieňajú statky. <strong>Výmenné relácie</strong> zodpovedajú cenám <span class="math notranslate nohighlight">\(\mathbf{p} = [p_1, p_2, ... p_k]\)</span>, kde <span class="math notranslate nohighlight">\(p_j\)</span> je cena statku <span class="math notranslate nohighlight">\(j \in \{1...k\}\)</span>. Ceny sú v modeli <em>endogénne</em>.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Poznámka</p>
+<p>Ľubovoľný spotrebiteľ <span class="math notranslate nohighlight">\(i\)</span> môže spotrebovať viac alebo menej statku <span class="math notranslate nohighlight">\(j\)</span> ako je jeho prídel <span class="math notranslate nohighlight">\(y_{ij}\)</span>, keďže ho môže získať výmenou za iný statok (predajom a kúpou).</p>
+</div>
+<dl class="simple myst">
+<dt>Alokácia</dt><dd><p>je ľubovoľná kombinácia spotrebiteľských košov každého spotrebiteľa. Označme ju maticou <span class="math notranslate nohighlight">\(\mathbf{X}\)</span>:</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{X} = [\mathbf{x_1}, \mathbf{x_2} ... \mathbf{x_n}]
+\]</div>
+<dl class="simple myst">
+<dt>Prípustná alokácia</dt><dd><p>Alokácia <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> je prípustná ak spotreba každého statku <span class="math notranslate nohighlight">\(j\)</span> všetkými spotrebiteľmi nie je väčšia ako celkový prídel tohto statku:</p>
+</dd>
+</dl>
+<div class="math notranslate nohighlight" id="equation-r-pripustna-alokacia">
+<span class="eqno">(9.1)<a class="headerlink" href="#equation-r-pripustna-alokacia" title="Link to this equation">#</a></span>\[\sum_{i=1}^{n}{\mathbf{x_i}} \le \sum_{i=1}^{n}{\mathbf{y_i}}.\]</div>
+<p>Inými slovami, podľa podmienky prípustnosti {eq}r_pripustna_alokacia, spotrebitelia nemôžu spotrebovať viac niektorého statku, ako je jeho celkový prídel v ekonomike.</p>
+<p>V čisto-výmennej ekonomike s monotónnymi preferenciami budú všetky statky v rovnováhe spotrebované, a preto bude v rovnováhe platiť rovnosť.</p>
+<ul class="simple">
+<li><p>Každý spotrebiteľ sa správa racionálne, čo možno charakterizovať úlohou v tvare:</p></li>
+</ul>
+<div class="math notranslate nohighlight" id="equation-r-vr-uloha-ui">
+<span class="eqno">(9.2)<a class="headerlink" href="#equation-r-vr-uloha-ui" title="Link to this equation">#</a></span>\[u_{i\max} = \max_{\mathbf{x_i}} {u_i(\mathbf{x_i})},\]</div>
+<div class="math notranslate nohighlight" id="equation-r-vr-uloha-o">
+<span class="eqno">(9.3)<a class="headerlink" href="#equation-r-vr-uloha-o" title="Link to this equation">#</a></span>\[\mathbf{p^{T} x_i} \le \mathbf{p^{T} y_i}\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight" id="equation-r-vr-uloha-n">
+<span class="eqno">(9.4)<a class="headerlink" href="#equation-r-vr-uloha-n" title="Link to this equation">#</a></span>\[\mathbf{x_i} \ge \mathbf{0}.\]</div>
+<div class="note admonition">
+<p class="admonition-title">Všimnime si</p>
+<p>Úloha <a class="reference internal" href="#equation-r-vr-uloha-ui">(9.2)</a>, <a class="reference internal" href="#equation-r-vr-uloha-o">(9.3)</a> a <a class="reference internal" href="#equation-r-vr-uloha-n">(9.4)</a> sa od úlohy spotrebiteľa v tvare <a class="reference internal" href="Spotrebitel.html#equation-funkcia-uzitocnosti">(5.6)</a>,<a class="reference internal" href="Spotrebitel.html#equation-rozpocet-spotrebitel">(5.7)</a> a <a class="reference internal" href="Spotrebitel.html#equation-spotrebitel-nezapornost">(5.8)</a> líši iba pravou stranou rozpočtového ohraničenia. Namiesto peňažného príjmu spotrebiteľ disponuje prídelovým košom.</p>
+</div>
+<p>Za predpokladov Arrowovho-Debreuovho sveta budeme skúmať podmienky, za ktorých v tejto ekonomike vzniká všeobecná rovnováha.</p>
+<p>Zjednodušme model všeobecnej rovnováhy čisto-výmennej ekonomiky do priestoru <span class="math notranslate nohighlight">\(2 \times 2\)</span>. Nech v ekonomike máme 2 spotrebiteľov, ktorí spotrebúvajú 2 statky. Pre ľahšie vnímanie indexov označme spotrebiteľov <span class="math notranslate nohighlight">\(i = A, B\)</span> a statky <span class="math notranslate nohighlight">\(j = 1, 2\)</span>.</p>
+<p>Pri daných (exogénnych) prídelových košoch <span class="math notranslate nohighlight">\(\mathbf{y}_A, \mathbf{y}_B\)</span>, možno model ekonomiky zapísať podmienkami prípustnosti</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}_A + \mathbf{x}_B \le \mathbf{y}_A + \mathbf{y}_B,
+\]</div>
+<p>úlohami charakterizujúcimi oboch spotrebiteľov</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{A\max} = \max_{\mathbf{x}_A} {u_A(\mathbf{x}_A)}, \text{ vzhľadom na} \\
+\mathbf{p^{T} x}_A \le \mathbf{p^{T} y}_A \\
+\mathbf{x}_A \ge \mathbf{0}
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{B\max} = \max_{\mathbf{x}_B} {u_B(\mathbf{x}_B}), \text{ vzhľadom na} \\
+\mathbf{p^{T} x}_B \le \mathbf{p^{T} y}_B \\
+\mathbf{x}_B \ge \mathbf{0}
+\end{split}\]</div>
+<p>Rozpíšme uvedené podmienky. Podmienky prípustnosti majú tvar:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+x_{A1} + x_{B1} \le y_{A1} + y_{B1}, \\
+x_{A2} + x_{B2} \le y_{A2} + y_{B2}.
+\end{split}\]</div>
+<p>Úlohy:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{A\max} = \max_{x_{A1},x_{A2}} {u_A(x_{A1},x_{A2})}, \text{ vzhľadom na} \\
+p_1x_{A1} + p_2x_{A2} \le p_1y_{A1} + p_2y_{A2}, \\
+x_{A1}, x_{A2} \ge 0;
+\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+u_{B\max} = \max_{x_{B1},x_{B2}} {u_B(x_{B1},x_{B2})}, \text{ vzhľadom na} \\
+p_1x_{B1} + p_2x_{B2} \le p_1y_{B1} + p_2y_{B2},\\
+x_{B1}, x_{B2} \ge 0;
+\end{split}\]</div>
+<p>Uvedený model možno prirodzene rozšíriť na ľubovoľný počet spotrebiteľov a statkov. Čitateľ si môže ako cvičenie rozpísať podmienky prípustnosti a optimalizačné úlohy pre všeobecný model s viac ako dvoma spotrebiteľmi alebo viac ako dvoma statkami.</p>
+<p>V ďalšom texte budeme skúmať, ako sa pri daných prídelových košoch a preferenciách vytvárajú ceny, ktoré koordinujú rozhodnutia oboch spotrebiteľov.</p>
+</section>
+<section id="hranicny-diagram">
+<h2><span class="section-number">9.3. </span>Hraničný diagram<a class="headerlink" href="#hranicny-diagram" title="Link to this heading">#</a></h2>
+<p>Najdôležitejšie princípy modelu všeobecnej rovnováhy možno v priestore <span class="math notranslate nohighlight">\(2\times2\)</span> graficky znázorniť pomocou Edgeworthovho diagramu (ďalej len <em>hraničný diagram</em>).</p>
+<p>Celkové množstvo prvého statku v ekonomike je</p>
+<div class="math notranslate nohighlight">
+\[
+\bar y_1 = y_{A1}+y_{B1},
+\]</div>
+<p>a celkové množstvo druhého statku je</p>
+<div class="math notranslate nohighlight">
+\[
+\bar y_2 = y_{A2}+y_{B2}.
+\]</div>
+<p>Hraničný diagram je obdĺžnik s rozmermi <span class="math notranslate nohighlight">\(\bar y_1 \times \bar y_2\)</span>. Každý bod diagramu predstavuje jednu prípustnú alokáciu statkov medzi spotrebiteľov <span class="math notranslate nohighlight">\(A\)</span> a <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Ak spotrebiteľ <span class="math notranslate nohighlight">\(A\)</span> spotrebuje kôš</p>
+<div class="math notranslate nohighlight">
+\[
+(x_{A1},x_{A2}),
+\]</div>
+<p>potom spotrebiteľ <span class="math notranslate nohighlight">\(B\)</span> spotrebuje zostávajúce množstvo statkov</p>
+<div class="math notranslate nohighlight">
+\[
+(x_{B1},x_{B2}) = (\bar y_1-x_{A1},\,\bar y_2-x_{A2}).
+\]</div>
+<p>Každému bodu hraničného diagramu preto zodpovedá práve jedna prípustná alokácia ekonomiky.</p>
+<section id="pridelovy-bod">
+<h3><span class="section-number">9.3.1. </span>Prídelový bod<a class="headerlink" href="#pridelovy-bod" title="Link to this heading">#</a></h3>
+<p>Štartovacie rozdelenie statkov medzi spotrebiteľov nazývame prídel.</p>
+<p>Prídelové koše</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf y_A=(y_{A1},y_{A2}),
+\qquad
+\mathbf y_B=(y_{B1},y_{B2})
+\]</div>
+<p>určujú v hraničnom diagrame <em>prídelový bod</em>.</p>
+<p>Prídelový bod predstavuje alokáciu, ktorou spotrebitelia disponujú pred otvorením trhu a uskutočnením výmeny.</p>
+</section>
+<section id="rozpoctova-hranica">
+<h3><span class="section-number">9.3.2. </span>Rozpočtová hranica<a class="headerlink" href="#rozpoctova-hranica" title="Link to this heading">#</a></h3>
+<p>Pri daných cenách <span class="math notranslate nohighlight">\(\mathbf p=(p_1,p_2)\)</span> je hranica spotrebiteľských možností spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{A1}+p_2x_{A2}=p_1y_{A1}+p_2y_{A2}.
+\]</div>
+<p>Keďže spotreba oboch spotrebiteľov musí spĺňať podmienky prípustnosti,</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1}+x_{B1}=\bar y_1,
+\qquad
+x_{A2}+x_{B2}=\bar y_2,
+\]</div>
+<p>z hranice spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span> vyplýva aj hranica spotrebiteľských možností spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{B1}+p_2x_{B2}
+=
+p_1y_{B1}+p_2y_{B2}.
+\]</div>
+<p>V hraničnom diagrame preto rozpočtové ohraničenie oboch spotrebiteľov reprezentuje jedna spoločná priamka prechádzajúca prídelovým bodom.</p>
+<p>Jej sklon je</p>
+<div class="math notranslate nohighlight">
+\[
+-\frac{p_1}{p_2}.
+\]</div>
+<p>Na obrázku <a class="reference internal" href="#id2"><span class="std std-numref">Obr. 9.1</span></a> je prídelový bod označený modrou značkou. Modrá priamka predstavuje spoločnú rozpočtovú hranicu oboch spotrebiteľov. Každý bod na tejto priamke predstavuje realizovateľnú výmenu pri daných cenách.</p>
+<p>Hraničný diagram zobrazuje tú istú ekonomiku z dvoch perspektív. Tradičný systém súradníc so začiatkom súradnicového systému v ľavom dolnom rohu zodpovedá spotrebiteľovi <span class="math notranslate nohighlight">\(A\)</span>. Spotrebiteľ <span class="math notranslate nohighlight">\(B\)</span> vníma ten istý diagram z opačnej perspektívy, pričom začiatok jeho súradnicového systému sa nachádza v pravom hornom rohu diagramu.</p>
+<p>Spotrebiteľské koše oboch spotrebiteľov preto zodpovedajú tomu istému bodu diagramu. Ak je spotrebiteľský kôš spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span></p>
+<div class="math notranslate nohighlight">
+\[
+(x_{A1},x_{A2}),
+\]</div>
+<p>potom spotrebiteľský kôš spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span> je určený zvyšnými disponibilnými množstvami statkov</p>
+<div class="math notranslate nohighlight">
+\[
+(x_{B1},x_{B2})
+=
+(\bar y_1-x_{A1},\,\bar y_2-x_{A2}).
+\]</div>
+<p>Každý bod hraničného diagramu tak súčasne určuje spotrebiteľské koše oboch spotrebiteľov.</p>
+</section>
+</section>
+<section id="konkurencna-rovnovaha">
+<span id="kap-konkurencna-rovnovaha"></span><h2><span class="section-number">9.4. </span>Konkurenčná rovnováha<a class="headerlink" href="#konkurencna-rovnovaha" title="Link to this heading">#</a></h2>
+<p>Pri daných cenách si každý spotrebiteľ volí spotrebiteľský kôš charakterizovaný úlohou <a class="reference internal" href="#equation-r-vr-uloha-ui">(9.2)</a>, <a class="reference internal" href="#equation-r-vr-uloha-o">(9.3)</a> a <a class="reference internal" href="#equation-r-vr-uloha-n">(9.4)</a>.</p>
+<dl class="simple myst" id="def-konkurencna-rovnovaha">
+<dt>Konkurenčná rovnováha</dt><dd><p>je taká alokácia statkov a taká sústava cien, pri ktorej každý spotrebiteľ maximalizuje svoju užitočnosť a súčasne sú všetky trhy v rovnováhe.</p>
+</dd>
+</dl>
+<p>V ekonomike s dvoma spotrebiteľmi a dvoma statkami je konkurenčná rovnováha charakterizovaná dvojicou spotrebiteľských košov</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}_A^*,\qquad \mathbf{x}_B^*
+\]</div>
+<p>a cenovým pomerom</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_1^*}{p_2^*}.
+\]</div>
+<p>Pri konkurenčnej rovnováhe si každý spotrebiteľ volí optimálny spotrebiteľský kôš na svojej rozpočtovej hranici. Podmienky prvého rádu preto vyžadujú</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_{A1}^*,x_{A2}^*)=\frac{p_1^*}{p_2^*},
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+MRS(x_{B1}^*,x_{B2}^*)=\frac{p_1^*}{p_2^*}.
+\]</div>
+<p>Preto platí</p>
+<div class="math notranslate nohighlight" id="equation-r-vr-ppr">
+<span class="eqno">(9.5)<a class="headerlink" href="#equation-r-vr-ppr" title="Link to this equation">#</a></span>\[MRS(x_{A1}^*,x_{A2}^*)=MRS(x_{B1}^*,x_{B2}^*).\]</div>
+<p>Konkurenčná rovnováha teda nastáva v bode, v ktorom sa indiferenčné krivky oboch spotrebiteľov navzájom dotýkajú a majú spoločnú dotyčnicu zodpovedajúcu rozpočtovej hranici.</p>
+<p>Na obrázku <a class="reference internal" href="#id2"><span class="std std-numref">Obr. 9.1</span></a> je konkurenčná rovnováha označená oranžovou značkou. V tomto bode si ani jeden zo spotrebiteľov nemôže zvýšiť užitočnosť bez porušenia svojho rozpočtového ohraničenia.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">"figure.figsize"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">podiel_cien</span><span class="p">(</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">y1B</span><span class="p">,</span><span class="n">y2B</span><span class="p">):</span> <span class="c1"># podiel cien riešenie v tvare p1/p2 (sklon ir)</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">𝛼A</span><span class="o">*</span><span class="n">y2A</span> <span class="o">+</span> <span class="n">𝛼B</span><span class="o">*</span><span class="n">y2B</span><span class="p">)</span> <span class="o">/</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">)</span><span class="o">*</span><span class="n">y1A</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">)</span><span class="o">*</span><span class="n">y1B</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">x</span><span class="p">(</span><span class="n">e1</span><span class="p">,</span><span class="n">e2</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">cena</span><span class="p">):</span> <span class="c1"># Marshallove dopytove funkice</span>
+    <span class="k">return</span> <span class="n">e1</span><span class="o">*</span><span class="n">y</span><span class="o">/</span><span class="p">(</span><span class="n">e1</span><span class="o">+</span><span class="n">e2</span><span class="p">)</span><span class="o">/</span><span class="n">cena</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ir</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="n">y2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">p</span><span class="o">*</span><span class="n">y1</span> <span class="o">+</span> <span class="n">y2</span> <span class="o">-</span> <span class="n">p</span><span class="o">*</span><span class="n">x1</span>
+
+<span class="c1"># zadanie: 10 jednotiek statku 1 a 10 statku 2</span>
+<span class="n">𝛼A</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="c1"># elasticita vo funkcii užitočnosti spotrebiteľa A</span>
+<span class="n">𝛼B</span> <span class="o">=</span> <span class="mi">3</span><span class="o">/</span><span class="mi">4</span> <span class="c1"># elasticita vo funkcii užitočnosti spotrebiteľa B</span>
+<span class="n">y1A</span> <span class="o">=</span> <span class="mf">6.</span>
+<span class="n">y2A</span> <span class="o">=</span> <span class="mf">5.</span>
+<span class="n">y1B</span> <span class="o">=</span> <span class="mf">10.</span><span class="o">-</span><span class="n">y1A</span>
+<span class="n">y2B</span> <span class="o">=</span> <span class="mf">10.</span><span class="o">-</span><span class="n">y2A</span>
+
+
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">podiel_cien</span><span class="p">(</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">y1B</span><span class="p">,</span><span class="n">y2B</span><span class="p">)</span> <span class="c1"># výpočet podielu cien</span>
+
+<span class="n">yA</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">y1A</span><span class="o">+</span><span class="n">y2A</span> <span class="c1"># peňažne vyjadrený príjem spotrebiteľa A</span>
+<span class="n">yB</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">y1B</span><span class="o">+</span><span class="n">y2B</span> <span class="c1"># peňažne vyjadrený príjem spotrebiteľa B</span>
+
+<span class="c1"># Spotrebiteľské koše oboch spotrebiteľov</span>
+<span class="n">x1A</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="n">𝛼A</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">yA</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+<span class="n">x2A</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">yA</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">x1B</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="n">𝛼B</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">yB</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+<span class="n">x2B</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">yB</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># hodnoty užitočností</span>
+<span class="n">uA</span> <span class="o">=</span> <span class="n">x1A</span><span class="o">**</span><span class="n">𝛼A</span><span class="o">*</span><span class="n">x2A</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">)</span>
+<span class="n">uB</span> <span class="o">=</span> <span class="n">x1B</span><span class="o">**</span><span class="n">𝛼B</span><span class="o">*</span><span class="n">x2B</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">)</span>
+
+<span class="n">prem</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># definičný obor indiferenčných kriviek a hranice spotrebiteľských možností</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">10.4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s1">'druhý statok'</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">270</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mf">10.5</span><span class="p">,</span><span class="s1">'prvý statok'</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">10.2</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mf">10.2</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mf">9.95</span><span class="p">,</span><span class="mf">10.</span><span class="p">],[</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">.7</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">],[</span><span class="mf">9.95</span><span class="p">,</span><span class="mf">10.</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">.7</span><span class="p">)</span>
+
+<span class="c1"># zobraz hranice možností oboch spotrebiteľov</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">prem</span><span class="p">,</span> <span class="n">p</span><span class="o">*</span><span class="n">y1A</span> <span class="o">+</span> <span class="n">y2A</span> <span class="o">-</span> <span class="n">p</span><span class="o">*</span><span class="n">prem</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">'Hranica spotrebiteľských možností</span><span class="se">\n</span><span class="s1"> je pre oboch spotrebiteľov rovnaká'</span><span class="p">)</span>
+
+<span class="c1"># zobraz indiferenčnú krivku A</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">prem</span><span class="p">,</span> <span class="n">uA</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">))</span> <span class="o">/</span> <span class="n">prem</span><span class="o">**</span><span class="p">(</span><span class="n">𝛼A</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">)),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">'Indiferenčná krivka spotrebiteľa $A$'</span><span class="p">)</span>
+
+<span class="c1"># zobraz indiferenčnú krivku B</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">prem</span><span class="p">,</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">uB</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="n">prem</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">𝛼B</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">)),</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">'indiferenčná krivka spotrebiteľa $B$'</span><span class="p">)</span>
+
+<span class="c1"># príjem:</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">'Prídelový bod'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">y1A</span><span class="p">,</span><span class="n">y1A</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span><span class="s1">':'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="n">y2A</span><span class="p">,</span><span class="n">y2A</span><span class="p">],</span><span class="s1">':'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+
+<span class="c1"># spotrebiteľské koše:</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x1A</span><span class="p">,</span><span class="n">x2A</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">'Spotrebiteľské koše'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x1A</span><span class="p">,</span><span class="n">x1A</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">],</span><span class="s1">':'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">],[</span><span class="n">x2A</span><span class="p">,</span><span class="n">x2A</span><span class="p">],</span><span class="s1">':'</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s1">'prvý statok'</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">'druhý statok'</span><span class="p">,</span><span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="id2">
+<img alt="_images/hranicny_diagram.png" src="_images/hranicny_diagram.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 9.1 </span><span class="caption-text">Hraničný diagram</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="walrasov-zakon">
+<span id="kap-walras"></span><h2><span class="section-number">9.5. </span>Walrasov zákon<a class="headerlink" href="#walrasov-zakon" title="Link to this heading">#</a></h2>
+<p>Pre každý statok <span class="math notranslate nohighlight">\(j\)</span> definujme prebytočný dopyt</p>
+<div class="math notranslate nohighlight">
+\[
+z_j=\sum_{i=1}^{n}x_{ij}-\sum_{i=1}^{n}y_{ij}.
+\]</div>
+<p>Prebytočný dopyt predstavuje rozdiel medzi celkovým dopytom po statku a jeho celkovým množstvom v ekonomike.</p>
+<p>Ak platí</p>
+<div class="math notranslate nohighlight">
+\[
+z_j&gt;0,
+\]</div>
+<p>na trhu statku <span class="math notranslate nohighlight">\(j\)</span> existuje prebytočný dopyt. Ak platí</p>
+<div class="math notranslate nohighlight">
+\[
+z_j&lt;0,
+\]</div>
+<p>na trhu existuje prebytočná ponuka.</p>
+<p>Každý spotrebiteľ volí svoj spotrebiteľský kôš na hranici spotrebiteľských možností</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf p^T\mathbf x_i=\mathbf p^T\mathbf y_i.
+\]</div>
+<p>Po sčítaní rozpočtových ohraničení všetkých spotrebiteľov získame</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^{n}\mathbf p^T\mathbf x_i=\sum_{i=1}^{n}\mathbf p^T\mathbf y_i.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf p^T\left(\sum_{i=1}^{n}\mathbf x_i-\sum_{i=1}^{n}\mathbf y_i\right)=0.
+\]</div>
+<p>Keďže výraz v zátvorke predstavuje vektor prebytočných dopytov, platí</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{j=1}^{k}p_j z_j=0.
+\]</div>
+<dl class="simple myst" id="def-walras">
+<dt>Walrasov zákon</dt><dd><p>Hodnota prebytočných dopytov vo všetkých trhoch ekonomiky sa rovná nule.</p>
+</dd>
+</dl>
+<p>Dôležitým dôsledkom Walrasovho zákona je, že ak sa rozpočtové ohraničenia všetkých subjektov realizujú ako rovnosť a ak je v ekonomike <span class="math notranslate nohighlight">\(k-1\)</span> trhov v rovnováhe, potom musí byť v rovnováhe aj posledný trh.</p>
+<p>Preto v ekonomike s <span class="math notranslate nohighlight">\(k\)</span> statkami existuje iba <span class="math notranslate nohighlight">\(k-1\)</span> lineárne nezávislých rovnovážnych podmienok.</p>
+<p>Walrasov zákon nehovorí, že ekonomika je v rovnováhe. Hovorí iba, že trhové nerovnováhy nemôžu byť nezávislé.</p>
+<p>Pre ľahšie pochopenie, odvoďme Walrasov zákon v ekonomike s dvoma spotrebiteľmi a dvoma statkami.</p>
+<p>Každý spotrebiteľ v rovnováhe vyčerpá celý svoj rozpočet. Pre dvoch spotrebiteľov preto platí</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{A1}+p_2x_{A2}=p_1y_{A1}+p_2y_{A2},
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{B1}+p_2x_{B2}=p_1y_{B1}+p_2y_{B2}.
+\]</div>
+<p>Po sčítaní oboch rovníc získame</p>
+<div class="math notranslate nohighlight">
+\[
+p_1(x_{A1}+x_{B1})+p_2(x_{A2}+x_{B2})=p_1(y_{A1}+y_{B1})+p_2(y_{A2}+y_{B2}).
+\]</div>
+<p>Po presunutí všetkých členov na ľavú stranu</p>
+<div class="math notranslate nohighlight">
+\[
+p_1[(x_{A1}+x_{B1})-(y_{A1}+y_{B1})]+p_2[(x_{A2}+x_{B2})-(y_{A2}+y_{B2})]=0.
+\]</div>
+<p>Výrazy v hranatých zátvorkách predstavujú prebytočné dopyty po jednotlivých statkoch. Označme ich</p>
+<div class="math notranslate nohighlight">
+\[
+z_1=(x_{A1}+x_{B1})-(y_{A1}+y_{B1}),
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+z_2=(x_{A2}+x_{B2})-(y_{A2}+y_{B2}).
+\]</div>
+<p>Potom platí</p>
+<div class="math notranslate nohighlight">
+\[
+p_1z_1+p_2z_2=0.
+\]</div>
+<p>Pre ekonomiku s ľubovoľným počtom statkov získame všeobecný tvar</p>
+<div class="math notranslate nohighlight">
+\[
+\sum_{j=1}^{k} p_j z_j = 0.
+\]</div>
+<section id="cenova-normalizacia">
+<span id="kap-cen-normalizacia"></span><h3><span class="section-number">9.5.1. </span>Cenová normalizácia<a class="headerlink" href="#cenova-normalizacia" title="Link to this heading">#</a></h3>
+<p>Podľa Walrasovovho zákona v ekonomike s <span class="math notranslate nohighlight">\(k\)</span> statkami existuje iba <span class="math notranslate nohighlight">\(k-1\)</span> lineárne nezávislých rovnovážnych podmienok. Preto nemožno jednoznačne určiť úroveň všetkých cien, ale iba ich vzájomné pomery.</p>
+<dl class="simple myst" id="def-cen-normalizacia">
+<dt>Cenová normalizácia</dt><dd><p>vyjadrenie všetkých cien vzhľadom na cenu jedného zvoleného statku.</p>
+</dd>
+</dl>
+<p>Jeden zo statkov preto možno zvoliť za numéraire, teda za jednotku hodnoty, v ktorej sa vyjadrujú ceny všetkých ostatných statkov.</p>
+<p>Ak za numéraire zvolíme statok <span class="math notranslate nohighlight">\(k\)</span>, potom</p>
+<div class="math notranslate nohighlight">
+\[
+p_k=1
+\]</div>
+<p>a cenový vektor možno zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\left[\frac{p_1}{p_k},\frac{p_2}{p_k},\dots,\frac{p_{k-1}}{p_k},1\right].
+\]</div>
+<p>Vo všeobecnej rovnováhe preto nie sú dôležité absolútne ceny, ale iba výmenné relácie medzi statkami.</p>
+<p>Napríklad v ekonomike s dvoma statkami možno rozpočtové ohraničenie spotrebiteľa</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_1+p_2x_2=p_1y_1+p_2y_2
+\]</div>
+<p>vydelením ceny <span class="math notranslate nohighlight">\(p_2\)</span> zapísať v tvare</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_1}{p_2}x_1+x_2=\frac{p_1}{p_2}y_1+y_2.
+\]</div>
+<p>V tomto prípade je cena druhého statku rovná jednej a cena prvého statku vyjadruje, koľko jednotiek druhého statku treba obetovať za jednu jednotku prvého statku.</p>
+<p>Cenovú normalizáciu sme využili už v úlohách spotrebiteľského rozhodovania medzi voľným časom a spotrebou (<a class="reference internal" href="Stati.html"><span class="doc">Voľný čas a spotreba</span></a>) a medzi súčasnou a budúcou spotrebou (<a class="reference internal" href="Dynam.html"><span class="doc">Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</span></a>). V prvej úlohe sme premenné vyjadrili v cenách spotrebného statku, v druhej v cenách spotreby v prvom období.</p>
+<p>Pomocou cenovej normalizácie možno ekonomické veličiny vyjadriť v jednotkách zvoleného statku. Analýza sa tak sústreďuje na relatívne ceny a výmenné relácie medzi statkami, nie na absolútnu cenovú úroveň.</p>
+</section>
+</section>
+<section id="paretova-efektivnost">
+<span id="kap-pareto"></span><h2><span class="section-number">9.6. </span>Paretova efektívnosť<a class="headerlink" href="#paretova-efektivnost" title="Link to this heading">#</a></h2>
+<p>Nie všetky prípustné alokácie sú rovnako žiaduce. Niekedy možno zmeniť alokáciu tak, aby si aspoň jeden spotrebiteľ polepšil bez toho, aby sa zhoršilo postavenie iného spotrebiteľa.</p>
+<dl class="simple myst" id="def-pareto">
+<dt>Paretova efektívnosť</dt><dd><p>Prípustná alokácia je Paretovo efektívna, ak neexistuje iná prípustná alokácia, pri ktorej by si aspoň jeden spotrebiteľ polepšil bez toho, aby sa zhoršilo postavenie niektorého iného spotrebiteľa.</p>
+</dd>
+</dl>
+<p>Paretovo efektívna alokácia preto nepredstavuje najlepšie možné rozdelenie statkov z pohľadu spravodlivosti. Znamená iba, že už nie je možné uskutočniť ďalšiu vzájomne výhodnú výmenu.</p>
+<p>V ekonomike s dvoma spotrebiteľmi a dvoma statkami nastáva Paretova efektívnosť v bodoch, v ktorých sa indiferenčné krivky oboch spotrebiteľov navzájom dotýkajú.</p>
+<p>V takom bode platí</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A (x_{A1},x_{A2})=MRS_B (x_{B1},x_{B2}).
+\]</div>
+<p>Ak by sa hraničné miery substitúcie nerovnali, existovala by možnosť ďalšej výmeny prospešnej pre aspoň jedného zo spotrebiteľov.</p>
+<p>Paretova efektívnosť predstavuje špeciálny prípad konceptu efektívnosti predstaveného v časti <a class="reference internal" href="Matematika.html#dominancia-efektivnost"><span class="std std-ref">Dominancia a efektívnosť</span></a>.</p>
+<p>Každú prípustnú alokáciu možno charakterizovať vektorom užitočností jednotlivých spotrebiteľov</p>
+<div class="math notranslate nohighlight">
+\[
+[u_A,u_B].
+\]</div>
+<p>Jedna alokácia dominuje druhej, ak poskytuje aspoň rovnakú úroveň užitočnosti všetkým spotrebiteľom a vyššiu úroveň užitočnosti aspoň jednému z nich.</p>
+<p>Paretovo efektívna alokácia potom zodpovedá efektívnemu riešeniu podľa definície <a class="reference internal" href="Matematika.html#efektivne"><span class="std std-ref">Efektívne riešenie</span></a>. Ide o alokáciu, ktorá nie je dominovaná žiadnou inou prípustnou alokáciou.</p>
+<dl class="simple myst" id="def-kontraktacna">
+<dt>Kontraktačná krivka</dt><dd><p>množina všetkých Paretovo efektívnych alokácií v hraničnom diagrame.</p>
+</dd>
+</dl>
+<p>Kontraktačná krivka je tvorená všetkými bodmi, v ktorých sa indiferenčné krivky oboch spotrebiteľov navzájom dotýkajú. V každom jej bode platí</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A (x_{A1},x_{A2})=MRS_B (x_{B1},x_{B2}).
+\]</div>
+<p>Rovnosť hraničných mier substitúcie je nutnou podmienkou Paretovej efektívnosti. Pri určovaní množiny Paretovo efektívnych alokácií je potrebné okrem riešení tejto rovnice preskúmať aj hraničné body množiny prípustných alokácií.</p>
+<p>Každá konkurenčná rovnováha leží na kontraktačnej krivke. Konkrétny rovnovážny bod však závisí od štartovacieho rozdelenia statkov medzi spotrebiteľov, teda od prídelového bodu.</p>
+<p>Pri zmene prídelového bodu sa môže zmeniť konkurenčná rovnováha, avšak nová rovnováha bude opäť ležať na kontraktačnej krivke.</p>
+<p>Z matematického hľadiska preto kontraktačná krivka predstavuje efektívnu hranicu množiny dosiahnuteľných dvojíc užitočností spotrebiteľov.</p>
+</section>
+<section id="walrasove-vety-o-blahobyte">
+<span id="kap-vety-blahobyt"></span><h2><span class="section-number">9.7. </span>Walrasove vety o blahobyte<a class="headerlink" href="#walrasove-vety-o-blahobyte" title="Link to this heading">#</a></h2>
+<p>Význam všeobecnej rovnováhy nespočíva iba v opise tvorby cien a alokácie statkov. Teória všeobecnej rovnováhy umožňuje analyzovať aj efektívnosť výslednej alokácie zdrojov.</p>
+<dl class="simple myst" id="prva-veta-blahobyt">
+<dt>Prvá Walrasova veta o blahobyte</dt><dd><p>Ak alokácia <span class="math notranslate nohighlight">\(\mathbf{X}^*\)</span> a ceny <span class="math notranslate nohighlight">\(\mathbf{p}^*\)</span> tvorí konkurenčnú rovnováhu, potom je alokácia <span class="math notranslate nohighlight">\(\mathbf{X}^*\)</span> Paretovo efektívna.</p>
+</dd>
+</dl>
+<p>Prvá Walrasova veta o blahobyte vyjadruje, že decentralizované rozhodnutia spotrebiteľov koordinované prostredníctvom cien vedú k efektívnemu využitiu zdrojov. V konkurenčnej rovnováhe neexistuje iná prípustná alokácia, pri ktorej by si niektorý spotrebiteľ polepšil bez toho, aby sa zhoršilo postavenie iného spotrebiteľa.</p>
+<p>Geometricky to znamená, že každá konkurenčná rovnováha leží na kontraktačnej krivke.</p>
+<dl class="simple myst" id="druha-veta-blahobyt">
+<dt>Druhá Walrasova veta o blahobyte</dt><dd><p>Za predpokladu spojitých, striktne monotónnych a striktne konvexných preferencií možno každú Paretovo efektívnu alokáciu dosiahnuť ako konkurenčnú rovnováhu pri vhodnom prerozdelení prídelov.</p>
+</dd>
+</dl>
+<p>Druhá veta vyžaduje silnejšie predpoklady než prvá veta, najmä konvexnosť preferencií.</p>
+<p>Druhá Walrasova veta o blahobyte oddeľuje problém efektívnosti od problému rozdelenia zdrojov. Trhový mechanizmus zabezpečuje efektívnosť, zatiaľ čo štartovacie rozdelenie zdrojov určuje, ktorá z Paretovo efektívnych alokácií bude dosiahnutá.</p>
+<p>Na <a class="reference internal" href="#graf-pridely-rovnovahy"><span class="std std-numref">Obr. 9.2</span></a> sú zobrazené tri prídelové alokácie <span class="math notranslate nohighlight">\(\mathbf{Y}^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{Y}^{(2)}\)</span> a <span class="math notranslate nohighlight">\(\mathbf{Y}^{(3)}\)</span>. Každá z nich generuje vlastnú konkurenčnú rovnováhu <span class="math notranslate nohighlight">\(\mathbf{X}^{(1)}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{X}^{(2)}\)</span> a <span class="math notranslate nohighlight">\(\mathbf{X}^{(3)}\)</span>.</p>
+<p>Všetky rovnovážne alokácie ležia na kontraktačnej krivke, a preto sú Paretovo efektívne. Zmena prídelovej alokácie vedie k zmene konkurenčnej rovnováhy, avšak nová rovnováha zostáva efektívna.</p>
+<p>Walrasove vety o blahobyte predstavujú formálne vyjadrenie myšlienky neviditeľnej ruky trhu, ktorú intuitívne formuloval Adam Smith <span class="bibtex-citation" id="id3">[<a class="reference internal" href="Literatura.html#id7" title="Adam Smith. An Inquiry into the Nature and Causes of the Wealth of Nations. W. Strahan and T. Cadell, London, 1776.">Smi76</a>]</span>. Ak sú splnené predpoklady Arrowovho-Debreuovho sveta, decentralizované rozhodnutia ekonomických subjektov koordinované prostredníctvom cien vedú k Paretovo efektívnej alokácii zdrojov.</p>
+<p>Druhá Walrasova veta naznačuje, že otázky efektívnosti a rozdelenia zdrojov možno oddeliť. Spoločnosť môže najprv rozhodnúť o rozdelení prídelov a následne ponechať trhom úlohu nájsť efektívnu alokáciu.</p>
+<div class="cell tag_hide-input tag_remove-output docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">zobraz_rovnovahu</span><span class="p">(</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">text_Y</span><span class="p">,</span><span class="n">text_X</span><span class="p">):</span>
+    <span class="n">y1B</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">y1A</span>
+    <span class="n">y2B</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">y2A</span>
+    
+    <span class="n">p</span> <span class="o">=</span> <span class="n">podiel_cien</span><span class="p">(</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">y1B</span><span class="p">,</span><span class="n">y2B</span><span class="p">)</span> <span class="c1"># výpočet podielu cien</span>
+    
+    <span class="n">yA</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">y1A</span><span class="o">+</span><span class="n">y2A</span> <span class="c1"># peňažne vyjadrený príjem spotrebiteľa A</span>
+    <span class="n">yB</span> <span class="o">=</span> <span class="n">p</span><span class="o">*</span><span class="n">y1B</span><span class="o">+</span><span class="n">y2B</span> <span class="c1"># peňažne vyjadrený príjem spotrebiteľa B</span>
+
+    <span class="c1"># Spotrebiteľské koše oboch spotrebiteľov</span>
+    <span class="n">x1A</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="n">𝛼A</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">yA</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+    <span class="n">x2A</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">𝛼A</span><span class="p">,</span><span class="n">yA</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">x1B</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="n">𝛼B</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">yB</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
+    <span class="n">x2B</span> <span class="o">=</span> <span class="n">x</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">𝛼B</span><span class="p">,</span><span class="n">yB</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1"># hodnoty užitočností</span>
+    <span class="n">uA</span> <span class="o">=</span> <span class="n">x1A</span><span class="o">**</span><span class="n">𝛼A</span><span class="o">*</span><span class="n">x2A</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">)</span>
+    <span class="n">uB</span> <span class="o">=</span> <span class="n">x1B</span><span class="o">**</span><span class="n">𝛼B</span><span class="o">*</span><span class="n">x2B</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">)</span>
+
+    <span class="c1"># zobraz hranice možností oboch spotrebiteľov </span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">prem</span><span class="p">,</span> <span class="n">p</span><span class="o">*</span><span class="n">y1A</span> <span class="o">+</span> <span class="n">y2A</span> <span class="o">-</span> <span class="n">p</span><span class="o">*</span><span class="n">prem</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"green"</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
+    
+    <span class="n">def_o</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="n">x1A</span><span class="o">-</span><span class="mf">3.</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="mf">1e-12</span><span class="p">,</span><span class="n">x1A</span><span class="o">+</span><span class="mi">3</span><span class="p">),</span><span class="mi">100</span><span class="p">)</span>
+
+    <span class="c1"># zobraz indiferenčnú krivku A</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">def_o</span><span class="p">,</span> <span class="n">uA</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">))</span> <span class="o">/</span> <span class="n">def_o</span><span class="o">**</span><span class="p">(</span><span class="n">𝛼A</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼A</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"blue"</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
+
+    <span class="c1"># zobraz indiferenčnú krivku B</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">def_o</span><span class="p">,</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">uB</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="n">def_o</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">𝛼B</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">𝛼B</span><span class="p">)),</span> <span class="n">color</span><span class="o">=</span><span class="s2">"orange"</span><span class="p">,</span><span class="n">linestyle</span><span class="o">=</span><span class="s2">"--"</span><span class="p">)</span>
+
+    <span class="c1"># príjem:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">y1A</span><span class="p">,</span><span class="n">y2A</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="n">text_Y</span><span class="p">)</span>    
+    
+    <span class="c1"># spotreba:</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x1A</span><span class="p">,</span><span class="n">x2A</span><span class="p">,</span><span class="n">marker</span><span class="o">=</span><span class="s1">'x'</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">x1A</span><span class="o">+</span><span class="mf">0.1</span><span class="p">,</span><span class="n">x2A</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span><span class="n">text_X</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="n">y_bar</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">xA1_cc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">9.99</span><span class="p">,</span><span class="mi">500</span><span class="p">)</span>
+<span class="n">xA2_cc</span> <span class="o">=</span> <span class="mi">15</span><span class="o">*</span><span class="n">xA1_cc</span><span class="o">/</span><span class="p">(</span><span class="mi">5</span><span class="o">+</span><span class="n">xA1_cc</span><span class="p">)</span> <span class="c1"># kontraktačná krivka pre hodnoty  prvého obrázka</span>
+
+<span class="n">prem</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="mf">1e-12</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># definičný obor hranice spotrebiteľských možností</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">10.4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="s1">'druhý statok'</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">270</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mf">10.5</span><span class="p">,</span><span class="s1">'prvý statok'</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">180</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xA1_cc</span><span class="p">,</span><span class="n">xA2_cc</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s2">"Kontraktačná krivka"</span><span class="p">,</span>
+         <span class="n">color</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">10.2</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mf">10.2</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mf">9.95</span><span class="p">,</span><span class="mf">10.</span><span class="p">],[</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">.7</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">,</span><span class="mi">10</span><span class="o">-</span><span class="n">i</span><span class="p">],[</span><span class="mf">9.95</span><span class="p">,</span><span class="mf">10.</span><span class="p">],</span><span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">.7</span><span class="p">)</span>
+
+<span class="n">zobraz_rovnovahu</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{Y^1}}$'</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{X^1}}$'</span><span class="p">)</span>
+<span class="n">zobraz_rovnovahu</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{Y^2}}$'</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{X^2}}$'</span><span class="p">)</span>
+<span class="n">zobraz_rovnovahu</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{Y^3}}$'</span><span class="p">,</span><span class="sa">r</span><span class="s1">'$\mathbf{{X^3}}$'</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">'lower right'</span><span class="p">,</span> <span class="n">framealpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span> <span class="o">=</span> <span class="s1">'prvý statok'</span><span class="p">,</span> <span class="n">ylabel</span> <span class="o">=</span> <span class="s1">'druhý statok'</span><span class="p">,</span><span class="n">ylim</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">xlim</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+</div>
+<figure class="align-default" id="graf-pridely-rovnovahy">
+<img alt="_images/graf_pridely_rovnovahy.png" src="_images/graf_pridely_rovnovahy.png" />
+<figcaption>
+<p><span class="caption-number">Obr. 9.2 </span><span class="caption-text">Konkurenčné rovnováhy pri rôznych prídelových alokáciách</span><a class="headerlink" href="#graf-pridely-rovnovahy" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="note admonition" id="def-centraliz">
+<p class="admonition-title">Centralizované a decentralizované riešenie</p>
+<p>Model všeobecnej rovnováhy možno riešiť dvoma spôsobmi.</p>
+<p>Pri decentralizovanom riešení každý spotrebiteľ samostatne maximalizuje svoju užitočnosť pri daných cenách. Trhy následne koordinujú individuálne rozhodnutia prostredníctvom cien.</p>
+<p>Pri centralizovanom riešení spoločenský plánovač priamo vyberá alokáciu zdrojov pre všetkých spotrebiteľov pri rešpektovaní podmienok prípustnosti.</p>
+<p>Prvá Walrasova veta o blahobyte vytvára prepojenie medzi oboma prístupmi. Za predpokladov Arrowovho-Debreuovho sveta vedie decentralizované trhové riešenie ku Paretovo efektívnej alokácii, ktorú by mohol zvoliť aj spoločenský plánovač.</p>
+</div>
+</section>
+<section id="riesene-priklady">
+<h2><span class="section-number">9.8. </span>Riešené príklady<a class="headerlink" href="#riesene-priklady" title="Link to this heading">#</a></h2>
+<p>Pri práci s Pythonom využijeme knižnice</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">symbols</span><span class="p">,</span> <span class="n">diff</span><span class="p">,</span> <span class="n">solve</span><span class="p">,</span> <span class="n">simplify</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="priklad-vseobecna-rovnovaha-v-cisto-vymennej-ekonomike">
+<h3><span class="section-number">9.8.1. </span>Príklad: Všeobecná rovnováha v čisto-výmennej ekonomike<a class="headerlink" href="#priklad-vseobecna-rovnovaha-v-cisto-vymennej-ekonomike" title="Link to this heading">#</a></h3>
+<p>Nech preferencie spotrebiteľov majú Cobbove-Douglasove tvary</p>
+<div class="math notranslate nohighlight">
+\[
+u_A=x_{A1}^{\alpha_A}x_{A2}^{1-\alpha_A},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+u_B=x_{B1}^{\alpha_B}x_{B2}^{1-\alpha_B}.
+\]</div>
+<p>Prídelové koše sú</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf y_A=(y_{A1},y_{A2}),
+\qquad
+\mathbf y_B=(y_{B1},y_{B2}).
+\]</div>
+<ol class="arabic simple">
+<li><p>Odvoďte rovnovážny pomer cien.</p></li>
+<li><p>Odvoďte kontraktačnú krivku.</p></li>
+</ol>
+<section id="riesenie">
+<h4><span class="section-number">9.8.1.1. </span>Riešenie<a class="headerlink" href="#riesenie" title="Link to this heading">#</a></h4>
+<p><strong>Rovnovážny pomer cien</strong></p>
+<p>Celkové prídely označme</p>
+<div class="math notranslate nohighlight">
+\[
+\bar y_1=y_{A1}+y_{B1},
+\qquad
+\bar y_2=y_{A2}+y_{B2}.
+\]</div>
+<p>Príjmy spotrebiteľov sú</p>
+<div class="math notranslate nohighlight">
+\[
+M_A=p_1y_{A1}+p_2y_{A2},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+M_B=p_1y_{B1}+p_2y_{B2}.
+\]</div>
+<p>Spotrebitelia riešia úlohu <a class="reference internal" href="#equation-r-vr-uloha-ui">(9.2)</a>, <a class="reference internal" href="#equation-r-vr-uloha-o">(9.3)</a> a <a class="reference internal" href="#equation-r-vr-uloha-n">(9.4)</a></p>
+<p>Úloha spotrebiteľa A je</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x_{A1},x_{A2}} u_A = \max_{x_{A1},x_{A2}} x_{A1}^{\alpha_A}x_{A2}^{1-\alpha_A}
+\]</div>
+<p>vzhľadom na</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{A1}+p_2x_{A2} \le M_A
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1},x_{A2} \ge 0.
+\]</div>
+<p>Spotrebiteľ B rieši úlohu</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x_{B1},x_{B2}} u_B = \max_{x_{B1},x_{B2}} x_{B1}^{\alpha_B}x_{B2}^{1-\alpha_B}
+\]</div>
+<p>vzhľadom na</p>
+<div class="math notranslate nohighlight">
+\[
+p_1x_{B1}+p_2x_{B2} \le M_B
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+x_{B1},x_{B2} \ge 0.
+\]</div>
+<p>Riešnie možno zapísať Marshallovými dopytovými funkciami <a class="reference internal" href="Porovn.html#equation-marshall-cd">(6.13)</a></p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1}=\alpha_A\frac{M_A}{p_1},
+\qquad
+x_{A2}=(1-\alpha_A)\frac{M_A}{p_2},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_{B1}=\alpha_B\frac{M_B}{p_1},
+\qquad
+x_{B2}=(1-\alpha_B)\frac{M_B}{p_2}.
+\]</div>
+<p>Z podmienky rovnováhy na trhu prvého statku</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1}+x_{B1}=\bar y_1
+\]</div>
+<p>po úprave získame rovnovážny pomer cien</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{p_1}{p_2}=\frac{\alpha_A y_{A2}+\alpha_B y_{B2}}{(1-\alpha_A)y_{A1}+(1-\alpha_B)y_{B1}}.
+\]</div>
+<p><strong>Kontraktačná krivka</strong></p>
+<p>Hraničné miery spotrebiteľskej substitúcie pri predpoklade funkcie užitočnosti v Cobbovom-Douglasovom tvare</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A=\frac{\alpha_A}{1-\alpha_A}\frac{x_{A2}}{x_{A1}},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MRS_B=\frac{\alpha_B}{1-\alpha_B}\frac{x_{B2}}{x_{B1}}.
+\]</div>
+<p>Paretovo efektívne alokácie spĺňajú</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A=MRS_B.
+\]</div>
+<p>Po dosadení podmienok prípustnosti</p>
+<div class="math notranslate nohighlight">
+\[
+x_{B1}=\bar y_1-x_{A1},\qquad x_{B2}=\bar y_2-x_{A2}
+\]</div>
+<p>dostávame všeobecnú rovnicu kontraktačnej krivky</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\alpha_A}{1-\alpha_A}\frac{x_{A2}}{x_{A1}}=\frac{\alpha_B}{1-\alpha_B}\frac{\bar y_2-x_{A2}}{\bar y_1-x_{A1}}.
+\]</div>
+</section>
+<section id="python">
+<h4><span class="section-number">9.8.1.2. </span>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h4>
+<p>Pripomeňme odvodenie marshallových doputových funkcií (<a class="reference internal" href="Porovn.html#priklad-marshall"><span class="std std-ref">Príklad: Marshallove dopytové funkcie</span></a>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">p1</span><span class="p">,</span><span class="n">p2</span><span class="p">,</span><span class="n">M</span><span class="p">,</span><span class="n">alpha</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'x1,x2,p1,p2,M,alpha'</span><span class="p">,</span><span class="n">Positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">u</span> <span class="o">=</span> <span class="n">x1</span><span class="o">**</span><span class="n">alpha</span> <span class="o">*</span> <span class="n">x2</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha</span><span class="p">)</span> <span class="c1"># funkcia užitočnosti všeobecne</span>
+
+<span class="c1"># podmienky prvého rádu všeobecne</span>
+<span class="n">ppr</span> <span class="o">=</span> <span class="p">[</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">/</span><span class="n">diff</span><span class="p">(</span><span class="n">u</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">-</span><span class="n">p1</span><span class="o">/</span><span class="n">p2</span><span class="p">,</span>
+      <span class="n">p1</span><span class="o">*</span><span class="n">x1</span> <span class="o">+</span> <span class="n">p2</span><span class="o">*</span><span class="n">x2</span> <span class="o">-</span> <span class="n">M</span><span class="p">]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">ppr</span><span class="p">,[</span><span class="n">x1</span><span class="p">,</span><span class="n">x2</span><span class="p">],</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">list</span> <span class="k">else</span> <span class="n">x</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Marshallové dopytové funkcie"</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Marshallové dopytové funkcie {x1: M*alpha/p1, x2: M*(1 - alpha)/p2}
+</pre></div>
+</div>
+</div>
+</div>
+<p>Marshallove dopytové dunkcie využijeme na vyjadrenie cenového pomeru</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alpha_A</span><span class="p">,</span><span class="n">alpha_B</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span>
+    <span class="s1">'alpha_A alpha_B'</span><span class="p">,</span>
+    <span class="n">positive</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">yA1</span><span class="p">,</span><span class="n">yA2</span><span class="p">,</span><span class="n">yB1</span><span class="p">,</span><span class="n">yB2</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span>
+    <span class="s1">'yA1 yA2 yB1 yB2'</span><span class="p">,</span>
+    <span class="n">positive</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">p_ratio</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'r'</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">MA</span> <span class="o">=</span> <span class="n">p_ratio</span><span class="o">*</span><span class="n">yA1</span> <span class="o">+</span> <span class="n">yA2</span>
+<span class="n">MB</span> <span class="o">=</span> <span class="n">p_ratio</span><span class="o">*</span><span class="n">yB1</span> <span class="o">+</span> <span class="n">yB2</span>
+
+<span class="n">xA1_expr</span> <span class="o">=</span> <span class="n">alpha_A</span><span class="o">*</span><span class="n">MA</span><span class="o">/</span><span class="n">p_ratio</span>
+<span class="n">xB1_expr</span> <span class="o">=</span> <span class="n">alpha_B</span><span class="o">*</span><span class="n">MB</span><span class="o">/</span><span class="n">p_ratio</span>
+
+<span class="n">p_pomer</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">xA1</span><span class="o">+</span><span class="n">xB1</span><span class="o">-</span><span class="p">(</span><span class="n">yA1</span><span class="o">+</span><span class="n">yB1</span><span class="p">),</span>
+    <span class="n">p_ratio</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">)</span>
+
+<span class="n">p_pomer</span> <span class="o">=</span> <span class="n">p_pomer</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">p_ratio</span><span class="p">]</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">p_pomer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{- \alpha_{A} yA_{2} - \alpha_{B} yB_{2}}{\alpha_{A} yA_{1} + \alpha_{B} yB_{1} - yA_{1} - yB_{1}}\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xA1</span><span class="p">,</span><span class="n">xA2</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">'xA1 xA2'</span><span class="p">,</span> <span class="n">positive</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ybar1</span><span class="p">,</span><span class="n">ybar2</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span>
+    <span class="s1">'ybar1 ybar2'</span><span class="p">,</span>
+    <span class="n">positive</span><span class="o">=</span><span class="kc">True</span>
+<span class="p">)</span>
+
+<span class="n">eq</span> <span class="o">=</span> <span class="n">alpha_A</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha_A</span><span class="p">)</span><span class="o">*</span><span class="n">xA2</span><span class="o">/</span><span class="n">xA1</span> <span class="o">-</span> <span class="n">alpha_B</span><span class="o">/</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">alpha_B</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">ybar2</span><span class="o">-</span><span class="n">xA2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">ybar1</span><span class="o">-</span><span class="n">xA1</span><span class="p">)</span>
+
+<span class="n">kontraktacna</span> <span class="o">=</span> <span class="n">solve</span><span class="p">(</span><span class="n">eq</span><span class="p">,</span><span class="n">xA2</span><span class="p">,</span><span class="nb">dict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Kontraktačná krivka, xA2 ="</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">kontraktacna</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">xA2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kontraktačná krivka, xA2 =
+</pre></div>
+</div>
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{\alpha_{B} xA_{1} \bar{y}_{2} \left(\alpha_{A} - 1\right)}{\alpha_{A} \alpha_{B} \bar{y}_{1} + \alpha_{A} xA_{1} - \alpha_{A} \bar{y}_{1} - \alpha_{B} xA_{1}}\]</div>
+</div>
+</div>
+</section>
+</section>
+<section id="numericky-priklad">
+<h3><span class="section-number">9.8.2. </span>Numerický príklad<a class="headerlink" href="#numericky-priklad" title="Link to this heading">#</a></h3>
+<p>Nech</p>
+<div class="math notranslate nohighlight">
+\[
+\alpha_A=\frac12,\qquad \alpha_B=\frac34,
+\]</div>
+<p>a</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf y_A=(6,5),\qquad \mathbf y_B=(4,5).
+\]</div>
+<p>Celkové prídely sú</p>
+<div class="math notranslate nohighlight">
+\[
+\bar y_1=\bar y_2=10.
+\]</div>
+<p>Vypočítajte optimálny pomer cien, príjmy spotrebiteľov, rovnovážne alokácie a vyčíslite kontraktačnú krivku.</p>
+<section id="id4">
+<h4><span class="section-number">9.8.2.1. </span>Riešenie<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
+<p>Dosadením do všeobecného vzťahu získame
+ 
+$<span class="math notranslate nohighlight">\(
+\frac{p_1}{p_2}=\frac{\frac12\cdot5+\frac34\cdot5}{\frac12\cdot6+\frac14\cdot4}=
+\frac{6.25}{4}=\frac{25}{16}=1,5625.
+\)</span><span class="math notranslate nohighlight">\(
+ 
+Po cenovej normalizácii
+ 
+\)</span><span class="math notranslate nohighlight">\(
+p_2=1
+\)</span><span class="math notranslate nohighlight">\(
+ 
+platí
+ 
+\)</span><span class="math notranslate nohighlight">\(
+p_1=\frac{25}{16}.
+\)</span><span class="math notranslate nohighlight">\(
+ 
+**Rovnovážne alokácie**
+ 
+Príjem spotrebiteľa \)</span>A<span class="math notranslate nohighlight">\( je
+ 
+\)</span><span class="math notranslate nohighlight">\(
+M_A=\frac{25}{16}\cdot6+5=14,375.
+\)</span><span class="math notranslate nohighlight">\(
+ 
+Príjem spotrebiteľa \)</span>B<span class="math notranslate nohighlight">\( je
+ 
+\)</span><span class="math notranslate nohighlight">\(
+M_B=\frac{25}{16}\cdot4+5=11,25.
+\)</span>$</p>
+<p><strong>Kôš spotrebiteľa A</strong></p>
+<p>Príjem spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span> je</p>
+<div class="math notranslate nohighlight">
+\[
+M_A=\frac{25}{16}\cdot6+5=14{,}375.
+\]</div>
+<p>Po dosadení do koša spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span> získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1}=\frac12\frac{14{,}375}{25/16}=4{,}6.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_{A2}=\frac12\cdot14{,}375=7{,}1875.
+\]</div>
+<p><strong>Kôš spotrebiteľa B</strong></p>
+<p>Príjem spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span> je</p>
+<div class="math notranslate nohighlight">
+\[
+M_B=\frac{25}{16}\cdot4+5=11{,}25.
+\]</div>
+<p>Po dosadení do koša spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span> získame</p>
+<div class="math notranslate nohighlight">
+\[
+x_{B1}=\frac34\frac{11{,}25}{25/16}=5{,}4.
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_{B2}=\frac14\cdot11{,}25=2{,}8125.
+\]</div>
+<p>Rovnovážne alokácie sú preto</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{x}_A^*=(4{,}6,\,7{,}1875),
+\qquad
+\mathbf{x}_B^*=(5{,}4,\,2{,}8125).
+\]</div>
+<p><strong>Kontrola všeobecnej rovnováhy</strong></p>
+<p>Pre prvý statok platí</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A1}+x_{B1}=4{,}6+5{,}4=10.
+\]</div>
+<p>Pre druhý statok platí</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A2}+x_{B2}=7{,}1875+2{,}8125=10.
+\]</div>
+<p>Oba trhy sú v rovnováhe.</p>
+<p><strong>Kontraktačná krivka</strong></p>
+<p>Dosadením parametrov do všeobecnej rovnice kontraktačnej krivky získame</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x_{A2}}{x_{A1}}=
+3\frac{10-x_{A2}}{10-x_{A1}}.
+\]</div>
+<p>Po úprave</p>
+<div class="math notranslate nohighlight">
+\[
+x_{A2}(10-x_{A1})=
+3x_{A1}(10-x_{A2}),
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+10x_{A2}+2x_{A1}x_{A2}=
+30x_{A1},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+x_{A2}=
+\frac{15x_{A1}}{5+x_{A1}}.
+\]</div>
+<p><strong>Overenie Paretovej efektívnosti</strong></p>
+<p>Pre rovnovážnu alokáciu platí</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A=
+\frac{7{,}1875}{4{,}6}
+=
+1{,}5625,
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+MRS_B=
+3\frac{2{,}8125}{5{,}4}
+=
+1{,}5625.
+\]</div>
+<p>Teda</p>
+<div class="math notranslate nohighlight">
+\[
+MRS_A=MRS_B=\frac{p_1}{p_2}.
+\]</div>
+<p>Rovnovážna alokácia leží na kontraktačnej krivke, a preto je Paretovo efektívna.</p>
+<p>Výsledok ilustruje prvú Walrasovu vetu o blahobyte: každá konkurenčná rovnováha je Paretovo efektívna.</p>
+</section>
+<section id="id5">
+<h4><span class="section-number">9.8.2.2. </span>Python<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<p>Do matematických zápisov dosadíme funkciou <code class="docutils literal notranslate"><span class="pre">subs()</span></code>.</p>
+<p><strong>Cenový pomer</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dosad</span> <span class="o">=</span> <span class="p">{</span><span class="n">alpha_A</span><span class="p">:</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="n">alpha_B</span><span class="p">:</span><span class="mi">3</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span><span class="n">yA1</span><span class="p">:</span><span class="mi">6</span><span class="p">,</span><span class="n">yA2</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="n">yB1</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="n">yB2</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span><span class="n">ybar1</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="n">ybar2</span><span class="p">:</span><span class="mi">10</span><span class="p">}</span>
+<span class="n">pr</span> <span class="o">=</span> <span class="n">p_pomer</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pr</span><span class="p">)</span>
+<span class="n">dosad</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">p_ratio</span><span class="p">:</span> <span class="n">pr</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.56250000000000
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Rozpočty zpotrebiteľov</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Ma</span> <span class="o">=</span> <span class="n">MA</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">)</span>
+<span class="n">Mb</span> <span class="o">=</span> <span class="n">MB</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">)</span>
+<span class="n">dosad</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">MA</span><span class="p">:</span> <span class="n">Ma</span><span class="p">,</span><span class="n">MB</span><span class="p">:</span> <span class="n">Mb</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotrebiteľ A"</span><span class="p">,</span> <span class="n">Ma</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotrebiteľ B"</span><span class="p">,</span> <span class="n">Mb</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>spotrebiteľ A 14.3750000000000
+spotrebiteľ B 11.2500000000000
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Alokácia</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xa1</span> <span class="o">=</span> <span class="n">xA1_expr</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">)</span>
+<span class="n">xb1</span> <span class="o">=</span> <span class="n">xB1_expr</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">)</span>
+<span class="n">xa2</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">dosad</span><span class="p">[</span><span class="n">alpha_A</span><span class="p">])</span><span class="o">*</span><span class="n">Ma</span><span class="p">)</span>
+<span class="n">xb2</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="o">-</span><span class="n">dosad</span><span class="p">[</span><span class="n">alpha_B</span><span class="p">])</span><span class="o">*</span><span class="n">Mb</span><span class="p">)</span>
+
+<span class="n">dosad</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">xA1</span><span class="p">:</span> <span class="n">xa1</span><span class="p">,</span><span class="n">xB1</span><span class="p">:</span> <span class="n">xb1</span><span class="p">})</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotrebiteľ A"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">([</span><span class="n">xa1</span><span class="p">,</span><span class="n">xa2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"spotrebiteľ B"</span><span class="p">)</span>
+<span class="n">display</span><span class="p">([</span><span class="n">xb1</span><span class="p">,</span><span class="n">xb2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>spotrebiteľ A
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[4.60000000000000, 7.18750000000000]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>spotrebiteľ B
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[5.40000000000000, 2.81250000000000]
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Kntrola všeobecnej rovnováhy</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Prvý statok"</span><span class="p">,</span> <span class="n">xa1</span><span class="o">+</span><span class="n">xb1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Druhý statok"</span><span class="p">,</span> <span class="n">xa2</span><span class="o">+</span><span class="n">xb2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prvý statok 10.0000000000000
+Druhý statok 10.0000000000000
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Overenie Paretovej efektívnosti</strong></p>
+<p>Najskôr preukážeme, že kontrektačná krivka sa rovná cenovému pomeru. Následne ukážeme, že spotreba druhého statku spotrebiteľom <span class="math notranslate nohighlight">\(A\)</span> vypočítaná z kontraktačnej krivky sa rovná oprimálnej hodnote.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">xa2</span><span class="o">/</span><span class="n">xa1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pr</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">kontraktacna</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">xA2</span><span class="p">]</span><span class="o">.</span><span class="n">subs</span><span class="p">(</span><span class="n">dosad</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">xa2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.56250000000000
+1.56250000000000
+7.18750000000000
+7.18750000000000
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="neriesene-priklady">
+<h2><span class="section-number">9.9. </span>Neriešené príklady<a class="headerlink" href="#neriesene-priklady" title="Link to this heading">#</a></h2>
+<section id="priklad">
+<h3><span class="section-number">9.9.1. </span>Príklad<a class="headerlink" href="#priklad" title="Link to this heading">#</a></h3>
+<p>Pre každú z nasledujúcich čisto-výmenných ekonomík:</p>
+<ol class="arabic simple">
+<li><p>odvodiť koše spotrebiteľov <span class="math notranslate nohighlight">\(A\)</span> a <span class="math notranslate nohighlight">\(B\)</span>,</p></li>
+<li><p>vypočítať rovnovážny podiel cien <span class="math notranslate nohighlight">\(p_1/p_2\)</span>,</p></li>
+<li><p>vypočítať rovnovážne alokácie <span class="math notranslate nohighlight">\(\mathbf{x}_A^*\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}_B^*\)</span>,</p></li>
+<li><p>overiť všeobecnú rovnováhu,</p></li>
+<li><p>odvodiť rovnicu kontraktačnej krivky,</p></li>
+<li><p>overiť, že rovnovážna alokácia je Paretovo efektívna.</p></li>
+</ol>
+<p><strong>a)</strong></p>
+<p>Prídelová matica je</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{Y}=\begin{bmatrix}
+10 &amp; 20\\
+20 &amp; 5
+\end{bmatrix},
+\end{split}\]</div>
+<p>kde prvý stĺpec predstavuje prídelový kôš spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span> a druhý stĺpec prídelový kôš spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Preferencie spotrebiteľov sú v Cobbovom Douglasovom tvare s konštantným výnosom z rozsahu, pričom <span class="math notranslate nohighlight">\(\alpha_A = 1/2\)</span> a <span class="math notranslate nohighlight">\(\alpha_B = 2/3\)</span>, teda</p>
+<p><strong>b)</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{Y}=
+\begin{bmatrix}
+8 &amp; 12\\
+12 &amp; 8
+\end{bmatrix}, \qquad \alpha_A = 2/3, \qquad \alpha_B = 2/3.
+\end{split}\]</div>
+<p><strong>c)</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{Y}=
+\begin{bmatrix}
+15 &amp; 5\\
+5 &amp; 15
+\end{bmatrix},  \qquad \alpha_A = 3/5, \qquad \alpha_B = 2/5.
+\end{split}\]</div>
+</section>
+<section id="priklad-tri-statky">
+<h3><span class="section-number">9.9.2. </span>Príklad: Tri statky<a class="headerlink" href="#priklad-tri-statky" title="Link to this heading">#</a></h3>
+<p>V ekonomike pôsobia dvaja spotrebitelia a tri statky.</p>
+<p>Prídelová matica je</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{Y}=
+\begin{bmatrix}
+12 &amp; 8\\
+6 &amp; 14\\
+9 &amp; 11
+\end{bmatrix}.
+\end{split}\]</div>
+<p>Prvý stĺpec predstavuje prídelový kôš spotrebiteľa <span class="math notranslate nohighlight">\(A\)</span> a druhý stĺpec prídelový kôš spotrebiteľa <span class="math notranslate nohighlight">\(B\)</span>.</p>
+<p>Preferencie spotrebiteľov sú</p>
+<div class="math notranslate nohighlight">
+\[
+u_A=x_{A1}^{1/2}x_{A2}^{1/4}x_{A3}^{1/4},
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+u_B=x_{B1}^{1/4}x_{B2}^{1/2}x_{B3}^{1/4}.
+\]</div>
+<ol class="arabic simple">
+<li><p>odvodiť koše spotrebiteľov <span class="math notranslate nohighlight">\(A\)</span> a <span class="math notranslate nohighlight">\(B\)</span>,</p></li>
+<li><p>vypočítať cenové relácie <span class="math notranslate nohighlight">\(p_1/p_3\)</span> a <span class="math notranslate nohighlight">\(p_2/p_3\)</span> pri cenovej normalizácii <span class="math notranslate nohighlight">\(p_3=1\)</span>,</p></li>
+<li><p>vypočítať rovnovážne alokácie <span class="math notranslate nohighlight">\(\mathbf{x}_A^*\)</span> a <span class="math notranslate nohighlight">\(\mathbf{x}_B^*\)</span>,</p></li>
+<li><p>overiť všeobecnú rovnováhu,</p></li>
+<li><p>overiť Walrasov zákon,</p></li>
+<li><p>overiť, že rovnovážna alokácia je Paretovo efektívna.</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "conda-base-py"
+        },
+        kernelOptions: {
+            name: "conda-base-py",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'conda-base-py'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="Dynam.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">8. </span>Spotrebiteľské rozhodovanie medzi súčasnosťou a budúcnosťou</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="Zaklad.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">10. </span>Systémy národných účtov a makroekonomická rovnováha</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arrowov-debreuov-svet">9.1. Arrowov-Debreuov svet</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cisto-vymenna-ekonomika">9.2. Čisto-výmenná ekonomika</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hranicny-diagram">9.3. Hraničný diagram</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pridelovy-bod">9.3.1. Prídelový bod</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rozpoctova-hranica">9.3.2. Rozpočtová hranica</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konkurencna-rovnovaha">9.4. Konkurenčná rovnováha</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#walrasov-zakon">9.5. Walrasov zákon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cenova-normalizacia">9.5.1. Cenová normalizácia</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#paretova-efektivnost">9.6. Paretova efektívnosť</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#walrasove-vety-o-blahobyte">9.7. Walrasove vety o blahobyte</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#riesene-priklady">9.8. Riešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-vseobecna-rovnovaha-v-cisto-vymennej-ekonomike">9.8.1. Príklad: Všeobecná rovnováha v čisto-výmennej ekonomike</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#riesenie">9.8.1.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#python">9.8.1.2. Python</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numericky-priklad">9.8.2. Numerický príklad</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">9.8.2.1. Riešenie</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">9.8.2.2. Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neriesene-priklady">9.9. Neriešené príklady</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad">9.9.1. Príklad</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#priklad-tri-statky">9.9.2. Príklad: Tri statky</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
