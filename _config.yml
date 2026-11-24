@@ -1,0 +1,29 @@
+# in _config.yml
+title: "Ekonomická analýza"
+logo: logo.png
+execute:
+  execute_notebooks: "off"
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - deflist
+
+sphinx:  
+  extra_extensions:
+    - sphinx_proof
+  config:
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    numfig: true # pridané 15.07.2026
+    math_numfig: true # pridané 15.07.2026
+    numfig_format: # pridané 15.07.2026
+      figure: "Obr. %s"
+      table: "Tab. %s"
+      code-block: "Výpis %s"
+      
+bibtex_bibfiles: # pridané 14.08.2026
+  - references.bib
+
+language: sk # pridané 15.07.2026

@@ -1,0 +1,49 @@
+ # _toc.yml
+
+format: jb-book
+root: Uvod
+defaults:
+   numbered: True
+parts:
+ - caption: Základné pojmy a matematický aparát
+   chapters:
+   - file: Matematika 
+ - caption: Teória firmy
+   chapters:
+   - file: Produk
+   - file: Firma
+   - file: Naklad
+ - caption: Teória spotrebiteľa
+   chapters:
+   - file: Spotrebitel
+   - file: Porovn
+   - file: Stati
+   - file: Dynam
+ - caption: Teória všeobecnej rovnováhy
+   chapters:
+   - file: Rovnovaha
+   - file: Zaklad
+   - file: StaticModel
+   - file: Finan
+ - caption: Dynamické ekonomické merania
+   chapters:
+   - file: DynMer
+ - caption: Teória rastu
+   chapters:
+   - file: UvodRast
+   - file: Rast
+   - file: HladPrac
+ - caption: Investície vo výrobnej ekonomike
+   chapters:
+   - file: Vyrob
+   - file: Otvorena
+ - caption: Peniaze a teórie hospodárskych cyklov
+   chapters:
+   - file: Peniaze
+   - file: Pruzne
+   - file: Nepruzne
+ - caption: Literatúra a prílohy   
+   chapters:
+   - file: Literatura
+   - file: Obrazky
+   - file: Data
